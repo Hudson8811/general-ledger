@@ -1,0 +1,139 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	section.top-section
+		.ts-container.container
+			.ts-flex
+				.ts-flex__left
+					h1.ts-heading Консолидированная отчетность для банка
+					.ts-p Для получения кредита и контроля ковенант
+					.ts-p От недели и 100 000 руб.
+					a.btn.btn--with-right-arrow.ts-btn(href="") СКАЧАТЬ ПРЕЗЕНТАЦИЮ
+				.ts-flex__right
+					img.ts-pic(src="img/ts.png" alt="")
+	.result-section
+		.rs-container.container
+			h2.default-h2 Что вы получите в результате
+			.rs-block
+				.rs-block-row
+					.rs-block-row__left.rs-block-row__left--text.customized-ul-wrap
+						.rs-block-title Консолидированную финансовую отчетность с детализацией до проводок
+						ul.rs-block-ul
+							li.rs-block-li Консолидированный финансовый отчет РСБУ по форме №1, форме №2 и форме №4
+							li.rs-block-li Консолидированный управленческий баланс, отчет о доходах и расходах, отчет о движении денежных средств по всей группе компаний
+					.rs-block-row__right
+						.rs-multi-pic-flex
+							a.rs-multi-pic-flex-item(href="https://via.placeholder.com/1000/2c2e85" data-fancybox="gallery-1" )
+								img(src="https://via.placeholder.com/200x136/2c2e85" alt="")
+							a.rs-multi-pic-flex-item(href="https://via.placeholder.com/1000/2c2e85" data-fancybox="gallery-1" )
+								img(src="https://via.placeholder.com/200x136/2c2e85" alt="")
+							a.rs-multi-pic-flex-item(href="https://via.placeholder.com/1000/2c2e85" data-fancybox="gallery-1" )
+								img(src="https://via.placeholder.com/200x136/2c2e85" alt="")
+							a.rs-multi-pic-flex-item(href="https://via.placeholder.com/1000/F26419" data-fancybox="gallery-1" )
+								img(src="https://via.placeholder.com/200x136/F26419" alt="")
+							a.rs-multi-pic-flex-item(href="https://via.placeholder.com/1000/F26419" data-fancybox="gallery-1" )
+								img(src="https://via.placeholder.com/200x136/F26419" alt="")
+							a.rs-multi-pic-flex-item(href="https://via.placeholder.com/1000/F26419" data-fancybox="gallery-1" )
+								img(src="https://via.placeholder.com/200x136/F26419" alt="")
+
+				.rs-block-row
+					.rs-block-row__left
+						img.rs-one-pic(src="https://via.placeholder.com/501x262.png" alt="")
+					.rs-block-row__right.rs-block-row__right--text.customized-ul-wrap
+						.rs-block-title Финансовый анализ и интерпретацию
+						ul.rs-block-ul
+							li.rs-block-li Презентация с обоснованием каждой цифры, ответы на вопросы
+							li.rs-block-li Консультацию по подаче отчетности в банк для получения лучших условий кредита
+							li.rs-block-li Расчет финансовых показателей - финансовый анализ и интерпретация
+
+	section.we-will-suit-you-section
+		.wwsy-container.container
+			h2.default-h2 Мы идеально подойдем Вам, если:
+			.wwsy-block
+				.wwsy-block-item
+					.wwsy-block-item__pic
+						img(src="https://via.placeholder.com/110/2c2e85", alt="")
+					.wwsy-block-item__text У вас группа или холдинг из 2-15 юрлиц
+				.wwsy-block-item
+					.wwsy-block-item__pic
+						img(src="https://via.placeholder.com/110/2c2e85", alt="")
+					.wwsy-block-item__text Нужно сделать срочно, на этой или след. неделе
+				.wwsy-block-item
+					.wwsy-block-item__pic
+						img(src="https://via.placeholder.com/110/2c2e85", alt="")
+					.wwsy-block-item__text Нужна отчетность для кредита, ковенант
+				.wwsy-block-item
+					.wwsy-block-item__pic
+						img(src="https://via.placeholder.com/110/2c2e85", alt="")
+					.wwsy-block-item__text Нужны только отчеты, без внедрения софта
+	section.how-we-work-section
+		.hww-container.container
+			h2.default-h2 Как мы готовим вашу отчетность
+			.hww-block
+				.hww-block-item
+					.hww-block-item-top
+						.hww-block-item-top__pic
+							img(src="https://via.placeholder.com/364x220", alt="")
+						.hww-block-item-top__text
+							.hww-block-item-step Шаг 1
+							.hww-block-item-duration 30-60 мин.
+					.hww-block-item-bottom.customized-ul-wrap
+						.hww-block-item-title Бесплатная консультация
+						.hww-block-item-desc Уточняем желаемый результат, чтобы сделать правильно с первого раза:
+						ul
+							li Какая отчетность нужна - в фискальных или регламентированных формах (РСБУ), в какой детализации, для какого банка, для каких целей, по какому количеству компаний
+							li Финансовые коэффициенты и интерпретация по ним
+							li Какая детализация нужна для управленческой отчетности
+							li Когда нужно сделать
+
+				.hww-block-item
+					.hww-block-item-top
+						.hww-block-item-top__pic
+							img(src="https://via.placeholder.com/364x220", alt="")
+						.hww-block-item-top__text
+							.hww-block-item-step Шаг 2
+							.hww-block-item-duration 1-8 часов
+					.hww-block-item-bottom.customized-ul-wrap
+						.hww-block-item-title Подписываем договор
+						.hww-block-item-desc В договоре фиксируем:
+
+						ul
+							li Неразглашение конфиденциальных данных
+							li Условия работы, результат, сроки
+							li Нашу ответственность за результат и гарантии качества
+				.hww-block-item
+					.hww-block-item-top
+						.hww-block-item-top__pic
+							img(src="https://via.placeholder.com/364x220", alt="")
+						.hww-block-item-top__text
+							.hww-block-item-step Шаг 3
+							.hww-block-item-duration 5-7 дней
+					.hww-block-item-bottom.customized-ul-wrap
+						.hww-block-item-title Присылаем готовые отчеты в таблицах
+						.hww-block-item-desc От Вас нужна только выгрузка из главной книги Вашей учетной платформы. Дальше мы делаем элиминацию внутренних оборотов:
+
+						ul
+							li Определяем нестыковки в учете разных компаний Вашей группы
+							li Приводим к единой учетной политике данные Ваших компаний
+							li Создаем набор сводных таблиц в Excel
+							li Присылаем через неделю готовую отчетность
+							li Отвечаем на Ваши вопросы
+				.hww-block-item
+					.hww-block-item-top
+						.hww-block-item-top__pic
+							img(src="https://via.placeholder.com/364x344	", alt="")
+						.hww-block-item-top__text
+							.hww-block-item-step Шаг 4
+							.hww-block-item-duration 7-14 дней
+					.hww-block-item-bottom.customized-ul-wrap
+						.hww-block-item-title Вы отправляете отчеты в банк
+						.hww-block-item-desc Вы отправляете отчеты в банк и получаете кредит, или подтверждаете ковенанты. При необходимости - сделаем снова.
