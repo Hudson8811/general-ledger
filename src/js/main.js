@@ -5,6 +5,7 @@
 //= libs/jquery.maskedinput.min.js
 //= libs/masonry.pkgd.min.js
 //= libs/imagesloaded.pkgd.min.js
+//= libs/slick.min.js
 
 /* my scripts */
 
