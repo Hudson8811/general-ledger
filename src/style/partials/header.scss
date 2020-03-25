@@ -1,0 +1,246 @@
+/////////////////////////////////HEADER/////////////////////////////////
+.site-header {
+	position: relative;
+	background: #2C2E85;
+
+	&::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 1px;
+		content: '';
+		background: rgba(255, 255, 255, .17);
+	}
+}
+
+.sh-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 0 17px;
+}
+
+.sh-logo {
+	display: flex;
+	align-items: center;
+}
+
+.sh-logo-img {
+	line-height: 1;
+}
+
+.sh-logo-vl {
+	display: block;
+	width: 1px;
+	height: 29px;
+	margin: 0 24px;
+	background: #9D9EBF;
+}
+
+.sh-logo-vl,
+.sh-logo-text {
+	margin-top: 10px;
+}
+
+.sh-logo-text {
+	color: #9D9EBF;
+	font-size: 14px;
+	line-height: 135%;
+
+	&__line-1 {}
+
+	&__line-2 {}
+}
+
+.sh-menu-wrap {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	margin-top: 9px;
+	margin-left: 4.5%;
+}
+
+
+
+.sh-phone {
+	display: flex;
+	align-items: center;
+	margin-top: 9px;
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 132%;
+	transition-duration: .2s;
+
+	svg {
+		min-width: 17px;
+		margin-right: 10px;
+
+		path {
+			transition-duration: .2s;
+		}
+	}
+
+	&:hover {
+
+		color: #f26419;
+
+		svg path {
+			fill: #f26419;
+		}
+	}
+
+	&:active {}
+
+	&:focus {}
+}
+
+.sh-burger {
+	position: relative;
+	display: none;
+	width: 34px;
+	height: 26px;
+	cursor: pointer;
+
+	span,
+	span::before,
+	span::after {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 34px;
+		height: 2px;
+		margin-top: -1px;
+		margin-left: -17px;
+		background-color: #fff;
+	}
+
+	span::before,
+	span::after {
+		content: '';
+		transition: 0.2s;
+	}
+
+	span::before {
+		transform: translateY(-12px);
+	}
+
+	span::after {
+		transform: translateY(12px);
+	}
+
+	&--active {
+		span {
+			height: 0;
+
+			&::before {
+				transform: rotate(45deg);
+			}
+
+			&::after {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width:1200px) {
+	.sh-menu-wrap {
+		margin-left: 0;
+	}
+}
+
+@media screen and (min-width:1146px) {
+	.sh-menu {
+		display: flex;
+		align-items: center;
+		list-style: none;
+	}
+
+	.sh-menu-item {
+		padding: 0px 5%;
+
+		a {
+			position: relative;
+			display: block;
+			transition: .2s;
+			color: #ffffff;
+			font-size: 16px;
+			line-height: 132%;
+
+			&:hover {
+				color: #F26419;
+			}
+
+			&:active {}
+
+			&:focus {}
+
+			&::after {
+				position: absolute;
+				bottom: -32px;
+				left: 0;
+				width: 100%;
+				height: 3px;
+				content: '';
+				transition: .2s;
+				opacity: 0;
+				background: #F26419;
+			}
+		}
+	}
+
+	.sh-menu-item-active {
+		a {
+			color: #F26419;
+
+			&::after {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1145px) {
+	.sh-container{
+		padding: 0;
+	}
+	.container.sh-container {
+		margin-left: 39px;
+		margin-right: 0;
+		max-width: calc(100% - 39px);
+	}
+
+	.sh-menu {
+		display: none;
+	}
+
+	.sh-phone {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 28px 21px 27px 29px;
+		margin-top: 0;
+		border-left:  1px solid rgba(255, 255, 255, 0.12);
+
+		svg {
+			width: 26px;
+			height: 26px;
+			margin-right: 0;
+		}
+
+		span {
+			display: none;
+		}
+	}
+
+	.sh-burger {
+		display: block;
+		margin-right: 32px;
+	}
+	.sh-logo-text, .sh-logo-vl {
+		margin-top: 3px;
+	}
+}
