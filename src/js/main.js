@@ -6,6 +6,7 @@
 //= libs/masonry.pkgd.min.js
 //= libs/imagesloaded.pkgd.min.js
 //= libs/slick.min.js
+//= libs/jquery.mCustomScrollbar.concat.min.js
 
 /* my scripts */
 
