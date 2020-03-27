@@ -61,6 +61,7 @@ body {
 		&::after {
 			display: block;
 			width: 20px;
+			min-width: 20px;
 			height: 20px;
 			margin-left: 14px;
 			content: '';
@@ -205,6 +206,8 @@ body {
 	padding: 64px 72px 55px 64px;
 	border-radius: 20px;
 	background: #FFFFFF;
+	position: relative;
+	z-index: 1;
 }
 
 .rs-block-row {
@@ -240,18 +243,20 @@ body {
 	position: absolute;
 	color: #DADAE8;
 	font-family: $fontG;
-	font-size: 60px;
+	font-weight: 600;
+	font-size: 80px;
 	line-height: 125%;
+	z-index: -1;
 }
 
 .rs-block-digit-1 {
-	top: 17px;
-	left: -41px;
+    top: 1px;
+    left: -20px;
 }
 
 .rs-block-digit-2 {
 	top: 14px;
-	right: 0;
+    left: 28px;
 }
 
 .rs-block-title {
