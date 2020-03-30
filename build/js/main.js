@@ -130,6 +130,9 @@ $(document).ready(function () {
             }
         ]
     });
+    $(window).resize(function () {
+        $('.oc-slider').slick('setPosition');
+    });
     $('.ans-item-question').click(function () {
         $(this).toggleClass('ans-item-question--opened').siblings('.ans-item-answer').slideToggle(200);
     });
@@ -226,7 +229,15 @@ $(document).ready(function () {
             }
         }
     });
-    $('.hww-slick-next--sp, .hww-slick-prev--sp').css('top', ($('.sp-block-item-pic').height() / 2 - 15 + 25) + 'px')
+
+
+    /////////////
+    if ($('.hww-slick-next--sp').length > 0) {
+        $('.hww-slick-next--sp, .hww-slick-prev--sp').css('top', ($('.sp-block-item-pic').height() / 2 - 15 + 25) + 'px');
+    }
+    if ($('.hww-slick-next:not(.hww-slick-next--sp)').length > 0) {
+        $('.hww-slick-next:not(.hww-slick-next--sp), .hww-slick-prev:not(.hww-slick-prev--sp)').css('top', ($('.hww-block-item-top__pic').height() / 2 - 15 + 41) + 'px');
+    }
     $(window).resize(function () {
         if ($('.hww-slick-next--sp').length > 0) {
             $('.hww-slick-next--sp, .hww-slick-prev--sp').css('top', ($('.sp-block-item-pic').height() / 2 - 15 + 25) + 'px');
@@ -234,8 +245,6 @@ $(document).ready(function () {
         if ($('.hww-slick-next:not(.hww-slick-next--sp)').length > 0) {
             $('.hww-slick-next:not(.hww-slick-next--sp), .hww-slick-prev:not(.hww-slick-prev--sp)').css('top', ($('.hww-block-item-top__pic').height() / 2 - 15 + 41) + 'px');
         }
-
-
     });
     ////////////////ФУТЕР
 
