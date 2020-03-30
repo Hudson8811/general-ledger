@@ -47,6 +47,11 @@ return t.apply(e,arguments)}}function a(){this.onload=null,e(t).addClass(d[2]),r
 
 /* my scripts */
 
+/*var mediaTablet= 1000;
+var mediaMoreTablet= 1001;
+var mediaMob= 700;
+var mediaMoreMob= 701;*/
+
 $(document).ready(function () {
     $("input[name='phone']").mask(" +7 (999) 999-99-99");
 
@@ -61,7 +66,6 @@ $(document).ready(function () {
 
     if (window.matchMedia('(min-width: 1001px)').matches) {
         $grid1 = $('.hww-block').masonry({
-
             columnWidth: '.hww-block-item',
             itemSelector: '.hww-block-item',
             gutter: 20,
@@ -119,12 +123,12 @@ $(document).ready(function () {
         nextArrow: '<div class="oc-slick-next"><svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 1L10.317 6.84762C9.56296 7.50741 8.43704 7.50741 7.68299 6.84762L1 0.999999" stroke="#A0A0B1" stroke-width="2"/></svg></div>',
         responsive: [
             {
-              breakpoint: 700,
-              settings: {
-                vertical: false,
-              }
+                breakpoint: 700,
+                settings: {
+                    vertical: false,
+                }
             }
-          ]
+        ]
     });
     $('.ans-item-question').click(function () {
         $(this).toggleClass('ans-item-question--opened').siblings('.ans-item-answer').slideToggle(200);
@@ -228,25 +232,52 @@ $(document).ready(function () {
             prevArrow: '<div class="wwsy-slick-prev"><svg width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1L2 16L14 31" stroke="#C7C7D5" stroke-width="2"/></svg></div>',
             nextArrow: '<div class="wwsy-slick-next"><svg width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 31L13 16L1 0.999999" stroke="#C7C7D5" stroke-width="2"/></svg></div>'
         });
-        $(".wwsy-block.slick-slider").on('afterChange', function (event, slick, currentSlide) {
-            $(".js-wwsy-block-mobile-counter__current").text(currentSlide + 1);
-        });
 
         //////////////////////////////
-
-
 
         $('.hww-block').slick({
             prevArrow: '<div class="hww-slick-prev"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 1L2 8L8 15" stroke="#555665" stroke-width="2"/></svg></div>',
             nextArrow: '<div class="hww-slick-next"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 15L7 8L1 0.999999" stroke="#555665" stroke-width="2"/></svg></div>'
         });
-        $('.hww-block-mobile-unwrap span').click(function () {
-            $('.hww-block').addClass('hww-block--shown');
-            setTimeout(function () {
-                $('.hww-block-mobile-unwrap').addClass('hww-block-mobile-unwrap--dn');
-            }, 200);
-        });
     }
+
+    $(".wwsy-block").on('afterChange', function (event, slick, currentSlide) {
+        $(".js-wwsy-block-mobile-counter__current").text(currentSlide + 1);
+    });
+
+    $('.hww-block-mobile-unwrap span').click(function () {
+        $('.hww-block').addClass('hww-block--shown');
+        setTimeout(function () {
+            $('.hww-block-mobile-unwrap').addClass('hww-block-mobile-unwrap--dn');
+        }, 200);
+    });
+
+    $(window).resize(function () {
+        if (window.matchMedia('(max-width: 700px)').matches) {
+    $('.wwsy-block').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            prevArrow: '<div class="wwsy-slick-prev"><svg width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1L2 16L14 31" stroke="#C7C7D5" stroke-width="2"/></svg></div>',
+            nextArrow: '<div class="wwsy-slick-next"><svg width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 31L13 16L1 0.999999" stroke="#C7C7D5" stroke-width="2"/></svg></div>'
+        });
+
+        //////////////////////////////
+
+        $('.hww-block').slick({
+            prevArrow: '<div class="hww-slick-prev"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 1L2 8L8 15" stroke="#555665" stroke-width="2"/></svg></div>',
+            nextArrow: '<div class="hww-slick-next"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 15L7 8L1 0.999999" stroke="#555665" stroke-width="2"/></svg></div>'
+        });
+        }
+        else {
+            if ($('.wwsy-block').hasClass('slick-initialized')) {
+                $('.wwsy-block').slick('unslick');
+            }
+
+            if ($('.hww-block').hasClass('slick-initialized')) {
+                $('.hww-block').slick('unslick');
+            }
+        }
+    });
 
     /* function wwsyBlock(params) {
 

@@ -715,6 +715,7 @@ a.cat-block-iwt-text__line-2 {
 		&::after {
 			display: block;
 			width: 20px;
+			min-width: 20px;
 			height: 20px;
 			margin-left: 14px;
 			content: '';
