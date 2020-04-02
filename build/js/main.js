@@ -179,6 +179,7 @@ $(document).ready(function () {
                 breakpoint: 700,
                 settings: {
                     vertical: false,
+                    verticalSwiping: false
                 }
             }
         ]
