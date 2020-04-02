@@ -6,11 +6,6 @@ var mediaMoreMob= 701;*/
 $(document).ready(function () {
     $("input[name='phone']").mask(" +7 (999) 999-99-99");
 
-    $('.sh-burger').click(function () {
-        $(this).toggleClass('sh-burger--active');
-        $('.sh-menu-wrap').toggleClass('sh-menu-wrap--open');
-    });
-
     var $grid1;
     var grid1_isMansory = false;
     var grid1_isMansoryLayoutNow = false;

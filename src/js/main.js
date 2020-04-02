@@ -7,7 +7,10 @@
 //= libs/imagesloaded.pkgd.min.js
 //= libs/slick.min.js
 //= libs/jquery.mCustomScrollbar.concat.min.js
+//= libs/popper.min.js
+//= libs/tippy-bundle.umd.min.js
 
 /* my scripts */
 
+//= partials/header.js
 //= partials/main.js
