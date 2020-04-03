@@ -1,5 +1,5 @@
-/*var mediaTablet= 1000;
-var mediaMoreTablet= 1001;
+/*var mediaTablet= 1025;
+var mediaMoreTablet= 1026;
 var mediaMob= 700;
 var mediaMoreMob= 701;*/
 
@@ -10,7 +10,7 @@ $(document).ready(function () {
     var grid1_isMansory = false;
     var grid1_isMansoryLayoutNow = false;
 
-    if (window.matchMedia('(min-width: 1001px)').matches) {
+    if (window.matchMedia('(min-width: 1026px)').matches) {
         $grid1 = $('.hww-block').masonry({
             columnWidth: '.hww-block-item',
             itemSelector: '.hww-block-item',
@@ -27,7 +27,7 @@ $(document).ready(function () {
 
 
     $(window).resize(function () {
-        if (window.matchMedia('(max-width: 1000px)').matches) {
+        if (window.matchMedia('(max-width: 1025px)').matches) {
             if (grid1_isMansory && grid1_isMansoryLayoutNow === true) {
                 $grid1.masonry('destroy')
                 grid1_isMansoryLayoutNow = false;
@@ -130,7 +130,7 @@ $(document).ready(function () {
     $(".sp-block").on('afterChange', function (event, slick, currentSlide) {
         $(".js-sp-block-mobile-counter__current").text(currentSlide + 1);
     });
-    if (window.matchMedia('(min-width: 701px) and (max-width: 1000px)').matches) {
+    if (window.matchMedia('(min-width: 701px) and (max-width: 1025px)').matches) {
         wcuAndSpInitScrollbar();
     }
     if (window.matchMedia('(max-width: 700px)').matches) {
@@ -138,7 +138,7 @@ $(document).ready(function () {
     }
 
     $(window).resize(function () {
-        if (window.matchMedia('(min-width: 701px) and (max-width: 1000px)').matches) {
+        if (window.matchMedia('(min-width: 701px) and (max-width: 1025px)').matches) {
             if (wcuAndSpBlockState === 'default') {
                 wcuAndSpInitScrollbar();
             }
@@ -196,7 +196,7 @@ $(document).ready(function () {
     ////////////////ФУТЕР
 
     function adaptFooter() {
-        if (window.matchMedia('(max-width: 1000px)').matches) {
+        if (window.matchMedia('(max-width: 1025px)').matches) {
             if (!$('.sf-col-3').parent().hasClass('sf-tb-container')) {
                 $('.sf-col-3').appendTo($('.sf-tb-container'));
                 $('.sf-col-5').appendTo($('.sf-tb-container'));

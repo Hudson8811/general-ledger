@@ -6,8 +6,11 @@
 
 /* my style */
 
+@import "partials/var";
 @import "partials/mixin";
 @import "partials/header";
 @import "partials/main";
 @import "partials/footer";
 @import "partials/main-adaptive";
+@import "partials/upr-otch.scss";
+@import "partials/upr-otch-adaptive.scss";
