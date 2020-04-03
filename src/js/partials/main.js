@@ -8,15 +8,17 @@ $(document).ready(function () {
 
     $('.js-rs-multi-pic-flex-item').fancybox({
 
-        animationEffect: false,
+        'animationEffect': false,
+        'wheel': false,
+        'fitToView': "cover",
+        'scrolling' : 'yes',
+
         afterShow: function (instance, current) {
 
             if (window.matchMedia('(min-width: 1300px)').matches) {
                 instance.scaleToActual();
             }
         },
-        scrolling: "auto"
-
 
 
     });
