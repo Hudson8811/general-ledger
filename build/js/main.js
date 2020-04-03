@@ -59,7 +59,7 @@ $(document).ready(function () {
 	$('.js-video-yt .video-yt__preview').click(function () {
 		if($(this).siblings('iframe').length===0){
 			var src = $(this).attr('data-src');
-			$(this).parent().prepend('<iframe src="'+src+'" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+			$(this).parent().addClass('video-yt-has-iframe').prepend('<iframe src="'+src+'" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
 		}
 	});
 });
@@ -437,8 +437,8 @@ $('.rs-ssb-thumbs').slick({
 	arrows: true,
 	slidesToShow: 3,
 	slidesToScroll: 1,
-	prevArrow: '<div class="oc-slick-prev"><svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8L7.68299 2.15238C8.43704 1.49259 9.56296 1.49259 10.317 2.15238L17 8" stroke="#555665" stroke-width="2"/></svg></div>',
-	nextArrow: '<div class="oc-slick-next"><svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 1L10.317 6.84762C9.56296 7.50741 8.43704 7.50741 7.68299 6.84762L1 0.999999" stroke="#A0A0B1" stroke-width="2"/></svg></div>',
+	prevArrow: '<div class="slider-white-prev"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14.5" cy="14.5" r="14.5" fill="#F5F6FB"/><path d="M16 8L10 15L16 22" stroke="#555665" stroke-width="2"/></svg></div>',
+	nextArrow: '<div class="slider-white-next"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14.5" cy="14.5" r="14.5" transform="rotate(-180 14.5 14.5)" fill="#F5F6FB"/><path d="M13 21L19 14L13 7" stroke="#555665" stroke-width="2"/></svg></div>',
 	asNavFor: '.rs-ssb-main',
 	focusOnSelect:true,
 

@@ -24,4 +24,153 @@
 		max-width: 113%;
 	}
 }
-.result-section--upr-ot{}
+
+
+//////////////////////////
+.result-section--uprot {
+	padding-top: 50px;
+}
+
+.rs-block-row__right {}
+
+.rs-synchro-slider-block {}
+
+.rs-ssb-main {
+	width: 100%;
+
+}
+
+.rs-ssb-main__item {
+	position: relative;
+
+	&::before {
+		content: '';
+		display: block;
+		padding-top: 59.535655058%;
+	}
+
+	.video-yt {
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 64px;
+			height: 64px;
+			background: url(../img/play.svg) no-repeat center center;
+			background-size: contain;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -32px;
+			margin-top: -32px;
+			z-index: 1;
+			transition-duration: .2s;
+		}
+		&:hover{
+			&::after{
+				transform: scale(1.1);
+			}
+		}
+		&.video-yt-has-iframe {
+			&::after{
+				display: none;
+			}
+		}
+	}
+
+	img {
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		object-position: center center;
+		object-fit: cover;
+	}
+}
+
+.rs-ssb-thumbs {
+	width: 100%;
+	margin-top: 2px;
+
+	.slick-list {
+		margin: 0 0 0 -1px;
+	}
+}
+
+.rs-ssb-thumbs-item {
+	padding: 0 1px;
+	position: relative;
+	cursor: pointer;
+
+	&--video {
+		&::after {
+			content: '';
+			display: block;
+			width: 39px;
+			height: 39px;
+			background: url(../img/play.svg) no-repeat center center;
+			background-size: contain;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -19.5px;
+			margin-top: -19.5px;
+			z-index: 1;
+		}
+	}
+}
+
+.rs-ssb-thumbs-item-inner {
+	width: 100%;
+	position: relative;
+
+	&::before {
+		content: '';
+		display: block;
+		padding-top: 71.2%;
+	}
+
+	img {
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		object-position: center center;
+		object-fit: cover;
+	}
+
+}
+
+.slider-white-prev,
+.slider-white-next {
+	z-index: 1;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: 29px;
+	margin-top: -14.5px;
+	transition-duration: .2s;
+
+	svg {
+		width: 100%;
+	}
+
+	&:hover {
+		opacity: .7;
+	}
+}
+
+.slider-white-prev {
+	left: 16px;
+}
+
+.slider-white-next {
+	right: 16px;
+}
