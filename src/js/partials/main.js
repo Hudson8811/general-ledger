@@ -6,23 +6,16 @@ var mediaMoreMob= 701;*/
 $(document).ready(function () {
     $("input[name='phone']").mask(" +7 (999) 999-99-99");
 
-    $('.js-rs-multi-pic-flex-item').fancybox({
-
+    $('.js-table-fancybox').fancybox({
         'animationEffect': false,
         'wheel': false,
-        'fitToView': "cover",
-        'scrolling' : 'yes',
-
         afterShow: function (instance, current) {
 
             if (window.matchMedia('(min-width: 1300px)').matches) {
-                instance.scaleToActual();
+                instance.scaleToActual(0,0);
             }
-        },
-
-
+        }
     });
-
 
     var $grid1;
     var grid1_isMansory = false;
@@ -197,12 +190,15 @@ $(document).ready(function () {
 
 
     /////////////
-    if ($('.hww-slick-next--sp').length > 0) {
-        $('.hww-slick-next--sp, .hww-slick-prev--sp').css('top', ($('.sp-block-item-pic').height() / 2 - 15 + 25) + 'px');
-    }
-    if ($('.hww-slick-next:not(.hww-slick-next--sp)').length > 0) {
-        $('.hww-slick-next:not(.hww-slick-next--sp), .hww-slick-prev:not(.hww-slick-prev--sp)').css('top', ($('.hww-block-item-top__pic').height() / 2 - 15 + 41) + 'px');
-    }
+    setTimeout(function(){
+        if ($('.hww-slick-next--sp').length > 0) {
+            $('.hww-slick-next--sp, .hww-slick-prev--sp').css('top', ($('.sp-block-item-pic').height() / 2 - 15 + 25) + 'px');
+        }
+        if ($('.hww-slick-next:not(.hww-slick-next--sp)').length > 0) {
+            $('.hww-slick-next:not(.hww-slick-next--sp), .hww-slick-prev:not(.hww-slick-prev--sp)').css('top', ($('.hww-block-item-top__pic').height() / 2 - 15 + 41) + 'px');
+        }
+    },1000);
+
     $(window).resize(function () {
         if ($('.hww-slick-next--sp').length > 0) {
             $('.hww-slick-next--sp, .hww-slick-prev--sp').css('top', ($('.sp-block-item-pic').height() / 2 - 15 + 25) + 'px');

@@ -9,7 +9,7 @@
 //= libs/jquery.mCustomScrollbar.concat.min.js
 //= libs/popper.min.js
 //= libs/tippy-bundle.umd.min.js
-
+//= libs/jquery.mousewheel.min.js
 /* my scripts */
 
 //= partials/components.js

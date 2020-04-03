@@ -87,6 +87,7 @@ body {
 
 		}
 	}
+
 	&--grey {
 		color: #9D9EBF;
 		border: 1px solid #9D9EBF;
@@ -758,7 +759,8 @@ body {
 	background: #FFFFFF;
 }
 
-.sp-block-item-pic {display: block;
+.sp-block-item-pic {
+	display: block;
 	position: relative;
 	width: 100%;
 
@@ -1282,5 +1284,15 @@ a.cat-block-iwt-text__line-2 {
 		height: 100%;
 		content: '';
 		background: #F26419;
+	}
+}
+
+@media screen and (min-width:1300px) {
+	.fancybox-slide--image {
+		overflow: scroll;
+		overflow-x: hidden;
+	}
+	body.fancybox-active{
+		overflow: hidden;
 	}
 }
