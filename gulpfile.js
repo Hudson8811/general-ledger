@@ -66,6 +66,7 @@ gulp.task('html:build', function buildHTML() {
 	return gulp.src('src/views/*.pug')
 		.pipe(pug({
 		// Your options in here.
+		pretty: true
 		}))
 		.pipe(gulp.dest(path.build.html))
 		.pipe(reload({stream: true}));
