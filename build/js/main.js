@@ -56,6 +56,15 @@ return t.apply(e,arguments)}}function a(){this.onload=null,e(t).addClass(d[2]),r
 /* my scripts */
 
 
+$(document).ready(function () {
+	$('.js-video-yt .video-yt__preview').click(function () {
+		if($(this).siblings('iframe').length===0){
+			var src = $(this).attr('data-src');
+			$(this).parent().prepend('<iframe src="'+src+'" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+		}
+	});
+});
+
 const headerMenuTips = tippy('.sh-menu-item--with-sub', {
 	content(reference) {
 		const id = reference.getAttribute('data-template');
@@ -112,6 +121,22 @@ var mediaMoreMob= 701;*/
 
 $(document).ready(function () {
     $("input[name='phone']").mask(" +7 (999) 999-99-99");
+
+    $('.js-rs-multi-pic-flex-item').fancybox({
+
+        animationEffect: false,
+        afterShow: function (instance, current) {
+
+            if (window.matchMedia('(min-width: 1300px)').matches) {
+                instance.scaleToActual();
+            }
+        },
+        scrolling: "auto"
+
+
+
+    });
+
 
     var $grid1;
     var grid1_isMansory = false;

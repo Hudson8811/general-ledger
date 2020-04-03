@@ -380,11 +380,10 @@
 @media screen and (max-width:$phoneMax) {
 	///--
 	footer {
-		overflow: hidden;
 		max-width: 100%;
 	}
 
-	.sf-container {
+	.container.sf-container {
 		flex-direction: column;
 		max-width: calc(100% - 39px * 2);
 	}
@@ -421,13 +420,13 @@
 		align-items: center;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		max-width: calc(100% - 39px *2);
+		max-width: calc(100% - 27px * 2);
 		margin: 0 auto;
 
 	}
 
 	.sf-mobile-socials {
-		margin: 30px -12px 0;
+		margin: 33px 0 0;
 
 		&-g-1 {
 			display: flex;
@@ -451,12 +450,12 @@
 	}
 
 	.sf-tablet-bottom {
-		margin-top: 34px;
+		margin-top: 16px;
 		padding: 24px 0 24px;
 		border-bottom: 1px solid rgba(255, 255, 255, .12);
 	}
 
-	.sf-tb-container {
+	.container.sf-tb-container {
 		flex-direction: column;
 		max-width: calc(100% - 39px * 2);
 	}
@@ -480,7 +479,7 @@
 		margin: 0 auto;
 
 		.sf-copyright {
-			padding: 31px 0 48px;
+			padding: 31px 0 41px;
 		}
 
 	}
@@ -493,6 +492,5 @@
 	}
 
 	.sf-mobile-socials {
-		margin: 30px -5px 0;
 	}
 }

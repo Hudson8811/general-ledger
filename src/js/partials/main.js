@@ -6,6 +6,22 @@ var mediaMoreMob= 701;*/
 $(document).ready(function () {
     $("input[name='phone']").mask(" +7 (999) 999-99-99");
 
+    $('.js-rs-multi-pic-flex-item').fancybox({
+
+        animationEffect: false,
+        afterShow: function (instance, current) {
+
+            if (window.matchMedia('(min-width: 1300px)').matches) {
+                instance.scaleToActual();
+            }
+        },
+        scrolling: "auto"
+
+
+
+    });
+
+
     var $grid1;
     var grid1_isMansory = false;
     var grid1_isMansoryLayoutNow = false;
