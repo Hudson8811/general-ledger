@@ -24,7 +24,6 @@ $(document).ready(function () {
     if (window.matchMedia('(min-width: 1026px)').matches) {
         $grid1 = $('.hww-block').masonry({
             columnWidth: '.hww-block-item',
-            itemSelector: '.hww-block-item',
             gutter: 20,
             horizontalOrder: true
         });
@@ -50,7 +49,6 @@ $(document).ready(function () {
                 $grid1 = $('.hww-block').masonry({
 
                     columnWidth: '.hww-block-item',
-                    itemSelector: '.hww-block-item',
                     gutter: 20,
                     horizontalOrder: true
                 });
