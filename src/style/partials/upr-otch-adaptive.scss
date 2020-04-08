@@ -1,4 +1,7 @@
 @media screen and (min-width: $desktopMin) {
+	.top-section--upr-ot {
+		overflow-x: hidden;
+	}
 
 	.sp-block--uprotch {
 		flex-wrap: wrap;
@@ -408,6 +411,12 @@
 }
 
 
+@media screen and (min-width:$tabletMin) {
+	.mobile-unwrap {
+		display: none;
+	}
+}
+
 @media screen and (min-width:$tabletMin) and (max-width:$tabletMax) {
 
 	.hww-block-item--fw {
@@ -668,7 +677,7 @@
 			border-radius: 20px 20px 0 0;
 		}
 
-		&:not(::last-child) {
+		&:not(:last-child) {
 			border-bottom: 1px solid #DADAE8;
 		}
 
@@ -685,5 +694,147 @@
 		margin-right: 16px;
 		min-width: 27px;
 		margin-top: 5px;
+	}
+
+	.wwsy-uprotch-mobile-counter {
+		margin-top: 26px;
+	}
+
+	.wwsy-uprotch-arrow-next,
+	.wwsy-uprotch-arrow-prev {
+		bottom: -52px;
+	}
+
+	//////////////////////
+
+	.hww-block-item--fw {
+		width: 100%;
+		padding: 0;
+		border-radius: 0;
+
+		ul {
+
+			margin-top: 19px;
+		}
+	}
+
+	.hww-block-item-title {
+		margin-top: 21px;
+	}
+
+	.hww-block-item-fw-left {
+		display: flex;
+		flex-direction: column-reverse;
+
+		.hww-block-item-fw-pic {
+			position: relative;
+			width: 100%;
+			margin-top: 19px;
+
+			&::before {
+				display: block;
+				padding-top: 63.8%;
+				content: '';
+			}
+
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center center;
+			}
+		}
+
+		.hww-block-item-fw-content-mobile {
+			order: 0;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			width: 100%;
+			padding-top: 0;
+		}
+	}
+
+	.hww-block-item-step {
+		margin-right: 10px;
+		font-size: 22px;
+		line-height: 1;
+	}
+
+	.hww-block-item-duration {
+		line-height: 1;
+
+		&::before {
+			display: inline;
+			width: unset;
+			height: unset;
+			margin: 0;
+			content: '(';
+			background: none;
+		}
+
+		&::after {
+			content: ')';
+
+		}
+	}
+
+	.how-we-work-section--uprotch {
+		margin-top: 0;
+		padding-top: 57px;
+		padding-bottom: 4px;
+
+		.default-h2 {
+			width: 210px;
+			margin: 0 auto;
+		}
+
+	}
+
+	.why-choose-us-section--uprotch {
+		padding-top: 58px;
+
+		.default-h2 {
+			width: 250px;
+		}
+
+		.wcu-block-item__title,
+		.wcu-block-item__text {
+			text-align: center;
+		}
+	}
+
+	.why-choose-us-section--uprotch {
+		padding-bottom: 30px;
+	}
+
+	////////////////////////
+	.cost-and-terms-section--uprotch {
+		padding-top: 38px;
+	}
+
+	.cat-block--uprotch .cat-block-title {
+		margin-bottom: 8px;
+	}
+
+	.cat-block--uprotch .cat-block-sub-title {
+		margin-bottom: 28px;
+	}
+}
+
+@media screen and (max-width:377px) {
+	.top-section--upr-ot .ts-flex__right {
+		margin-bottom: -100px;
+	}
+}
+@media screen and (max-width:335px) {
+
+	.rs-block-digit-3--uprotch,
+	.rs-block-row-2--uprotch .rs-block-digit-2 {
+		left: auto;
+		right: 0;
 	}
 }

@@ -365,6 +365,10 @@ $(document).ready(function () {
         $(".js-wwsy-block-mobile-counter__current").text(currentSlide + 1);
     });
 
+    $(".wcu-block").on('afterChange', function (event, slick, currentSlide) {
+        $(".js-wcu-uprotch-mobile-counter__current").text(currentSlide + 1);
+    });
+
     $('.hww-block-mobile-unwrap span').click(function () {
         $('.hww-block').addClass('hww-block--shown');
         setTimeout(function () {
