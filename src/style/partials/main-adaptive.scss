@@ -1,4 +1,5 @@
 @media screen and (max-width:1242px) {
+
 	.rs-block-row__left,
 	.rs-block-row__right {
 		width: 50%;
@@ -425,7 +426,9 @@
 }
 
 @media screen and (min-width:$tabletMin) and (max-width:$tabletMax) {
-
+	.sp-block-item{
+		min-width: 400px;
+	}
 	//------------------------------------------------
 	.how-we-work-section {
 		margin-top: 28px;
@@ -442,7 +445,12 @@
 
 	.hww-block-mobile-tab {
 		position: relative;
-		padding: 19px 56px 38px 57px;
+		//padding: 19px 56px 38px 57px;
+		max-width: 161px;
+
+		padding-top: 19px;
+		height: 77px;
+		flex-grow: 1;
 		cursor: pointer;
 		transition-duration: .2s;
 		color: #A0A0B1;
@@ -452,10 +460,14 @@
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 125%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		box-sizing: border-box;
 
 		&:not(:first-child) {
-			padding-left: 77px;
 			border-radius: 0 20px 0px 0px;
+			padding-left: 20px;
 		}
 
 		&:not(:last-child) {
@@ -509,7 +521,7 @@
 
 			&:not(:first-child) {
 				margin-left: 20px;
-				padding-left: 57px;
+				padding-left: 0;
 				border-radius: 20px 20px 0px 0px;
 			}
 		}
@@ -529,8 +541,10 @@
 		background: #FFFFFF;
 
 	}
-
-	.hww-block-item {
+	.hww-block-item:not(.hww-block-item--active), .hww-block-item--fw:not(.hww-block-item--active) {
+		display: none;
+	}
+	.hww-block-item, .hww-block-item--fw {
 		display: none;
 		width: 100%;
 		transition-duration: .2s;

@@ -100,7 +100,7 @@ $(document).ready(function () {
             $('.hww-block-item--active').removeClass('hww-block-item--active-visible');
             setTimeout(function () {
                 $('.hww-block-item--active').removeClass('hww-block-item--active');
-                $('.hww-block-item').eq(index).addClass('hww-block-item--active').addClass('hww-block-item--active-visible');
+                $('.hww-block-item, .hww-block-item--fw').eq(index).addClass('hww-block-item--active').addClass('hww-block-item--active-visible');
             }, 200);
         }
     });
