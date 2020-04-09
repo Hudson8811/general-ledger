@@ -1,0 +1,655 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	section.top-section.top-section--upr-ot
+		.ts-container.container
+			.ts-flex
+				.ts-flex__left
+					h1.ts-heading Полная управленческая отчетность для холдинга или группы компаний
+
+					.ts-text-desktop
+						p Для контроля показателей холдинга и достижения финансовых целей
+						p От 2-х недель и 300 тыс. руб.
+					.ts-text-mobile
+						p Для контроля показателей холдинга и достижения финансовых целей
+						p От 2-х недель и 300 тыс. руб.
+					a.btn.btn--white.btn--with-right-arrow.ts-btn.ts-btn-desktop(href="") СКАЧАТЬ ПРЕЗЕНТАЦИЮ
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
+
+				.ts-flex__right
+					img.ts-pic(src="img/upr-otch-ts-pic.png" alt="")
+					a.btn.btn--orange.btn--with-right-arrow.ts-btn.ts-btn-mobile(href="") СКАЧАТЬ ПРЕЗЕНТАЦИЮ
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
+	section.result-section.result-section--uprot
+		.rs-container.container
+			h2.default-h2 Что вы получите в результате
+			.rs-block-mobile-digit-1 1
+			.rs-block
+				.rs-block-row.rs-block-row-1
+					.rs-block-row__left.rs-block-row__left--text.customized-ul-wrap
+						.rs-block-digit.rs-block-digit-1 1
+						.rs-block-title Консолидированную упр. отчетность с детализацией до отдельных операций по холдингу и отдельным компаниям группы
+						ul.rs-block-ul
+							li.rs-block-li Управленческий баланс, отчет о доходах и расходах, отчет о движении денежных средств в OLAP кубах по холдингу в целом и отдельным компаниям группы
+							li.rs-block-li Классификатор статей для каждого отчета и расписанную методологию группировки статей по всем отчетам
+							li.rs-block-li Твердую статистику за предыдущий год-два с целью определить закономерности в бизнесе
+							li.rs-block-li Анализ динамики ключевых показателей - что стало лучше/хуже и где причина изменений
+							li.rs-block-li Быстрый анализ в живом многомерном отчете - группируйте данные в разных разрезах за несколько секунд
+					.rs-block-row__right
+						.rs-synchro-slider-block.rs-synchro-slider-block--uprotch
+							.rs-ssb-main
+								.rs-ssb-main__item
+									img(src="http://via.placeholder.com/640x360" alt="")
+								.rs-ssb-main__item
+									.video-yt.js-video-yt.video-yt--h100
+										.video-yt__preview(data-src="https://www.youtube.com/embed/WUgvvPRH7Oc")
+											img(src="https://i.ytimg.com/vi/WUgvvPRH7Oc/maxresdefault.jpg")
+								.rs-ssb-main__item
+									img(src="http://via.placeholder.com/640x360" alt="")
+								.rs-ssb-main__item
+									img(src="http://via.placeholder.com/640x360" alt="")
+								.rs-ssb-main__item
+									img(src="http://via.placeholder.com/640x360" alt="")
+							.rs-ssb-thumbs
+								.rs-ssb-thumbs-item
+									.rs-ssb-thumbs-item-inner
+										img(src="http://via.placeholder.com/200x150" alt="")
+								.rs-ssb-thumbs-item.rs-ssb-thumbs-item--video
+									.rs-ssb-thumbs-item-inner
+										img(src="https://i.ytimg.com/vi/WUgvvPRH7Oc/maxresdefault.jpg" alt="")
+								.rs-ssb-thumbs-item
+									.rs-ssb-thumbs-item-inner
+										img(src="http://via.placeholder.com/200x150" alt="")
+								.rs-ssb-thumbs-item
+									.rs-ssb-thumbs-item-inner
+										img(src="http://via.placeholder.com/200x150" alt="")
+								.rs-ssb-thumbs-item
+									.rs-ssb-thumbs-item-inner
+										img(src="http://via.placeholder.com/200x150" alt="")
+				.rs-block-row
+					.rs-triple-ptd.rs-triple-ptd--uprotch.js-rs-triple-ptd--uprotch
+						.rs-triple-ptd-item
+							a.rs-multi-pic-flex-item.js-table-fancybox.rs-multi-pic-flex-item--blue(href="/images/form-1.png" data-fancybox="gallery-1")
+								.rs-multi-pic-flex-item-inner
+									.rs-multi-pic-flex-item-text  Balance
+									.rs-multi-pic-flex-item-img-wrap
+										img(src="/images/form-1.png" alt="")
+							.rs-triple-ptd-item-title Управленческий баланс по холдингу и компаниям
+							.rs-triple-ptd-item-description
+								p Управленческая и бухгалтерская форма
+								p Помесячно или за период
+								p Аналитика за разные периоды
+						.rs-triple-ptd-item
+							a.rs-multi-pic-flex-item.js-table-fancybox.rs-multi-pic-flex-item--blue(href="/images/form-1.png" data-fancybox="gallery-1")
+								.rs-multi-pic-flex-item-inner
+									.rs-multi-pic-flex-item-text P&L
+									.rs-multi-pic-flex-item-img-wrap
+										img(src="/images/form-1.png" alt="")
+							.rs-triple-ptd-item-title Отчет о доходах и расходах по холдингу и компаниям
+							.rs-triple-ptd-item-description
+								p Управленческая и бухгалтерская форма
+								p Постоянные и переменные расходы
+								p Аналитика за разные периоды
+
+						.rs-triple-ptd-item
+							a.rs-multi-pic-flex-item.js-table-fancybox.rs-multi-pic-flex-item--blue(href="/images/form-1.png" data-fancybox="gallery-1")
+								.rs-multi-pic-flex-item-inner
+									.rs-multi-pic-flex-item-text CashFlow
+									.rs-multi-pic-flex-item-img-wrap
+										img(src="/images/form-1.png" alt="")
+							.rs-triple-ptd-item-title Управленческий баланс по холдингу и компаниям
+							.rs-triple-ptd-item-description
+								p Управленческая и бухгалтерская форма
+								p Помесячно или за период
+								p Аналитика за разные периоды
+
+
+				.rs-block-row.rs-block-row-2.rs-block-row-2--uprotch.rs-block-row-mobile-hidden
+					.rs-block-row__left
+						a.rs-one-pic-wrap(href="/images/rs-left-pic.png" data-fancybox="gallery-2" )
+							.rs-one-pic-wrap-inner
+								img.rs-one-pic(src="/images/rs-left-pic.png" alt="")
+					.rs-block-row__right.rs-block-row__right--text.customized-ul-wrap
+						.rs-block-digit.rs-block-digit-2 2
+						.rs-block-title Фин. модель холдинга для проверки целей – "а что, если..." и "что нам нужно, чтобы
+						ul.rs-block-ul
+							li.rs-block-li Какая прибыль будет через месяц, квартал, год, если ничего не менять в работе
+							li.rs-block-li Как изменится прибыль, если крупный клиент увеличит объем заказов и попросит дополнительную отсрочку
+							li.rs-block-li Хватит ли своего капитала на обновление оборудования при ожидаемом снижении себестоимости и росте продаж
+							li.rs-block-li Картина будущего для холдинга в целом и отдельных компаний группы
+							li.rs-block-li Высокая достоверность прогноза  – создаем модель из реальной статистики за прошлый год-два
+							li.rs-block-li Какие показатели и в каких компаниях контролировать, чтобы достичь квартальной финансовой цели
+					.mobile-unwrap.js-mobile-unwrap-rs-block-row-uprotch
+						span Развернуть
+				.rs-block-row.rs-block-row-3.rs-block-row-mobile-hidden
+					.rs-block-row__left.rs-block-row__left--text.customized-ul-wrap
+						.rs-block-digit.rs-block-digit-1.rs-block-digit-3--uprotch 3
+						.rs-block-title Удобный контроль показателей для достижения месячных, квартальных и годовых целей
+						ul.rs-block-ul
+							li.rs-block-li Регулярный консолидированный отчет по выбранным показателям – продажи, оборотный капитал, незавершенное производство и т.д.
+							li.rs-block-li Наглядные графики и диаграммы, собранные в 5 дашбордах с ключевыми показателями (возможна реализация в Power BI)
+							li.rs-block-li Объяснение каждой цифры - откуда взялась, что означает, рекомендации по улучшению показателей
+							li.rs-block-li Предотвращение нехватки оборотных средств, превышения расходов, уменьшения прибыли
+							li.rs-block-li Помощь в целеполагании и планомерное достижение финансовых целей
+
+					.rs-block-row__right
+					.mobile-unwrap.js-mobile-unwrap-rs-block-row-uprotch
+						span Развернуть
+
+	section.we-will-suit-you-section
+		.wwsy-container.container
+			h2.default-h2 Мы идеально подойдем Вам, если:
+			.wwsy-uprotch
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__text
+						|У Вас
+						b  5-7 компаний
+						|  с оборотом
+						b  50-300 млн
+						|  в месяц, и нужна понятная картина бизнеса
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__text
+						b Нет времени
+						|  возиться с 1С и
+						b  вручную составлять
+						|  управленческую
+						b  отчетность
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__text
+						| Вы хотите на твердых цифрах знать, насколько
+						b  хорошо или плохо идут дела
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__text
+						| Не получается
+						b  привести учет
+						|  в разных компаниях
+						b  к одной классификации
+
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__text
+						b Данные нужны сейчас,
+						|  не дожидаясь автоматизации через год и за 2-5 млн
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__text
+						| Есть ощущение, что текущие
+						b  данные не соответствуют действительности
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__text
+						| Вам нужен
+						b  прогноз фин. результатов
+						|  и понимание, какие точки контролировать, чтобы достичь цели
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__text
+						| Вы запускаете инвест-проект и хотите знать,
+						b  что будет при продажах на 10, 50 и 100 млн в месяц
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__text
+						|Вам нужно знать,
+						b  хватит ли
+						|  своих
+						b  оборотных средств на покупку оборудования,
+						|  или нужно кредитоваться
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__text
+						| Бухгалтерских отчетов недостаточно,
+						b  нужны управленческие отчеты,
+						|  а внедрение долго и дорого
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__text
+						| Вам нужно знать,
+						b  сколько
+						|  можно
+						b  изъять из оборота
+						|  на запуск инвест-проекта
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__text
+						|  Вы планируете
+						b  повысить эффективность
+						|  бизнеса, и нужно
+						b  подтянуть показатели
+
+			.wwsy-uprotch--tablet-mobile.js-wwsy-uprotch--tablet-mobile
+				.wwsy-uprotch-items-group
+					.wwsy-uprotch-item
+						.wwsy-uprotch-item__text
+							|У Вас
+							b  5-7 компаний
+							|  с оборотом
+							b  50-300 млн
+							|  в месяц, и нужна понятная картина бизнеса
+					.wwsy-uprotch-item
+						.wwsy-uprotch-item__text
+							b Нет времени
+							|  возиться с 1С и
+							b  вручную составлять
+							|  управленческую
+							b  отчетность
+					.wwsy-uprotch-item
+						.wwsy-uprotch-item__text
+							| Вы хотите на твердых цифрах знать, насколько
+							b  хорошо или плохо идут дела
+					.wwsy-uprotch-item
+						.wwsy-uprotch-item__text
+							| Не получается
+							b  привести учет
+							|  в разных компаниях
+							b  к одной классификации
+				.wwsy-uprotch-items-group
+					.wwsy-uprotch-item
+						.wwsy-uprotch-item__text
+							b Данные нужны сейчас,
+							|  не дожидаясь автоматизации через год и за 2-5 млн
+					.wwsy-uprotch-item
+						.wwsy-uprotch-item__text
+							| Есть ощущение, что текущие
+							b  данные не соответствуют действительности
+					.wwsy-uprotch-item
+						.wwsy-uprotch-item__text
+							| Вам нужен
+							b  прогноз фин. результатов
+							|  и понимание, какие точки контролировать, чтобы достичь цели
+					.wwsy-uprotch-item
+						.wwsy-uprotch-item__text
+							| Вы запускаете инвест-проект и хотите знать,
+							b  что будет при продажах на 10, 50 и 100 млн в месяц
+				.wwsy-uprotch-items-group
+					.wwsy-uprotch-item
+						.wwsy-uprotch-item__text
+							|Вам нужно знать,
+							b  хватит ли
+							|  своих
+							b  оборотных средств на покупку оборудования,
+							|  или нужно кредитоваться
+					.wwsy-uprotch-item
+						.wwsy-uprotch-item__text
+							| Бухгалтерских отчетов недостаточно,
+							b  нужны управленческие отчеты,
+							|  а внедрение долго и дорого
+					.wwsy-uprotch-item
+						.wwsy-uprotch-item__text
+							| Вам нужно знать,
+							b  сколько
+							|  можно
+							b  изъять из оборота
+							|  на запуск инвест-проекта
+					.wwsy-uprotch-item
+						.wwsy-uprotch-item__text
+							|  Вы планируете
+							b  повысить эффективность
+							|  бизнеса, и нужно
+							b  подтянуть показатели
+
+			.wwsy-uprotch-mobile-counter
+				.wwsy-uprotch-mobile-counter__current.js-wwsy-uprotch-mobile-counter__current 1
+				.wwsy-uprotch-mobile-counter__slash /
+				.wwsy-uprotch-mobile-counter__max 3
+	section.how-we-work-section.how-we-work-section--uprotch
+		.hww-container.container
+			h2.default-h2 Как мы это сделаем
+			.hww-block-mobile-tabs.hww-block-mobile-tabs--uprotch
+				.hww-block-mobile-tab.hww-block-mobile-tab--active ШАГ 1
+				.hww-block-mobile-tab ШАГ 2
+				.hww-block-mobile-tab ШАГ 3
+				.hww-block-mobile-tab ШАГ 4
+				.hww-block-mobile-tab ШАГ 5
+			.hww-block
+				.hww-block-item.hww-block-item--active.hww-block-item--active-visible
+					.hww-block-item-top
+						.hww-block-item-top__pic
+							img(src="/images/step-1.jpg" alt="")
+						.hww-block-item-top__text
+							.hww-block-item-step Шаг 1
+							.hww-block-item-duration 30-60 мин.
+					.hww-block-item-bottom.customized-ul-wrap
+						.hww-block-item-title Бесплатная консультация
+						.hww-block-item-desc Чтобы сделать правильно с первого раза, уточняем задачу – какая отчетность нужна, для кого, как часто, в каких аналитических срезах.
+
+				.hww-block-item
+					.hww-block-item-top
+						.hww-block-item-top__pic
+							img(src="/images/step-2.jpg" alt="")
+						.hww-block-item-top__text
+							.hww-block-item-step Шаг 2
+							.hww-block-item-duration 1-8 часов
+					.hww-block-item-bottom.customized-ul-wrap
+						.hww-block-item-title Подписываем договор
+						.hww-block-item-desc В договоре фиксируем:
+
+						ul
+							li Неразглашение конфиденциальных данных
+							li Условия работы, результат, сроки
+							li Нашу ответственность за результат и гарантии качества
+				.hww-block-item
+					.hww-block-item-top
+						.hww-block-item-top__pic
+							img(src="/images/step-3.jpg" alt="")
+						.hww-block-item-top__text
+							.hww-block-item-step Шаг 3
+							.hww-block-item-duration 5-7 дней
+					.hww-block-item-bottom.customized-ul-wrap
+						.hww-block-item-title Готовим таблицу с данными
+						.hww-block-item-desc Обрабатываем и сводим выгрузку из главной книги Вашей учетной системы:
+
+						ul
+							li Определяем нестыковки в учете разных компаний Вашей группы
+							li Приводим к единой учетной политике данные Ваших компаний
+							li Создаем набор сводных таблиц в Excel
+							li Проведем за руку по таблицам, объясним цифры, покажем, откуда взялись
+				.hww-block-item
+					.hww-block-item-top
+						.hww-block-item-top__pic
+							img(src="/images/step-4.jpg" alt="")
+						.hww-block-item-top__text
+							.hww-block-item-step Шаг 4
+							.hww-block-item-duration 7-14 дней
+					.hww-block-item-bottom.customized-ul-wrap
+						.hww-block-item-title Помогаем разобраться и определиться
+							br
+							|   с целями
+						.hww-block-item-desc Приезжаем к Вам в офис или созваниваемся с трансляцией экрана и:
+
+						ul
+							li Создаем фин. модель для работы с Вашими целями
+							li Научим пользоваться таблицами учета и фин. моделью
+							li Покажем, какие показатели влияют на достижение Вашей цели
+							li Покажем, как делать прогноз результатов при разных условиях
+				.hww-block-item
+					.hww-block-item-top
+						.hww-block-item-top__pic
+							img(src="/images/step-5.png" alt="")
+						.hww-block-item-top__text
+							.hww-block-item-step Шаг 5
+							.hww-block-item-duration 5-7 дней
+					.hww-block-item-bottom.customized-ul-wrap
+						.hww-block-item-title Предоставляем данные для контроля
+							br
+							|   показателей
+						.hww-block-item-desc Каждый месяц предоставляем таблицы, диаграммы, графики по ключевым показателям:
+
+						ul
+							li Удобные таблицы, графики, диаграммы
+							li Обращаем Ваше внимание на важные изменения
+							li Вы видите динамику ключевых показателей
+							li И достигаете своих месячных, квартальных и годовых целей
+
+			.hww-block-mobile-unwrap
+				span Развернуть
+	section.why-choose-us-section.why-choose-us-section--uprotch
+		.wcu-container.container
+			h2.default-h2.wcu-h2 Почему лучше заказать у нас
+			.wcu-block-wrap
+				.wcu-block.wcu-block--uprotch
+					.wcu-block-item
+						.wcu-block-item__icon
+							img(src="img/horseshoe.svg" alt="")
+						.wcu-block-item-content
+							.wcu-block-item__title
+								| В 5-10 раз быстрее
+								br
+								|  и дешевле софта
+							.wcu-block-item__text
+								p  Получите полную управленческую картину и возможность проверить идеи по развитию бизнеса за 300 тыс. руб и 7-14 дней.
+
+					.wcu-block-item
+						.wcu-block-item__icon
+							img(src="img/horseshoe.svg" alt="")
+						.wcu-block-item-content
+							.wcu-block-item__title
+								|  Удобный контроль
+								br
+								|  затрат
+							.wcu-block-item__text
+								p Анализируем затраты за прошлые периоды, показываем связь с другими показателями, помогаем сократить.
+
+					.wcu-block-item
+						.wcu-block-item__icon
+							img(src="img/horseshoe.svg" alt="")
+						.wcu-block-item-content
+							.wcu-block-item__title
+								|  Без нового софта
+								br
+								|  и сотрудников
+							.wcu-block-item__text
+								p Даем данные для правильных управленческих решений без установки и внедрения дополнительного софта. Без проектов на год и 3-5 млн. руб, платных лицензий и поддержки, найма новых сотрудников
+					.wcu-block-item
+						.wcu-block-item__icon
+							img(src="img/horseshoe.svg" alt="")
+						.wcu-block-item-content
+							.wcu-block-item__title
+								|  Экономим время Ваших
+								br
+								|  сотрудников
+							.wcu-block-item__text
+								p Предоставляем отчетность без участия Вашей бухгалтерии. Все, что нужно - выгрузка из 1С, остальное мы сами.
+					.wcu-block-item
+						.wcu-block-item__icon
+							img(src="img/horseshoe.svg" alt="")
+						.wcu-block-item-content
+							.wcu-block-item__title
+								|  Экономим на
+								br
+								|  автоматизации от 30%
+							.wcu-block-item__text
+								p  Делаем работу интегратора - разрабатываем единый классификатор, устраняем нестыковки в учете, размечаем данные. Это экономит Вам минимум 30% стоимости автоматизации учета.
+					.wcu-block-item
+						.wcu-block-item__icon
+							img(src="img/horseshoe.svg" alt="")
+						.wcu-block-item-content
+							.wcu-block-item__title
+								|  Без изменений Ваших
+								br
+								|  процессов
+							.wcu-block-item__text
+								p Мы подстроимся под Вас. Это значит, что Вы получите управленческий учет без изменений Ваших процессов, переучивания сотрудников и доработки 1С.
+
+			.wcu-uprotch-mobile-counter
+				.wcu-uprotch-mobile-counter__current.js-wcu-uprotch-mobile-counter__current 1
+				.wcu-uprotch-mobile-counter__slash /
+				.wcu-uprotch-mobile-counter__max 6
+
+	section.solution-package-section
+		.sp-container.container
+			h2.default-h2 Что входит в&nbsp;комплект решений
+			.sp-block-wrap
+				.sp-block.sp-block--uprotch
+					.sp-block-item
+						.sp-block-item-pic.sp-block-item-pic--orange
+							.sp-block-item-pic-inner
+								img(src="/images/form-1.png" alt="")
+						.sp-block-item-content
+							.sp-block-item-content__title 3 управленческих отчета
+							.sp-block-item-content__text Управленческий баланс, отчет о доходах и расходах, отчет о движении денежных средств в OLAP-кубах
+
+					.sp-block-item
+						.sp-block-item-pic.sp-block-item-pic--orange
+							.sp-block-item-pic-inner
+								img(src="/images/form-1.png" alt="")
+						.sp-block-item-content
+							.sp-block-item-content__title Финансовая модель + обучение
+							.sp-block-item-content__text Таблица для быстрого моделирования выбранных показателей холдинга – прибыль, оборотные средства и т.д.
+					.sp-block-item
+						.sp-block-item-pic.sp-block-item-pic--orange
+							.sp-block-item-pic-inner
+								img(src="/images/form-1.png" alt="")
+						.sp-block-item-content
+							.sp-block-item-content__title Интерпретация данных
+							.sp-block-item-content__text Объясним в аналитической записке, что означают цифры, подскажем, как искать нужные данные, что влияет на показатели
+
+					.sp-block-item
+						.sp-block-item-pic.sp-block-item-pic--orange
+							.sp-block-item-pic-inner
+								img(src="/images/form-1.png" alt="")
+						.sp-block-item-content
+							.sp-block-item-content__title Контроль показателей и затрат
+							.sp-block-item-content__text Ежемесячные отчеты в графиках, диаграммах и таблицах для контроля затрат и ключевых показателей
+
+					.sp-block-item
+						.sp-block-item-pic.sp-block-item-pic--orange
+							.sp-block-item-pic-inner
+								img(src="/images/form-1.png" alt="")
+						.sp-block-item-content
+							.sp-block-item-content__title Методологические материалы
+							.sp-block-item-content__text Классификатор статей для каждого отчета, методология группировки статей, рекомендации по улучшению учета
+					.sp-block-item
+						.sp-block-item-pic.sp-block-item-pic--blue
+							.sp-block-item-pic-inner
+								img(src="/images/form-1.png" alt="")
+						.sp-block-item-content
+							.sp-block-item-content__title Консультации
+							.sp-block-item-content__text Какую цель выбрать, какие малые действия влияют на большие показатели, как измерять результат, что контролировать
+
+					.wwsy-block-mobile-counter.sp-block-mobile-counter
+						.wwsy-block-mobile-counter__current.js-sp-block-mobile-counter__current 1
+						.wwsy-block-mobile-counter__slash /
+						.wwsy-block-mobile-counter__max 3
+	section.cost-and-terms-section.cost-and-terms-section--uprotch
+		.cat-container.container
+			.cat-block.cat-block--uprotch
+				.cat-block-top
+					.cat-block-top-left
+						.cat-block-title Стоимость и сроки
+						.cat-block-sub-title Для холдингов состоящих из 5-8 компаний
+						.cat-block-left-row
+							.cat-block-icon-with-text
+								.cat-block-iwt-pic
+									img(src="img/cat-icon.svg" alt="")
+								.cat-block-iwt-text
+									.cat-block-iwt-text__line-1 от 300 000 ₽
+									.cat-block-iwt-text__line-2 за период учета в 12 мес.
+							.cat-block-icon-with-text
+								.cat-block-iwt-pic
+									img(src="img/cat-icon.svg" alt="")
+								.cat-block-iwt-text
+									.cat-block-iwt-text__line-1 от 2-х недель
+									.cat-block-iwt-text__line-2 для подготовки отчетности за год
+
+					.cat-block-top-right
+						.cat-block-title Бесплатная консультация
+						.cat-block-sub-title Для холдингов состоящих из 5-8 компаний
+						.cat-block-icon-with-text.cat-block-icon-with-text--right
+							.cat-block-iwt-pic
+								img(src="img/cat-icon.svg" alt="")
+							.cat-block-iwt-text
+								.cat-block-iwt-text__line-1 +7 (495) 211 90 40
+								a.cat-block-iwt-text__line-2(href="mailto:info@gl.finance") info@gl.finance
+				.cat-block-bottom
+					.cat-block-bottom__text Точную стоимость и сроки сообщим в течение 2-3 часов после консультации
+					a.cat-block-bottom__presentation(href="") Скачать презентацию
+
+	section.our-clients-section
+		.oc-container.container
+			h2.default-h2 Наши клиенты и их истории
+			.oc-slider-wrap
+				.oc-slider
+					.oc-slide
+						.oc-slide-inner
+							.oc-slide-pic
+								img(src="img/client-photo.jpg" alt="")
+							.oc-slide-content
+								.oc-slide-quote
+									| General Ledger помогли нам сэкономить порядка 3 000 000 рублей, внедрив управленческую и консолидированную отчетность в нашу компанию. Теперь мы понимаем где мы находимся не только по своим «ощущениям», но и на уровне цифр
+								.oc-slide-row
+									a.oc-slide-row-logo(href="")
+										img(src="img/client-logo.png" alt="")
+									.oc-slide-row-info
+										.oc-slide-row-info__fio Алексей Тараповский
+										.oc-slide-row-info__position Управляющий партнер, председатель правления
+					.oc-slide
+						.oc-slide-inner
+							.oc-slide-pic
+								img(src="img/client-photo.jpg" alt="")
+							.oc-slide-content
+								.oc-slide-quote
+									| Мы сотрудничаем с General Ledger уже 4 года. Компания сняла с нас все заботы по получению консолидированной отчетности — мы просто передаем бухгалтерские данные, а все остальное делает General Ledger. Особую благодарность хотелось бы выразить ...
+									a(href="")  читать весь отзыв
+								.oc-slide-row
+									a.oc-slide-row-logo(href="")
+										img(src="img/client-logo.png" alt="")
+									.oc-slide-row-info
+										.oc-slide-row-info__fio Алексей Баранов
+										.oc-slide-row-info__position Финансовый директор
+					.oc-slide
+						.oc-slide-inner
+							.oc-slide-pic
+								img(src="img/client-photo.jpg" alt="")
+							.oc-slide-content
+								.oc-slide-quote
+									| Мы сотрудничаем с General Ledger уже 4 года. Компания сняла с нас все заботы по получению консолидированной отчетности — мы просто передаем бухгалтерские данные, а все остальное делает General Ledger. Особую благодарность хотелось бы выразить ...
+									a(href="")  читать весь отзыв
+								.oc-slide-row
+									a.oc-slide-row-logo(href="")
+										img(src="img/client-logo.png" alt="")
+									.oc-slide-row-info
+										.oc-slide-row-info__fio Алексей Баранов
+										.oc-slide-row-info__position Финансовый директор
+
+				.oc-slider-controls
+
+	section.answers-section
+		.ans-container.container
+			h2.default-h2 Ответы на часто задаваемые вопросы
+			.ans-block
+				.ans-item
+					.ans-item-question
+						.ans-iq-left-indicator
+							| <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect class="ans-iq-li-svg-main" x="0.5" y="0.5" width="19" height="19" rx="2.5" stroke="#C7C7D5"/><rect class="ans-iq-li-svg-horiz" x="4" y="9" width="12" height="2" fill="#C7C7D5"/><rect class="ans-iq-li-svg-vert" x="9" y="16" width="12" height="2" transform="rotate(-90 9 16)" fill="#C7C7D5"/></svg>
+						.ans-iq__text Мы уже подавали отчетность в банк, но нам отказали. Вы можете подготовить такую отчетность, чтобы одобрили кредит?
+						.ans-iq-right-indicator
+					.ans-item-answer Мы можем подсказать, как лучше подготовить отчет, и так сгруппировать реальные цифры, чтобы показать лучшие стороны бизнеса и произвести на банк лучшее впечатление.
+
+				.ans-item
+					.ans-item-question
+						.ans-iq-left-indicator
+							| <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect class="ans-iq-li-svg-main" x="0.5" y="0.5" width="19" height="19" rx="2.5" stroke="#C7C7D5"/><rect class="ans-iq-li-svg-horiz" x="4" y="9" width="12" height="2" fill="#C7C7D5"/><rect class="ans-iq-li-svg-vert" x="9" y="16" width="12" height="2" transform="rotate(-90 9 16)" fill="#C7C7D5"/></svg>
+						.ans-iq__text У меня нет фин. директора, сможете сделать мне отчетность?
+						.ans-iq-right-indicator
+					.ans-item-answer Мы можем подсказать, как лучше подготовить отчет, и так сгруппировать реальные цифры, чтобы показать лучшие стороны бизнеса и произвести на банк лучшее впечатление.
+
+				.ans-item
+					.ans-item-question
+						.ans-iq-left-indicator
+							| <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect class="ans-iq-li-svg-main" x="0.5" y="0.5" width="19" height="19" rx="2.5" stroke="#C7C7D5"/><rect class="ans-iq-li-svg-horiz" x="4" y="9" width="12" height="2" fill="#C7C7D5"/><rect class="ans-iq-li-svg-vert" x="9" y="16" width="12" height="2" transform="rotate(-90 9 16)" fill="#C7C7D5"/></svg>
+						.ans-iq__text Я плохо разбираюсь в Excel, поможете?
+						.ans-iq-right-indicator
+					.ans-item-answer Мы можем подсказать, как лучше подготовить отчет, и так сгруппировать реальные цифры, чтобы показать лучшие стороны бизнеса и произвести на банк лучшее впечатление.
+
+				.ans-item
+					.ans-item-question
+						.ans-iq-left-indicator
+							| <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect class="ans-iq-li-svg-main" x="0.5" y="0.5" width="19" height="19" rx="2.5" stroke="#C7C7D5"/><rect class="ans-iq-li-svg-horiz" x="4" y="9" width="12" height="2" fill="#C7C7D5"/><rect class="ans-iq-li-svg-vert" x="9" y="16" width="12" height="2" transform="rotate(-90 9 16)" fill="#C7C7D5"/></svg>
+						.ans-iq__text А что, если у нас разные политики учета по внутренним и внешним контрагентам?
+						.ans-iq-right-indicator
+					.ans-item-answer Мы можем подсказать, как лучше подготовить отчет, и так сгруппировать реальные цифры, чтобы показать лучшие стороны бизнеса и произвести на банк лучшее впечатление.
+
+				.ans-item
+					.ans-item-question
+						.ans-iq-left-indicator
+							| <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect class="ans-iq-li-svg-main" x="0.5" y="0.5" width="19" height="19" rx="2.5" stroke="#C7C7D5"/><rect class="ans-iq-li-svg-horiz" x="4" y="9" width="12" height="2" fill="#C7C7D5"/><rect class="ans-iq-li-svg-vert" x="9" y="16" width="12" height="2" transform="rotate(-90 9 16)" fill="#C7C7D5"/></svg>
+						.ans-iq__text Мы используем разные системы учета, не только 1С Бухгалтерия, сможете?
+						.ans-iq-right-indicator
+					.ans-item-answer Мы можем подсказать, как лучше подготовить отчет, и так сгруппировать реальные цифры, чтобы показать лучшие стороны бизнеса и произвести на банк лучшее впечатление.
+
+				.ans-item
+					.ans-item-question
+						.ans-iq-left-indicator
+							| <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect class="ans-iq-li-svg-main" x="0.5" y="0.5" width="19" height="19" rx="2.5" stroke="#C7C7D5"/><rect class="ans-iq-li-svg-horiz" x="4" y="9" width="12" height="2" fill="#C7C7D5"/><rect class="ans-iq-li-svg-vert" x="9" y="16" width="12" height="2" transform="rotate(-90 9 16)" fill="#C7C7D5"/></svg>
+						.ans-iq__text Мы используем разные системы учета, не только 1С Бухгалтерия, сможете?
+						.ans-iq-right-indicator
+					.ans-item-answer Мы можем подсказать, как лучше подготовить отчет, и так сгруппировать реальные цифры, чтобы показать лучшие стороны бизнеса и произвести на банк лучшее впечатление.
+
+				.ans-item
+					.ans-item-question
+						.ans-iq-left-indicator
+							| <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect class="ans-iq-li-svg-main" x="0.5" y="0.5" width="19" height="19" rx="2.5" stroke="#C7C7D5"/><rect class="ans-iq-li-svg-horiz" x="4" y="9" width="12" height="2" fill="#C7C7D5"/><rect class="ans-iq-li-svg-vert" x="9" y="16" width="12" height="2" transform="rotate(-90 9 16)" fill="#C7C7D5"/></svg>
+						.ans-iq__text А если нужна отчетность в соответствии с формами отчетов банка?
+						.ans-iq-right-indicator
+					.ans-item-answer Мы можем подсказать, как лучше подготовить отчет, и так сгруппировать реальные цифры, чтобы показать лучшие стороны бизнеса и произвести на банк лучшее впечатление.
