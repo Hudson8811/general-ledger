@@ -12,6 +12,72 @@
 	.wwsy-block-mobile-counter {
 		display: none;
 	}
+
+
+	.oc-slide-inner {}
+
+	.oc-slide-pic {
+		width: 257px;
+		min-width: 257px;
+		flex-grow: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&::before {
+			display: none;
+		}
+
+		img {
+			width: 139px;
+			height: 139px;
+			border-radius: 50%;
+			position: static;
+			margin-left: 25px;
+			margin-bottom: 31px;
+		}
+	}
+
+	.oc-slide-content {
+		padding-left: 58px;
+		max-width: calc(100% - 257px);
+		padding-right: 13%;
+		padding-top: 36px;
+		padding-bottom: 48px-16px+35px;
+	}
+
+	.oc-slide-quote {
+		padding-top: 35px;
+		a {
+			&:hover {}
+
+			&:active {}
+
+			&:focus {}
+		}
+		&::before{
+			top: 40px;
+		}
+	}
+
+	.oc-slide-row {
+		margin-top: 42px;
+		.oc-slide-row-logo {
+			&:hover {}
+
+			&:active {}
+
+			&:focus {}
+		}
+
+		.oc-slide-row-info {
+			&__fio {}
+
+			&__position {}
+		}
+
+		img {}
+	}
 }
 
 
@@ -429,9 +495,10 @@
 }
 
 @media screen and (min-width:$tabletMin) and (max-width:$tabletMax) {
-	.sp-block-item{
+	.sp-block-item {
 		min-width: 400px;
 	}
+
 	//------------------------------------------------
 	.how-we-work-section {
 		margin-top: 28px;
@@ -544,10 +611,14 @@
 		background: #FFFFFF;
 
 	}
-	.hww-block-item:not(.hww-block-item--active), .hww-block-item--fw:not(.hww-block-item--active) {
+
+	.hww-block-item:not(.hww-block-item--active),
+	.hww-block-item--fw:not(.hww-block-item--active) {
 		display: none;
 	}
-	.hww-block-item, .hww-block-item--fw {
+
+	.hww-block-item,
+	.hww-block-item--fw {
 		display: none;
 		width: 100%;
 		transition-duration: .2s;
@@ -584,7 +655,8 @@
 
 	.hww-block-mobile-unwrap,
 	.rs-block-mobile-digit-1,
-	.wwsy-block-mobile-counter, .wcu-uprotch-mobile-counter {
+	.wwsy-block-mobile-counter,
+	.wcu-uprotch-mobile-counter {
 		display: none;
 	}
 
@@ -1329,16 +1401,19 @@
 	.cat-block-bottom__presentation {
 		padding: 21px 31px 23px;
 	}
-	.oc-slide-row-logo{
+
+	.oc-slide-row-logo {
 		width: 100px;
 		min-width: 100px;
 		padding-right: 15px;
 		box-sizing: border-box;
-		&::after{
+
+		&::after {
 			display: none;
 		}
 	}
-	.oc-slide-row-logo img{
+
+	.oc-slide-row-logo img {
 		max-width: 100%;
 		height: auto;
 	}
