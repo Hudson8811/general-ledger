@@ -302,4 +302,5 @@ $(document).ready(function () {
 
          wcuAndSpBlockState = 'scrollbar';
      }*/
+     $('.sh-menu-item:first a').removeAttr('href');
 });
