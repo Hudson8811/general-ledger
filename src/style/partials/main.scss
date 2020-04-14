@@ -602,7 +602,7 @@ body {
 	width: calc(100% - 140px);
 
 	img {
-		width: 100%;
+		//width: 100%;
 		max-width: 100%;
 		height: auto;
 	}
@@ -752,7 +752,8 @@ body {
 	padding-top: 36px;
 }
 
-.sp-block-item {    width: calc(33.333333% - 21px);
+.sp-block-item {
+	width: calc(33.333333% - 21px);
 	margin: 0 10px 20px;
 	border-radius: 20px;
 	background: #FFFFFF;
@@ -1291,7 +1292,32 @@ a.cat-block-iwt-text__line-2 {
 		overflow: scroll;
 		overflow-x: hidden;
 	}
-	body.fancybox-active{
+
+	body.fancybox-active {
 		overflow: hidden;
+	}
+}
+
+.dbr,
+.tbr,
+.mbr {
+	display: none;
+}
+
+@media screen and (min-width:$desktopMin) {
+	.dbr {
+		display: inline;
+	}
+}
+
+@media screen and (min-width:$tabletMin) and (max-width:$tabletMax) {
+	.tbr {
+		display: inline;
+	}
+}
+
+@media screen and (max-width:$phoneMax) {
+	.mbr {
+		display: inline;
 	}
 }

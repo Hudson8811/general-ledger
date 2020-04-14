@@ -183,7 +183,7 @@
 
 /////////////////////
 .rs-triple-ptd {
-	margin: 46px -23px 0;
+	margin: 38px -23px 0;
 	display: flex;
 
 	&--uprotch {
@@ -281,4 +281,8 @@
 		color: #9D9EBF;
 	}
 
+}
+
+.customized-ul-wrap.customized-ul-wrap--uo li:not(:last-child) {
+    margin-bottom: 13px;
 }

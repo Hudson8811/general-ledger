@@ -453,7 +453,7 @@
 	}
 
 	.oc-slide-content {
-		padding: 0 78px 42px 28px;
+		padding: 0 50px 42px 28px;
 	}
 
 	.oc-slider-controls {
@@ -469,7 +469,7 @@
 	}
 
 	.oc-slide-row {
-		margin-top: 10px;
+		margin-top: 34px;
 	}
 
 	//----------------------------------
@@ -636,7 +636,8 @@
 	}
 
 	.hww-block-item-top__pic img {
-		width: 364px;
+		//width: 364px;
+		padding: 0 !important;
 	}
 
 	.hww-block-item-bottom {
@@ -817,7 +818,10 @@
 	}
 
 	.we-will-suit-you-section {
-		margin-top: 57px;
+		margin-top: 30px;
+		background: #f5f6fb;
+		padding-top: 57px;
+		padding-bottom: 46px;
 
 		.default-h2 {
 			width: 230px;
@@ -894,7 +898,7 @@
 
 	//----------------
 	.how-we-work-section {
-		margin-top: 46px;
+		margin-top: 0;
 		padding-top: 66px;
 		padding-bottom: 0;
 		background: #ffffff;
@@ -956,7 +960,7 @@
 	.hww-block {
 		overflow: hidden;
 		height: auto;
-		max-height: 617px;
+		max-height: 621px;
 		margin-top: 28px;
 		transition-duration: .5s;
 
@@ -1071,8 +1075,8 @@
 
 
 	.why-choose-us-section {
-		padding-top: 62px;
-		padding-bottom: 42px;
+		padding-top: 57px;
+		padding-bottom: 29px;
 
 		.default-h2 {
 			width: 180px;
@@ -1118,6 +1122,7 @@
 			margin-bottom: 23px;
 			font-size: 18px;
 			line-height: 135%;
+			width: 100%;
 		}
 
 		&__text {
@@ -1198,8 +1203,14 @@
 		padding: 24px 31px 34px;
 	}
 
-	.sp-block-item-content__text {
+	.sp-block-item-content__title {
 		margin-top: 11px;
+		font-size: 18px;
+		line-height: 135%;
+		margin-top: 2px;
+	}
+	.sp-block-item-content__text {
+		margin-top: 13px;
 	}
 
 	.sp-block-mobile-counter {
@@ -1362,7 +1373,7 @@
 
 	//------
 	.answers-section {
-		margin-top: 49px;
+		margin-top: 65px;
 
 		.default-h2 {
 			width: 240px;
