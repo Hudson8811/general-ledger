@@ -138,10 +138,12 @@
 
 			&::before {
 				transform: rotate(45deg);
+				background: #323340;
 			}
 
 			&::after {
 				transform: rotate(-45deg);
+				background: #323340;
 			}
 		}
 	}
@@ -257,6 +259,7 @@
 
 	.sh-menu-item {
 		padding: 0px 22px;
+		color: #fff;
 
 		.sh-menu-item-a {
 			position: relative;

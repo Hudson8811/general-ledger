@@ -1304,7 +1304,7 @@ a.cat-block-iwt-text__line-2 {
 	display: none;
 }
 
-@media screen and (min-width:$desktopMin) {
+@media screen and (min-width:$desktopMax) {
 	.dbr {
 		display: inline;
 	}

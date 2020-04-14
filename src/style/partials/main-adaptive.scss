@@ -770,6 +770,10 @@
 	.customized-ul-wrap li {
 		font-size: 15px;
 		line-height: 150%;
+
+		&.rs-block-li__mobile-fsz16{
+			font-size: 16px;
+		}
 	}
 
 	//-------------------------
