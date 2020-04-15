@@ -9,6 +9,10 @@
 
 
 @media screen and (min-width:$desktopMin) {
+	.rs-block-row.no-flex-desc{
+		display: block;
+	}
+
 	.wwsy-block-mobile-counter {
 		display: none;
 	}

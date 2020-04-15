@@ -286,7 +286,7 @@ $(document).ready(function () {
 
          wcuAndSpBlockState = 'scrollbar';
      }*/
-     $('.sh-menu-item:first .sh-menu-item-a').removeAttr('href');
+
      setTimeout(function () {
         $('.slick-initialized').slick('setPosition');
                 }, 2000);
