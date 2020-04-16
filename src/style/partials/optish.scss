@@ -1,0 +1,171 @@
+.top-section--optish {
+	.ts-flex__left {
+		padding-top: 106px;
+		width: 550px;
+		padding-bottom: 148px;
+	}
+
+	.ts-flex__right {
+		width: calc(100% - 550px);
+	}
+
+	.ts-heading {
+		margin-bottom: 26px;
+	}
+
+	.ts-btn {
+		margin-top: 52px;
+	}
+
+	.ts-pic {
+		bottom: 0;
+		left: 2px;
+		width: 661px;
+		max-width: 100%;
+	}
+}
+
+
+
+.we-will-suit-you-section--optish {
+	margin-top: 72px;
+}
+
+
+.wwsy-uprotch-v2 {}
+
+.wwsy-uprotch-v2--optish {}
+
+/////////////////////////////////////////
+.our-results-in-digits {
+	margin-top: 91px;
+}
+
+.orind-container.container {}
+
+h2.default-h2 {}
+
+.orind-block {
+	display: flex;
+	background: #FFFFFF;
+	border-radius: 20px;
+	padding: 80px 0 67px;
+	margin-top: 37px;
+}
+
+.orind-item {
+	width: calc(25% - 1px);
+
+	&:not(:nth-child(4n)) {
+
+		border-right: 1px solid #DADAE8;
+	}
+
+	display: flex;
+	justify-content: center;
+}
+
+.orind-item-inner {
+	width: 190px;
+	max-width: 95%;
+}
+
+.orind-top {
+	font-family: $fontG;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 60px;
+	line-height: 53px;
+	color: #2A2FFF;
+}
+
+span.orind-top__digit {}
+
+span.orind-top__dimension {
+	font-size: 19px;
+	margin-left: 10px;
+}
+
+.orind-description {
+	margin-top: 4px;
+	font-size: 16px;
+	line-height: 125%;
+	color: #555665;
+}
+
+
+////////////////////////
+
+
+.modal-custom {
+	display: none;
+}
+
+.modal-full-comment {}
+
+.modal-fc-slider {}
+
+.modal-fc-slide {}
+
+.modal-fc-top {
+	&__logo {}
+
+	&__text {}
+
+	img {}
+}
+
+.modal-fc-main {}
+
+.modal-fc-main-bold {}
+
+.modal-fc-video-wrap {
+	.video-yt {
+		&--h100 {}
+
+		&__preview {}
+
+		img {}
+	}
+
+	.modal-fc-vid-name {}
+
+	.modal-fc-vid-positio {}
+}
+
+.modal-fc-text {
+	.customized-ul-wrap {}
+
+	p {}
+}
+
+.modal-fc-slider-nav {
+	&__prev {}
+
+	&__next {}
+
+	&__dots {
+		.slick-dots {}
+
+		li {
+			#slick-slide-control31 {
+				&:hover {}
+
+				&:active {}
+
+				&:focus {}
+			}
+		}
+
+		.slick-active {
+			#slick-slide-control32 {
+				&:hover {}
+
+				&:active {}
+
+				&:focus {}
+			}
+		}
+	}
+
+}

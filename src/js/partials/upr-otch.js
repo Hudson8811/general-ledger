@@ -15,9 +15,6 @@ $('.rs-ssb-main').slick({
 		}
 	]
 });
-$(window).resize(function () {
-	$('.rs-ssb-main').slick('setPosition');
-});
 $('.rs-ssb-thumbs').slick({
 	arrows: true,
 	slidesToShow: 3,
@@ -35,9 +32,6 @@ $('.rs-ssb-thumbs').slick({
 			}
 		}
 	]
-});
-$(window).resize(function () {
-	$('.rs-ssb-thumbs').slick('setPosition');
 });
 
 

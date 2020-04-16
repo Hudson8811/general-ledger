@@ -15,3 +15,4 @@
 //= partials/header.js
 //= partials/main.js
 //= partials/upr-otch.js
+//= partials/optish.js

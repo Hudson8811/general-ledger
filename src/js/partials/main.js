@@ -12,7 +12,7 @@ $(document).ready(function () {
         afterShow: function (instance, current) {
 
             if (window.matchMedia('(min-width: 1300px)').matches) {
-                instance.scaleToActual(0,0);
+                instance.scaleToActual(0, 0);
             }
         }
     });
@@ -22,16 +22,18 @@ $(document).ready(function () {
     var grid1_isMansoryLayoutNow = false;
 
     if (window.matchMedia('(min-width: 1026px)').matches) {
-        $grid1 = $('.hww-block').masonry({
-            columnWidth: '.hww-block-item',
-            gutter: 20,
-            horizontalOrder: true
-        });
-        $grid1.imagesLoaded().progress(function () {
-            $grid1.masonry('layout');
-        });
-        grid1_isMansory = true;
-        grid1_isMansoryLayoutNow = true;
+        if (!$('.hww-block').hasClass('js-hww-block--not-mansory')) {
+            $grid1 = $('.hww-block').masonry({
+                columnWidth: '.hww-block-item',
+                gutter: 20,
+                horizontalOrder: true
+            });
+            $grid1.imagesLoaded().progress(function () {
+                $grid1.masonry('layout');
+            });
+            grid1_isMansory = true;
+            grid1_isMansoryLayoutNow = true;
+        }
     }
 
 
@@ -45,19 +47,21 @@ $(document).ready(function () {
             }
         }
         else {
-            if (grid1_isMansory === false) {
-                $grid1 = $('.hww-block').masonry({
+            if (!$('.hww-block').hasClass('js-hww-block--not-mansory')) {
+                if (grid1_isMansory === false) {
+                    $grid1 = $('.hww-block').masonry({
 
-                    columnWidth: '.hww-block-item',
-                    gutter: 20,
-                    horizontalOrder: true
-                });
-                grid1_isMansory = true;
-                grid1_isMansoryLayoutNow = true;
-            }
-            if (grid1_isMansoryLayoutNow === false) {
-                $grid1.masonry('layout');
-                grid1_isMansoryLayoutNow = true;
+                        columnWidth: '.hww-block-item',
+                        gutter: 20,
+                        horizontalOrder: true
+                    });
+                    grid1_isMansory = true;
+                    grid1_isMansoryLayoutNow = true;
+                }
+                if (grid1_isMansoryLayoutNow === false) {
+                    $grid1.masonry('layout');
+                    grid1_isMansoryLayoutNow = true;
+                }
             }
         }
 
@@ -74,6 +78,7 @@ $(document).ready(function () {
         verticalSwiping: true,
         appendArrows: $('.oc-slider-controls'),
         appendDots: $('.oc-slider-controls'),
+        asNavFor: '.modal-fc-slider',
         prevArrow: '<div class="oc-slick-prev"><svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8L7.68299 2.15238C8.43704 1.49259 9.56296 1.49259 10.317 2.15238L17 8" stroke="#555665" stroke-width="2"/></svg></div>',
         nextArrow: '<div class="oc-slick-next"><svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 1L10.317 6.84762C9.56296 7.50741 8.43704 7.50741 7.68299 6.84762L1 0.999999" stroke="#A0A0B1" stroke-width="2"/></svg></div>',
         responsive: [
@@ -86,9 +91,31 @@ $(document).ready(function () {
             }
         ]
     });
-    $(window).resize(function () {
-        $('.oc-slider').slick('setPosition');
+
+    $('.modal-fc-slider').slick({
+        dots: true,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.oc-slider',
+        appendDots: $('.modal-fc-slider-nav__dots'),
+        prevArrow: '.modal-fc-slider-nav__prev',
+        nextArrow: '.modal-fc-slider-nav__next'
+
     });
+
+    $('.js-modal-comments-open, #js-modal-comments-open').click(function(){
+        $.fancybox.open({
+            src  : '#modal-full-comment',
+            type : 'inline',
+            opts : {
+                afterShow : function( instance, current ) {
+                   // console.info( 'done!' );
+                }
+            }
+        });
+    });
+
     $('.ans-item-question').click(function () {
         $(this).toggleClass('ans-item-question--opened').siblings('.ans-item-answer').slideToggle(200);
     });
@@ -287,7 +314,7 @@ $(document).ready(function () {
          wcuAndSpBlockState = 'scrollbar';
      }*/
 
-     setTimeout(function () {
+    setTimeout(function () {
         $('.slick-initialized').slick('setPosition');
-                }, 2000);
+    }, 2000);
 });
