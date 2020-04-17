@@ -223,6 +223,7 @@ $(document).ready(function () {
         $.fancybox.open({
             src  : '#modal-full-comment',
             type : 'inline',
+            touch: false,
             opts : {
                 afterLoad : function( instance, current ) {
                     $('.modal-fc-slider').slick('setPosition');
