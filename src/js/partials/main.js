@@ -109,8 +109,8 @@ $(document).ready(function () {
             src  : '#modal-full-comment',
             type : 'inline',
             opts : {
-                afterShow : function( instance, current ) {
-                   // console.info( 'done!' );
+                afterLoad : function( instance, current ) {
+                    $('.modal-fc-slider').slick('setPosition');
                 }
             }
         });
