@@ -1,29 +1,3 @@
-.top-section--optish {
-	.ts-flex__left {
-		width: 550px;
-		padding-top: 106px;
-		padding-bottom: 148px;
-	}
-
-	.ts-flex__right {
-		width: calc(100% - 550px);
-	}
-
-	.ts-heading {
-		margin-bottom: 26px;
-	}
-
-	.ts-btn {
-		margin-top: 52px;
-	}
-
-	.ts-pic {
-		bottom: 0;
-		left: 2px;
-		width: 661px;
-		max-width: 100%;
-	}
-}
 
 
 
@@ -35,6 +9,22 @@
 .wwsy-uprotch-v2 {}
 
 .wwsy-uprotch-v2--optish {}
+/////////////////////////////////////////
+
+
+
+.sp-block-item-title-number {
+	position: absolute;
+    left: -1px;
+    transform: translatex(-50%);
+	top: -21px;
+	font-weight: 600;
+	font-size: 80px;
+	line-height: 125%;
+	color: #DADAE8;
+	font-family: $fontG;
+	z-index: -1;
+}
 
 /////////////////////////////////////////
 .our-results-in-digits {

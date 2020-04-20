@@ -45,8 +45,7 @@ $(document).ready(function () {
                 grid1_isMansoryLayoutNow = false;
                 grid1_isMansory = false;
             }
-        }
-        else {
+        } else {
             if (!$('.hww-block').hasClass('js-hww-block--not-mansory')) {
                 if (grid1_isMansory === false) {
                     $grid1 = $('.hww-block').masonry({
@@ -81,15 +80,15 @@ $(document).ready(function () {
         asNavFor: '.modal-fc-slider',
         prevArrow: '<div class="oc-slick-prev"><svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8L7.68299 2.15238C8.43704 1.49259 9.56296 1.49259 10.317 2.15238L17 8" stroke="#555665" stroke-width="2"/></svg></div>',
         nextArrow: '<div class="oc-slick-next"><svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 1L10.317 6.84762C9.56296 7.50741 8.43704 7.50741 7.68299 6.84762L1 0.999999" stroke="#A0A0B1" stroke-width="2"/></svg></div>',
-        responsive: [
-            {
-                breakpoint: 700,
-                settings: {
-                    vertical: false,
-                    verticalSwiping: false
-                }
+        responsive: [{
+            breakpoint: 700,
+            settings: {
+                vertical: false,
+                verticalSwiping: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
             }
-        ]
+        }]
     });
 
     $('.modal-fc-slider').slick({
@@ -104,13 +103,13 @@ $(document).ready(function () {
 
     });
 
-    $('.js-modal-comments-open, #js-modal-comments-open').click(function(){
+    $('.js-modal-comments-open, #js-modal-comments-open').click(function () {
         $.fancybox.open({
-            src  : '#modal-full-comment',
-            type : 'inline',
-            touch: false,
-            opts : {
-                afterLoad : function( instance, current ) {
+            src: '#modal-full-comment',
+            type: 'inline',
+            opts: {
+                touch: false,
+                afterLoad: function (instance, current) {
                     $('.modal-fc-slider').slick('setPosition');
                 }
             }
@@ -135,22 +134,27 @@ $(document).ready(function () {
 
     /////////////////////////////////
 
-    var wcuAndSpBlockState = 'default';//default/scrollbar/slider
+    var wcuAndSpBlockState = 'default'; //default/scrollbar/slider
 
     function wcuAndSpInitScrollbar() {
         $('.wcu-block-wrap').mCustomScrollbar({
             theme: "custom-theme",
             axis: "x",
-            scrollButtons: { enable: true }
+            scrollButtons: {
+                enable: true
+            }
         });
         $('.sp-block-wrap').mCustomScrollbar({
             theme: "custom-theme mCS-custom-theme-sp",
             axis: "x",
-            scrollButtons: { enable: true }
+            scrollButtons: {
+                enable: true
+            }
         });
 
         wcuAndSpBlockState = 'scrollbar';
     }
+
     function wcuAndSpInitSlider() {
         $('.wcu-block').slick({
             prevArrow: '<div class="wwsy-slick-prev wwsy-slick-prev--wcu"><svg width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1L2 16L14 31" stroke="#C7C7D5" stroke-width="2"/></svg></div>',
@@ -184,8 +188,7 @@ $(document).ready(function () {
                 $('.sp-block').slick('unslick');
                 wcuAndSpInitScrollbar();
             }
-        }
-        else {
+        } else {
             if (window.matchMedia('(max-width: 700px)').matches) {
                 if (wcuAndSpBlockState === 'default') {
                     wcuAndSpInitSlider();
@@ -199,8 +202,7 @@ $(document).ready(function () {
                     $('.wcu-block').slick('setPosition');
                     $('.sp-block').slick('setPosition');
                 }
-            }
-            else {
+            } else {
                 if (wcuAndSpBlockState === 'scrollbar') {
                     $('.wcu-block-wrap').mCustomScrollbar("destroy");
                     $('.sp-block-wrap').mCustomScrollbar("destroy");
@@ -224,8 +226,7 @@ $(document).ready(function () {
                 $('.sf-col-3').appendTo($('.sf-tb-container'));
                 $('.sf-col-5').appendTo($('.sf-tb-container'));
             }
-        }
-        else {
+        } else {
             console.log($('.sf-col-3').parent());
             if ($('.sf-col-3').parent().hasClass('sf-tb-container')) {
                 $('.sf-col-3').appendTo($('.sf-container.container'));
@@ -282,8 +283,7 @@ $(document).ready(function () {
                     prevArrow: '<div class="wwsy-slick-prev"><svg width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1L2 16L14 31" stroke="#C7C7D5" stroke-width="2"/></svg></div>',
                     nextArrow: '<div class="wwsy-slick-next"><svg width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 31L13 16L1 0.999999" stroke="#C7C7D5" stroke-width="2"/></svg></div>'
                 });
-            }
-            else {
+            } else {
                 $('.wwsy-block').slick('setPosition');
             }
             //////////////////////////////
@@ -293,13 +293,10 @@ $(document).ready(function () {
                     prevArrow: '<div class="hww-slick-prev"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 1L2 8L8 15" stroke="#555665" stroke-width="2"/></svg></div>',
                     nextArrow: '<div class="hww-slick-next"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 15L7 8L1 0.999999" stroke="#555665" stroke-width="2"/></svg></div>'
                 });
-            }
-            else {
+            } else {
                 $('.hww-block').slick('setPosition');
             }
-        }
-
-        else {
+        } else {
             if ($('.wwsy-block').hasClass('slick-initialized')) {
                 $('.wwsy-block').slick('unslick');
             }
@@ -315,7 +312,35 @@ $(document).ready(function () {
          wcuAndSpBlockState = 'scrollbar';
      }*/
 
+
+    function fixCommentsVerticalVariableHeight() {
+        var maxHeight = -1;
+        $('.oc-slider .slick-slide').each(function () {
+            $(this).css('margin', '0');
+        });
+
+        $('.oc-slider').slick('setPosition');
+
+        $('.oc-slider .slick-slide').each(function () {
+            if ($(this).height() > maxHeight) {
+                maxHeight = $(this).height();
+            }
+        });
+        $('.oc-slider .slick-slide').each(function () {
+            if ($(this).height() < maxHeight) {
+                $(this).css('margin', Math.ceil((maxHeight - $(this).height()) / 2) + 'px 0');
+            }
+        });
+
+    }
     setTimeout(function () {
+        fixCommentsVerticalVariableHeight();
         $('.slick-initialized').slick('setPosition');
+
     }, 2000);
+
+    $(window).resize(function () {
+        fixCommentsVerticalVariableHeight();
+        $('.slick-initialized').slick('setPosition');
+    });
 });
