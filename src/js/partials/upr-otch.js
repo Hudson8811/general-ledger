@@ -75,9 +75,7 @@ $(document).ready(function () {
 		initUprotchRsTripleSlider();
 		initWWSYuprotchSlider();
 	}
-    $(".js-wwsy-uprotch--tablet-mobile").on('afterChange', function (event, slick, currentSlide) {
-        $(".js-wwsy-uprotch-mobile-counter__current").text(currentSlide + 1);
-    });
+	
 
 	$(window).resize(function () {
 		if (window.matchMedia('(max-width: 1025px)').matches) {
@@ -112,5 +110,6 @@ $(document).ready(function () {
         setTimeout(function () {
             par.addClass('mobile-unwrap--dn');
         }, 200);
-    });
+	});
+	
 });

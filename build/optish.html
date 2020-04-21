@@ -54,11 +54,11 @@
           </div>
         </div>
       </section>
-      <section class="result-section result-section--uprot">
+      <section class="result-section result-section--uprot result-section--optish">
         <div class="rs-container container">
           <h2 class="default-h2">В результате Вы получаете:</h2>
           <div class="sp-block-wrap">
-            <div class="sp-block sp-block--optish-sp-1">
+            <div class="sp-block sp-block--optish-sp-1" data-counter-id="optish-sp1-counter">
               <div class="sp-block-item">
                 <div class="sp-block-item-pic sp-block-item-pic--orange">
                   <div class="sp-block-item-pic-inner"><img src="images/form-1.png" alt=""></div>
@@ -94,8 +94,8 @@
               </div>
             </div>
             <div class="wwsy-block-mobile-counter sp-block-mobile-counter">
-              <div class="wwsy-block-mobile-counter__current js-sp-block-mobile-counter__current">1</div>
-              <div class="wwsy-block-mobile-counter__slash"></div>
+              <div class="wwsy-block-mobile-counter__current" id="optish-sp1-counter">1</div>
+              <div class="wwsy-block-mobile-counter__slash">/</div>
               <div class="wwsy-block-mobile-counter__max">6</div>
             </div>
           </div>
@@ -104,7 +104,7 @@
       <section class="we-will-suit-you-section we-will-suit-you-section--optish">
         <div class="wwsy-container container">
           <h2 class="default-h2">Какие проблемы мы решаем</h2>
-          <div class="wwsy-uprotch wwsy-uprotch-v2 wwsy-uprotch-v2--optish js-wwsy-uprotch-v2">
+          <div class="wwsy-uprotch wwsy-uprotch-v2 wwsy-uprotch-v2--optish js-wwsy-uprotch-v2" data-counter-id="optish-wwsy-1-counter">
             <div class="wwsy-uprotch-item">
               <div class="wwsy-uprotch-item__text">Резко вырастают налоги,<br class="tbr"> или налоговая предъявляет претензии и&nbsp;штрафы</div>
             </div>
@@ -131,7 +131,7 @@
             </div>
           </div>
           <div class="wwsy-uprotch-mobile-counter">
-            <div class="wwsy-uprotch-mobile-counter__current js-wwsy-uoptish-mobile-counter__current">1</div>
+            <div class="wwsy-uprotch-mobile-counter__current" id="optish-wwsy-1-counter">1</div>
             <div class="wwsy-uprotch-mobile-counter__slash">/</div>
             <div class="wwsy-uprotch-mobile-counter__max"><span class="wwsy-counter-max-tablet">2</span><span class="wwsy-counter-max-mobile">3</span></div>
           </div>
@@ -148,7 +148,7 @@
             <div class="hww-block-mobile-tab">ШАГ 5</div>
             <div class="hww-block-mobile-tab">ШАГ 6</div>
           </div>
-          <div class="hww-block hww-block--not-mansory js-hww-block--not-mansory">
+          <div class="hww-block hww-block--not-mansory hww-block-non-mob-hidden hww-block--optish js-hww-block--not-mansory">
             <div class="hww-block-item hww-block-item--active hww-block-item--active-visible">
               <div class="hww-block-item-top">
                 <div class="hww-block-item-top__pic"><img src="images/step-1.jpg" alt=""></div>
@@ -222,18 +222,17 @@
               </div>
             </div>
           </div>
-          <div class="hww-block-mobile-unwrap"><span>Развернуть</span></div>
         </div>
       </section>
       <section class="why-choose-us-section why-choose-us-section--optish">
         <div class="wcu-container container">
-          <h2 class="default-h2 wcu-h2">Почему выгоднее привлечь нас</h2>
+          <h2 class="default-h2 wcu-h2"> <span class="dbr tbr">Почему выгоднее привлечь нас</span><span class="mbr">Почему с нами выгоднее</span></h2>
           <div class="wcu-block-wrap">
-            <div class="wcu-block wcu-block--optish">
+            <div class="wcu-block wcu-block--optish" data-counter-id="optish-wcu1-counter">
               <div class="wcu-block-item">
                 <div class="wcu-block-item__icon"><img src="img/horseshoe.svg" alt=""></div>
                 <div class="wcu-block-item-content">
-                  <div class="wcu-block-item__title">Команда с многолетним<br> опытом</div>
+                  <div class="wcu-block-item__title">Команда с<br class="mbr"> многолетним<br class="dbr tbr"> опытом</div>
                   <div class="wcu-block-item__text">
                     <p>Работает<b> команда из корпоративного юриста, финдиректора, налоговика, профессионального управленца</b> с&nbsp;многолетним опытом.</p>
                   </div>
@@ -269,7 +268,7 @@
             </div>
           </div>
           <div class="wcu-uprotch-mobile-counter">
-            <div class="wcu-uprotch-mobile-counter__current js-wcu-uprotch-mobile-counter__current">1</div>
+            <div class="wcu-uprotch-mobile-counter__current" id="optish-wcu1-counter">1</div>
             <div class="wcu-uprotch-mobile-counter__slash">/</div>
             <div class="wcu-uprotch-mobile-counter__max">6</div>
           </div>
@@ -277,7 +276,7 @@
       </section>
       <section class="our-results-in-digits">
         <div class="orind-container container">
-          <h2 class="default-h2">Наши результаты в цифрах</h2>
+          <h2 class="default-h2">Наши результаты<br class="mbr"> в цифрах</h2>
           <div class="orind-block">
             <div class="orind-item">
               <div class="orind-item-inner">
@@ -300,17 +299,17 @@
             <div class="orind-item">
               <div class="orind-item-inner">
                 <div class="orind-top"><span class="orind-top__digit">20</span><span class="orind-top__dimension">млрд руб.</span></div>
-                <div class="orind-description">Защитили активов клиентов</div>
+                <div class="orind-description">Защитили<br class="mbr"> активов клиентов</div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="solution-package-section">
+      <section class="solution-package-section solution-package-section--optish">
         <div class="sp-container container">
           <h2 class="default-h2">Что входит в комплект услуги</h2>
-          <div class="sp-block-wrap">
-            <div class="sp-block sp-block--tablet-slider sp-block--optish-sp-2">
+          <div class="sp-block-wrap sp-block-wrap--optish-2 sp-block-wrap--tablet-slider optish-sp-2--mobile-hide" id="sp-block--optish-sp-2">
+            <div class="sp-block sp-block--tablet-slider sp-block--optish-sp-2" data-counter-id="optish-sp2-counter">
               <div class="sp-block-item customized-ul-wrap">
                 <div class="sp-block-item-pic sp-block-item-pic--orange">
                   <div class="sp-block-item-pic-inner"><img src="images/form-1.png" alt=""></div>
@@ -318,7 +317,7 @@
                 <div class="sp-block-item-content">
                   <div class="sp-block-item-content__title">Описание существующей<br class="dbr"> структуры холдинга</div>
                   <ul class="sp-block-item-ul">
-                    <li>Правовой анализ юридических лиц, входящих в группу компаний – с учетом степени и характера их взаимодействия, конечным бенефициарам и сфер корпоративного влияния</li>
+                    <li>Правовой анализ юридических <br class="mbr"> лиц, входящих в группу компаний <br class="mbr">  – с учетом степени и характера их взаимодействия, конечным бенефициарам и сфер корпоративного влияния</li>
                     <li>Анализ движения денежно-товарных потоков между компаниями группы</li>
                     <li>Анализ налоговой нагрузки и рисков</li>
                   </ul>
@@ -364,11 +363,12 @@
                 </div>
               </div>
             </div>
-            <div class="wwsy-block-mobile-counter sp-block-mobile-counter">
-              <div class="wwsy-block-mobile-counter__current js-sp-block-mobile-counter__current">1</div>
-              <div class="wwsy-block-mobile-counter__slash">/</div>
-              <div class="wwsy-block-mobile-counter__max">6</div>
-            </div>
+            <div class="mobile-unwrap mobile-unwrap--optish-sp-2" data-mobile-unwrap-target-id="sp-block--optish-sp-2" data-mobile-unwrap-target-rclass="optish-sp-2--mobile-hide"><span>Развернуть</span></div>
+          </div>
+          <div class="wwsy-block-mobile-counter sp-block-mobile-counter">
+            <div class="wwsy-block-mobile-counter__current" id="optish-sp2-counter">1</div>
+            <div class="wwsy-block-mobile-counter__slash">/</div>
+            <div class="wwsy-block-mobile-counter__max">6</div>
           </div>
         </div>
       </section>
@@ -463,6 +463,66 @@
           </div>
           <div class="modal-custom modal-full-comment" id="modal-full-comment">
             <div class="modal-fc-slider">
+              <div class="modal-fc-slide">
+                <div class="modal-fc-top">
+                  <div class="modal-fc-top__logo"><img src="images/anderida.png" alt=""></div>
+                  <div class="modal-fc-top__text">ANDERIDA<br> FINANCIAL GROUP</div>
+                </div>
+                <div class="modal-fc-main">
+                  <div class="modal-fc-main-bold">General Ledger помогли нам сэкономить порядка 3 000 000 рублей, внедрив управленческую и консолидированную отчетность в нашу компанию. Теперь мы понимаем где мы находимся не только по своим «ощущениям», но и на уровне цифр.</div>
+                  <div class="modal-fc-video-wrap">
+                    <div class="video-yt js-video-yt video-yt--h100 video-yt-btn">
+                      <div class="video-yt__preview" data-src="https://www.youtube.com/embed/WUgvvPRH7Oc"><img src="images/com-mod-pic.jpg"></div>
+                    </div>
+                    <div class="modal-fc-vid-name">Алексей Тараповский</div>
+                    <div class="modal-fc-vid-positio">Управляющий партнер, председатель правления</div>
+                  </div>
+                  <div class="modal-fc-text">
+                    <p>«Андерида файненшл групп» управляет финансами состоятельных семей по всему миру. Поэтому компания привыкла к обращению с крупными капиталами , однако через какое-то время, когда собственные финансовые потоки увеличились, руководство столкнулось с парадоксальной проблемой: стало понятно, что в корпоративных финансах нет порядка.</p>
+                    <p>Из-за того, что в семействе «Андериды» образовалась группа компаний, постепенно исчезло понимание ситуации в финансах - в какой компании сколько денег и кто больше тратит.</p>
+                    <p>Было необходимо наладить понимание финансовой картины по всей группе компаний. Поэтому руководство обратилось за консолидированной управленческой отчетности.</p>
+                    <p>General Ledger в короткий срок предоставила детализированную отчетность по группе компаний и помогла понять финансовое состояние «Андериды».  А именно:</p>
+                    <ul class="customized-ul-wrap">
+                      <li>Понять выручку компании в разрезе продуктов и услуг, консультантов, отнесения выручки к единоразовой либо регулярной.</li>
+                      <li>Понять траты компании в разрезе видов расходов, в том числе агентской комиссии, заработной платы (в разрезе оклада и бонусов, налогов на заработную плату, по сотрудникам и департаментам), налогов, аренды офиса и пр.</li>
+                      <li>Дать информацию о наличии денежных средств на счетах компании и финансовых вложений в&nbsp;разрезе счетов и инструментов.</li>
+                      <li>Определить структуру запасов, НМА и ОС компании по сумме.</li>
+                      <li>Раскрыть и сгруппировать дебиторскую и кредиторскую задолженности компании.</li>
+                    </ul>
+                    <p>Эта информация помогла компании оценить своё текущее положение дел, оценить<br class="dbr"> собственное финансовое состояние, оптимизировать затраты и сэкономить более<br class="dbr"> 3 000 000 рублей на дальнейшей автоматизации компании.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-fc-slide">
+                <div class="modal-fc-top">
+                  <div class="modal-fc-top__logo"><img src="images/anderida.png" alt=""></div>
+                  <div class="modal-fc-top__text">ANDERIDA<br> FINANCIAL GROUP</div>
+                </div>
+                <div class="modal-fc-main">
+                  <div class="modal-fc-main-bold">General Ledger помогли нам сэкономить порядка 3 000 000 рублей, внедрив управленческую и консолидированную отчетность в нашу компанию. Теперь мы понимаем где мы находимся не только по своим «ощущениям», но и на уровне цифр.</div>
+                  <div class="modal-fc-video-wrap">
+                    <div class="video-yt js-video-yt video-yt--h100 video-yt-btn">
+                      <div class="video-yt__preview" data-src="https://www.youtube.com/embed/WUgvvPRH7Oc"><img src="images/com-mod-pic.jpg"></div>
+                    </div>
+                    <div class="modal-fc-vid-name">Алексей Тараповский</div>
+                    <div class="modal-fc-vid-positio">Управляющий партнер, председатель правления</div>
+                  </div>
+                  <div class="modal-fc-text">
+                    <p>«Андерида файненшл групп» управляет финансами состоятельных семей по всему миру. Поэтому компания привыкла к обращению с крупными капиталами , однако через какое-то время, когда собственные финансовые потоки увеличились, руководство столкнулось с парадоксальной проблемой: стало понятно, что в корпоративных финансах нет порядка.</p>
+                    <p>Из-за того, что в семействе «Андериды» образовалась группа компаний, постепенно исчезло понимание ситуации в финансах - в какой компании сколько денег и кто больше тратит.</p>
+                    <p>Было необходимо наладить понимание финансовой картины по всей группе компаний. Поэтому руководство обратилось за консолидированной управленческой отчетности.</p>
+                    <p>General Ledger в короткий срок предоставила детализированную отчетность по группе компаний и помогла понять финансовое состояние «Андериды».  А именно:</p>
+                    <ul class="customized-ul-wrap">
+                      <li>Понять выручку компании в разрезе продуктов и услуг, консультантов, отнесения выручки к единоразовой либо регулярной.</li>
+                      <li>Понять траты компании в разрезе видов расходов, в том числе агентской комиссии, заработной платы (в разрезе оклада и бонусов, налогов на заработную плату, по сотрудникам и департаментам), налогов, аренды офиса и пр.</li>
+                      <li>Дать информацию о наличии денежных средств на счетах компании и финансовых вложений в&nbsp;разрезе счетов и инструментов.</li>
+                      <li>Определить структуру запасов, НМА и ОС компании по сумме.</li>
+                      <li>Раскрыть и сгруппировать дебиторскую и кредиторскую задолженности компании.</li>
+                    </ul>
+                    <p>Эта информация помогла компании оценить своё текущее положение дел, оценить<br class="dbr"> собственное финансовое состояние, оптимизировать затраты и сэкономить более<br class="dbr"> 3 000 000 рублей на дальнейшей автоматизации компании.</p>
+                  </div>
+                </div>
+              </div>
               <div class="modal-fc-slide">
                 <div class="modal-fc-top">
                   <div class="modal-fc-top__logo"><img src="images/anderida.png" alt=""></div>

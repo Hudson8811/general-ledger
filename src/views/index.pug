@@ -86,7 +86,7 @@ block main
 							li.rs-block-li.rs-block-li__mobile-fsz16 Консультацию по подаче отчетности в банк&nbsp;для получения лучших условий кредита
 							li.rs-block-li.rs-block-li__mobile-fsz16 Расчет финансовых показателей - финансовый анализ и интерпретация
 
-	section.we-will-suit-you-section
+	section.we-will-suit-you-section(data-counter-id="ind-wwsy-1-counter")
 		.wwsy-container.container
 			h2.default-h2 Мы идеально подойдем Вам, если:
 			.wwsy-block
@@ -109,7 +109,7 @@ block main
 						img(src="https://via.placeholder.com/110/2c2e85" alt="")
 					.wwsy-block-item__text Нужны только отчеты, без&nbsp;внедрения софта
 			.wwsy-block-mobile-counter
-				.wwsy-block-mobile-counter__current.js-wwsy-block-mobile-counter__current 1
+				#ind-wwsy-1-counter.wwsy-block-mobile-counter__current 1
 				.wwsy-block-mobile-counter__slash /
 				.wwsy-block-mobile-counter__max 4
 	section.how-we-work-section
@@ -189,7 +189,7 @@ block main
 		.wcu-container.container
 			h2.default-h2.wcu-h2 Почему лучше заказать у нас
 			.wcu-block-wrap
-				.wcu-block
+				.wcu-block(data-counter-id="ind-wcu-1-counter")
 					.wcu-block-item
 						.wcu-block-item__icon
 							img(src="/bitrix/templates/GL/img/horseshoe.svg" alt="")
@@ -260,14 +260,14 @@ block main
 								|  финансовых показателей
 
 			.wcu-uprotch-mobile-counter
-				.wcu-uprotch-mobile-counter__current.js-wcu-uprotch-mobile-counter__current 1
+				#ind-wcu-1-counter.wcu-uprotch-mobile-counter__current 1
 				.wcu-uprotch-mobile-counter__slash /
 				.wcu-uprotch-mobile-counter__max 3
 	section.solution-package-section
 		.sp-container.container
 			h2.default-h2 Что входит в&nbsp;комплект решений
 			.sp-block-wrap
-				.sp-block
+				.sp-block(data-counter-id="ind-sp-1-counter")
 					.sp-block-item
 						a.sp-block-item-pic.sp-block-item-pic--orange.js-table-fancybox(href="/bitrix/templates/GL/images/form-1.png" data-fancybox="gallery-sp" )
 							.sp-block-item-pic-inner
@@ -299,7 +299,7 @@ block main
 								br.dbr
 								|  отчетами в банк
 				.wwsy-block-mobile-counter.sp-block-mobile-counter
-					.wwsy-block-mobile-counter__current.js-sp-block-mobile-counter__current 1
+					#ind-sp-1-counter.wwsy-block-mobile-counter__current 1
 					.wwsy-block-mobile-counter__slash /
 					.wwsy-block-mobile-counter__max 3
 	section.cost-and-terms-section

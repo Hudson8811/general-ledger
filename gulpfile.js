@@ -83,7 +83,7 @@ gulp.task('js:build', function () {
 		.pipe(reload({stream: true}));
 });
 
-gulp.task('style:build', function () {
+gulp.task('style:build', function () {		
 	return gulp.src(path.src.style)
 		.pipe(plumber())
 		.pipe(sourcemaps.init())

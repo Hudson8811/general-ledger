@@ -29,11 +29,11 @@ block main
 					img.ts-pic(src="img/optish-ts.png" alt="")
 					a.btn.btn--orange.btn--with-right-arrow.ts-btn.ts-btn-mobile(href="") СКАЧАТЬ ПРЕЗЕНТАЦИЮ
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
-	section.result-section.result-section--uprot
+	section.result-section.result-section--uprot.result-section--optish
 		.rs-container.container
 			h2.default-h2 В результате Вы получаете:
 			.sp-block-wrap
-				.sp-block.sp-block--optish-sp-1
+				.sp-block.sp-block--optish-sp-1(data-counter-id="optish-sp1-counter")
 					.sp-block-item
 						.sp-block-item-pic.sp-block-item-pic--orange
 							.sp-block-item-pic-inner
@@ -71,13 +71,13 @@ block main
 							.sp-block-item-content__text Определим один центр прибыли или один или несколько центров расходов, чтобы сократить НДС и налог на прибыль. А за счет централизации функций и упрощения управления уменьшим операционные расходы.
 
 				.wwsy-block-mobile-counter.sp-block-mobile-counter
-					.wwsy-block-mobile-counter__current.js-sp-block-mobile-counter__current 1
-					.wwsy-block-mobile-counter__slash
+					#optish-sp1-counter.wwsy-block-mobile-counter__current 1
+					.wwsy-block-mobile-counter__slash /
 					.wwsy-block-mobile-counter__max 6
 	section.we-will-suit-you-section.we-will-suit-you-section--optish
 		.wwsy-container.container
 			h2.default-h2 Какие проблемы мы решаем
-			.wwsy-uprotch.wwsy-uprotch-v2.wwsy-uprotch-v2--optish.js-wwsy-uprotch-v2
+			.wwsy-uprotch.wwsy-uprotch-v2.wwsy-uprotch-v2--optish.js-wwsy-uprotch-v2(data-counter-id="optish-wwsy-1-counter")
 				.wwsy-uprotch-item
 					.wwsy-uprotch-item__text Резко вырастают налоги,
 						br.tbr
@@ -118,7 +118,7 @@ block main
 						|   на рост бизнеса
 
 			.wwsy-uprotch-mobile-counter
-				.wwsy-uprotch-mobile-counter__current.js-wwsy-uoptish-mobile-counter__current 1
+				#optish-wwsy-1-counter.wwsy-uprotch-mobile-counter__current 1
 				.wwsy-uprotch-mobile-counter__slash /
 				.wwsy-uprotch-mobile-counter__max
 					span.wwsy-counter-max-tablet 2
@@ -133,7 +133,7 @@ block main
 				.hww-block-mobile-tab ШАГ 4
 				.hww-block-mobile-tab ШАГ 5
 				.hww-block-mobile-tab ШАГ 6
-			.hww-block.hww-block--not-mansory.js-hww-block--not-mansory
+			.hww-block.hww-block--not-mansory.hww-block-non-mob-hidden.hww-block--optish.js-hww-block--not-mansory
 				.hww-block-item.hww-block-item--active.hww-block-item--active-visible
 					.hww-block-item-top
 						.hww-block-item-top__pic
@@ -198,20 +198,23 @@ block main
 						.hww-block-item-title Финансовый результат
 						.hww-block-item-desc.hww-block-item-desc--non-bold Налоги и штрафы уменьшаются уже в текущем отчетном периоде, так же как и риск потери активов из-за банкротства, рейдеров или вышедшего из-под контроля директора.
 
-			.hww-block-mobile-unwrap
-				span Развернуть
 	section.why-choose-us-section.why-choose-us-section--optish
 		.wcu-container.container
-			h2.default-h2.wcu-h2 Почему выгоднее привлечь нас
+			h2.default-h2.wcu-h2 
+				span.dbr.tbr Почему выгоднее привлечь нас
+				span.mbr Почему с нами выгоднее
+
 			.wcu-block-wrap
-				.wcu-block.wcu-block--optish
+				.wcu-block.wcu-block--optish(data-counter-id="optish-wcu1-counter")
 					.wcu-block-item
 						.wcu-block-item__icon
 							img(src="img/horseshoe.svg" alt="")
 						.wcu-block-item-content
 							.wcu-block-item__title
-								| Команда с многолетним
-								br
+								| Команда с
+								br.mbr
+								|  многолетним
+								br.dbr.tbr
 								|  опытом
 							.wcu-block-item__text
 								p
@@ -268,13 +271,15 @@ block main
 									|  чем отдельно нанимать юриста, налоговика, методолга
 
 			.wcu-uprotch-mobile-counter
-				.wcu-uprotch-mobile-counter__current.js-wcu-uprotch-mobile-counter__current 1
+				#optish-wcu1-counter.wcu-uprotch-mobile-counter__current 1
 				.wcu-uprotch-mobile-counter__slash /
 				.wcu-uprotch-mobile-counter__max 6
 
 	section.our-results-in-digits
 		.orind-container.container
-			h2.default-h2 Наши результаты в цифрах
+			h2.default-h2 Наши результаты
+				br.mbr
+				|  в цифрах
 			.orind-block
 				.orind-item
 					.orind-item-inner
@@ -299,12 +304,14 @@ block main
 						.orind-top
 							span.orind-top__digit 20
 							span.orind-top__dimension млрд руб.
-						.orind-description Защитили активов клиентов
-	section.solution-package-section
+						.orind-description Защитили
+							br.mbr
+							|  активов клиентов
+	section.solution-package-section.solution-package-section--optish
 		.sp-container.container
 			h2.default-h2 Что входит в комплект услуги
-			.sp-block-wrap
-				.sp-block.sp-block--tablet-slider.sp-block--optish-sp-2
+			#sp-block--optish-sp-2.sp-block-wrap.sp-block-wrap--optish-2.sp-block-wrap--tablet-slider.optish-sp-2--mobile-hide
+				.sp-block.sp-block--tablet-slider.sp-block--optish-sp-2(data-counter-id="optish-sp2-counter")
 					.sp-block-item.customized-ul-wrap
 						.sp-block-item-pic.sp-block-item-pic--orange
 							.sp-block-item-pic-inner
@@ -315,7 +322,11 @@ block main
 								|  структуры холдинга
 
 							ul.sp-block-item-ul
-								li Правовой анализ юридических лиц, входящих в группу компаний – с учетом степени и характера их взаимодействия, конечным бенефициарам и сфер корпоративного влияния
+								li Правовой анализ юридических 
+									br.mbr
+									|  лиц, входящих в группу компаний 
+									br.mbr
+									|   – с учетом степени и характера их взаимодействия, конечным бенефициарам и сфер корпоративного влияния
 								li Анализ движения денежно-товарных потоков между компаниями группы
 								li Анализ налоговой нагрузки и рисков
 							.sp-block-item-content__text
@@ -367,11 +378,12 @@ block main
 							.sp-block-item-content__text
 								b В результате: схема новой структуры холдинга: владение, управление, налоговая нагрузка
 
-
-				.wwsy-block-mobile-counter.sp-block-mobile-counter
-					.wwsy-block-mobile-counter__current.js-sp-block-mobile-counter__current 1
-					.wwsy-block-mobile-counter__slash /
-					.wwsy-block-mobile-counter__max 6
+				.mobile-unwrap.mobile-unwrap--optish-sp-2(data-mobile-unwrap-target-id="sp-block--optish-sp-2" data-mobile-unwrap-target-rclass="optish-sp-2--mobile-hide")
+					span Развернуть
+			.wwsy-block-mobile-counter.sp-block-mobile-counter
+				#optish-sp2-counter.wwsy-block-mobile-counter__current 1
+				.wwsy-block-mobile-counter__slash /
+				.wwsy-block-mobile-counter__max 6
 	section.cost-and-terms-section.cost-and-terms-section--optish
 		.cat-container.container
 			.cat-block.cat-block--optish
@@ -455,6 +467,72 @@ block main
 				.oc-slider-controls
 			#modal-full-comment.modal-custom.modal-full-comment
 				.modal-fc-slider
+					.modal-fc-slide
+						.modal-fc-top
+							.modal-fc-top__logo
+								img(src="images/anderida.png", alt="")
+							.modal-fc-top__text ANDERIDA
+								br
+								|  FINANCIAL GROUP
+						.modal-fc-main
+							.modal-fc-main-bold General Ledger помогли нам сэкономить порядка 3 000 000 рублей, внедрив управленческую и консолидированную отчетность в нашу компанию. Теперь мы понимаем где мы находимся не только по своим «ощущениям», но и на уровне цифр.
+							.modal-fc-video-wrap
+								.video-yt.js-video-yt.video-yt--h100.video-yt-btn
+										.video-yt__preview(data-src="https://www.youtube.com/embed/WUgvvPRH7Oc")
+											img(src="images/com-mod-pic.jpg")
+								.modal-fc-vid-name Алексей Тараповский
+								.modal-fc-vid-positio Управляющий партнер, председатель правления
+							.modal-fc-text
+								p «Андерида файненшл групп» управляет финансами состоятельных семей по всему миру. Поэтому компания привыкла к обращению с крупными капиталами , однако через какое-то время, когда собственные финансовые потоки увеличились, руководство столкнулось с парадоксальной проблемой: стало понятно, что в корпоративных финансах нет порядка.
+								p Из-за того, что в семействе «Андериды» образовалась группа компаний, постепенно исчезло понимание ситуации в финансах - в какой компании сколько денег и кто больше тратит.
+								p Было необходимо наладить понимание финансовой картины по всей группе компаний. Поэтому руководство обратилось за консолидированной управленческой отчетности.
+								p General Ledger в короткий срок предоставила детализированную отчетность по группе компаний и помогла понять финансовое состояние «Андериды».  А именно:
+
+								ul.customized-ul-wrap
+									li Понять выручку компании в разрезе продуктов и услуг, консультантов, отнесения выручки к единоразовой либо регулярной.
+									li Понять траты компании в разрезе видов расходов, в том числе агентской комиссии, заработной платы (в разрезе оклада и бонусов, налогов на заработную плату, по сотрудникам и департаментам), налогов, аренды офиса и пр.
+									li Дать информацию о наличии денежных средств на счетах компании и финансовых вложений в&nbsp;разрезе счетов и инструментов.
+									li Определить структуру запасов, НМА и ОС компании по сумме.
+									li Раскрыть и сгруппировать дебиторскую и кредиторскую задолженности компании.
+
+								p Эта информация помогла компании оценить своё текущее положение дел, оценить
+									br.dbr
+									|  собственное финансовое состояние, оптимизировать затраты и сэкономить более
+									br.dbr
+									|  3 000 000 рублей на дальнейшей автоматизации компании.
+					.modal-fc-slide
+						.modal-fc-top
+							.modal-fc-top__logo
+								img(src="images/anderida.png", alt="")
+							.modal-fc-top__text ANDERIDA
+								br
+								|  FINANCIAL GROUP
+						.modal-fc-main
+							.modal-fc-main-bold General Ledger помогли нам сэкономить порядка 3 000 000 рублей, внедрив управленческую и консолидированную отчетность в нашу компанию. Теперь мы понимаем где мы находимся не только по своим «ощущениям», но и на уровне цифр.
+							.modal-fc-video-wrap
+								.video-yt.js-video-yt.video-yt--h100.video-yt-btn
+										.video-yt__preview(data-src="https://www.youtube.com/embed/WUgvvPRH7Oc")
+											img(src="images/com-mod-pic.jpg")
+								.modal-fc-vid-name Алексей Тараповский
+								.modal-fc-vid-positio Управляющий партнер, председатель правления
+							.modal-fc-text
+								p «Андерида файненшл групп» управляет финансами состоятельных семей по всему миру. Поэтому компания привыкла к обращению с крупными капиталами , однако через какое-то время, когда собственные финансовые потоки увеличились, руководство столкнулось с парадоксальной проблемой: стало понятно, что в корпоративных финансах нет порядка.
+								p Из-за того, что в семействе «Андериды» образовалась группа компаний, постепенно исчезло понимание ситуации в финансах - в какой компании сколько денег и кто больше тратит.
+								p Было необходимо наладить понимание финансовой картины по всей группе компаний. Поэтому руководство обратилось за консолидированной управленческой отчетности.
+								p General Ledger в короткий срок предоставила детализированную отчетность по группе компаний и помогла понять финансовое состояние «Андериды».  А именно:
+
+								ul.customized-ul-wrap
+									li Понять выручку компании в разрезе продуктов и услуг, консультантов, отнесения выручки к единоразовой либо регулярной.
+									li Понять траты компании в разрезе видов расходов, в том числе агентской комиссии, заработной платы (в разрезе оклада и бонусов, налогов на заработную плату, по сотрудникам и департаментам), налогов, аренды офиса и пр.
+									li Дать информацию о наличии денежных средств на счетах компании и финансовых вложений в&nbsp;разрезе счетов и инструментов.
+									li Определить структуру запасов, НМА и ОС компании по сумме.
+									li Раскрыть и сгруппировать дебиторскую и кредиторскую задолженности компании.
+
+								p Эта информация помогла компании оценить своё текущее положение дел, оценить
+									br.dbr
+									|  собственное финансовое состояние, оптимизировать затраты и сэкономить более
+									br.dbr
+									|  3 000 000 рублей на дальнейшей автоматизации компании.
 					.modal-fc-slide
 						.modal-fc-top
 							.modal-fc-top__logo
