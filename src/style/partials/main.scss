@@ -1303,6 +1303,10 @@ a.cat-block-iwt-text__line-2 {
 		content: '';
 		background: #F26419;
 	}
+
+	ul{
+		margin-left: 18px;
+	}
 }
 
 @media screen and (min-width:1300px) {
@@ -1483,12 +1487,13 @@ a.cat-block-iwt-text__line-2 {
 			margin-top: 10px;
 		}
 
-		&+ul {
+		&+ul,  &+ol{
 			margin-top: 18px;
+			margin-left: 18px;
 		}
 	}
 
-	ul {
+	ul, ol {
 
 		&+p {
 			margin-top: 16px;
