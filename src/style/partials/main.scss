@@ -1010,6 +1010,8 @@ a.cat-block-iwt-text__line-2 {
 		border-radius: 20px;
 		object-fit: cover;
 		object-position: center center;
+		filter: grayscale(100%);
+		filter: gray;
 	}
 }
 
@@ -1055,7 +1057,7 @@ a.cat-block-iwt-text__line-2 {
 .oc-slide-row-logo {
 	display: flex;
 	align-items: center;
-	height: 47px;
+	height: 87px;
 
 	&::after {
 		display: block;
@@ -1068,7 +1070,7 @@ a.cat-block-iwt-text__line-2 {
 
 	img {
 		width: auto;
-		height: 47px;
+		max-height: 87px;
 	}
 }
 
@@ -1301,6 +1303,10 @@ a.cat-block-iwt-text__line-2 {
 		content: '';
 		background: #F26419;
 	}
+
+	ul{
+		margin-left: 18px;
+	}
 }
 
 @media screen and (min-width:1300px) {
@@ -1336,4 +1342,264 @@ a.cat-block-iwt-text__line-2 {
 	.mbr {
 		display: inline;
 	}
+}
+
+
+
+///////////модалка отзывов/////////////
+
+
+.modal-custom {
+	display: none;
+
+	.fancybox-close-small {
+		top: 31px;
+		right: 32px;
+		width: 27px;
+		height: 27px;
+		background: url(../img/fancy-close.svg) no-repeat center center;
+		background-size: contain;
+
+		svg {
+			display: none;
+		}
+	}
+}
+
+.modal-full-comment {
+	width: 1044px;
+	max-width: 100%;
+	padding: 0;
+	border-radius: 20px;
+	background: #FFFFFF;
+
+}
+
+.modal-fc-slider {
+	padding-top: 80px;
+}
+
+.modal-fc-slide {
+	box-sizing: border-box;
+	max-width: 100%;
+	padding: 0 100px 0;
+}
+
+.modal-fc-top {
+	display: flex;
+
+	&__logo {
+		max-width: 150px;
+		display: flex;
+		align-items: center;
+
+		img {
+			width: auto;
+			max-width: 100%;
+			height: auto;
+			max-height: 77px;
+		}
+	}
+
+	&__text {
+		display: flex;
+		align-items: center;
+		padding: 0 0 0 24px;
+		color: #323340;
+		font-family: $fontG;
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 125%;
+
+	}
+
+}
+
+.modal-fc-main {}
+
+.modal-fc-main-bold {
+	position: relative;
+	width: 570px;
+	max-width: 100%;
+	margin-top: 53px;
+	color: #323340;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+
+	&::before {
+		position: absolute;
+		top: 4px;
+		left: -58px;
+		display: block;
+		width: 34px;
+		height: 23px;
+		content: '';
+		background: url(../img/quote.svg) no-repeat center center;
+		background-size: contain;
+	}
+}
+
+.modal-fc-video-wrap {
+	width: 513px;
+	max-width: 100%;
+	margin-top: 41px;
+	.img {
+		width: 139px;
+		height: 139px;
+		border-radius: 50%;
+		object-fit: cover;
+		object-position: center center;
+		filter: grayscale(100%);
+		filter: gray;
+	}
+}
+
+
+
+.modal-fc-vid-name {
+	color: #323340;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	font-style: normal;
+	margin-top: 24px;
+}
+
+.modal-fc-vid-positio {
+	color: #c7c7d5;
+	font-size: 16px;
+	line-height: 150%;
+	font-style: normal;
+}
+
+.modal-fc-text {
+	margin-top: 41px;
+	width: 786px;
+	max-width: 100%;
+	font-size: 16px;
+	line-height: 150%;
+
+	.customized-ul-wrap {}
+
+	p {
+		&+p {
+			margin-top: 10px;
+		}
+
+		&+ul,  &+ol{
+			margin-top: 18px;
+			margin-left: 18px;
+		}
+	}
+
+	ul, ol {
+
+		&+p {
+			margin-top: 16px;
+		}
+
+		&+ul {
+			margin-top: 16px;
+		}
+	}
+}
+
+.modal-fc-slider-nav {
+	margin-top: 64px;
+	padding-bottom: 48px;
+	border-top: 1px solid #DADAE8;
+	padding-top: 31px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__prev,
+	&__next {
+		font-size: 16px;
+		line-height: 19px;
+		display: flex;
+		align-items: center;
+		color: #555665;
+		cursor: pointer;
+		&:hover{
+			opacity: .8;
+		}
+	}
+
+	&__prev {
+		&::after {
+			content: '';
+			display: block;
+
+			height: 16px;
+			width: 7px;
+			margin-left: 56px;
+			background: url(../img/com-s-p.svg) no-repeat center center;
+			background-size: contain;
+		}
+	}
+
+	&__next {
+		&::before {
+			content: '';
+			display: block;
+
+			height: 16px;
+			width: 7px;
+			margin-right: 56px;
+			background: url(../img/com-s-n.svg) no-repeat center center;
+			background-size: contain;
+		}
+	}
+
+	&__dots {
+		margin: 0 72px;
+
+		.slick-dots {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+		}
+
+		li {
+			width: 7px;
+			height: 7px;
+			background: #C7C7D5;
+			border-radius: 50%;
+			margin: 0 12px;
+			cursor: pointer;
+			position: relative;
+
+			button {
+				display: none;
+			}
+
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+
+				width: 9px;
+				height: 9px;
+				background: #2B2FFF;
+				border-radius: 50%;
+				left: -1px;
+				top: -1px;
+				opacity: 0;
+				transition-duration: .2s;
+			}
+
+			&.slick-active,
+			&:hover {
+				&::before {
+					opacity: 1;
+				}
+			}
+		}
+
+
+	}
+
 }
