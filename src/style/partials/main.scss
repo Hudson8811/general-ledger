@@ -1368,7 +1368,7 @@ a.cat-block-iwt-text__line-2 {
 
 .modal-full-comment {
 	width: 1044px;
-	max-width: 100%;
+    max-width: calc(100% - 80px);
 	padding: 0;
 	border-radius: 20px;
 	background: #FFFFFF;
@@ -1506,6 +1506,9 @@ a.cat-block-iwt-text__line-2 {
 }
 
 .modal-fc-slider-nav {
+	width: calc(100% - 200px);
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 64px;
 	padding-bottom: 48px;
 	border-top: 1px solid #DADAE8;

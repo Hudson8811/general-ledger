@@ -1,6 +1,3 @@
-
-
-
 .we-will-suit-you-section--optish {
 	margin-top: 72px;
 }
@@ -9,21 +6,26 @@
 .wwsy-uprotch-v2 {}
 
 .wwsy-uprotch-v2--optish {}
+
 /////////////////////////////////////////
 
 
 
 .sp-block-item-title-number {
 	position: absolute;
-    left: -1px;
-    transform: translatex(-50%);
-	top: -21px;
+	left: 10px;
+	transform: translatex(-50%);
+	top: -33px;
 	font-weight: 600;
 	font-size: 80px;
 	line-height: 125%;
 	color: #DADAE8;
 	font-family: $fontG;
 	z-index: -1;
+
+	&--1 {
+		left: -1px;
+	}
 }
 
 /////////////////////////////////////////
@@ -82,3 +84,25 @@ span.orind-top__dimension {
 }
 
 
+
+
+/////////////////////////////////
+
+.sp-pic-optish-1 {
+	padding: 40px 32px 0;
+}
+
+.sp-pic-optish-1-cf {
+	&::before {
+		padding-top: calc(33% + 64px * 2 - 15px * 2);
+	}
+}
+
+//////////////
+
+.sp-pic-optish-2-cf{
+	border-radius: 20px;
+	&::before {
+		padding-top: calc(31.4% + 64px * 2 - 15px * 2);
+	}
+}

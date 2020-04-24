@@ -364,6 +364,30 @@
 			}
 		}
 	}
+
+
+	/////////////////////////////////
+
+	.sp-pic-optish-1 {
+		padding: 0;
+	}
+
+	.sp-pic-optish-1-cf {
+		border-radius: 20px;
+
+		&::before {
+			padding-top: calc(25% + 64px * 2 - 15px * 2);
+		}
+	}
+
+	//////////////
+
+	.sp-pic-optish-2-cf {
+		&::before {
+			padding-top: calc(32.3% + 64px * 2 - 15px * 2);
+		}
+	}
+
 }
 
 @media screen and (min-width:$tabletMin) {}
@@ -767,11 +791,23 @@
 
 		border-radius: 0 0 20px 20px;
 	}
-	.cost-and-terms-section--optish{
+
+	.cost-and-terms-section--optish {
 		padding-top: 54px;
+
 		.cat-block-top-left {
 			padding: 55px 31px 0;
 		}
+	}
+
+	/////////////////////////////
+
+	.sp-pic-optish-1-cf::before {
+		padding-top: calc(31.2% + 64px * 2 - 15px * 2);
+	}
+
+	.sp-pic-optish-2-cf::before {
+		padding-top: calc(31.3% + 64px * 2 - 15px * 2);
 	}
 }
 
