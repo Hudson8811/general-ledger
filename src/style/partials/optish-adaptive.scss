@@ -1,8 +1,3 @@
-.wwsy-counter-max-tablet,
-.wwsy-counter-max-mobile {
-	display: none;
-}
-
 .hww-block-item-desc--non-bold {
 	font-weight: normal;
 	font-size: 16px;
@@ -37,15 +32,7 @@
 		}
 	}
 
-	.wwsy-uprotch-v2--optish {
-		.wwsy-uprotch-item {
-			min-height: 316px;
-		}
 
-		.wwsy-uprotch-item__text {
-			width: 210px;
-		}
-	}
 
 	.sp-block--optish-sp-1 {
 		.sp-block-item-pic-inner {
@@ -218,67 +205,6 @@
 		}
 	}
 
-	.we-will-suit-you-section--optish {
-		margin-top: 81px;
-	}
-
-	.wwsy-uprotch-v2--optish {
-		.wwsy-uprotch-item__text {
-			width: 233px;
-			margin-top: 24px;
-		}
-
-		.wwsy-uprotch-item {
-			min-height: 292px;
-		}
-
-		.slick-track {
-			display: flex;
-			align-items: stretch;
-			justify-content: center;
-
-			.slick-slide {
-				height: auto;
-			}
-		}
-
-		.slick-slide {
-			margin-top: 40px;
-		}
-
-		.slick-slide {
-			&>div {
-				display: flex;
-				align-items: stretch;
-
-				&:nth-child(1) {
-					.wwsy-uprotch-item:nth-child(1) {
-						border-radius: 20px 0 0 0;
-						background: #FFFFFF;
-					}
-
-					.wwsy-uprotch-item:nth-child(2) {
-						border-radius: 0 20px 0 0;
-						background: #F9F9FC;
-					}
-				}
-
-				&:nth-child(2) {
-					.wwsy-uprotch-item:nth-child(1) {
-						border-radius: 0 0 0 20px;
-						background: #F9F9FC;
-					}
-
-					.wwsy-uprotch-item:nth-child(2) {
-						border-radius: 0 0 20px 0;
-						background: #F0F0F8;
-					}
-				}
-			}
-
-		}
-	}
-
 	.top-section--optish {
 		.ts-text-mobile {
 			width: 500px;
@@ -302,9 +228,6 @@
 		}
 	}
 
-	.wwsy-uprotch-v2--optish {
-		display: block;
-	}
 
 	.why-choose-us-section--optish {
 		padding-top: 72px;
@@ -394,9 +317,8 @@
 
 
 @media screen and (min-width:$tabletMin) and (max-width:$tabletMax) {
-	.wwsy-counter-max-tablet {
-		display: block;
-	}
+
+
 
 	.how-we-work-section--optish {
 		margin-top: 72px;
@@ -510,10 +432,7 @@
 
 
 
-@media screen and (max-width:$phoneMax) {
-	.wwsy-counter-max-mobile {
-		display: block;
-	}
+@media screen and (max-width:$phoneMax) {\
 
 	.top-section--optish {
 		.ts-text-mobile {
@@ -559,65 +478,7 @@
 		}
 	}
 
-	.we-will-suit-you-section--optish {
-		background: none;
-		padding-top: 0;
-		margin-top: 46px;
-		padding-bottom: 0;
 
-		.default-h2 {
-			width: 100%;
-		}
-	}
-
-	.wwsy-uprotch-v2--optish {
-
-		margin-top: 26px;
-
-		.slick-slide {
-			margin-top: 0;
-
-			.wwsy-uprotch-item {
-				background: #F5F6FB !important;
-				min-height: unset;
-				display: flex !important;
-				padding: 32px 24px 26px 24px;
-			}
-
-			.wwsy-uprotch-item__text {
-				margin-top: 0;
-				max-width: calc(100% - 43px);
-				width: 246px;
-				flex-grow: 0;
-			}
-
-			&>div:not(:last-child) {
-				.wwsy-uprotch-item {
-					border-bottom: 1px solid #DADAE8;
-				}
-			}
-
-			&>div:nth-child(1) {
-
-
-				.wwsy-uprotch-item {
-					border-radius: 20px 20px 0 0 !important;
-				}
-			}
-
-			&>div:nth-child(2) {
-				.wwsy-uprotch-item {
-					border-radius: 0 !important;
-				}
-			}
-
-			&>div:nth-child(3) {
-				.wwsy-uprotch-item {
-					border-radius: 0 0 20px 20px !important;
-				}
-			}
-		}
-	}
 
 	.how-we-work-section--optish {
 		padding-top: 55px;

@@ -17,7 +17,7 @@ function initWWSYuprotchV2Slider() {
 				settings: {
 
 					slidesPerRow: 1,
-					rows: 3,
+					rows: 4,
 				}
 			}
 		]
@@ -29,7 +29,7 @@ $(document).ready(function () {
 	if (window.matchMedia('(max-width: 1025px)').matches) {
 		initWWSYuprotchV2Slider();
 	}
-	
+
 	$(window).resize(function () {
 		if (window.matchMedia('(max-width: 1025px)').matches) {
 			if (!$('.js-wwsy-uprotch-v2').hasClass('slick-initialized')) {
