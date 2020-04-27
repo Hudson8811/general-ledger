@@ -36,7 +36,7 @@ h2.default-h2 {}
 .orind-block {
 	display: flex;
 	margin-top: 37px;
-	padding: 80px 0 67px;
+    padding: 74px 0px 68px 0;
 	border-radius: 20px;
 	background: #FFFFFF;
 }
@@ -100,5 +100,17 @@ span.orind-top__dimension {
 	border-radius: 20px;
 	&::before {
 		padding-top: calc(31.4% + 64px * 2 - 15px * 2);
+	}
+}
+
+@media screen and (min-width:$desktopMin){
+	.we-will-suit-you-section--optish{
+
+		.wwsy-uprotch-item:nth-child(6){
+			.wwsy-uprotch-item__text{
+				width: 220px;
+				max-width: 120%;
+			}
+		}
 	}
 }
