@@ -42,42 +42,46 @@ block main
 							li.rs-block-li Консолидированный управленческий баланс, отчет о доходах и расходах, отчет о движении денежных средств по всей группе компаний
 					.rs-block-row__right
 						.rs-multi-pic-flex
-							a.rs-multi-pic-flex-item.js-table-fancybox.rs-multi-pic-flex-item--orange(href="/bitrix/templates/GL/images/form-1-big.png" data-fancybox="gallery-1")
-								.rs-multi-pic-flex-item-inner
-									.rs-multi-pic-flex-item-text Форма № 1
-									.rs-multi-pic-flex-item-img-wrap
-										img(src="/bitrix/templates/GL/images/form-1.png" alt="")
-							a.rs-multi-pic-flex-item.js-table-fancybox.rs-multi-pic-flex-item--orange(href="/bitrix/templates/GL/images/form-2-big.png" data-fancybox="gallery-1" )
-								.rs-multi-pic-flex-item-inner
-									.rs-multi-pic-flex-item-text Форма № 2
-									.rs-multi-pic-flex-item-img-wrap
-										img(src="/bitrix/templates/GL/images/form-2.png" alt="")
-							a.rs-multi-pic-flex-item.js-table-fancybox.rs-multi-pic-flex-item--orange(href="/bitrix/templates/GL/images/form-3-big.png" data-fancybox="gallery-1" )
-								.rs-multi-pic-flex-item-inner
-									.rs-multi-pic-flex-item-text Форма № 4
-									.rs-multi-pic-flex-item-img-wrap
-										img(src="/bitrix/templates/GL/images/form-3.png" alt="")
-							a.rs-multi-pic-flex-item.js-table-fancybox.rs-multi-pic-flex-item--blue(href="/bitrix/templates/GL/images/form-4-big.png" data-fancybox="gallery-1" )
-								.rs-multi-pic-flex-item-inner
-									.rs-multi-pic-flex-item-text Balance
-									.rs-multi-pic-flex-item-img-wrap
-										img(src="/bitrix/templates/GL/images/form-4.png" alt="")
-							a.rs-multi-pic-flex-item.js-table-fancybox.rs-multi-pic-flex-item--blue(href="/bitrix/templates/GL/images/form-5-big.png" data-fancybox="gallery-1" )
-								.rs-multi-pic-flex-item-inner
-									.rs-multi-pic-flex-item-text P&L
-									.rs-multi-pic-flex-item-img-wrap
-										img(src="/bitrix/templates/GL/images/form-5.png" alt="")
-							a.rs-multi-pic-flex-item.js-table-fancybox.rs-multi-pic-flex-item--blue(href="/bitrix/templates/GL/images/form-6-big.png" data-fancybox="gallery-1" )
-								.rs-multi-pic-flex-item-inner
-									.rs-multi-pic-flex-item-text CashFlow
-									.rs-multi-pic-flex-item-img-wrap
-										img(src="/bitrix/templates/GL/images/form-6.png" alt="")
+							.rs-multi-pic-flex-item
+								a.component-fancy.component-fancy--with-text.component-fancy--rs-multi-pic-flex-item.js-table-fancybox(href="images/form-1.png" data-fancybox="gallery-1")
+									.component-fancy__inner
+										.component-fancy__text Форма №1
+										img(src="images/form-1.png", alt="")
+							.rs-multi-pic-flex-item
+								a.component-fancy.component-fancy--with-text.component-fancy--rs-multi-pic-flex-item.js-table-fancybox(href="images/form-2.png" data-fancybox="gallery-1")
+									.component-fancy__inner
+										.component-fancy__text Форма №2
+										img(src="images/form-2.png", alt="")
+							.rs-multi-pic-flex-item
+								a.component-fancy.component-fancy--with-text.component-fancy--rs-multi-pic-flex-item.js-table-fancybox(href="images/form-3.png" data-fancybox="gallery-1")
+									.component-fancy__inner
+										.component-fancy__text Форма №3
+										img(src="images/form-3.png", alt="")
+							.rs-multi-pic-flex-item
+								a.component-fancy.component-fancy--with-text.component-fancy--rs-multi-pic-flex-item.js-table-fancybox(href="images/form-4.png" data-fancybox="gallery-1")
+									.component-fancy__inner
+										.component-fancy__text Balance
+										img(src="images/form-4.png", alt="")
+							.rs-multi-pic-flex-item
+								a.component-fancy.component-fancy--with-text.component-fancy--rs-multi-pic-flex-item.js-table-fancybox(href="images/form-5.png" data-fancybox="gallery-1")
+									.component-fancy__inner
+										.component-fancy__text P&L
+										img(src="images/form-5.png", alt="")
+							.rs-multi-pic-flex-item
+								a.component-fancy.component-fancy--with-text.component-fancy--rs-multi-pic-flex-item.js-table-fancybox(href="images/form-6.png" data-fancybox="gallery-1")
+									.component-fancy__inner
+										.component-fancy__text CashFlow
+										img(src="images/form-6.png", alt="")
+
 
 				.rs-block-row.rs-block-row-2
 					.rs-block-row__left
-						a.rs-one-pic-wrap.js-table-fancybox(href="/bitrix/templates/GL/images/rs-left-pic.png" data-fancybox="gallery-1" )
-							.rs-one-pic-wrap-inner
-								img.rs-one-pic(src="/bitrix/templates/GL/images/rs-left-pic.png" alt="")
+
+						a.component-fancy.component-fancy--cons-rs-one-pic.js-table-fancybox(href="images/consolid-otch-table-1.png" data-fancybox="")
+							.component-fancy__inner
+
+								img(src="images/consolid-otch-table-1.png", alt="")
+
 					.rs-block-row__right.rs-block-row__right--text.customized-ul-wrap
 						.rs-block-digit.rs-block-digit-2 2
 						.rs-block-title Финансовый анализ и интерпретацию
@@ -489,10 +493,10 @@ block main
 									|  3 000 000 рублей на дальнейшей автоматизации компании.
 
 				.modal-fc-slider-nav
-					.modal-fc-slider-nav__prev 
+					.modal-fc-slider-nav__prev
 						span Предыдущий отзыв
 					.modal-fc-slider-nav__dots
-					.modal-fc-slider-nav__next 
+					.modal-fc-slider-nav__next
 						span Следующий отзыв
 
 	section.answers-section
