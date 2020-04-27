@@ -1,0 +1,116 @@
+.top-section--diag{
+  .ts-flex__left{
+    width: 650px;
+    margin-right: -35px;
+    padding-bottom: 117px;
+    .ts-text-desktop p{
+      max-width: 460px;
+    }
+  }
+  .ts-flex__right{
+    margin-right:-10px;
+    .ts-pic{
+      width: 731px;
+      margin-top: 36px
+    }
+  }
+}
+
+.result-section--diag{
+  .rs-block-digit-1{
+    top:-12px;
+  }
+  .rs-block-digit-2{
+    top:27px;
+  }
+
+  .rs-block-row__left{
+    width: 560px;
+    flex-shrink: 0;
+  }
+  .rs-block-row__left--text{
+    padding-bottom: 65px;
+  }
+
+  .rs-block-row__right--text{
+    padding-top: 43px;
+    padding-bottom: 63px;
+
+    .rs-block-ul li{
+      max-width: 440px;
+    }
+  }
+
+  .component-fancy{
+    height: 100%;
+  }
+
+  .customized-ul-wrap li:not(:last-child){
+    margin-bottom: 14px;
+  }
+}
+
+.we-will-suit-you-section--diag__not-tab-slider{
+  @media screen and (min-width:$desktopMin){
+    .wwsy-block-item{
+      align-items: flex-start;
+      box-sizing: border-box;
+      width: auto;
+    }
+    .wwsy-block-item:first-child{
+      width: 380px;
+    }
+    .wwsy-block-item:nth-child(2){
+      width: 405px;
+    }
+    .wwsy-block-item:nth-child(3){
+      width: 360px;
+    }
+    .wwsy-block-item + .wwsy-block-item{
+      margin-left: 48px;
+    }
+    .wwsy-block-item__text{
+      padding-right: 50px;
+      text-align: left;
+      padding-left: 0;
+      font-size: 20px;
+      p{
+        margin-top: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .wwsy-block-item__text{
+    line-height: 23px;
+  }
+  .wwsy-block-item__text .ah1{
+    font-size: 20px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 500;
+  }
+}
+
+.we-will-suit-you-section--diag{
+  .wwsy-uprotch-item{
+    width: 33.3333333%;
+    .wwsy-uprotch-item__text{
+      width: 240px;
+    }
+    &:nth-child(3){
+      border-bottom:1px solid #dadae8;
+      .wwsy-uprotch-item__text{
+      }
+    }
+    &:nth-child(4){
+      border-left:0;
+      .wwsy-uprotch-item__text{
+      }
+    }
+    &:nth-child(5){
+      border-left:1px solid #dadae8;
+      .wwsy-uprotch-item__text{
+      }
+    }
+  }
+}
