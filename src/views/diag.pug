@@ -1,324 +1,329 @@
 extends layouts/default
 
 block vars
-    -
-        const page = {
-        title: 'index.html'
-        };
+	-
+		const page = {
+		title: 'index.html'
+		};
 
 
 
 
 block main
-    section.top-section.top-section--diag
-        .ts-container.container
-            .ts-flex
-                .ts-flex__left
-                    h1.ts-heading Комплексная диагностика корпоративных финансов
+	section.top-section.top-section--diag
+		.ts-container.container
+			.ts-flex
+				.ts-flex__left
+					h1.ts-heading Комплексная диагностика корпоративных финансов
 
-                    .ts-text-desktop
-                        p Поможем найти причины проблем с финансами, и подготовим дорожную карту их решения
-                        p От 3-х дней и 50 тыс. руб
-                    .ts-text-mobile
-                        p Поможем найти причины проблем с финансами,  и подготовим дорожную карту их решения
-                        p От 3-х дней и 50 тыс. руб
-                    a.btn.btn--white.btn--with-right-arrow.ts-btn.ts-btn-desktop(href="") СКАЧАТЬ ПРЕЗЕНТАЦИЮ
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
+					.ts-text-desktop
+						p Поможем найти причины проблем с финансами, и подготовим дорожную карту их решения
+						p От 3-х дней и 50 тыс. руб
+					.ts-text-mobile
+						p Поможем найти причины проблем с финансами,  и подготовим дорожную карту их решения
+						p От 3-х дней и 50 тыс. руб
+					a.btn.btn--white.btn--with-right-arrow.ts-btn.ts-btn-desktop(href="") СКАЧАТЬ ПРЕЗЕНТАЦИЮ
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
 
-                .ts-flex__right
-                    img.ts-pic(src="/bitrix/templates/GL/img/diag.png" alt="")
-                    a.btn.btn--orange.btn--with-right-arrow.ts-btn.ts-btn-mobile(href="") СКАЧАТЬ ПРЕЗЕНТАЦИЮ
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
-    section.result-section.result-section--diag
-        .rs-container.container
-            h2.default-h2 Что вы получите в результате
-            .rs-block-mobile-digit-1 1
-            .rs-block
-                .rs-block-row.rs-block-row-1
-                    .rs-block-row__left.rs-block-row__left--text.customized-ul-wrap
-                        .rs-block-digit.rs-block-digit-1 1
-                        .rs-block-title Полную картину финансов бизнеса
-                        ul.rs-block-ul
-                            li.rs-block-li Факторы риска – список проблемных точек в управлении финансами и бизнесом, насколько они критичны
-                            li.rs-block-li Точки роста – где есть потенциал для роста, как его извлечь, какие проблемы при этом решить
-                            li.rs-block-li Ясность в финансах – что на что влияет, что менять, чтобы достичь финансовых целей
-                    .rs-block-row__right
-                        a.component-fancy.sp-pic-optish-1-cf(href="/bitrix/templates/GL/images/diag/1-big.png" data-fancybox="optish-results-1")
-                            .component-fancy__inner
-                                img(src="/bitrix/templates/GL/images/diag/1.png", alt="")
-                .rs-block-row.rs-block-row-2
-                    .rs-block-row__left
-                        a.component-fancy.sp-pic-optish-1-cf(href="/bitrix/templates/GL/images/diag/2-big.png" data-fancybox="optish-results-1")
-                            .component-fancy__inner
-                                img(src="/bitrix/templates/GL/images/diag/2.png", alt="")
-                    .rs-block-row__right.rs-block-row__right--text.customized-ul-wrap
-                        .rs-block-digit.rs-block-digit-2 2
-                        .rs-block-title Дорожную карту решения проблем
-                        ul.rs-block-ul
-                            li.rs-block-li.rs-block-li__mobile-fsz16 Список сбоев и проблем в системе управления финансами и активами
-                            li.rs-block-li.rs-block-li__mobile-fsz16 Дорожную карту решения проблем - в каком направлении искать глубже, план конкретных действий
+				.ts-flex__right
+					img.ts-pic(src="img/diag.png" alt="")
+					a.btn.btn--orange.btn--with-right-arrow.ts-btn.ts-btn-mobile(href="") СКАЧАТЬ ПРЕЗЕНТАЦИЮ
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
+	section.result-section.result-section--diag
+		.rs-container.container
+			h2.default-h2 Что вы получите в результате
+			.rs-block-mobile-digit-1 1
+			.rs-block
+				.rs-block-row.rs-block-row-1
+					.rs-block-row__left.rs-block-row__left--text.customized-ul-wrap
+						.rs-block-digit.rs-block-digit-1 1
+						.rs-block-title Полную картину финансов бизнеса
+						ul.rs-block-ul
+							li.rs-block-li Факторы риска – список проблемных точек в управлении финансами и бизнесом, насколько они критичны
+							li.rs-block-li Точки роста – где есть потенциал для роста, как его извлечь, какие проблемы при этом решить
+							li.rs-block-li Ясность в финансах – что на что влияет, что менять, чтобы достичь финансовых целей
+					.rs-block-row__right
+						a.component-fancy.sp-pic-optish-1-cf(href="images/diag/1-big.png" data-fancybox="optish-results-1")
+							.component-fancy__inner
+								img(src="images/diag/1.png", alt="")
+				.rs-block-row.rs-block-row-2
+					.rs-block-row__left
+						a.component-fancy.sp-pic-optish-1-cf(href="images/diag/2-big.png" data-fancybox="optish-results-1")
+							.component-fancy__inner
+								img(src="images/diag/2.png", alt="")
+					.rs-block-row__right.rs-block-row__right--text.customized-ul-wrap
+						.rs-block-digit.rs-block-digit-2 2
+						.rs-block-title Дорожную карту решения проблем
+						ul.rs-block-ul
+							li.rs-block-li.rs-block-li__mobile-fsz16 Список сбоев и проблем в системе управления финансами и активами
+							li.rs-block-li.rs-block-li__mobile-fsz16 Дорожную карту решения проблем - в каком направлении искать глубже, план конкретных действий
 
-    section.we-will-suit-you-section(data-counter-id="ind-wwsy-1-counter").we-will-suit-you-section--diag__not-tab-slider
-        .wwsy-container.container
-            h2.default-h2 Когда нужна такая диагностика
-            .wwsy-block
-                .wwsy-block-item
-                    .wwsy-block-item__pic
-                        img(src="https://via.placeholder.com/110/2c2e85" alt="")
-                    .wwsy-block-item__text
-                        .ah1 Компания разрослась
-                        p И Вы видите, что текущие методы управления не справляются, нужна новая система управления процессами
-                .wwsy-block-item
-                    .wwsy-block-item__pic
-                        img(src="https://via.placeholder.com/110/2c2e85" alt="")
-                    .wwsy-block-item__text
-                        .ah1 Компания собирается расти
-                        p И нужно улучшить управление финансами, чтобы снизить потери и избежать дорогих ошибок роста
-                .wwsy-block-item
-                    .wwsy-block-item__pic
-                        img(src="https://via.placeholder.com/110/2c2e85" alt="")
-                    .wwsy-block-item__text
-                        .ah1 Нужна объективная оценка
-                        p Финансовой системы – все в порядке или есть серьезные проблемы? Если есть проблемы, как их устранить?
-            .wwsy-block-mobile-counter
-                #ind-wwsy-1-counter.wwsy-block-mobile-counter__current 1
-                .wwsy-block-mobile-counter__slash /
-                .wwsy-block-mobile-counter__max 4
+	section.we-will-suit-you-section(data-counter-id="ind-wwsy-1-counter").we-will-suit-you-section--diag__not-tab-slider
+		.wwsy-container.container
+			h2.default-h2 Когда нужна такая диагностика
+			.wwsy-block
+				.wwsy-block-item
+					.wwsy-block-item__pic
+						img(src="https://via.placeholder.com/110/2c2e85" alt="")
+					.wwsy-block-item__text
+						.ah1 Компания разрослась
+						p И Вы видите, что текущие методы управления не справляются, нужна новая система управления процессами
+				.wwsy-block-item
+					.wwsy-block-item__pic
+						img(src="https://via.placeholder.com/110/2c2e85" alt="")
+					.wwsy-block-item__text
+						.ah1 Компания собирается расти
+						p И нужно улучшить управление финансами, чтобы снизить потери и избежать дорогих ошибок роста
+				.wwsy-block-item
+					.wwsy-block-item__pic
+						img(src="https://via.placeholder.com/110/2c2e85" alt="")
+					.wwsy-block-item__text
+						.ah1 Нужна объективная оценка
+						p Финансовой системы – все в порядке или есть серьезные проблемы? Если есть проблемы, как их устранить?
+			.wwsy-block-mobile-counter
+				#ind-wwsy-1-counter.wwsy-block-mobile-counter__current 1
+				.wwsy-block-mobile-counter__slash /
+				.wwsy-block-mobile-counter__max 4
 
-    section.we-will-suit-you-section.we-will-suit-you-section--diag
-        .wwsy-container.container
-            h2.default-h2 Это нужно прямо сейчас, если:
-            .wwsy-uprotch
-                .wwsy-uprotch-item
-                    .wwsy-uprotch-item__number
-                        span 1
-                    .wwsy-uprotch-item__text Нужно увеличить прибыль
-                        br.dbr
-                        |  и сократить расходы
-                .wwsy-uprotch-item
-                    .wwsy-uprotch-item__number
-                        span 2
-                    .wwsy-uprotch-item__text Нет твердой ясности, насколько хорошо идут дела у холдинга в целом и отдельных компаний
-                .wwsy-uprotch-item
-                    .wwsy-uprotch-item__number
-                        span 3
-                    .wwsy-uprotch-item__text Нужно что-то менять в управлении финансами, но непонятно, что делать и нет времени, чтобы разобраться
-                .wwsy-uprotch-item
-                    .wwsy-uprotch-item__number
-                        span 4
-                    .wwsy-uprotch-item__text Нет времени, чтобы найти и устранить причины проблем вместо борьбы с симптомами
-                .wwsy-uprotch-item
-                    .wwsy-uprotch-item__number
-                        span 5
-                    .wwsy-uprotch-item__text Нужно увеличить стоимость бизнеса
-                .wwsy-uprotch-item
-                    .wwsy-uprotch-item__number
-                        span 6
-                    .wwsy-uprotch-item__text Уменьшилась управляемость&nbsp;- недостаточно информации, затягивание действий, потери из-за несогласованности
+	section.we-will-suit-you-section.we-will-suit-you-section--diag
+		.wwsy-container.container
+			h2.default-h2 Это нужно прямо сейчас, если:
+			.wwsy-uprotch
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__number
+						span 1
+					.wwsy-uprotch-item__text Нужно увеличить прибыль
+						br.dbr
+						|  и сократить расходы
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__number
+						span 2
+					.wwsy-uprotch-item__text Нет твердой ясности, насколько хорошо идут дела у холдинга в целом и отдельных компаний
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__number
+						span 3
+					.wwsy-uprotch-item__text Нужно что-то менять в управлении финансами, но непонятно, что делать и нет времени, чтобы разобраться
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__number
+						span 4
+					.wwsy-uprotch-item__text Нет времени, чтобы найти и устранить причины проблем вместо борьбы с симптомами
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__number
+						span 5
+					.wwsy-uprotch-item__text Нужно увеличить стоимость бизнеса
+				.wwsy-uprotch-item
+					.wwsy-uprotch-item__number
+						span 6
+					.wwsy-uprotch-item__text Уменьшилась управляемость&nbsp;- недостаточно информации, затягивание действий, потери из-за несогласованности
 
-    section.how-we-work-section
-        .hww-container.container
-            h2.default-h2 Как мы готовим вашу отчетность
-            .hww-block-mobile-tabs(style="padding-right: 5.8vw;")
-                .hww-block-mobile-tab.hww-block-mobile-tab--active ШАГ 1
-                .hww-block-mobile-tab ШАГ 2
-                .hww-block-mobile-tab ШАГ 3
-                .hww-block-mobile-tab ШАГ 4
-            .hww-block
-                .hww-block-item.hww-block-item--active.hww-block-item--active-visible
-                    .hww-block-item-top
-                        a.hww-block-item-top__pic.js-table-fancybox(href="/bitrix/templates/GL/images/step-1.jpg")
-                            img(src="/bitrix/templates/GL/images/step-1.jpg" alt="")
-                        .hww-block-item-top__text
-                            .hww-block-item-step Шаг 1
-                            .hww-block-item-duration 30-60 мин.
-                    .hww-block-item-bottom.customized-ul-wrap
-                        .hww-block-item-title Бесплатная консультация
-                        .hww-block-item-desc Уточняем желаемый результат, чтобы сделать правильно с первого раза:
-                        ul
-                            li Какая отчетность нужна - в фискальных или регламентированных формах (РСБУ), в какой
-                                br.dbr
-                                |  детализации, для какого банка, для каких целей, по
-                                br.dbr
-                                |  какому количеству компаний
-                            li Финансовые коэффициенты и интерпретация по ним
-                            li Какая детализация нужна для управленческой отчетности
-                            li Когда нужно сделать
 
-                .hww-block-item
-                    .hww-block-item-top
-                        a.hww-block-item-top__pic.js-table-fancybox(href="/bitrix/templates/GL/images/step-2.jpg")
-                            img(src="/bitrix/templates/GL/images/step-2.jpg" alt="")
-                        .hww-block-item-top__text
-                            .hww-block-item-step Шаг 2
-                            .hww-block-item-duration 1-8 часов
-                    .hww-block-item-bottom.customized-ul-wrap
-                        .hww-block-item-title Подписываем договор
-                        .hww-block-item-desc В договоре фиксируем:
 
-                        ul
-                            li Неразглашение конфиденциальных данных
-                            li Условия работы, результат, сроки
-                            li Нашу ответственность за результат и гарантии качества
-                .hww-block-item
-                    .hww-block-item-top
-                        a.hww-block-item-top__pic.js-table-fancybox(href="/bitrix/templates/GL/images/step-3.jpg")
-                            img(src="/bitrix/templates/GL/images/step-3.jpg" alt="")
-                        .hww-block-item-top__text
-                            .hww-block-item-step Шаг 3
-                            .hww-block-item-duration 5-7 дней
-                    .hww-block-item-bottom.customized-ul-wrap
-                        .hww-block-item-title Присылаем готовые отчеты в таблицах
-                        .hww-block-item-desc От Вас нужна только выгрузка из главной книги Вашей учетной платформы. Дальше мы делаем элиминацию внутренних оборотов:
+	section.how-we-work-section.how-we-work-section--optish
+		.hww-container.container
+			h2.default-h2 Как мы это делаем
+			.hww-block-mobile-tabs.hww-block-mobile-tabs--uprotch
+				.hww-block-mobile-tab.hww-block-mobile-tab--active ШАГ 1
+				.hww-block-mobile-tab ШАГ 2
+				.hww-block-mobile-tab ШАГ 3
+				.hww-block-mobile-tab ШАГ 4
+				.hww-block-mobile-tab ШАГ 5
+			.hww-block.hww-block--not-mansory.hww-block-non-mob-hidden.hww-block--optish.js-hww-block--not-mansory
+				.hww-block-item.hww-block-item--active.hww-block-item--active-visible
+					.hww-block-item-top
+						.hww-block-item-top__pic
+							img(src="images/step-1.jpg" alt="")
+						.hww-block-item-top__text
+							.hww-block-item-step Шаг 1
+							.hww-block-item-duration 30-60 мин.
+					.hww-block-item-bottom.customized-ul-wrap
+						.hww-block-item-title Бесплатная консультация
+						.hww-block-item-desc Уточняем задачу – какие цели стоят перед холдингом и отдельными компаниями, как производится управленческий и финансовый учет, как система корпоративных финансов связана с продажами, производством, логистикой и т.д.
 
-                        ul
-                            li Определяем нестыковки в учете разных компаний Вашей&nbsp;группы
-                            li Приводим к единой учетной политике данные Ваших&nbsp;компаний
-                            li Создаем набор сводных таблиц в Excel
-                            li Присылаем через неделю готовую отчетность
-                            li Отвечаем на Ваши вопросы
-                .hww-block-item
-                    .hww-block-item-top
-                        a.hww-block-item-top__pic.js-table-fancybox(href="/bitrix/templates/GL/images/step-4-1.png")
-                            img(src="/bitrix/templates/GL/images/step-4-1.png" alt="" style="padding-top:100px")
-                        .hww-block-item-top__text
-                            .hww-block-item-step Шаг 4
-                            .hww-block-item-duration 7-14 дней
-                    .hww-block-item-bottom.customized-ul-wrap
-                        .hww-block-item-title Вы отправляете отчеты в банк
-                        .hww-block-item-desc Вы отправляете отчеты в банк и получаете кредит, или подтверждаете ковенанты. При необходимости - сделаем снова.
-            .hww-block-mobile-unwrap
-                span Развернуть
-    section.why-choose-us-section
-        .wcu-container.container
-            h2.default-h2.wcu-h2 Почему лучше заказать у нас
-            .wcu-block-wrap
-                .wcu-block(data-counter-id="ind-wcu-1-counter")
-                    .wcu-block-item
-                        .wcu-block-item__icon
-                            img(src="/bitrix/templates/GL/img/horseshoe.svg" alt="")
-                        .wcu-block-item__title Помогли привлечь 570 млн руб. кредитных средств
-                        .wcu-block-item__text
-                            p
-                                b  Для
-                                |  групп
-                                b  компаний
-                                |  и холдингов
-                                b  из 2&#8209;15 юрлиц
-                            p
-                                b Знаем, в каком виде
-                                |  банку
-                                b  нужна
-                                |  финансовая
-                                b  отчетность
-                            p
-                                b  Оцениваем риск невозврата кредита,
-                                |  исходя из состояния бизнеса
-                            p
-                                b Помогаем получить лучшие условия
-                                |  кредитования
-                    .wcu-block-item
-                        .wcu-block-item__icon
-                            img(src="/bitrix/templates/GL/img/horseshoe.svg" alt="")
-                        .wcu-block-item__title
-                            | В 5 раз дешевле,
-                            br
-                            |  в 10 раз быстрее
-                        .wcu-block-item__text
-                            p
-                                b  Без
-                                |  проектирования,
-                                b  разработки и внедрения
-                                |  дополнительного
-                                b  софта
-                            p
-                                b  Работаем с компаниями любого размера
-                                |  и оборота
-                            p Гарантируем
-                                b  100% безопасность Ваших&nbsp;данных
-                            p
-                                b  Обрабатываем 1.000.000 операций
-                                |  в выгрузке из 1С
-                                b  за неделю
-                            p
-                                | Готовим отчетность
-                                b  без участия Ваших сотрудников
-                    .wcu-block-item
-                        .wcu-block-item__icon
-                            img(src="/bitrix/templates/GL/img/horseshoe.svg" alt="")
-                        .wcu-block-item__title Устраняем разногласия в учетной политике
-                        .wcu-block-item__text
-                            p
-                                b Показываем,
-                                |  где и на какие суммы есть
-                                b  разногласия в учете
-                            p(style="margin-right:-5px;")
-                                b Приводим к единому виду данные
-                                |  из компаний с разными политиками учета
-                            p
-                                b  Детализируем
-                                |  отчетность таблиц
-                                b  до отдельных проводок
-                            p
-                                b  Объясняем каждую цифру
-                                |  финансовых показателей
+				.hww-block-item
+					.hww-block-item-top
+						.hww-block-item-top__pic
+							img(src="images/step-2.jpg" alt="")
+						.hww-block-item-top__text
+							.hww-block-item-step Шаг 2
+							.hww-block-item-duration 1-8 часов
+					.hww-block-item-bottom.customized-ul-wrap
+						.hww-block-item-title Подписываем договор
+						.hww-block-item-desc В договоре фиксируем:
+						ul
+							li Неразглашение конфиденциальных данных
+							li Условия работы, результат, сроки
+							li Нашу ответственность за результат и гарантии качества
 
-            .wcu-uprotch-mobile-counter
-                #ind-wcu-1-counter.wcu-uprotch-mobile-counter__current 1
-                .wcu-uprotch-mobile-counter__slash /
-                .wcu-uprotch-mobile-counter__max 3
-    section.we-will-suit-you-section(data-counter-id="ind-wwsy-1-counter")
-        .wwsy-container.container
-            h2.default-h2 Мы идеально подойдем Вам, если:
-            .wwsy-block
-                .wwsy-block-item
-                    .wwsy-block-item__pic
-                        img(src="https://via.placeholder.com/110/2c2e85" alt="")
-                    .wwsy-block-item__text Стартовая консультация
-                .wwsy-block-item
-                    .wwsy-block-item__pic
-                        img(src="https://via.placeholder.com/110/2c2e85" alt="")
-                    .wwsy-block-item__text 1-2 встречи по 2-3 часа
-                .wwsy-block-item
-                    .wwsy-block-item__pic
-                        img(src="https://via.placeholder.com/110/2c2e85" alt="")
-                    .wwsy-block-item__text Презентация выводов
-                .wwsy-block-item
-                    .wwsy-block-item__pic
-                        img(src="https://via.placeholder.com/110/2c2e85" alt="")
-                    .wwsy-block-item__text Ответы на вопросы
-            .wwsy-block-mobile-counter
-                #ind-wwsy-1-counter.wwsy-block-mobile-counter__current 1
-                .wwsy-block-mobile-counter__slash /
-                .wwsy-block-mobile-counter__max 4
-    section.cost-and-terms-section
-        .cat-container.container
-            .cat-block
-                .cat-block-top
-                    .cat-block-top-left
-                        .cat-block-title Стоимость и сроки
-                        .cat-block-left-row
-                            .cat-block-icon-with-text
-                                .cat-block-iwt-pic
-                                    img(src="/bitrix/templates/GL/img/cat-icon.svg" alt="")
-                                .cat-block-iwt-text
-                                    .cat-block-iwt-text__line-1 от 100 000 ₽
-                                    .cat-block-iwt-text__line-2 за период учета в 12 мес.
-                            .cat-block-icon-with-text
-                                .cat-block-iwt-pic
-                                    img(src="/bitrix/templates/GL/img/cat-icon.svg" alt="")
-                                .cat-block-iwt-text
-                                    .cat-block-iwt-text__line-1 от 7 дней
-                                    .cat-block-iwt-text__line-2 для подготовки отчетности за&nbsp;год
 
-                    .cat-block-top-right
-                        .cat-block-title Бесплатная консультация
-                        .cat-block-icon-with-text.cat-block-icon-with-text--right
-                            .cat-block-iwt-pic
-                                img(src="/bitrix/templates/GL/img/cat-icon.svg" alt="")
-                            .cat-block-iwt-text
-                                .cat-block-iwt-text__line-1 +7 (495) 211 90 40
-                                a.cat-block-iwt-text__line-2(href="mailto:info@gl.finance") info@gl.finance
-                .cat-block-bottom
-                    .cat-block-bottom__text Точную стоимость и сроки сообщим в течение 2-3 часов после консультации
-                    a.cat-block-bottom__presentation(href="") Скачать презентацию
+				.hww-block-item
+					.hww-block-item-top
+						.hww-block-item-top__pic
+							img(src="images/step-3-1.png" alt="")
+						.hww-block-item-top__text
+							.hww-block-item-step Шаг 3
+							.hww-block-item-duration 5-7 дней
+					.hww-block-item-bottom.customized-ul-wrap
+						.hww-block-item-title Собираем информацию и погружаемся в детали
+						.hww-block-item-desc Проводим 1-2 встречи по 2-3 часа с руководством холдинга и отдельных компаний (собираемся все сразу). На встрече задаем вопросы, руководители отвечают, рассматриваем проблемы с разных точек зрения.
+
+				.hww-block-item
+					.hww-block-item-top
+						.hww-block-item-top__pic
+							img(src="images/step-3.jpg" alt="")
+						.hww-block-item-top__text
+							.hww-block-item-step Шаг 4
+							.hww-block-item-duration 7-14 дней.
+					.hww-block-item-bottom.customized-ul-wrap
+						.hww-block-item-title Анализируем ситуацию и готовим выводы
+						.hww-block-item-desc Определяем точки роста и проблемные области. Оформляем предложения в презентацию и подробную аналитическую записку.
+
+				.hww-block-item.hww-block-item--fw-flex
+					.hww-block-item-top
+						.hww-block-item-top__pic
+							img(src="images/step-4-1.png" alt="")
+						.hww-block-item-top__text.hww-block-item-top__text--fw-flex-non-desktop
+							.hww-block-item-step Шаг 5
+							.hww-block-item-duration 30-60 мин.
+					.hww-block-item-bottom.customized-ul-wrap
+						.hww-block-item-top__text.hww-block-item-top__text--fw-flex-desktop
+							.hww-block-item-step Шаг 5
+							.hww-block-item-duration 5-7 дней
+						.hww-block-item-title Презентуем дорожную карту, отвечаем на&nbsp;вопросы
+						.hww-block-item-desc Проведем презентацию со слайдами и ответами на вопросы, покажем, где проблемы и их причины. Предложим очередь задач для решения и обоснуем, опираясь на исследования 200+ компаний из РФ.
+
+
+
+
+	section.why-choose-us-section
+		.wcu-container.container
+			h2.default-h2.wcu-h2 Почему лучше заказать у нас
+			.wcu-block-wrap
+				.wcu-block(data-counter-id="ind-wcu-1-counter")
+					.wcu-block-item
+						.wcu-block-item__icon
+							img(src="img/horseshoe.svg" alt="")
+						.wcu-block-item__title Помогли привлечь 570 млн руб. кредитных средств
+						.wcu-block-item__text
+							p
+								b  Для
+								|  групп
+								b  компаний
+								|  и холдингов
+								b  из 2&#8209;15 юрлиц
+							p
+								b Знаем, в каком виде
+								|  банку
+								b  нужна
+								|  финансовая
+								b  отчетность
+							p
+								b  Оцениваем риск невозврата кредита,
+								|  исходя из состояния бизнеса
+							p
+								b Помогаем получить лучшие условия
+								|  кредитования
+					.wcu-block-item
+						.wcu-block-item__icon
+							img(src="img/horseshoe.svg" alt="")
+						.wcu-block-item__title
+							| В 5 раз дешевле,
+							br
+							|  в 10 раз быстрее
+						.wcu-block-item__text
+							p
+								b  Без
+								|  проектирования,
+								b  разработки и внедрения
+								|  дополнительного
+								b  софта
+							p
+								b  Работаем с компаниями любого размера
+								|  и оборота
+							p Гарантируем
+								b  100% безопасность Ваших&nbsp;данных
+							p
+								b  Обрабатываем 1.000.000 операций
+								|  в выгрузке из 1С
+								b  за неделю
+							p
+								| Готовим отчетность
+								b  без участия Ваших сотрудников
+					.wcu-block-item
+						.wcu-block-item__icon
+							img(src="img/horseshoe.svg" alt="")
+						.wcu-block-item__title Устраняем разногласия в учетной политике
+						.wcu-block-item__text
+							p
+								b Показываем,
+								|  где и на какие суммы есть
+								b  разногласия в учете
+							p(style="margin-right:-5px;")
+								b Приводим к единому виду данные
+								|  из компаний с разными политиками учета
+							p
+								b  Детализируем
+								|  отчетность таблиц
+								b  до отдельных проводок
+							p
+								b  Объясняем каждую цифру
+								|  финансовых показателей
+
+			.wcu-uprotch-mobile-counter
+				#ind-wcu-1-counter.wcu-uprotch-mobile-counter__current 1
+				.wcu-uprotch-mobile-counter__slash /
+				.wcu-uprotch-mobile-counter__max 3
+	section.we-will-suit-you-section(data-counter-id="ind-wwsy-1-counter")
+		.wwsy-container.container
+			h2.default-h2 Мы идеально подойдем Вам, если:
+			.wwsy-block
+				.wwsy-block-item
+					.wwsy-block-item__pic
+						img(src="https://via.placeholder.com/110/2c2e85" alt="")
+					.wwsy-block-item__text Стартовая консультация
+				.wwsy-block-item
+					.wwsy-block-item__pic
+						img(src="https://via.placeholder.com/110/2c2e85" alt="")
+					.wwsy-block-item__text 1-2 встречи по 2-3 часа
+				.wwsy-block-item
+					.wwsy-block-item__pic
+						img(src="https://via.placeholder.com/110/2c2e85" alt="")
+					.wwsy-block-item__text Презентация выводов
+				.wwsy-block-item
+					.wwsy-block-item__pic
+						img(src="https://via.placeholder.com/110/2c2e85" alt="")
+					.wwsy-block-item__text Ответы на вопросы
+			.wwsy-block-mobile-counter
+				#ind-wwsy-1-counter.wwsy-block-mobile-counter__current 1
+				.wwsy-block-mobile-counter__slash /
+				.wwsy-block-mobile-counter__max 4
+	section.cost-and-terms-section
+		.cat-container.container
+			.cat-block
+				.cat-block-top
+					.cat-block-top-left
+						.cat-block-title Стоимость и сроки
+						.cat-block-left-row
+							.cat-block-icon-with-text
+								.cat-block-iwt-pic
+									img(src="img/cat-icon.svg" alt="")
+								.cat-block-iwt-text
+									.cat-block-iwt-text__line-1 от 100 000 ₽
+									.cat-block-iwt-text__line-2 за период учета в 12 мес.
+							.cat-block-icon-with-text
+								.cat-block-iwt-pic
+									img(src="img/cat-icon.svg" alt="")
+								.cat-block-iwt-text
+									.cat-block-iwt-text__line-1 от 7 дней
+									.cat-block-iwt-text__line-2 для подготовки отчетности за&nbsp;год
+
+					.cat-block-top-right
+						.cat-block-title Бесплатная консультация
+						.cat-block-icon-with-text.cat-block-icon-with-text--right
+							.cat-block-iwt-pic
+								img(src="img/cat-icon.svg" alt="")
+							.cat-block-iwt-text
+								.cat-block-iwt-text__line-1 +7 (495) 211 90 40
+								a.cat-block-iwt-text__line-2(href="mailto:info@gl.finance") info@gl.finance
+				.cat-block-bottom
+					.cat-block-bottom__text Точную стоимость и сроки сообщим в течение 2-3 часов после консультации
+					a.cat-block-bottom__presentation(href="") Скачать презентацию
