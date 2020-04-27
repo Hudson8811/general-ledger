@@ -102,3 +102,15 @@ span.orind-top__dimension {
 		padding-top: calc(31.4% + 64px * 2 - 15px * 2);
 	}
 }
+
+@media screen and (min-width:$desktopMin){
+	.we-will-suit-you-section--optish{
+
+		.wwsy-uprotch-item:nth-child(6){
+			.wwsy-uprotch-item__text{
+				width: 220px;
+				max-width: 120%;
+			}
+		}
+	}
+}
