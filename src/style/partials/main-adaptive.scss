@@ -583,6 +583,34 @@
 }
 
 @media screen and (min-width:$tabletMin) and (max-width:$tabletMax) {
+
+	.wwsy-block-mobile-counter.wwsy-block-tablet-counter {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		margin-top: 54px;
+		color: #A0A0B1;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 150%;
+
+
+		.wwsy-block-mobile-counter__current {}
+
+		.wwsy-block-mobile-counter__slash {}
+
+		.wwsy-block-mobile-counter__max {
+			margin-top: -7px;
+			margin-left: 2px;
+			font-size: 13px;
+		}
+	}
+
+
+
+
+
 	.sp-block-item {
 		min-width: 400px;
 	}
@@ -1326,6 +1354,9 @@
 	}
 
 	//-----------------------------
+	.cat-block-iwt-pic {
+		padding-top: 2px;
+	}
 	.cat-block-title {
 		margin-bottom: 25px;
 		font-size: 22px;
@@ -1568,23 +1599,28 @@
 		margin-top: 33px;
 		font-size: 15px;
 		line-height: 155%;
+
 		.customized-ul-wrap li {
 			line-height: 155%;
+
 			&:not(:last-child) {
 				margin-bottom: 14px;
 			}
 		}
 	}
-	.modal-fc-text ol+p, .modal-fc-text ul+p {
+
+	.modal-fc-text ol+p,
+	.modal-fc-text ul+p {
 		margin-top: 14px;
 	}
+
 	.modal-fc-slider-nav {
 		margin-top: 41px;
 		padding-bottom: 32px;
 		margin-left: 24px;
 		width: calc(100% - 48px);
 	}
-	
+
 	.modal-fc-slider-nav__dots {
 		margin: 0 36px;
 	}

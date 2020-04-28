@@ -133,6 +133,36 @@
 			padding-top: calc(42.3% + 64px * 2 - 15px * 2);
 		}
 	}
+
+
+
+	.we-will-suit-you-section--diag {
+		.wwsy-uprotch-item {
+			width: 33.3333333%;
+
+			.wwsy-uprotch-item__text {
+				width: 240px;
+			}
+
+			&:nth-child(3) {
+				border-bottom: 1px solid #dadae8;
+
+				.wwsy-uprotch-item__text {}
+			}
+
+			&:nth-child(4) {
+				border-left: 0;
+
+				.wwsy-uprotch-item__text {}
+			}
+
+			&:nth-child(5) {
+				border-left: 1px solid #dadae8;
+
+				.wwsy-uprotch-item__text {}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: $tabletMax) {
@@ -211,5 +241,257 @@
 		&::before {
 			padding-top: calc(43% + 64px * 2 - 15px * 2);
 		}
+	}
+
+	.we-will-suit-you-section--diag {
+		margin-top: 70px;
+	}
+}
+
+@media screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+	.wwsy-block--slider-tablet {
+
+		.wwsy-slick-prev,
+		.wwsy-slick-next {
+			position: absolute;
+			z-index: 2;
+			top: 43%;
+			display: block;
+			width: 15px;
+			cursor: pointer;
+
+			svg {
+				width: 15px;
+			}
+		}
+
+		.wwsy-slick-prev {
+			left: 54px;
+		}
+
+		.wwsy-slick-next {
+			right: 54px;
+		}
+
+		.wwsy-block-item {
+			margin-bottom: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.wwsy-block-item:not(:last-child)::after {
+			display: none;
+		}
+
+		.wwsy-block-item__text {
+			margin-top: 38px;
+
+			.ah1+p {
+				margin-top: 19px;
+			}
+
+			p {
+				width: 350px;
+				max-width: 100%;
+
+			}
+		}
+	}
+
+	.wwsy-uprotch--diag {
+		border-radius: 20px;
+		overflow: hidden;
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 38px;
+
+		.wwsy-uprotch-item {
+			&:nth-child(2n) {
+
+				border-left: 1px solid #dadae8;
+			}
+
+			&:not(:nth-last-child(1)):not(:nth-last-child(2)) {
+				border-bottom: 1px solid #dadae8;
+			}
+		}
+	}
+
+	.we-will-suit-you-section--diag-complect {
+		.wwsy-block-item {
+			margin-bottom: 63px;
+
+			&:nth-last-child(1),
+			&:nth-last-child(2) {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.cost-and-terms-section--diag {
+		padding-top: 72px;
+	}
+}
+
+@media screen and (max-width: $phoneMax) {
+	.top-section--diag {
+		.ts-heading {
+			width: 100%;
+			max-width: 100%;
+		}
+
+		.ts-text-mobile {
+			margin-top: 16px;
+			font-size: 16px;
+			line-height: 125%;
+			width: 297px;
+			margin: 16px auto 0;
+		}
+	}
+
+
+
+	.top-section--diag {
+		.ts-flex__right .ts-pic {
+			bottom: 0;
+			width: 86%;
+			margin-top: 2px;
+			margin-right: 7%;
+		}
+
+		.ts-flex__right {
+			margin-bottom: -80px;
+		}
+
+		.ts-btn-mobile {
+			margin-top: 32px;
+		}
+	}
+
+	.result-section--diag {
+		padding-top: 144px;
+		padding-bottom: 30px;
+
+		.default-h2 {
+			width: 200px;
+			text-align: left;
+		}
+
+		.rs-block-mobile-digit-1 {
+			top: -29px;
+			left: 167px;
+		}
+
+		.rs-block-row__left--text {
+			padding-bottom: 27px;
+		}
+
+		.rs-block-row-1 .rs-block-row__right {
+			padding-bottom: 24px;
+		}
+
+		.rs-block-row-2 {
+			margin-top: 0px;
+		}
+
+		.rs-block-digit-2 {
+			left: 124px;
+		}
+	}
+
+
+
+	.we-will-suit-you-section--diag__not-tab-slider {
+		.wwsy-block-item__text {
+			margin-top: 33px;
+			padding: 0;
+
+			.ah1 {
+				font-size: 18px;
+
+				&+p {
+					margin-top: 21px;
+				}
+			}
+		}
+
+		.wwsy-slick-next,
+		.wwsy-slick-prev {
+			top: 85px;
+		}
+	}
+
+	.how-we-work-section--diag {
+
+		.hww-block--optish .hww-block-item-top__pic,
+		.hww-block--optish .hww-block-item-bottom {
+			background: #ffffff;
+		}
+
+	}
+
+	.why-choose-us-section--diag {
+
+		margin-top: 41px;
+
+		.wcu-block-item {
+			text-align: center;
+		}
+
+		.wcu-block-item__title {
+			margin-bottom: 18px;
+		}
+	}
+	.we-will-suit-you-section--diag-complect{
+		margin-top: 63px;
+	}
+	.component-fancy-diag-rs-pic-1 {
+		&::before {
+			padding-top: calc(31.5% + 64px * 2 - 15px * 2);
+		}
+
+		&::after {
+			width: 56px;
+			height: 56px;
+		}
+	}
+
+	.component-fancy-diag-rs-pic-2 {
+		margin-top: 24px;
+
+		&::before {
+			padding-top: calc(31.5% + 64px * 2 - 15px * 2);
+		}
+
+		&::after {
+			width: 56px;
+			height: 56px;
+		}
+	}
+
+	.wwsy-uprotch--diag {
+		border-radius: 20px;
+		overflow: hidden;
+		margin-bottom: 20px;
+
+		.wwsy-uprotch-item {
+			width: 100%;
+
+			&:nth-child(2n) {
+				border-left: 1px solid #dadae8;
+			}
+
+			&:not(:nth-last-child(1)) {
+				border-bottom: 1px solid #dadae8;
+			}
+		}
+
+		.wwsy-uprotch-item__text {
+			width: 100%;
+		}
+	}
+	.cost-and-terms-section--diag{
+		padding-top: 64px;
 	}
 }

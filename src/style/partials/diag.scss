@@ -1,6 +1,7 @@
 .top-section--diag {
   .ts-flex__left {
     width: 650px;
+    max-width: 100%;
     margin-right: -35px;
     padding-bottom: 117px;
 
@@ -66,33 +67,5 @@
     font-size: 20px;
     font-family: Gilroy, sans-serif;
     font-weight: 500;
-  }
-}
-
-.we-will-suit-you-section--diag {
-  .wwsy-uprotch-item {
-    width: 33.3333333%;
-
-    .wwsy-uprotch-item__text {
-      width: 240px;
-    }
-
-    &:nth-child(3) {
-      border-bottom: 1px solid #dadae8;
-
-      .wwsy-uprotch-item__text {}
-    }
-
-    &:nth-child(4) {
-      border-left: 0;
-
-      .wwsy-uprotch-item__text {}
-    }
-
-    &:nth-child(5) {
-      border-left: 1px solid #dadae8;
-
-      .wwsy-uprotch-item__text {}
-    }
   }
 }
