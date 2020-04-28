@@ -1,0 +1,113 @@
+@media screen and (min-width: $desktopMin) {
+  .top-section--contacts{
+    padding-bottom: 126px;
+    margin-bottom: 0;
+    .ts-pic{
+      width: 689px;
+      position: relative;
+      display: block;
+      margin-top: -14px;
+      left:0;
+    }
+    .ts-flex__right{
+      width: calc(100% - 551px);
+    }
+    .ts-flex__left{
+      padding-top: 140px;
+      width: 551px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .ts-text-desktop p{
+      max-width: 510px;
+    }
+  }
+}
+
+.contacts-page {
+  &-block {
+    box-shadow: 0px 4px 25px rgba(34, 35, 58, 0.15);
+    overflow: hidden;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #fff;
+    margin-top: -126px;
+    margin-bottom: 165px;
+    display: flex;
+  }
+  &-left-block {
+    flex-shrink: 0;
+    background: #f5f6fb;
+    width: 47%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 73px 6.5% 72px;
+  }
+  &-right-block {
+    font-weight: 500;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 73px 6.5% 72px;
+  }
+  &-address{
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 21px;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 3px;
+      top: 2px;
+      background: url("../img/contacts/addr.svg") no-repeat center center;
+      width: 17px;
+      height: 24px;
+    }
+  }
+  &-phone{
+    margin-bottom: 21px;
+    a{
+      color: inherit;
+      padding-left: 40px;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        left: 3px;
+        top: -2px;
+        width: 19px;
+        height: 19px;
+        background: url("../img/contacts/phone.svg") no-repeat center center;
+      }
+    }
+  }
+  &-email{
+    margin-bottom: 21px;
+    a{
+      color: #2a2eff;
+      padding-left: 40px;
+      position: relative;
+      text-decoration: underline;
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 24px;
+        height: 17px;
+        background: url("../img/contacts/mail.svg") no-repeat center center;
+      }
+    }
+  }
+  &-map{
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 216px;
+  }
+}

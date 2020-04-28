@@ -1,0 +1,57 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	section.top-section.top-section--contacts
+		.ts-container.container
+			.ts-flex
+				.ts-flex__left
+					h1.ts-heading Контактная информация
+					.ts-text-desktop
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+					.ts-text-mobile
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+
+				.ts-flex__right
+					img.ts-pic(src="img/contacts.png" alt="")
+
+	section.contacts-page
+		.container
+			.contacts-page-block
+				.contacts-page-left-block
+					.contacts-page-left-block-heading
+						form.form-main
+							.form-main-heading Форма обратной связи
+							input.inputbox.form-main-input(placeholder="Ваше имя" required)
+							input.inputbox.form-main-input(placeholder="Телефон или email" required)
+							textarea.textarea.form-main-textarea(placeholder="Ваше сообщение")
+							button.form-main-button СВЯЗАТЬСЯ
+				.contacts-page-right-block
+					.contacts-page-address Инновационный центр «Сколково»,
+						br
+						|  121205 г. Москва, Большой бульвар, д. 42, стр. 1
+					div.contacts-page-phone
+						a(href="tel:+74952119040") +7 (495) 211 90 40
+					div.contacts-page-email
+						a(href="mailto:info@gl.finance") info@gl.finance
+					.social-block
+						a.social-block-item(href="")
+							img(src="img/contacts/wa.svg")
+						a.social-block-item(href="")
+							img(src="img/contacts/tg.svg")
+						a.social-block-item(href="")
+							img(src="img/contacts/vb.svg")
+						a.social-block-item(href="")
+							img(src="img/contacts/fb.svg")
+						a.social-block-item(href="")
+							img(src="img/contacts/yt.svg")
+
+					.contacts-page-map
