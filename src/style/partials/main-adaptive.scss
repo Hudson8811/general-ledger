@@ -580,6 +580,17 @@
 		margin-right: auto;
 
 	}
+
+	.social-block{
+		margin-top: 47px;
+		&-item+&-item{
+			margin-left: 44px;
+		}
+		img{
+			transform: scale(1.2);
+		}
+	}
+
 }
 
 @media screen and (min-width:$tabletMin) and (max-width:$tabletMax) {

@@ -1,8 +1,107 @@
 
 @media screen and (min-width: $desktopMin) {
-
+  .contacts-page-block{
+    box-shadow: 0px 4px 25px rgba(34, 35, 58, 0.15);
+  }
 }
 
 @media screen and (max-width: $tabletMax) {
+  .top-section--contacts{
+    padding-bottom: 64px;
+  }
+  .top-section--contacts .ts-flex__right{
+    margin-bottom: 0;
 
+  }
+  .top-section--contacts .ts-pic{
+    margin-top: -5px;
+  }
+  .top-section--contacts .ts-heading{
+    margin-bottom: 11px;
+  }
+  .top-section--contacts .ts-text-mobile{
+    max-width: 490px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacts-page{
+    &-block{
+      margin-top: -64px;
+      flex-direction: column-reverse;
+      margin-bottom: 80px;
+    }
+    &-left-block{
+      background: transparent;
+      width: auto;
+      padding: 0 11.6% 64px;
+      &-border{
+        padding-top: 60px;
+        border-top:1px solid #dbdae8;
+
+        .form-main-input, .form-main-textarea{
+          background: #f5f6fb;
+        }
+      }
+    }
+    &-right-block{
+      padding: 55px 11.6% 31px;
+    }
+    &-map{
+      height: 245px;
+    }
+  }
+}
+
+@media screen and (max-width:$phoneMax) {
+
+  .top-section--contacts .ts-pic{
+    width: 100%;
+  }
+  .top-section--contacts{
+    padding-bottom: 0;
+  }
+  .top-section--contacts .ts-heading{
+    width: auto;
+  }
+  .top-section--contacts .ts-text-mobile{
+    font-size: 16px;
+  }
+  .contacts-page-block{
+    margin-top: 0;
+  }
+  .contacts-page-address{
+    max-width: 335px;
+  }
+  .contacts-page-right-block{
+    padding: 50px 0 23px;
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .social-block img{
+    transform: scale(1.1);
+  }
+  .social-block-item+.social-block-item{
+    margin-left: 30px;
+  }
+  .social-block{
+    margin-top: 37px;
+    margin-left: 5px;
+  }
+  .contacts-page-map{
+    height: 160px;
+  }
+  .contacts-page-left-block{
+    padding:0;
+  }
+  .contacts-page-left-block-border{
+    padding-top: 41px;
+  }
+  .form-main-heading{
+    margin-bottom: 27px;
+  }
+  .form-main-textarea{
+    margin-bottom: 33px;
+  }
 }
