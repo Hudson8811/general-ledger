@@ -20,22 +20,93 @@ body {
 	font-size: 16px;
 }
 
-.inputbox::-webkit-input-placeholder{opacity: 1; transition: opacity 0.3s ease; color:#555665;}
-.inputbox::-moz-placeholder{opacity: 1; transition: opacity 0.3s ease; color:#555665;}
-.inputbox:-moz-placeholder{opacity: 1; transition: opacity 0.3s ease; color:#555665;}
-.inputbox:-ms-input-placeholder{opacity: 1; transition: opacity 0.3s ease; color:#555665;}
-.inputbox:focus::-webkit-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
-.inputbox:focus::-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
-.inputbox:focus:-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
-.inputbox:focus:-ms-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
-.textarea::-webkit-input-placeholder{opacity: 1; transition: opacity 0.3s ease; color:#555665;}
-.textarea::-moz-placeholder{opacity: 1; transition: opacity 0.3s ease; color:#555665;}
-.textarea:-moz-placeholder{opacity: 1; transition: opacity 0.3s ease; color:#555665;}
-.textarea:-ms-input-placeholder{opacity: 1; transition: opacity 0.3s ease; color:#555665;}
-.textarea:focus::-webkit-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
-.textarea:focus::-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
-.textarea:focus:-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
-.textarea:focus:-ms-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
+.inputbox::-webkit-input-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+	color: #555665;
+}
+
+.inputbox::-moz-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+	color: #555665;
+}
+
+.inputbox:-moz-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+	color: #555665;
+}
+
+.inputbox:-ms-input-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+	color: #555665;
+}
+
+.inputbox:focus::-webkit-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.inputbox:focus::-moz-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.inputbox:focus:-moz-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.inputbox:focus:-ms-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.textarea::-webkit-input-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+	color: #555665;
+}
+
+.textarea::-moz-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+	color: #555665;
+}
+
+.textarea:-moz-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+	color: #555665;
+}
+
+.textarea:-ms-input-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+	color: #555665;
+}
+
+.textarea:focus::-webkit-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.textarea:focus::-moz-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.textarea:focus:-moz-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.textarea:focus:-ms-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
 
 .main {
 	flex-grow: 1;
@@ -62,7 +133,7 @@ body {
 }
 
 
-.tippy-box{
+.tippy-box {
 	background: transparent;
 }
 
@@ -847,6 +918,10 @@ a.cat-block-iwt-text__line-2 {
 	width: 523px;
 	padding: 64px 64px 42px;
 	border-left: 1px solid rgba(255, 255, 255, 0.12);
+
+	.cat-block-iwt-text__line-1 {
+		color: #ffffff;
+	}
 }
 
 
@@ -968,12 +1043,13 @@ a.cat-block-iwt-text__line-2 {
 		background: url(../img/quote.svg) no-repeat center center;
 		background-size: contain;
 	}
-	a{
+
+	a {
 		text-decoration: underline;
 		cursor: pointer;
 		transition-duration: .2s;
 
-		&:hover{
+		&:hover {
 			text-decoration: none;
 		}
 	}
@@ -1235,7 +1311,7 @@ a.cat-block-iwt-text__line-2 {
 		background: #F26419;
 	}
 
-	ul{
+	ul {
 		margin-left: 18px;
 	}
 }
@@ -1299,7 +1375,7 @@ a.cat-block-iwt-text__line-2 {
 
 .modal-full-comment {
 	width: 1044px;
-    max-width: calc(100% - 80px);
+	max-width: calc(100% - 80px);
 	padding: 0;
 	border-radius: 20px;
 	background: #FFFFFF;
@@ -1375,6 +1451,7 @@ a.cat-block-iwt-text__line-2 {
 	width: 513px;
 	max-width: 100%;
 	margin-top: 41px;
+
 	.img {
 		width: 139px;
 		height: 139px;
@@ -1418,13 +1495,15 @@ a.cat-block-iwt-text__line-2 {
 			margin-top: 10px;
 		}
 
-		&+ul,  &+ol{
+		&+ul,
+		&+ol {
 			margin-top: 18px;
 			margin-left: 18px;
 		}
 	}
 
-	ul, ol {
+	ul,
+	ol {
 
 		&+p {
 			margin-top: 16px;
@@ -1456,7 +1535,8 @@ a.cat-block-iwt-text__line-2 {
 		align-items: center;
 		color: #555665;
 		cursor: pointer;
-		&:hover{
+
+		&:hover {
 			opacity: .8;
 		}
 	}
@@ -1539,14 +1619,14 @@ a.cat-block-iwt-text__line-2 {
 }
 
 
-.form-main{
-	&-input{
+.form-main {
+	&-input {
 		display: block;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		width: 100%;
-		border:1px solid #dbdae8;
+		border: 1px solid #dbdae8;
 		-webkit-border-radius: 8px;
 		-moz-border-radius: 8px;
 		border-radius: 8px;
@@ -1560,7 +1640,7 @@ a.cat-block-iwt-text__line-2 {
 		height: 54px;
 	}
 
-	&-heading{
+	&-heading {
 		font-size: 20px;
 		line-height: 23px;
 		font-family: 'Gilroy', Pragmatica, sans-serif;
@@ -1568,13 +1648,13 @@ a.cat-block-iwt-text__line-2 {
 		margin-bottom: 35px;
 	}
 
-	&-textarea{
+	&-textarea {
 		display: block;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		width: 100%;
-		border:1px solid #dbdae8;
+		border: 1px solid #dbdae8;
 		-webkit-border-radius: 8px;
 		-moz-border-radius: 8px;
 		border-radius: 8px;
@@ -1587,7 +1667,8 @@ a.cat-block-iwt-text__line-2 {
 		margin-bottom: 48px;
 		font-family: Pragmatica, sans-serif;
 	}
-	&-button{
+
+	&-button {
 		background: #f2641a;
 		font-size: 16px;
 		letter-spacing: 0.1em;
@@ -1596,7 +1677,7 @@ a.cat-block-iwt-text__line-2 {
 		-webkit-border-radius: 24px;
 		-moz-border-radius: 24px;
 		border-radius: 24px;
-		border:0;
+		border: 0;
 		outline: 0;
 		-webkit-box-shadow: 0;
 		-moz-box-shadow: 0;
@@ -1608,16 +1689,18 @@ a.cat-block-iwt-text__line-2 {
 	}
 }
 
-.social-block{
-  margin-top: 38px;
-  margin-bottom: 40px;
-  display: flex;
-  &-item{
-    &+&{
-      margin-left: 24px;
-    }
-    img{
-      display: block;
-    }
-  }
+.social-block {
+	margin-top: 38px;
+	margin-bottom: 40px;
+	display: flex;
+
+	&-item {
+		&+& {
+			margin-left: 24px;
+		}
+
+		img {
+			display: block;
+		}
+	}
 }

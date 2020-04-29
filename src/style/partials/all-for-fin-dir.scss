@@ -1,0 +1,47 @@
+.list-on-blue-section {
+    margin-top: 88px;
+    padding: 78px 0 56px;
+    background: #2C2E85;
+
+    .default-h2 {
+        color: #FFFFFF;
+    }
+}
+
+.lob-container {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 135%;
+}
+
+.lob-block {
+    width: 1074px;
+    margin: 67px auto 0;
+    ul {
+        list-style: none;
+        column-count: 2;
+        column-gap: 147px;
+    }
+
+    li {
+        padding-left: 27px;
+        display: inline-block;
+        position: relative;
+        margin-bottom: 28px;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 135%;
+
+        &::before {
+            position: absolute;
+            top: 11px;
+            left: 0;
+            display: block;
+            width: 7px;
+            height: 7px;
+            content: '';
+            border-radius: 50%;
+            background: #F26419;
+        }
+    }
+}

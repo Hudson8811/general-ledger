@@ -265,7 +265,8 @@
 .sf-col-5 {
 	order: 5;
 }
-.sf-tablet-bottom{
+
+.sf-tablet-bottom {
 	display: none;
 }
 
@@ -276,6 +277,33 @@
 ///////////////////////////
 ///////////////////////////
 
+@media screen and (min-width:$desktopMin) {
+	.sf-col-3-inner {
+
+		display: flex;
+		flex-direction: column;
+	}
+
+	.sf-a-btn:nth-child(2) {
+		margin-top: 7px;
+	}
+
+	.sf-polit-wrap {
+
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+
+		a {
+			font-size: 16px;
+			line-height: 150%;
+			color: #9D9EBF;
+			margin-right: -20px;
+			margin-bottom: 8px;
+		}
+	}
+}
 
 @media screen and (min-width:$desktopMin) and (max-width:1085px) {
 	.sf-socials-left__item {
@@ -294,7 +322,7 @@
 		display: block;
 		justify-content: space-between;
 		margin-top: 32px;
-		padding: 24px 0;
+		padding: 19px 0;
 		border-top: 1px solid rgba(255, 255, 255, 0.12);
 	}
 
@@ -327,17 +355,35 @@
 	}
 
 	.sf-col-3-inner {
+		padding-left: 44px;
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
+		&::after{
+			content: '';
+			display: block;
+		}
 		width: unset;
 		margin: 0;
 
 		.btn {
 			box-sizing: border-box;
-			width: 223px;
+			width: 192px;
 		}
 	}
+	.sf-a-btn:not(:last-child) {
+		margin-right: 0;
+		margin-bottom: 0;
+	}
 
+	.sf-polit-wrap {
+		margin-right: 29px;
+		a {
+			font-size: 16px;
+			line-height: 150%;
+			color: #9D9EBF;
+		}
+	}
 	.sf-col-4 {
 		width: 232px;
 		margin-top: 25px;
@@ -354,10 +400,6 @@
 		}
 	}
 
-	.sf-a-btn:not(:last-child) {
-		margin-right: 25px;
-		margin-bottom: 0;
-	}
 
 	.sf-col-5 {
 		flex-direction: row;
@@ -367,6 +409,7 @@
 	.sf-col-5-social {
 		margin-left: 24px;
 	}
+
 }
 
 @media screen and (min-width:$tabletMin) {
@@ -378,6 +421,7 @@
 }
 
 @media screen and (max-width:$phoneMax) {
+
 	///--
 	footer {
 		max-width: 100%;
@@ -451,8 +495,7 @@
 
 	.sf-tablet-bottom {
 		margin-top: 16px;
-		padding: 24px 0 24px;
-		border-bottom: 1px solid rgba(255, 255, 255, .12);
+		padding: 24px 0 0;
 	}
 
 	.container.sf-tb-container {
@@ -467,19 +510,39 @@
 	.sf-col-3-inner {
 		align-items: flex-start;
 		flex-direction: column;
+		padding-left: 0;
 	}
-
+	.sf-col-3-inner .btn{
+		width: 223px;
+	}
 	.sf-a-btn:not(:last-child) {
 		margin-right: 0;
 		margin-bottom: 16px;
 	}
-
+	.sf-polit-wrap {
+		margin-top: 9px;
+		margin-right: 0;
+		width: 100%;
+		&::before{
+			position: absolute;
+			left: 0;
+			width: 100%;
+			content: '';
+			display: block;
+			height: 1px;
+			background:   rgba(255, 255, 255, .12);
+		}
+		a{
+			padding-top: 25px;
+			display: inline-block;
+		}
+	}
 	.sf-mobile-copyright {
 		max-width: calc(100% - 39px * 2);
 		margin: 0 auto;
 
 		.sf-copyright {
-			padding: 31px 0 41px;
+			padding: 7px 0 25px;
 		}
 
 	}
@@ -491,6 +554,5 @@
 		margin: 0 5px 10px;
 	}
 
-	.sf-mobile-socials {
-	}
+	.sf-mobile-socials {}
 }

@@ -1,5 +1,3 @@
-
-
 .top-section--upr-ot {
 	.ts-flex__left {
 		width: 550px;
@@ -255,18 +253,23 @@
 .rs-block-row-2--uprotch {}
 
 @media screen and (min-width:$desktopMin) {
-	.rs-block-row-2--upr-otdelnaya, .rs-block-row-3--upr-otdelnaya {
+
+	.rs-block-row-2--upr-otdelnaya,
+	.rs-block-row-3--upr-otdelnaya {
 		.rs-block-row__right {
 			width: calc(100% - 546px);
 			padding-right: 2%;
 		}
-		.rs-block-row__left{
+
+		.rs-block-row__left {
 			width: 546px;
-			&.rs-block-row__left--text{
+
+			&.rs-block-row__left--text {
 				padding-right: 10px;
 			}
 		}
-		.customized-ul-wrap li:not(:last-child){
+
+		.customized-ul-wrap li:not(:last-child) {
 			margin-bottom: 13px;
 		}
 
@@ -302,14 +305,84 @@
 }
 
 .customized-ul-wrap.customized-ul-wrap--uo li:not(:last-child) {
-    margin-bottom: 13px;
+	margin-bottom: 13px;
 }
 
 ////////////////
 @media screen and (min-width:$desktopMin) {
-	.cost-and-terms-section--upr-otdelnaya{
-		.cat-block-left-row .cat-block-icon-with-text:first-child{
+	.cost-and-terms-section--upr-otdelnaya {
+		.cat-block-left-row .cat-block-icon-with-text:first-child {
 			margin-right: 5%;
 		}
 	}
+}
+
+
+.component-fancy--uprotch-1 {
+	padding: 63px 46px;
+
+	&::before {
+		padding-top: calc(76.8% + 46px * 2 - 53px * 2);
+	}
+
+	&::after {
+		right: 12px;
+		bottom: 7px;
+	}
+
+	.component-fancy__inner {
+		top: 63px;
+		left: 46px;
+		width: calc(100% - 46px * 2);
+		height: calc(100% - 63px * 2);
+	}
+}
+
+.component-fancy--uprotch-2 {
+	padding: 44px 67px;
+
+	&::before {
+		padding-top: calc(115% + 44px * 2 - 67px * 2);
+	}
+
+	.component-fancy__inner {
+		top: 44px;
+		left: 67px;
+		width: calc(100% - 67px * 2);
+		height: calc(100% - 44px * 2);
+	}
+}
+
+.component-fancy--uprotch-3 {
+	padding: 63px 88px;
+
+	&::before {
+		padding-top: calc(94% + 63px * 2 - 88px * 2);
+	}
+
+	.component-fancy__inner {
+		top: 63px;
+		left: 88px;
+		width: calc(100% - 88px * 2);
+		height: calc(100% - 63px * 2);
+	}
+}
+
+//////////////////
+
+.component-fancy--uprotch-sp-pics{
+	padding: 18px;
+	border-radius: 20px;
+
+	&::before {
+		padding-top: calc(44%);
+	}
+
+	.component-fancy__inner {
+		top: 18px;
+		left: 18px;
+		width: calc(100% - 18px * 2);
+		height: calc(100% - 18px * 2);
+	}
+
 }
