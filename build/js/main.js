@@ -431,7 +431,7 @@ $(document).ready(function () {
                     nextArrow: '<div class="wwsy-slick-next"><svg width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 31L13 16L1 0.999999" stroke="#C7C7D5" stroke-width="2"/></svg></div>'
                 });
             }
-        }else {
+        } else {
 
             if ($('.js-wwsy-slider-tablet').hasClass('slick-initialized')) {
                 $('.js-wwsy-slider-tablet').slick('unslick');
@@ -509,6 +509,13 @@ $(document).ready(function () {
     $(window).resize(function () {
         fixCommentsVerticalVariableHeight();
         $('.slick-initialized').slick('setPosition');
+    });
+
+    $('.papers_prewiew').click(function () {
+        $(this).toggleClass('papers_prewiew--hidden');
+        $(this).siblings('span').toggleClass('papers_prewiew--hidden');
+        var src = $(this).siblings('iframe').attr('src');
+        $(this).siblings('iframe').attr('src', src + '&autoplay=1');
     });
 });
 $('.rs-ssb-main').slick({
