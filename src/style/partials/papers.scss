@@ -13,12 +13,12 @@
     padding-bottom: 55px;
   }
   &--grid{
+    grid-auto-rows: 295px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 20px;
     &_item{
       position: relative;
-      height: 295px;
       border-radius: 20px;
       overflow: hidden;
       box-sizing: border-box;
@@ -192,6 +192,7 @@
   .papers{
     padding-bottom: 80px;
     &--grid{
+      grid-auto-rows: 210px;
       grid-template-columns: repeat(3,1fr);
       grid-gap: 30px;
       &_item:nth-child(8n+1){
@@ -237,7 +238,7 @@
       }
     }
     &--grid_item{
-      height: 210px;
+
     }
     &--heading{
       font-weight: normal;
@@ -283,6 +284,7 @@
       padding-bottom: 33px;
     }
     &--grid{
+      grid-auto-rows: 295px;
       grid-template-rows: auto;
       grid-template-columns: repeat(1,100%);
       grid-gap: 0;
