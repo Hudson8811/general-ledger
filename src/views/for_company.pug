@@ -1,0 +1,129 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	.for_company
+		.for_company__title_block
+			.container.for_company__title_block--flex
+				.for_company__title_block--left
+					.for_company__title_block--heading Информация о компании
+					.for_company__title_block--subtitle Дженерал Лэджер наводит порядок в финансах,#[br(class="dbr")] делает процессы прозрачными и понятными
+					.for_company__title_block--description Мы хотим, чтобы растущий бизнес мог максимально быстро самореализоваться и расти дальше, чтобы зрелый бизнес не потерял свои позиции и уверенно смотрел в будущее. Нам #[br(class="dbr")]важно, чтобы финансовые процессы в российском бизнесе #[br(class="dbr")]вышли из тени и стали инструментом управления, чтобы руководители компаний получили реальную основу для #[br(class="dbr")]принятия решений. Мы помогаем компаниям увидеть полную финансовую картину своего бизнеса, включая прошлые#[br(class="dbr")] периоды, текущее сосояние, возможные перспективы. Мы даём гибкий инструмент,позволяющий руководителю, предотвратить нежелательные потери и повысить устойчивость бизнеса.
+				img(src="images/for_informations_banner.png", alt="banner").for_company__title_block--banner
+		.team_block
+			.team_block--heading Команда
+			.container.team_block--flex
+				.team_block--item
+					.team_block--overlay
+					.team_block--user
+						img(src="images/user1.png", alt="user")
+					.team_block--name Владимир Вавилов
+					.team_block--subname Руководитель проекта
+					.team_block--wrapper
+						.team_block--description Профессиональный финансовый директор
+						.team_block--description 12-ти летний опыт работы в #[br(class="dbr")]крупных российских холдингах на ТОП-позициях
+						.team_block--description Более 50 реализованных проектов в области финансов и автоматизации бизнес-процессов
+				.team_block--item
+					.team_block--overlay
+					.team_block--user
+						img(src="images/user2.png", alt="user")
+					.team_block--name Олег Дранко
+					.team_block--subname Специалист по управлению корпоративными финансами
+					.team_block--wrapper
+						.team_block--description Доктор технических наук, доцент
+						.team_block--description 25-летний практический опыт разработки и реализации#[br(class="dbr")] проектов по корпоративным финансам России и СНГ
+						.team_block--description Более 180 реализованных проектов в области управления корпоративными финансами
+				.team_block--item
+					.team_block--overlay
+					.team_block--user
+						img(src="images/user3.jpg", alt="user")
+					.team_block--name Инна Шатохина
+					.team_block--subname Специалист по бухгалтерскому, налоговому, управленческому учету
+					.team_block--wrapper
+						.team_block--description Опыт работы в крупных производственных холдингах 20 #[br(class="dbr")]лет на позициях главный бухгалтер, финансовый директор
+						.team_block--description Эксперт в области налогообложения
+						.team_block--description Более 10 реализованных проектов в области оптимизации холдинговых структур
+				.team_block--item
+					.team_block--overlay
+					.team_block--user
+						img(src="images/user4.jpg", alt="user")
+					.team_block--name Мария Царькова
+					.team_block--subname Дипломированный юрист
+					.team_block--wrapper
+						.team_block--description Стаж профессиональной деятельности 14 лет
+						.team_block--description Опыт успешной реализации проектов по реструктуризации холдингов и долговых обязательств
+						.team_block--description Эксперт в большинстве#[br(class="dbr")] областей судебной практики
+				.team_block--item
+					.team_block--overlay
+					.team_block--user
+						img(src="images/user5.png", alt="user")
+					.team_block--name Анастасия Пилипенко
+					.team_block--subname Специалист по #[br(class="dbr")]корпоративным финансам
+					.team_block--wrapper
+						.team_block--description 10-ти летний опыт работы в крупных производственных холдингах
+						.team_block--description Финансовый менеджмент #[br(class="dbr")]портфеля проектов на сумму#[br(class="dbr")] более 1,5 млрд. руб.
+				.team_block--item
+					.team_block--overlay
+					.team_block--user
+						img(src="images/user6.png", alt="user")
+					.team_block--name Алла Семенова
+					.team_block--subname Специалист по управленческому #[br(class="dbr")]учету, методолог
+					.team_block--wrapper
+						.team_block--description Высококвалифицированный экономист, главный бухгалтер
+						.team_block--description Разработка методологии и постановка управленческого #[br(class="dbr")]учета на 15-ти промышленных предприятиях
+						.team_block--description Трансформация финансовой отчетности в более 100 компаниях
+				.team_block--item
+					.team_block--overlay
+					.team_block--user
+						img(src="images/user7.png", alt="user")
+					.team_block--name Сергей Игнатов
+					.team_block--subname Системный архитектор, архитектор программного обеспечения
+					.team_block--wrapper
+						.team_block--description 20-ти летний опыт в информационных технологиях
+						.team_block--description 10-ти летний опыт автоматизации в холдинговых структурах: разработка, внедрение и сопровождение проектов по управленческому учету, системам бюджетирования, казначейства, контроллинга
+				.team_block--item
+					.team_block--overlay
+					.team_block--user
+						img(src="images/user8.png", alt="user")
+					.team_block--name Александр Сидов
+					.team_block--subname Специалист по технической #[br(class="dbr")]поддержке и безопасности данных
+					.team_block--wrapper
+						.team_block--description 15 лет опыта работы по защите информации в банковской сфере
+						.team_block--description 20-ти летний опыт разработки программного обеспечения B2B сектора
+		.client_block
+			.container
+				.client_block--heading Наши клиенты
+				.client_block--content
+					.client_block--item
+						img(src="images/client1.svg", alt="client")
+					.client_block--item
+						img(src="images/client2.svg", alt="client")
+					.client_block--item
+						img(src="images/client3.svg", alt="client")
+					.client_block--item
+						img(src="images/client4.svg", alt="client")
+					.client_block--item.big_item
+						img(src="images/client5.svg", alt="client")
+					.client_block--item.big_item
+						img(src="images/client6.svg", alt="client")
+					.client_block--item.big_item
+						img(src="images/client7.svg", alt="client")
+					.client_block--item.big_item
+						img(src="images/client8.svg", alt="client")
+					.client_block--item.bot_item
+						img(src="images/client9.png", alt="client")
+					.client_block--item.bot_item
+						img(src="images/client10.svg", alt="client")
+					.client_block--item.bot_item
+						img(src="images/client11.png", alt="client")
+					.client_block--item.bot_item
+						img(src="images/client12.svg", alt="client")
+
