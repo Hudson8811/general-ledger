@@ -28,53 +28,23 @@
       flex-direction: column;
       justify-content: space-between;
       transition: all 1s;
-      &.papers_item1{
-        background: linear-gradient(0deg, rgba(34, 34, 101, 0.65), rgba(34, 34, 101, 0.75)), center / cover url(../images/papers_item1.png) no-repeat;
-        &:hover{
-          background: linear-gradient(0deg, rgba(34, 34, 101, 0.65), rgba(34, 34, 101, 0.65)), center / cover url(../images/papers_item1.png) no-repeat;
-        }
+      background: no-repeat center / cover;
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(0deg, rgba(34, 34, 101, 0.75), rgba(34, 34, 101, 0.75));
       }
-      &.papers_item2{
-        background: linear-gradient(0deg, rgba(34, 34, 101, 0.65), rgba(34, 34, 101, 0.75)), center / cover url(../images/papers_item2.png) no-repeat;
-        &:hover{
-          background: linear-gradient(0deg, rgba(34, 34, 101, 0.65), rgba(34, 34, 101, 0.65)), center / cover url(../images/papers_item2.png) no-repeat;
-        }
+      &:hover:before{
+        background: linear-gradient(0deg, rgba(34, 34, 101, 0.65), rgba(34, 34, 101, 0.65));
       }
-      &.papers_item3{
-        background: linear-gradient(0deg, rgba(34, 34, 101, 0.65), rgba(34, 34, 101, 0.75)), center / cover url(../images/papers_item3.png) no-repeat;
-        &:hover{
-          background: linear-gradient(0deg, rgba(34, 34, 101, 0.65), rgba(34, 34, 101, 0.65)), center / cover url(../images/papers_item3.png) no-repeat;
-        }
-      }
-      &.papers_item4{
-        background: linear-gradient(0deg, rgba(34, 34, 101, 0.65), rgba(34, 34, 101, 0.75)), center / cover url(../images/papers_item4.png) no-repeat;
-        &:hover{
-          background: linear-gradient(0deg, rgba(34, 34, 101, 0.65), rgba(34, 34, 101, 0.65)), center / cover url(../images/papers_item4.png) no-repeat;
-        }
-      }
-      &.papers_item5{
-        background: linear-gradient(0deg, rgba(34, 34, 101, 0.65), rgba(34, 34, 101, 0.75)), center / cover url(../images/papers_item5.png) no-repeat;
-        &:hover{
-          background: linear-gradient(0deg, rgba(34, 34, 101, 0.65), rgba(34, 34, 101, 0.65)), center / cover url(../images/papers_item5.png) no-repeat;
-        }
-      }
-      &.papers_item6{
-        background: linear-gradient(0deg, rgba(34, 34, 101, 0.65), rgba(34, 34, 101, 0.75)), center / cover url(../images/papers_item6.png) no-repeat;
-        &:hover{
-          background: linear-gradient(0deg, rgba(34, 34, 101, 0.65), rgba(34, 34, 101, 0.65)), center / cover url(../images/papers_item6.png) no-repeat;
-        }
-      }
-      &.papers_long-block{
-        background: linear-gradient(0deg, rgba(34, 34, 101, 0.65), rgba(34, 34, 101, 0.75)), center / auto url(../images/papers_item7.jpg) no-repeat;
+      &:nth-child(7n+1){
+
         background-position: 67% 57%;
         background-size: 143%;
-    
-        &:hover{
-          background: linear-gradient(0deg, rgba(34, 34, 101, 0.65), rgba(34, 34, 101, 0.65)), center / auto url(../images/papers_item7.jpg) no-repeat;
-          background-position: 67% 57%;
-          background-size: 143%;
-      
-        }
         .paper{
           font-weight: 500;
           font-size: 22px;
@@ -104,6 +74,7 @@
         line-height: 125%;
         /* or 20px */
         color: #FFFFFF;
+        position: relative;
       }
       .author{
         font-family: Pragmatica;
@@ -115,6 +86,7 @@
         /* белый */
         color: #FFFFFF;
         transition: opacity .5s;
+        position: relative;
       }
       .read{
         font-family: Pragmatica;
@@ -143,13 +115,13 @@
       }
     }
   }
-  &_big-block{
+  &--grid_item:nth-child(7n){
     grid-column: 3/5;
     grid-row: 2/4;
     height: auto;
     position: relative;
   }
-  &_video-block{
+  &--grid_item:nth-child(7n){
     .author{
       z-index: 2;
       transform: none;
@@ -178,7 +150,7 @@
     }
     .papers_prewiew{
       z-index: 1;
-      background: 47% 48% / auto url(../images/papers_video.jpg) no-repeat;
+      background: 47% 48% / auto no-repeat;
       display: flex;
       justify-content: center;
       align-items: center;
