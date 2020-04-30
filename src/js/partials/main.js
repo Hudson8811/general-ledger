@@ -384,4 +384,10 @@ $(document).ready(function () {
         var src = $(this).siblings('iframe').attr('src');
         $(this).siblings('iframe').attr('src', src + '&autoplay=1');
     });
+    $('.client_block--btn').click(function () {
+        $(this).toggleClass('active');
+        $('.client_block--item_wrapper').toggleClass('active');
+        $('.client_block--item_wrapper:nth-child(n+5)').slideToggle()
+    });
+
 });

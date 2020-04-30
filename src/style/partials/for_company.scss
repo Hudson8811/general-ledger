@@ -1,4 +1,5 @@
 .for_company{
+  padding-bottom: 112px;
   &__title_block{
     padding-top: 40px;
     background: #2C2E85;
@@ -9,6 +10,7 @@
       margin-right: -90px;
     }
     &--flex{
+      overflow: hidden;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
@@ -183,6 +185,8 @@
     margin-bottom: 40px;
   }
   &--content{
+    padding-top: 48px;
+    border-radius: 20px;
     background: #fff;
     box-sizing: border-box;
     display: flex;
@@ -191,25 +195,104 @@
     flex-flow: row wrap;
     padding: 48px 0;
   }
-  &--item{
+  &--item_wrapper{
     width: 25%;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
+    height: 123px;
+    &:nth-child(4n){
+     .client_block--item{
+      border-right: none;
+     }
+    }
+    &:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4),
+    &:nth-child(9),&:nth-child(10),&:nth-child(11),&:nth-child(12){
+        &.active{
+          height: 150px;
+        }
+    }
+    &:nth-child(n+9){
+      .client_block--item{
+       border-bottom: none;
+      }
+    }
+    &:nth-child(4n+1){
+      box-sizing: border-box;
+      padding-left: 56px;
+      .client_block--item{
+        img{
+          margin-left: -40px;
+        }
+      }
+    }
+    &:nth-child(4n){
+      box-sizing: border-box;
+      padding-right: 56px;
+      .client_block--item{
+        img{
+          margin-right: -40px;
+        }
+      }
+    }
     img{
       margin-top: -26px;
     }
-    &.big_item{
+    &:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8){
       height: 184px;
       img{
         margin-top: 0;
       }
     }
-    &.bot_item{
+    &:nth-child(n+5){
+      display: none;
+    }
+    &:nth-child(9),&:nth-child(10),&:nth-child(11),&:nth-child(12){
       img{
         margin-top:24px;
+      }
+    }
+  }
+  &--item{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-right: 1px solid #DADAE8;
+    box-sizing: border-box;
+    &.active{
+      border-bottom: 1px solid #DADAE8;
+    }
+  }
+  &--btn{
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 72px;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 79px;
+    margin-top: -20px;
+    img{
+      margin-top: 7px;
+      transition: transform .5s;
+    }
+    &:before{
+      content: '';
+      display: block;position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #fff;
+      margin-top: -34px;
+      z-index: -1;
+    }
+    &.active{
+      img{
+        transform: rotate(180deg);
       }
     }
   }
