@@ -53,7 +53,7 @@
       color: #323340;
       margin-bottom: 12px;
     }
-    .text{
+    .text, p{
       display: block;
       font-style: normal;
       font-weight: 400;
@@ -63,9 +63,11 @@
       /* основной шрифт */
       color: #323340;
       margin-bottom: 12px;
+      margin-top: 0;
     }
   }
   &--price{
+    margin-top: auto !important;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -131,25 +133,27 @@
       align-items: center;
       border-radius: 50%;
       transition: background .5s;
-      @media screen and (min-width:1146px) {
+      @media screen and (min-width:1026px) {
         &:hover{
           background: #2A2FFF;
         }
       }
     }
-    @media screen and (min-width:1146px) {
+    @media screen and (min-width:1026px) {
       .text:hover~.img{
         background: #2A2FFF;
       }
     }
   }
   &--block{
+    display: flex;
+    flex-direction: column;
     background: #FFFFFF;
     border-radius: 20px;
     transition: box-shadow .5s;
     width: calc(50% - 10px);
     margin-bottom: 37px;
-    @media screen and (min-width:1146px){
+    @media screen and (min-width:1026px){
       &:hover{
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         .services_section--link_block .img{
@@ -162,7 +166,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
   }
 }
 
@@ -173,14 +176,17 @@
     }
   }
 }
-@media screen and (min-width:1146px) and (max-width:1162px){
+@media screen and (min-width:1026px) and (max-width:1162px){
+  .services_section--price-content span{
+    font-size: 17px;
+  }
   .services_section{
     &--content{
       min-height: 296px;
     }
   }
 }
-@media screen and (max-width:1145px){
+@media screen and (max-width:1025px){
   .services_section{
     padding-top: 54px;
     padding-bottom: 55px;
@@ -196,9 +202,6 @@
       /* основной шрифт */
       color: #323340;
       margin-bottom: 42px;
-    }
-    &--block{
-      width: 100%;
     }
     &--banner{
       img{
@@ -216,6 +219,8 @@
       padding-bottom: 37px;
     }
     &--block{
+      display: block;
+      width: 100%;
       margin-bottom: 26px;
       .castom_orange_tbl{
         margin-bottom: 21px;
@@ -278,8 +283,8 @@
       .bold{
         font-size: 15px;
       }
-      .text{
-        font-size: 15px;
+      .text, p{
+          font-size: 15px;
           line-height: 127%;
       }
     }
