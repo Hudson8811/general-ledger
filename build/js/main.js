@@ -272,6 +272,7 @@ $(document).ready(function () {
     var wcuAndSpBlockState = 'default'; //default/scrollbar/slider
 
     function wcuAndSpInitTablet() {
+        console.log('wcuAndSpInitTablet');
         $('.wcu-block-wrap').mCustomScrollbar({
             theme: "custom-theme",
             axis: "x",
@@ -324,8 +325,8 @@ $(document).ready(function () {
                 wcuAndSpInitTablet();
             }
             if (wcuAndSpBlockState === 'mobile') {
-                $('.wcu-block').slick('unslick');
-                $('.sp-block:not(.sp-block--tablet-slider)').slick('unslick');
+                $('.wcu-block.slick-slider').slick('unslick');
+                $('.sp-block.slick-slider:not(.sp-block--tablet-slider)').slick('unslick');
                 wcuAndSpInitTablet();
             }
         } else { //mobile
@@ -368,7 +369,7 @@ $(document).ready(function () {
                 $('.sf-col-5').appendTo($('.sf-tb-container'));
             }
         } else {
-            console.log($('.sf-col-3').parent());
+
             if ($('.sf-col-3').parent().hasClass('sf-tb-container')) {
                 $('.sf-col-3').appendTo($('.sf-container.container'));
                 $('.sf-col-5').appendTo($('.sf-container.container'));
@@ -691,4 +692,60 @@ $(document).ready(function () {
 			}
 		}
 	});
+});
+$(document).ready(function () {
+
+    if (window.matchMedia('(max-width:  1025px)').matches) {
+
+    } else {
+        $('.js-profitb-tabs-wrap').mCustomScrollbar({
+            theme: "inset-dark mCS-custom-theme-profitb",
+            axis: "Y",
+            scrollButtons: {
+                enable: false
+            }
+        });
+    }
+
+
+    $(window).resize(function () {
+        if (window.matchMedia('(max-width: 1025px)').matches) {
+            if ($('.js-profitb-tabs-wrap.mCustomScrollbar').length > 0) {
+                $('.js-profitb-tabs-wrap.mCustomScrollbar').mCustomScrollbar("destroy");
+            }
+        } else {
+            if ($('.js-profitb-tabs-wrap:not(.mCustomScrollbar)').length > 0) {
+                $('profitb-tab__inner').attr('style','');
+                $('.js-profitb-tabs-wrap:not(.mCustomScrollbar)').mCustomScrollbar({
+                    theme: "inset-dark mCS-custom-theme-profitb",
+                    axis: "Y",
+                    scrollButtons: {
+                        enable: false
+                    }
+                });
+            }
+        }
+
+    });
+
+
+    $('.profitb-controller-inner').click(function () {
+        var ind = $(this).parent().index();
+        $('.profitb-controller').removeClass('profitb-controller--active');
+        $(this).parent().addClass('profitb-controller--active');
+        $('.profitb-tab').eq(ind).addClass('profitb-tab--active').siblings().removeClass('profitb-tab--active');
+    });
+
+    $('.lob-block-mobile-tablet-show-btn').click(function () {
+        $(this).parent().addClass('lob-block-wrap--mobtab-visible');
+    });
+
+
+
+
+    $('.profitb-tab-non-desktop-head').click(function(){
+        $(this).siblings().slideToggle(300);
+
+        $(this).parent().toggleClass('profitb-tab--active');
+    });
 });

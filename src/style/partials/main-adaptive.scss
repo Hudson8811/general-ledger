@@ -9,6 +9,9 @@
 
 
 @media screen and (min-width:$desktopMin) {
+	.cat-block-bottom__presentation{
+		padding-left: 10px;
+	}
 	.rs-block-row.no-flex-desc {
 		display: block;
 	}
