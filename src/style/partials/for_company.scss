@@ -385,3 +385,11 @@
     }
   }
 }
+
+@media screen and (max-width: $phoneMax) {
+  .team_block {
+    &--item {
+      width: 100%;
+    }
+  }
+}
