@@ -13,27 +13,30 @@ block main
 
 
 
-	section.top-section.top-section--diag
+	section.top-section.top-section--affd
 		.ts-container.container
 			.ts-flex
 				.ts-flex__left
 					h1.ts-heading Полный набор данных
-						br.dbr.tbr
+						br
 						|  для финансового директора
 
 					.ts-text-desktop
-						p Мы собираем и упорядочиваем данные – Вы анализируете в нужных Вам разрезах
+						p Мы собираем и упорядочиваем данные –
+							br
+							|  Вы анализируете в нужных Вам разрезах
 						p От 2-х недель и 200 тыс. руб
 					.ts-text-mobile
 						p Мы собираем и упорядочиваем данные –
-							br.tbr
+							br.tbr.mbr
+
 							|  Вы анализируете в нужных Вам разрезах
 						p От 2-х недель и 200 тыс. руб
 					a.btn.btn--white.btn--with-right-arrow.ts-btn.ts-btn-desktop(href="") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
 
 				.ts-flex__right
-					img.ts-pic(src="img/diag.png" alt="")
+					img.ts-pic(src="images/affd-ts.png" alt="")
 					a.btn.btn--orange.btn--with-right-arrow.ts-btn.ts-btn-mobile(href="") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
 
@@ -42,7 +45,6 @@ block main
 	section.result-section.result-section--uprot.result-section--affd
 		.rs-container.container
 			h2.default-h2 Что Вы получите в результате
-			.rs-block-mobile-digit-1 1
 			.rs-block
 				.rs-block-row.rs-block-row-1
 					.rs-block-row__left.rs-block-row__left--text.customized-ul-wrap.customized-ul-wrap--uo
@@ -93,7 +95,7 @@ block main
 
 	section.we-will-suit-you-section.we-will-suit-you-section--uprotch.we-will-suit-you-section--diag
 		.wwsy-container.container
-			h2.default-h2 Это нужно прямо
+			h2.default-h2 Идеально подойдет Вам, если:
 				br.mbr
 				|   сейчас, если:
 			.wwsy-uprotch.wwsy-uprotch--diag
@@ -135,8 +137,12 @@ block main
 					ul
 						li Финансовая и управленческая отчетность для учредителей и генерального директора
 						li Консолидированная отчетность для получения кредита или подтверждения ковенант
-						li Понимать реальную прибыль, свои оборотные, и&nbsp;сколько можно безболезненно изъять
-						li Прогноз продаж, расходов и прибыли на основании твердой статистики предыдущих периодов
+						li Понимать реальную прибыль, свои оборотные, и&nbsp;сколько можно
+							br.mbr
+							|  безболезненно изъять
+						li Прогноз продаж, расходов и прибыли на основании твердой статистики
+							br.mbr
+							|  предыдущих периодов
 						li Контроль и управление долями собственного и&nbsp;заемного капитала
 						li Уменьшение штрафов и налогов за счет устранения разногласий и ошибок в бухучете разных компаний
 						li Определение чистого финансового результата холдинга с учетом внутренних взаиморасчетов
@@ -158,7 +164,7 @@ block main
 
 	section.how-we-work-section.how-we-work-section--affd
 		.hww-container.container
-			h2.default-h2 Как мы готовим вашу отчетность
+			h2.default-h2 Как мы это сделаем
 			.hww-block-mobile-tabs(style="padding-right: 5.8vw;")
 				.hww-block-mobile-tab.hww-block-mobile-tab--active ШАГ 1
 				.hww-block-mobile-tab ШАГ 2
@@ -222,16 +228,16 @@ block main
 			.hww-block-mobile-unwrap
 				span Развернуть
 
-	section.section-profitable
+	section.section-profitable.section-profitable-affd
 		.profit-container.container
-			h2.default-h2 Почему с нами выгоднее и удобнее
+			h2.default-h2 Почему с нами выгоднее и&nbsp;удобнее
 			.profit-block
 				.profitb-controls
-					.profitb-controller
+					.profitb-controller.profitb-controller--active
 						.profitb-controller-inner
 							.profitb-controller__text Преимущества наших таблиц перед отчетами из 1С
 								.profitb-controller__number 1
-					.profitb-controller.profitb-controller--active
+					.profitb-controller
 						.profitb-controller-inner
 							.profitb-controller__text Почему заказать у нас таблицу выгоднее, чем делать своими силами
 								.profitb-controller__number 2
@@ -248,15 +254,29 @@ block main
 							.profitb-tab__inner
 								h3.profitb-heading Универсальный отчет
 								p.profitb-p 1С и подобные системы ориентированы на ввод данных, вывод данных
-									br.tbr
+									br.tbr.mbr
 									|  в удобные отчеты - вторичная задача. Поэтому приходится использовать сторонний софт для удобного представления данных. Наши таблицы переводят с
 									b  “языка бухгалтерии” на “язык экономики и финансов”
-									|  (понятный собственнику и ТОП-менеджменту). Перестраивайте таблицу в любой формат – превращайте строки в столбцы одним действием.
-								h3.profitb-heading Полное представление о структуре доходов и затрат
+									|  (понятный собственнику и
+									br.mbr
+									|  ТОП-менеджменту). Перестраивайте таблицу в любой формат – превращайте строки в столбцы одним действием.
+								h3.profitb-heading Полное представление о
+									br.mbr
+									|  структуре доходов и затрат
 								p.profitb-p Размечаем заново проводки и детализируем расходы и доходы – было 7 статей расходов, стало 50. Превращаем сокращенные данные бухгалтерского учета в детализированные, пригодные для управленческого анализа. Делим затраты на постоянные и переменные, в форме No2 этого нет.
+								h3.profitb-heading Консолидация по всему холдингу и детализация до отдельных операций в одной таблице
+								p.profitb-p В печатных формах 1С по балансу, ОпиУ и ОДДС нельзя провалиться в конечные операции для контроля легитимности затрат. А в наших таблицах можно.
+								h3.profitb-heading Вся необходимая для анализа информация в одной таблице, а не в нескольких базах 1С
+								p.profitb-p Бывало у Вас такое, что для того, чтобы получить нужные цифры, нужно открыть 4-5 баз 1С, взять оттуда цифры и собрать в таблицу? Мы даем таблицу со всеми данными, и все, что Вам нужно сделать - сгруппировать их нужным образом.
+								h3.profitb-heading Все летает без запросов и ожидания, когда 1С просчитает
+								p.profitb-p Таблица уже в оперативной памяти. Поэтому изменения происходят мгновенно и в пару кликов. Теперь не нужно создавать запросы в 1С и ждать, когда она их обработает и выгрузит.
 						.profitb-tab
 							.profitb-tab-non-desktop-head
-								.profitb-controller__text Почему заказать у нас таблицу выгоднее, чем делать своими силами
+								.profitb-controller__text Почему заказать у нас
+									br.mbr
+									|  таблицу выгоднее, чем
+									br.mbr
+									|  делать своими силами
 									.profitb-controller__number 2
 							.profitb-tab__inner
 								h3.profitb-heading Универсальный отчет
@@ -269,7 +289,11 @@ block main
 								p.profitb-p Размечаем заново проводки и детализируем расходы и доходы – было 7 статей расходов, стало 50. Превращаем сокращенные данные бухгалтерского учета в детализированные, пригодные для управленческого анализа. Делим затраты на постоянные и переменные, в форме No2 этого нет.s
 						.profitb-tab
 							.profitb-tab-non-desktop-head
-								.profitb-controller__text Почему заказать у нас таблицу выгоднее, чем внедрять автоматизацию
+								.profitb-controller__text Почему заказать у нас
+									br.mbr
+									|  таблицу выгоднее, чем
+									br.mbr
+									|  внедрять автоматизацию
 									.profitb-controller__number 3
 							.profitb-tab__inner
 								h3.profitb-heading Универсальный отчет
@@ -286,7 +310,7 @@ block main
 								p.profitb-p Размечаем заново проводки и детализируем расходы и доходы – было 7 статей расходов, стало 50. Превращаем сокращенные данные бухгалтерского учета в детализированные, пригодные для управленческого анализа. Делим затраты на постоянные и переменные, в форме No2 этого нет.s
 
 
-	section.solution-package-section
+	section.solution-package-section.solution-package-section-affd
 		.sp-container.container
 			h2.default-h2 Что входит в&nbsp;комплект решений
 			.sp-block-wrap
@@ -340,14 +364,18 @@ block main
 								.cat-block-iwt-pic
 									img(src="img/cat-icon.svg" alt="")
 								.cat-block-iwt-text
-									.cat-block-iwt-text__line-1 от 200 000 ₽
-									.cat-block-iwt-text__line-2 для холдингов из 5-8 компаний
+									.cat-block-iwt-text__line-1 от 20 000 ₽
+									.cat-block-iwt-text__line-2 для холдингов из 5-8
+										br.mbr
+										|  компаний
 							.cat-block-icon-with-text
 								.cat-block-iwt-pic
 									img(src="img/cat-icon.svg" alt="")
 								.cat-block-iwt-text
-									.cat-block-iwt-text__line-1 от 2-х недель
-									.cat-block-iwt-text__line-2 набор обработанных данных за 6-12 мес.
+									.cat-block-iwt-text__line-1 от 30 000 ₽/мес.
+									.cat-block-iwt-text__line-2 набор обработанных
+										br.mbr
+										|   данных за 6-12 мес.
 
 					.cat-block-top-right
 						.cat-block-title Бесплатная консультация
