@@ -29,10 +29,16 @@ block main
 					img.ts-pic(src="/bitrix/templates/GL/img/upr-otch-o-ts.png" alt="")
 					a.btn.btn--orange.btn--with-right-arrow.ts-btn.ts-btn-mobile(href="") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
+
+
+
+
+
+
 	section.result-section.result-section--uprot
 		.rs-container.container
 			h2.default-h2 Что вы получите в результате
-			.rs-block-mobile-digit-1 1
+			.rs-block-mobile-digit-1.rs-block-mobile-digit-1--uprotch 1
 			.rs-block
 				.rs-block-row.rs-block-row-1
 					.rs-block-row__left.rs-block-row__left--text.customized-ul-wrap.customized-ul-wrap--uo
@@ -49,44 +55,18 @@ block main
 							li.rs-block-li Анализ динамики ключевых показателей - что стало лучше/хуже и где причина изменений
 							li.rs-block-li Полную картину по компании в готовом виде без внедрения дополнительного софта
 					.rs-block-row__right
-						img(src="http://via.placeholder.com/640x360" alt="" width="100%")
-				.rs-block-row.no-flex-desc
-					.rs-triple-ptd.rs-triple-ptd--uprotch.js-rs-triple-ptd--uprotch
-						.rs-triple-ptd-item
-							a.rs-multi-pic-flex-item.js-table-fancybox.rs-multi-pic-flex-item--blue(href="/bitrix/templates/GL/images/form-4-big.png" data-fancybox="gallery-1")
-								.rs-multi-pic-flex-item-inner
-									.rs-multi-pic-flex-item-text  Balance
-									.rs-multi-pic-flex-item-img-wrap
-										img(src="/bitrix/templates/GL/images/form-4.png" alt="")
-							.rs-triple-ptd-item-title Управленческий баланс
-							.rs-triple-ptd-item-description
-								p Управленческая и бухгалтерская форма
-								p Помесячно или за период
-								p Аналитика за разные периоды
-						.rs-triple-ptd-item
-							a.rs-multi-pic-flex-item.js-table-fancybox.rs-multi-pic-flex-item--blue(href="/bitrix/templates/GL/images/form-5-big.png" data-fancybox="gallery-1")
-								.rs-multi-pic-flex-item-inner
-									.rs-multi-pic-flex-item-text P&L
-									.rs-multi-pic-flex-item-img-wrap
-										img(src="/bitrix/templates/GL/images/form-5.png" alt="")
-							.rs-triple-ptd-item-title Отчет о доходах и расходах
-							.rs-triple-ptd-item-description
-								p Управленческая и бухгалтерская форма
-								p Постоянные и переменные расходы
-								p Аналитика за разные периоды
+						a.component-fancy.component-fancy--uprotch-1.js-table-fancybox(href="/bitrix/templates/GL/images/form-4-big.png" data-fancybox="gallery-1uo")
+							.component-fancy__inner
+								img(src="/bitrix/templates/GL/images/uo-pic-preview.png", alt="")
+						a.rs-multi-pic-flex-item.js-table-fancybox.rs-multi-pic-flex-item--blue(href="/bitrix/templates/GL/images/form-5-big.png" data-fancybox="gallery-1uo" style="display: none;")
+						a.rs-multi-pic-flex-item.js-table-fancybox.rs-multi-pic-flex-item--blue(href="/bitrix/templates/GL/images/form-6-big.png" data-fancybox="gallery-1uo" style="display: none;")
 
-						.rs-triple-ptd-item
-							a.rs-multi-pic-flex-item.js-table-fancybox.rs-multi-pic-flex-item--blue(href="/bitrix/templates/GLimages/form-6-big.png" data-fancybox="gallery-1")
-								.rs-multi-pic-flex-item-inner
-									.rs-multi-pic-flex-item-text CashFlow
-									.rs-multi-pic-flex-item-img-wrap
-										img(src="/bitrix/templates/GL/images/form-6.png" alt="")
-							.rs-triple-ptd-item-title Движение денежных средств
-							.rs-triple-ptd-item-description
-								p Прямой и косвенный анализ по видам деятельности
-								p С классификатором на 50+ статей Аналитика за разные периоды
-				.rs-block-row.rs-block-row-2.rs-block-row-2--uprotch.rs-block-row-2--upr-otdelnaya.rs-block-row-mobile-hidden
+				.rs-block-row.rs-block-row-2.rs-block-row-2--uprotch.rs-block-row-mobile-hidden
 					.rs-block-row__left
+						.component-fancy.component-fancy--fancy-off.component-fancy--uprotch-2
+							.component-fancy__inner
+								img(src="/bitrix/templates/GL/images/uprotch-pic-2.png", alt="")
+
 					.rs-block-row__right.rs-block-row__right--text.customized-ul-wrap
 						.rs-block-digit.rs-block-digit-2 2
 						.rs-block-title Фин. модель компании для проверки идей –
@@ -101,7 +81,7 @@ block main
 							li.rs-block-li Какие показатели и в каких отделах контролировать, чтобы управлять ростом компании
 					.mobile-unwrap.js-mobile-unwrap-rs-block-row-uprotch
 						span Развернуть
-				.rs-block-row.rs-block-row-3.rs-block-row-3--upr-otdelnaya.rs-block-row-mobile-hidden
+				.rs-block-row.rs-block-row-3.rs-block-row-mobile-hidden
 					.rs-block-row__left.rs-block-row__left--text.customized-ul-wrap
 						.rs-block-digit.rs-block-digit-1.rs-block-digit-3--uprotch 3
 						.rs-block-title Удобный контроль показателей для
@@ -132,8 +112,17 @@ block main
 								| финансовых целей
 
 					.rs-block-row__right
+						.component-fancy.component-fancy--fancy-off.component-fancy--uprotch-3
+							.component-fancy__inner
+								img(src="/bitrix/templates/GL/images/uprotch-o-3.png", alt="")
+
 					.mobile-unwrap.js-mobile-unwrap-rs-block-row-uprotch
 						span Развернуть
+
+
+
+
+
 
 	section.we-will-suit-you-section.we-will-suit-you-section--uprotch
 		.wwsy-container.container
@@ -351,7 +340,7 @@ block main
 				.wcu-block.wcu-block--uprotch(data-counter-id="uprotc-o-wcu-1-counter")
 					.wcu-block-item
 						.wcu-block-item__icon
-							img(src="/bitrix/templates/GL/img/horseshoe.svg" alt="")
+							img(src="/bitrix/templates/GL/img/icons/icon-6.svg" alt="")
 						.wcu-block-item-content
 							.wcu-block-item__title
 								| В 5-10 раз быстрее
@@ -365,7 +354,7 @@ block main
 
 					.wcu-block-item
 						.wcu-block-item__icon
-							img(src="/bitrix/templates/GL/img/horseshoe.svg" alt="")
+							img(src="/bitrix/templates/GL/img/icons/icon-9.svg" alt="")
 						.wcu-block-item-content
 							.wcu-block-item__title
 								|  Удобный контроль
@@ -379,7 +368,7 @@ block main
 
 					.wcu-block-item
 						.wcu-block-item__icon
-							img(src="/bitrix/templates/GL/img/horseshoe.svg" alt="")
+							img(src="/bitrix/templates/GL/img/icons/icon-4.svg" alt="")
 						.wcu-block-item-content
 							.wcu-block-item__title
 								|  Без нового софта и
@@ -393,7 +382,7 @@ block main
 									| , платных лицензий и поддержки, найма новых сотрудников.
 					.wcu-block-item
 						.wcu-block-item__icon
-							img(src="/bitrix/templates/GL/img/horseshoe.svg" alt="")
+							img(src="/bitrix/templates/GL/img/icons/icon-5.svg" alt="")
 						.wcu-block-item-content
 							.wcu-block-item__title
 								|  Экономим время Ваших
@@ -405,7 +394,7 @@ block main
 									|  Все, что нужно - выгрузка из 1С, остальное мы сами.
 					.wcu-block-item
 						.wcu-block-item__icon
-							img(src="/bitrix/templates/GL/img/horseshoe.svg" alt="")
+							img(src="/bitrix/templates/GL/img/icons/icon-8.svg" alt="")
 						.wcu-block-item-content
 							.wcu-block-item__title
 								|  Экономим на
@@ -419,7 +408,7 @@ block main
 									|  стоимости автоматизации учета.
 					.wcu-block-item
 						.wcu-block-item__icon
-							img(src="/bitrix/templates/GL/img/horseshoe.svg" alt="")
+							img(src="/bitrix/templates/GL/img/icons/icon-2.svg" alt="")
 						.wcu-block-item-content
 							.wcu-block-item__title
 								|  Оперативно
@@ -442,9 +431,9 @@ block main
 			.sp-block-wrap
 				.sp-block.sp-block--uprotch(data-counter-id="uprotc-o-sp-1-counter")
 					.sp-block-item
-						.sp-block-item-pic.sp-block-item-pic--orange
-							.sp-block-item-pic-inner
-								img(src="/bitrix/templates/GL/images/form-1.png" alt="")
+						.component-fancy.component-fancy--fancy-off.component-fancy--uprotch-sp-pics
+							.component-fancy__inner
+								img(src="/bitrix/templates/GL/images/uprotch-sp-pic-1.png", alt="")
 						.sp-block-item-content
 							.sp-block-item-content__title 3 управленческих отчета
 							.sp-block-item-content__text Управленческий баланс, отчет о
@@ -454,9 +443,9 @@ block main
 								|  движении денежных средств в интерактивных таблицах
 
 					.sp-block-item
-						.sp-block-item-pic.sp-block-item-pic--orange
-							.sp-block-item-pic-inner
-								img(src="/bitrix/templates/GL/images/form-1.png" alt="")
+						.component-fancy.component-fancy--fancy-off.component-fancy--uprotch-sp-pics
+							.component-fancy__inner
+								img(src="/bitrix/templates/GL/images/uprotch-sp-pic-2.png", alt="")
 						.sp-block-item-content
 							.sp-block-item-content__title Финансовая модель + обучение
 							.sp-block-item-content__text Таблица для быстрого
@@ -467,9 +456,9 @@ block main
 								br.dbr
 								|  оборотные средства и т.д.
 					.sp-block-item
-						.sp-block-item-pic.sp-block-item-pic--orange
-							.sp-block-item-pic-inner
-								img(src="/bitrix/templates/GL/images/form-1.png" alt="")
+						.component-fancy.component-fancy--fancy-off.component-fancy--uprotch-sp-pics
+							.component-fancy__inner
+								img(src="/bitrix/templates/GL/images/uprotch-o-compl-3.png", alt="")
 						.sp-block-item-content
 							.sp-block-item-content__title Интерпретация данных
 							.sp-block-item-content__text Объясним в аналитической
@@ -481,9 +470,9 @@ block main
 								|  данные, что влияет на показатели
 
 					.sp-block-item
-						.sp-block-item-pic.sp-block-item-pic--orange
-							.sp-block-item-pic-inner
-								img(src="/bitrix/templates/GL/images/form-1.png" alt="")
+						.component-fancy.component-fancy--fancy-off.component-fancy--uprotch-sp-pics
+							.component-fancy__inner
+								img(src="/bitrix/templates/GL/images/uprotch-o-compl-4.png", alt="")
 						.sp-block-item-content
 							.sp-block-item-content__title Контроль показателей и затрат
 							.sp-block-item-content__text Ежемесячные отчеты в графиках,
@@ -493,18 +482,18 @@ block main
 								|  контроля затрат и ключевых показателей
 
 					.sp-block-item
-						.sp-block-item-pic.sp-block-item-pic--orange
-							.sp-block-item-pic-inner
-								img(src="/images/form-1.png" alt="")
+						.component-fancy.component-fancy--fancy-off.component-fancy--uprotch-sp-pics
+							.component-fancy__inner
+								img(src="/bitrix/templates/GL/images/uprotch-sp-pic-5.png", alt="")
 						.sp-block-item-content
 							.sp-block-item-content__title Методологические материалы
 							.sp-block-item-content__text Классификатор статей для каждого отчета, методология группировки статей, рекомендации по
 								br.dbr
 								|  улучшению учета
 					.sp-block-item
-						.sp-block-item-pic.sp-block-item-pic--blue
-							.sp-block-item-pic-inner
-								img(src="/bitrix/templates/GL/images/form-1.png" alt="")
+						.component-fancy.component-fancy--fancy-off.component-fancy--uprotch-sp-pics
+							.component-fancy__inner
+								img(src="/bitrix/templates/GL/images/uprotch-sp-pic-6.png", alt="")
 						.sp-block-item-content
 							.sp-block-item-content__title Консультации
 							.sp-block-item-content__text Какую цель выбрать, какие малые действия влияют на большие показатели, как измерять
@@ -592,7 +581,7 @@ block main
 									a.js-modal-comments-open  читать весь отзыв
 								.oc-slide-row
 									a.oc-slide-row-logo(href="")
-										img(src="img/client-logo.png" alt="")
+										img(src="/bitrix/templates/GL/img/client-logo.png" alt="")
 									.oc-slide-row-info
 										.oc-slide-row-info__fio Алексей Баранов
 										.oc-slide-row-info__position Финансовый директор
@@ -604,7 +593,7 @@ block main
 					.modal-fc-slide
 						.modal-fc-top
 							.modal-fc-top__logo
-								img(src="images/anderida.png", alt="")
+								img(src="/bitrix/templates/GL/images/anderida.png", alt="")
 							.modal-fc-top__text ANDERIDA
 								br
 								|  FINANCIAL GROUP
@@ -613,7 +602,7 @@ block main
 							.modal-fc-video-wrap
 								.video-yt.js-video-yt.video-yt--h100.video-yt-btn
 										.video-yt__preview(data-src="https://www.youtube.com/embed/WUgvvPRH7Oc")
-											img(src="images/com-mod-pic.jpg")
+											img(src="/bitrix/templates/GL/images/com-mod-pic.jpg")
 								.modal-fc-vid-name Алексей Тараповский
 								.modal-fc-vid-positio Управляющий партнер, председатель правления
 							.modal-fc-text
@@ -638,7 +627,7 @@ block main
 					.modal-fc-slide
 						.modal-fc-top
 							.modal-fc-top__logo
-								img(src="images/anderida.png", alt="")
+								img(src="/bitrix/templates/GL/images/anderida.png", alt="")
 							.modal-fc-top__text ANDERIDA
 								br
 								|  FINANCIAL GROUP
@@ -647,7 +636,7 @@ block main
 							.modal-fc-video-wrap
 								.video-yt.js-video-yt.video-yt--h100.video-yt-btn
 										.video-yt__preview(data-src="https://www.youtube.com/embed/WUgvvPRH7Oc")
-											img(src="images/com-mod-pic.jpg")
+											img(src="/bitrix/templates/GL/images/com-mod-pic.jpg")
 								.modal-fc-vid-name Алексей Тараповский
 								.modal-fc-vid-positio Управляющий партнер, председатель правления
 							.modal-fc-text
@@ -672,7 +661,7 @@ block main
 					.modal-fc-slide
 						.modal-fc-top
 							.modal-fc-top__logo
-								img(src="images/anderida.png", alt="")
+								img(src="/bitrix/templates/GL/images/anderida.png", alt="")
 							.modal-fc-top__text ANDERIDA
 								br
 								|  FINANCIAL GROUP
@@ -681,7 +670,7 @@ block main
 							.modal-fc-video-wrap
 								.video-yt.js-video-yt.video-yt--h100.video-yt-btn
 										.video-yt__preview(data-src="https://www.youtube.com/embed/WUgvvPRH7Oc")
-											img(src="images/com-mod-pic.jpg")
+											img(src="/bitrix/templates/GL/images/com-mod-pic.jpg")
 								.modal-fc-vid-name Алексей Тараповский
 								.modal-fc-vid-positio Управляющий партнер, председатель правления
 							.modal-fc-text

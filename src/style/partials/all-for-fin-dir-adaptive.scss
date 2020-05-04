@@ -1,10 +1,37 @@
 @media screen and (min-width: $desktopMin) {
-    .lob-block-mobile-tablet-unwrap {
+    .top-section--affd {
+        overflow-x: hidden;
+        overflow-y: visible;
+
+        .ts-flex__left {
+            width: 760px;
+        }
+
+        .ts-pic {
+            position: absolute;
+            margin: 57px 0 0 0;
+            left: -63px;
+            bottom: 0;
+            width: 756px;
+            max-width: 121%;
+        }
+
+        .btn {
+            margin-top: 56px;
+        }
+
+        .ts-flex__left {
+            padding-bottom: 147px;
+        }
+    }
+
+
+    /////////////////////
+    .lob-block-mobile-tablet-unwrap, .lob-block-mobile-tablet-show-btn {
         display: none;
     }
 
     /////////////////////
-
 
 
     .profit-block {
@@ -119,7 +146,7 @@
                     width: 9px;
                     background: #DADAE8;
                     border-radius: 26px;
-                    margin: 4px 4px;
+                    margin: 2px 4px;
                 }
             }
 
@@ -185,7 +212,54 @@
     .profitb-tab__inner {}
 }
 
+@media screen and (max-width: 1430px) and (min-width: $desktopMin) {
+    .top-section--affd {
+        .ts-pic {
+            left: auto;
+            right: -70px;
+            max-width: 62vw;
+        }
+    }
+
+    .ts-flex__right {
+        z-index: 0;
+    }
+
+    .top-section--affd .ts-flex__left {
+        z-index: 1;
+    }
+}
+
 @media screen and (max-width: $tabletMax) {
+    .top-section--affd {
+        .ts-pic {
+            position: static;
+            margin: 0;
+            max-width: 100%;
+
+            width: 75%;
+            margin-top: 22px;
+        }
+
+        .ts-text-mobile {
+            font-size: 20px;
+            line-height: 125%;
+            margin-top: 16px;
+
+            p+p {
+                margin-top: 15px;
+            }
+        }
+
+        .ts-flex__right {
+            margin-bottom: -89px;
+        }
+    }
+
+
+
+
+
     .result-section--affd {
         .rs-block {
             padding: 32px 56px 56px 56px;
@@ -341,14 +415,13 @@
         &::before {
             content: '';
             display: block;
-
-            width: 154px;
-            height: 40px;
+            width: 56px;
+            height: 15px;
             background: url(../img/profirb-tabmob-triangle-active.svg) no-repeat center center;
-            background-size: 100% 100%;
+            background-size: contain;
             position: absolute;
             pointer-events: none;
-            bottom: -39px;
+            bottom: -20px;
             left: 84px;
             opacity: 0;
             transition-duration: .2s;
@@ -379,8 +452,10 @@
     }
 
 
-    .profitb-tab__inner {display: none;
+    .profitb-tab__inner {
+        display: none;
         overflow: hidden;
+
         h3 {
             font-weight: 500;
             font-size: 16px;
@@ -388,7 +463,10 @@
             color: #323340;
             width: 563px;
             max-width: 100%;
-            &+p{margin-top: 19px;}
+
+            &+p {
+                margin-top: 19px;
+            }
         }
 
         p {
@@ -397,8 +475,12 @@
             color: #555665;
             width: 563px;
             max-width: 100%;
-            &+h3{margin-top: 41px;}
-            b{
+
+            &+h3 {
+                margin-top: 41px;
+            }
+
+            b {
                 font-weight: 500;
             }
         }
@@ -407,9 +489,7 @@
     .profitb-tab--active {
 
 
-        .profitb-tab__inner {
-
-        }
+        .profitb-tab__inner {}
 
         .profitb-heading {}
 
@@ -424,7 +504,7 @@
 
             &::before {
                 opacity: 1;
-                bottom: -39px;
+                bottom: -15px;
             }
 
 
@@ -435,4 +515,181 @@
     }
 }
 
-@media screen and (max-width: $phoneMax) {}
+@media screen and (max-width: $phoneMax) {
+
+    .top-section--affd {
+        .ts-heading {
+            width: 315px;
+        }
+
+        .ts-text-mobile {
+            font-size: 16px;
+            line-height: 135%;
+        }
+
+        .ts-pic {
+            width: 92%;
+            margin-top: 17px;
+        }
+
+        .ts-flex__right {
+            margin-bottom: -105px;
+        }
+    }
+
+    .result-section--affd {
+        padding-top: 173px;
+
+        .rs-block {
+            padding: 0px 0 56px 0;
+            margin-top: 21px;
+        }
+    }
+
+    .list-on-blue-section {
+        margin-top: 64px;
+        padding: 55px 0 44px;
+    }
+
+    .lob-block {
+
+        max-height: 298px;
+        margin: 37px auto 0;
+        padding: 0;
+    }
+
+    .lob-block li {
+        padding-left: 23px;
+        font-size: 15px;
+        line-height: 135%;
+        margin-bottom: 19px;
+
+        &::before {
+            position: absolute;
+            top: 7px;
+        }
+    }
+
+
+    .lob-block-mobile-tablet-show-btn {
+        margin-top: 22px;
+
+        &::before {
+            display: none;
+        }
+
+        span {
+            &::after {
+                position: absolute;
+                right: 14px;
+                margin: 0;
+                margin-top: 5px;
+                height: 11px;
+                width: 17px;
+            }
+
+            padding: 0 23px 0;
+        }
+    }
+
+    .how-we-work-section--affd {
+        margin-top: 0;
+        padding-top: 63px;
+    }
+
+    .how-we-work-section--affd {
+        .default-h2 {
+            width: 220px;
+        }
+
+        .hww-block-mobile-unwrap {
+            height: 129px;
+        }
+
+        .hww-block-mobile-unwrap span {
+            margin-top: 105px;
+        }
+    }
+
+
+    .section-profitable-affd {
+        margin-top: 72px;
+    }
+
+    .profit-block {
+        margin-top: 35px;
+    }
+
+
+    .profitb-tab-non-desktop-head {
+        border-radius: 10px;
+        padding: 22px 51px 19px 29px;
+    }
+
+    .profitb-controller__text {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 135%;
+    }
+
+    .profitb-controller__number {}
+
+    .profitb-tab-non-desktop-head::before {
+        width: 35px;
+        height: 10px;
+        left: 42px;
+        bottom: -15px;
+    }
+
+    .profitb-tab--active .profitb-tab-non-desktop-head::before {
+        bottom: -10px;
+    }
+
+    .profitb-tab__inner {
+        margin-top: -7px;
+        padding: 50px 24px 40px 30px;
+    }
+
+    .profitb-tab__inner h3 {
+        font-size: 15px;
+        line-height: 125%;
+    }
+
+    .profitb-tab__inner p {
+        font-size: 15px;
+        line-height: 155%;
+    }
+
+    .profitb-tab__inner h3+p {
+        margin-top: 13px;
+    }
+
+    .profitb-tab__inner p+h3 {
+        margin-top: 26px;
+    }
+
+
+    .profitb-tab__inner {
+        border-radius: 0 0 10px 10px;
+        border: 1px solid #DADAE8;
+        border-top: 0;
+    }
+
+    .profitb-controller__number {
+        left: -13px;
+        top: -15px;
+    }
+
+    .profitb-tab-non-desktop-head::after {
+        width: 17px;
+        height: 9px;
+        top: 50%;
+        right: 24px;
+        margin-top: -9px;
+    }
+
+
+    .solution-package-section-affd{
+        padding-top: 51px;
+    }
+}
