@@ -139,6 +139,7 @@ $(document).ready(function () {
     var wcuAndSpBlockState = 'default'; //default/scrollbar/slider
 
     function wcuAndSpInitTablet() {
+        console.log('wcuAndSpInitTablet');
         $('.wcu-block-wrap').mCustomScrollbar({
             theme: "custom-theme",
             axis: "x",
@@ -191,8 +192,8 @@ $(document).ready(function () {
                 wcuAndSpInitTablet();
             }
             if (wcuAndSpBlockState === 'mobile') {
-                $('.wcu-block').slick('unslick');
-                $('.sp-block:not(.sp-block--tablet-slider)').slick('unslick');
+                $('.wcu-block.slick-slider').slick('unslick');
+                $('.sp-block.slick-slider:not(.sp-block--tablet-slider)').slick('unslick');
                 wcuAndSpInitTablet();
             }
         } else { //mobile
@@ -235,7 +236,7 @@ $(document).ready(function () {
                 $('.sf-col-5').appendTo($('.sf-tb-container'));
             }
         } else {
-            console.log($('.sf-col-3').parent());
+
             if ($('.sf-col-3').parent().hasClass('sf-tb-container')) {
                 $('.sf-col-3').appendTo($('.sf-container.container'));
                 $('.sf-col-5').appendTo($('.sf-container.container'));
