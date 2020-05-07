@@ -124,4 +124,19 @@ $(document).ready(function () {
 		appendDots: $('#cf-slick-1-dots'),
 		autoplay:false
 	});
+
+	$(".js-cf-slick-afancy").fancybox({
+		animationEffect: false,
+		wheel: false,
+		afterShow: function (instance, current) {
+		  if (window.matchMedia("(min-width: 1300px)").matches) {
+			instance.scaleToActual(0, 0);
+		  }
+		},
+		afterClose: function() {
+			setTimeout(function(){
+				$('.js-cf-slick-1').slick('refresh');
+			}, 10);
+		}
+	  });
 });
