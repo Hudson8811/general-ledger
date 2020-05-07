@@ -122,6 +122,6 @@ $(document).ready(function () {
 		infinite: false,
 		dots: true,
 		appendDots: $('#cf-slick-1-dots'),
-		autoplay:true
+		autoplay:false
 	});
 });
