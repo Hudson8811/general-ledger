@@ -317,7 +317,7 @@ $(document).ready(function () {
     setTimeout(function () {
       $(".hww-block-mobile-unwrap").addClass("hww-block-mobile-unwrap--dn");
     }, 200);
-    
+
   });
 
   $(window).resize(function () {

@@ -450,7 +450,7 @@ $(document).ready(function () {
     setTimeout(function () {
       $(".hww-block-mobile-unwrap").addClass("hww-block-mobile-unwrap--dn");
     }, 200);
-    
+
   });
 
   $(window).resize(function () {
@@ -658,7 +658,7 @@ $(document).ready(function () {
 		initUprotchRsTripleSlider();
 		initWWSYuprotchSlider();
 	}
-	
+
 
 	$(window).resize(function () {
 		if (window.matchMedia('(max-width: 1025px)').matches) {
@@ -694,7 +694,15 @@ $(document).ready(function () {
             par.addClass('mobile-unwrap--dn');
         }, 200);
 	});
-	
+
+
+	$('.js-cf-slick-1').slick({
+		arrows:false,
+		infinite: false,
+		dots: true,
+		appendDots: $('#cf-slick-1-dots'),
+		autoplay:true
+	});
 });
 
 

@@ -48,11 +48,20 @@ block main
 							li.rs-block-li Анализ динамики ключевых показателей - что стало лучше/хуже и где причина изменений
 							li.rs-block-li Быстрый анализ в живом многомерном отчете - группируйте данные в разных разрезах за несколько секунд
 					.rs-block-row__right
-						a.component-fancy.component-fancy--uprotch-1.js-table-fancybox(href="/bitrix/templates/GL/images/form-4-big.png" data-fancybox="gallery-1uo")
+						.component-fancy.component-fancy--uprotch-1.component-fancy--with-slider
 							.component-fancy__inner
-								img(src="/bitrix/templates/GL/images/uo-pic-preview.png", alt="")
-						a.rs-multi-pic-flex-item.js-table-fancybox.rs-multi-pic-flex-item--blue(href="/bitrix/templates/GL/images/form-5-big.png" data-fancybox="gallery-1uo" style="display: none;")
-						a.rs-multi-pic-flex-item.js-table-fancybox.rs-multi-pic-flex-item--blue(href="/bitrix/templates/GL/images/form-6-big.png" data-fancybox="gallery-1uo" style="display: none;")
+								.component-fancy-slider-uprotch.js-cf-slick-1
+									a.js-table-fancybox(href="images/form-4-big.png" data-fancybox="gallery-1uo")
+										span.cf-sup-item-name Форма №1
+										img(src="images/uo-pic-preview.png", alt="")
+									a.js-table-fancybox(href="images/form-5-big.png" data-fancybox="gallery-1uo")
+										span.cf-sup-item-name Форма №2
+										img(src="images/form-5-big.png", alt="")
+									a.js-table-fancybox(href="images/form-6-big.png" data-fancybox="gallery-1uo")
+										span.cf-sup-item-name Форма №3
+										img(src="images/form-6-big.png", alt="")
+							#cf-slick-1-dots
+
 
 				.rs-block-row.rs-block-row-2.rs-block-row-2--uprotch.rs-block-row-mobile-hidden
 					.rs-block-row__left
