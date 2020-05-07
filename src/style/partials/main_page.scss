@@ -1,8 +1,5 @@
 .top-section__main-page {
   margin-bottom: 0;
-  .container {
-    overflow: hidden;
-  }
   .ts-flex__left {
     padding-top: 122px;
     padding-bottom: 178px;
@@ -14,6 +11,9 @@
     max-width: 971px;
     width: 971px;
     left: -60px;
+  }
+  .ts-tablet {
+    display: none;
   }
 }
 .skills_block {
@@ -106,6 +106,9 @@
 }
 .why_block {
   margin-top: 86px;
+  .wwsy-uprotch-counter {
+    display: none;
+  }
   .wwsy-uprotch.wwsy-uprotch--diag {
     margin-top: 40px;
     align-items: stretch;
@@ -211,6 +214,483 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 150%;
+      }
+    }
+  }
+}
+
+.slider-section-main {
+  margin-top: 87px;
+}
+
+.client_block-main {
+  margin-top: 50px;
+  margin-bottom: 87px;
+  .client_block--btn {
+    margin-bottom: 0;
+  }
+}
+
+.papers_block {
+  .pb_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 44px;
+    .papers--grid_item {
+      min-height: 386px;
+      width: calc(33.333% - 40px / 3);
+      .paper {
+        font-size: 20px;
+      }
+      .tablet_block {
+        display: none;
+      }
+    }
+  }
+  .pb__all_papers {
+    display: block;
+    margin: 0 auto;
+    font-family: Pragmatica;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+    text-align: center;
+    text-decoration-line: underline;
+    /* links */
+    color: #2a2fff;
+    margin-top: 34px;
+    margin-bottom: 102px;
+  }
+}
+
+@media screen and (max-width: 1690px) {
+  .top-section__main-page {
+    .ts-flex__right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .ts-pic {
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+        left: auto;
+      }
+    }
+    .ts-flex__left {
+      padding-bottom: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: $tabletMax) {
+  .top-section__main-page {
+    padding-bottom: 85px;
+    .ts-tablet {
+      display: block;
+    }
+    .ts-desktop {
+      display: none;
+    }
+    .ts-flex__left {
+      padding-top: 46px;
+    }
+    .ts-flex__right {
+      .ts-pic {
+        margin-right: 0px;
+        width: 95%;
+        margin: 0 auto;
+        top: -37px;
+        left: 30px;
+      }
+    }
+    .ts-btn {
+      display: none;
+    }
+  }
+  .skills_block {
+    &--item {
+      width: 50%;
+      padding-top: 0;
+      padding-bottom: 12px;
+      justify-content: center;
+      p {
+        padding-right: 0;
+        margin-top: auto;
+        &:nth-child(1) {
+          margin-bottom: -35px;
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+      &:nth-child(3n)::before {
+        border-right: none;
+      }
+      &:nth-child(2n)::before {
+        border-right: 1px solid rgba(255, 255, 255, 0.17);
+      }
+    }
+  }
+  .why_block {
+    margin-top: 79px;
+    .wwsy-uprotch.wwsy-uprotch--diag {
+      justify-content: space-between;
+      overflow: visible;
+      .wwsy-uprotch-item {
+        width: calc(50% - 15px);
+        padding-left: 24px;
+        padding-top: 37px;
+        min-height: 254px;
+        margin-bottom: 30px;
+        &__number {
+          width: 100%;
+          &:before {
+            left: -24px;
+            top: 10px;
+          }
+        }
+      }
+    }
+  }
+  .how-we-work-main-section {
+    margin-top: 46px;
+    .hww-block-item {
+      padding-right: 43px;
+      .hww-block-item-desc {
+        font-weight: 500;
+      }
+    }
+  }
+  .our-results-in-digits-main {
+    margin-top: 5px;
+  }
+  .why-choose-us-section-main {
+    margin-top: 76px;
+    padding-bottom: 50px;
+    .wcu-block {
+      margin-top: 42px;
+      margin-right: -10px;
+      .wcu-block-item {
+        margin: 0 40px;
+        width: 50%;
+      }
+    }
+  }
+  .slider-section-main {
+    margin-top: 80px;
+  }
+  .client_block-main {
+    margin-top: 70px;
+    margin-bottom: 78px;
+  }
+  .client_block {
+    &--item_wrapper {
+      width: 50%;
+      box-sizing: border-box;
+      padding-left: 56px;
+      padding-right: 0;
+      img {
+        margin-top: 0;
+      }
+      &:nth-child(4n + 1) {
+        .client_block--item {
+          img {
+            margin-left: -54px;
+          }
+        }
+      }
+      &:nth-child(2n) {
+        img {
+          margin-left: 53px;
+        }
+      }
+      &.active {
+        .client_block--item {
+          border-bottom: 1px solid #dadae8;
+        }
+      }
+      &:nth-child(n + 3) {
+        display: none;
+      }
+      &:nth-child(2n) {
+        padding-right: 56px;
+        padding-left: 0;
+        .client_block--item {
+          border-right: 0;
+        }
+      }
+      &:nth-child(n + 11) {
+        &.active {
+          .client_block--item {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .papers_block {
+    .pb_wrapper {
+      .papers--grid_item {
+        width: calc(50% - 15px);
+        min-height: 323px;
+        padding: 31px 24px 40px 32px;
+        &:nth-child(3) {
+          display: none;
+        }
+        .author {
+          display: none;
+        }
+        .read {
+          position: relative;
+          transform: none;
+          left: 0;
+        }
+        .tablet_block {
+          display: block;
+          font-family: Pragmatica;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 125%;
+          /* or 17px */
+          /* белый */
+          color: #ffffff;
+          position: relative;
+          z-index: 2;
+          .vertical_line {
+            display: inline-block;
+            margin: 0 3px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .pb__all_papers {
+      margin-bottom: 69px;
+    }
+  }
+}
+
+@media screen and (max-width: $phoneMax) {
+  .top-section__main-page {
+    padding-bottom: 50px;
+    .ts-flex__left {
+      padding-top: 41px;
+    }
+    .ts-flex__right {
+      overflow: hidden;
+      .ts-pic {
+        margin-right: 0;
+        width: 123%;
+        margin: 0 auto;
+        top: -32px;
+        left: -13px;
+      }
+    }
+    .ts-tablet {
+      display: none;
+    }
+    .ts-desktop {
+      display: block;
+    }
+  }
+  .skills_block {
+    .skills_block--container {
+      width: 100%;
+      max-width: none;
+    }
+    &--item {
+      width: 100%;
+      padding: 70px 29px 13px 49px;
+      padding-top: 0;
+      filter: none;
+      &:before {
+        border-right: none !important;
+        border-left: none !important;
+      }
+      a {
+        background-color: #f26419;
+      }
+    }
+  }
+  .wwsy-uprotch.wwsy-uprotch--diag.wwsy-block {
+    overflow: visible;
+  }
+  .why_block {
+    margin-top: 61px;
+    .wwsy-uprotch-counter {
+      display: block;
+      text-align: center;
+      font-family: Pragmatica;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 150%;
+      /* or 30px */
+      text-align: center;
+      /* светло серый шрифт */
+      color: #a0a0b1;
+      margin-top: 24px;
+    }
+    .wwsy-uprotch.wwsy-uprotch--diag {
+      .wwsy-slick-next,
+      .wwsy-slick-prev {
+        top: auto;
+        bottom: -50px;
+        background: transparent;
+      }
+      .wwsy-slick-next svg,
+      .wwsy-slick-prev svg {
+        height: 20px;
+      }
+      .wwsy-slick-next {
+        right: 47px;
+      }
+      .wwsy-slick-prev {
+        left: 60px;
+      }
+      margin-top: 28px;
+      .wwsy-uprotch-item {
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        padding-left: 33px;
+        min-height: 223px;
+        padding-bottom: 22px;
+        &__number {
+          max-width: 93%;
+          &:before {
+            left: -33px;
+          }
+          &:after {
+            display: block;
+            margin-left: 15px;
+            margin-bottom: 16px;
+          }
+        }
+        &__text {
+          margin-top: 24px;
+          max-width: none;
+        }
+      }
+    }
+  }
+  .how-we-work-main-section {
+    margin-top: 0;
+    padding-top: 56px;
+    .hww-slick-next,
+    .hww-slick-prev {
+      background: #fff;
+    }
+    .hww-block-item {
+      padding-right: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      &:nth-child(1) {
+        padding-bottom: 0;
+      }
+      &:nth-child(3),
+      &:nth-child(4) {
+        .hww-block-item-top__pic {
+          width: 100%;
+        }
+      }
+      .hww-block-item-top__pic {
+        width: 100%;
+        margin-top: 35px;
+        img {
+          max-width: none;
+          width: 100%;
+        }
+      }
+      .hww-block-item-top__pic {
+        background: #f5f6fb;
+      }
+      .hww-block-item-step {
+        margin-right: 0;
+      }
+      .hww-block-item-bottom {
+        padding-left: 24px;
+        padding-right: 24px;
+        background: #f5f6fb;
+        padding-bottom: 32px;
+        .hww-block-item-title {
+          margin-top: 0;
+          padding-top: 21px;
+        }
+      }
+    }
+  }
+  .our-results-in-digits-main {
+    margin-top: 0;
+  }
+  .client_block {
+    &--heading {
+      font-size: 22px;
+      margin-bottom: 0;
+    }
+    .container {
+      padding-top: 48px;
+      background: #f5f6fb;
+      border-radius: 20px;
+    }
+    .client_block--content {
+      background: transparent;
+      padding-top: 0;
+    }
+    &--item_wrapper {
+      width: 100%;
+      padding: 0px 58px !important;
+      &:nth-child(n + 3) {
+        display: flex;
+      }
+      &:nth-child(n + 4) {
+        display: none;
+      }
+      .client_block--item {
+        width: 100%;
+        border-right: 0;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        border-bottom: 1px solid #dadae8;
+        background: transparent;
+        img {
+          margin: 0 !important;
+        }
+      }
+    }
+    .client_block--btn {
+      background: #f5f6fb;
+      position: absolute;
+      left: 50%;
+      margin-left: -36px;
+      margin-top: -25px;
+    }
+  }
+  .papers_block {
+    .pb_wrapper {
+      flex-wrap: wrap;
+      .papers--grid_item {
+        width: 100%;
+        margin-bottom: 16px;
+        .paper {
+          max-width: 230px;
+        }
+      }
+    }
+  }
+  .why-choose-us-section-main {
+    .wcu-block .wcu-block-item {
+      margin: 0;
+      .wcu-block-item__title {
+        text-align: left;
+      }
+      .wcu-block-item__text {
+        text-align: left;
       }
     }
   }
