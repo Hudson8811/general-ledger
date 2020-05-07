@@ -193,6 +193,10 @@
             max-width: 100%;
             display: block;
 
+            &+p{
+                margin-top: 20px;
+            }
+
             b {
 
                 font-weight: 500;
