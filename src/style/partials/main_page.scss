@@ -52,12 +52,12 @@
         rgba(54, 56, 143, 0) 88.75%
       );
       z-index: 0;
-      border-left: 1px solid rgba(255, 255, 255, 0.17);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+      border-left: 1px solid #585aa2;
+      border-bottom: 1px solid #585aa2;
     }
     &:nth-child(3n) {
       &::before {
-        border-right: 1px solid rgba(255, 255, 255, 0.17);
+        border-right: 1px solid #585aa2;
       }
     }
     p {
