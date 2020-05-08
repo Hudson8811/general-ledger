@@ -9,6 +9,7 @@
     <meta name="format-detection" content="telephone=no">
     <link href="css/main.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -407,6 +408,18 @@
         </div>
       </section>
     </main>
+    <div class="modal-consult modal-custom-close" id="modal-consult">
+      <h2 class="modcon-h2">Получить консультацию</h2>
+      <input class="inputbox form-main-input" placeholder="Ваше имя" required>
+      <input class="inputbox form-main-input js-phone" placeholder="Телефон" required>
+      <input class="inputbox form-main-input" placeholder="Email" type="email" required>
+      <textarea class="textarea form-main-textarea form-main-textarea--mc" placeholder="Ваше сообщение" required></textarea>
+      <div class="modcon-captcha-container">
+        <div class="g-recaptcha" id="capcha1" data-sitekey="Ключ"></div>
+        <div class="text-danger" id="recaptchaError"></div>
+      </div>
+      <button class="form-main-button">ОТПРАВИТЬ</button>
+    </div>
     <footer class="site-footer">
       <div class="sf-container container">
         <div class="sf-col-1">

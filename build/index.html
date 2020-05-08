@@ -9,6 +9,7 @@
     <meta name="format-detection" content="telephone=no">
     <link href="css/main.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -45,11 +46,13 @@
               </div>
               <div class="ts-text-mobile">
                 <p>Для получения кредита и контроля ковенант. От недели и 100 000 руб.</p>
-              </div><a class="btn btn--white btn--with-right-arrow ts-btn ts-btn-desktop" href="">
+              </div><a class="btn btn--white btn--with-right-arrow ts-btn ts-btn-desktop js-modal-fancy-caller" data-fancy-src="#modal-consult">
                 ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg></a>
             </div>
-            <div class="ts-flex__right"><img class="ts-pic" src="/bitrix/templates/GL/img/ts.png" alt=""><a class="btn btn--orange btn--with-right-arrow ts-btn ts-btn-mobile" href="">
-                ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg></a></div>
+            <div class="ts-flex__right"><img class="ts-pic" src="/bitrix/templates/GL/img/ts.png" alt="">
+              <div class="btn btn--orange btn--with-right-arrow ts-btn ts-btn-mobile js-modal-fancy-caller" data-fancy-src="#modal-consult">
+                ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg></div>
+            </div>
           </div>
         </div>
       </section>
@@ -558,6 +561,18 @@
         </div>
       </section>
     </main>
+    <div class="modal-consult modal-custom-close" id="modal-consult">
+      <h2 class="modcon-h2">Получить консультацию</h2>
+      <input class="inputbox form-main-input" placeholder="Ваше имя" required>
+      <input class="inputbox form-main-input js-phone" placeholder="Телефон" required>
+      <input class="inputbox form-main-input" placeholder="Email" type="email" required>
+      <textarea class="textarea form-main-textarea form-main-textarea--mc" placeholder="Ваше сообщение" required></textarea>
+      <div class="modcon-captcha-container">
+        <div class="g-recaptcha" id="capcha1" data-sitekey="Ключ"></div>
+        <div class="text-danger" id="recaptchaError"></div>
+      </div>
+      <button class="form-main-button">ОТПРАВИТЬ</button>
+    </div>
     <footer class="site-footer">
       <div class="sf-container container">
         <div class="sf-col-1">

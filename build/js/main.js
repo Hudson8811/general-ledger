@@ -161,6 +161,7 @@ function modalFancyCaller(fancySrc) {
   $.fancybox.open({
       src: fancySrc,
       type: 'inline',
+      autoFocus: false,
       touch: false
   });
 }

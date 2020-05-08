@@ -1,3 +1,18 @@
+
+
+#modal-consult.modal-consult.modal-custom-close
+	h2.modcon-h2 Получить консультацию
+	input.inputbox.form-main-input(placeholder="Ваше имя" required)
+	input.inputbox.form-main-input.js-phone(placeholder="Телефон" required)
+	input.inputbox.form-main-input(placeholder="Email" type="email" required)
+	textarea.textarea.form-main-textarea.form-main-textarea--mc(placeholder="Ваше сообщение" required)
+	.modcon-captcha-container
+		#capcha1.g-recaptcha(data-sitekey="Ключ")
+		.text-danger#recaptchaError
+	button.form-main-button ОТПРАВИТЬ
+
+
+
 footer.site-footer
 	.sf-container.container
 		.sf-col-1
