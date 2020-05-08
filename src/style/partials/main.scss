@@ -381,7 +381,7 @@ input,textarea,select,button{
   &__left {
     position: relative;
     box-sizing: border-box;
-    width: 501px;
+    width: 556px;
 
     &--text {
       padding-right: 70px;
@@ -392,7 +392,7 @@ input,textarea,select,button{
   &__right {
     position: relative;
     box-sizing: border-box;
-    width: calc(100% - 501px);
+    width: calc(100% - 556px);
 
     &--text {
       padding-top: 24px;

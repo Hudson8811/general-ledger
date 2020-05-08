@@ -1,5 +1,6 @@
 .for_company {
   padding-bottom: 112px;
+  .client_block--btn{margin-bottom: 0;}
   &__title_block {
     padding-top: 40px;
     background: #2c2e85;
@@ -259,7 +260,7 @@
       }
     }
     &:nth-child(n + 5) {
-      display: none;
+      
     }
     &:nth-child(9),
     &:nth-child(10),

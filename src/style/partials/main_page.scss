@@ -413,7 +413,7 @@
         }
       }
       &:nth-child(n + 3) {
-        display: none;
+      
       }
       &:nth-child(2n) {
         padding-right: 56px;
@@ -648,7 +648,7 @@
         display: flex;
       }
       &:nth-child(n + 4) {
-        display: none;
+        
       }
       .client_block--item {
         width: 100%;
