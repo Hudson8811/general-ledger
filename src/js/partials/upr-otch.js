@@ -133,6 +133,7 @@ $(document).ready(function () {
 			instance.scaleToActual(0, 0);
 		  }
 		},
+		backFocus:false,
 		afterClose: function() {
 			setTimeout(function(){
 				$('.js-cf-slick-1').slick('refresh');
