@@ -149,6 +149,25 @@ $(document).ready(function () {
     },
   });
 
+//////////////////
+
+
+$('.js-modal-fancy-caller').click(function () {
+  modalFancyCaller($(this).attr('data-fancy-src'));
+});
+
+function modalFancyCaller(fancySrc) {
+  event.preventDefault();
+  $.fancybox.open({
+      src: fancySrc,
+      type: 'inline',
+      touch: false
+  });
+}
+
+
+////////////////
+
   var $grid1;
   var grid1_isMansory = false;
   var grid1_isMansoryLayoutNow = false;
