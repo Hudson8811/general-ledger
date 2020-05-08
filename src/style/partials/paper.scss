@@ -19,6 +19,9 @@
     color: #323340;
     padding-bottom: 27px;
   }
+  ol, ul{
+    margin-left: 18px;
+  }
   img{
     display: block;
     max-width: 541px;
@@ -54,7 +57,7 @@
     padding-bottom: 8px;
     border-bottom: 1px solid #DADAE8;
   }
-  p,span{
+  p,span, ol, ul{
     display: block;
     font-family: Pragmatica;
     font-weight:400;
@@ -64,7 +67,7 @@
     /* основной шрифт */
     color: #323340;
   }
-  p{
+  p, ol, ul{
     margin-top: 24px;
   }
   .paper_navigations{
@@ -143,10 +146,10 @@
         margin-bottom: 10px;
       }
     }
-    p,span{
+    p,span, ol, ul{
       font-size: 14px;
     }
-    p{margin-top: 10px;}
+    p, ol, ul{margin-top: 10px;}
   }
 }
 
