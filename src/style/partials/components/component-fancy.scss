@@ -1,155 +1,157 @@
 ///////////////Картинка с названием + фансибокс
 .component-fancy {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 100%;
-    padding: 15px 64px;
-    cursor: pointer;
-    transition-duration: .2s;
-    background: #222265;
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 100%;
+	padding: 15px 64px;
+	cursor: pointer;
+	transition-duration: .2s;
+	background: #222265;
 
-    &:hover {
-        opacity: .8;
-    }
+	&:hover {
+		opacity: .8;
+	}
 
-    &.component-fancy--fancy-off{
-        pointer-events: none;
-        &::after{
-            display: none;
-        }
-    }
-    &:active {}
+	&.component-fancy--fancy-off {
+		pointer-events: none;
 
-    &:focus {}
+		&::after {
+			display: none;
+		}
+	}
 
-    &::before {
-        display: block;
-        padding-top: calc(50% + 64px * 2 - 15px * 2);
-        content: '';
-    }
+	&:active {}
 
-    &::after {
-        position: absolute;
-        z-index: 2;
-        right: 19px;
-        bottom: 15px;
-        display: block;
-        width: 38px;
-        height: 38px;
-        content: '';
-        background: url(../img/lupe2.svg) no-repeat center center;
-        background-size: contain;
-    }
+	&:focus {}
+
+	&::before {
+		display: block;
+		padding-top: calc(50% + 64px * 2 - 15px * 2);
+		content: '';
+	}
+
+	&::after {
+		position: absolute;
+		z-index: 2;
+		right: 19px;
+		bottom: 15px;
+		display: block;
+		width: 38px;
+		height: 38px;
+		content: '';
+		background: url(../img/lupe2.svg) no-repeat center center;
+		background-size: contain;
+	}
 }
 
 .component-fancy__inner {
-    position: absolute;
-    top: 17px;
-    left: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: calc(100% - 64px * 2);
-    height: calc(100% - 30px);
+	position: absolute;
+	top: 17px;
+	left: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: calc(100% - 64px * 2);
+	height: calc(100% - 30px);
 
-    img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        max-height: 100%;
-        object-fit: contain;
-        object-position: center center;
-    }
+	img {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		max-height: 100%;
+		object-fit: contain;
+		object-position: center center;
+	}
 }
 
 ////////////////////////////////// component-fancy вариации
 
 //на стр консолид отчётность
 .component-fancy--with-text {
-    padding: 0 25px 0 24px;
+	padding: 0 25px 0 24px;
 
-    &::before {
-        display: block;
-        padding-top: calc(57.2% + 25px + 24px);
-    }
+	&::before {
+		display: block;
+		padding-top: calc(57.2% + 25px + 24px);
+	}
 
-    &::after {
-        right: 6px;
-        bottom: 4px;
-        width: 20px;
-        height: 20px;
-    }
+	&::after {
+		right: 6px;
+		bottom: 4px;
+		width: 20px;
+		height: 20px;
+	}
 
-    .component-fancy__inner {
-        top: 0;
-        left: 24px;
-        display: flex;
-        overflow: hidden;
-        align-items: flex-start;
-        flex-direction: column;
-        width: calc(100% - 25px - 24px);
-        height: 100%;
+	.component-fancy__inner {
+		top: 0;
+		left: 24px;
+		display: flex;
+		overflow: hidden;
+		align-items: flex-start;
+		flex-direction: column;
+		width: calc(100% - 25px - 24px);
+		height: 100%;
 
-        img {
-            position: absolute;
-            top: 38px;
-            left: 0;
-            width: 132px;
-            max-width: calc(100% - 10px);
-            object-fit: cover;
-            object-position: center top;
-        }
-    }
+		img {
+			position: absolute;
+			top: 38px;
+			left: 0;
+			width: 132px;
+			max-width: calc(100% - 10px);
+			object-fit: cover;
+			object-position: center top;
+		}
+	}
 }
 
 .component-fancy__text {
-    position: absolute;
-    top: 13px;
-    color: #FFFFFF;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 150%;
+	position: absolute;
+	top: 13px;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 150%;
 }
 
 //на стр консолид отчётность
 .component-fancy--cons-rs-one-pic {
 
-    padding: 41px 106px 0 40px;
+	padding: 41px 106px 0 40px;
 
-    &::before {
-        display: block;
-        padding-top: calc(32.5% + 146px - 41px);
-    }
+	&::before {
+		display: block;
+		padding-top: calc(32.5% + 146px - 41px);
+	}
 
-    &::after {
-        right: 20px;
-        bottom: 15px;
-        width: 38px;
-        height: 38px;
-    }
+	&::after {
+		right: 20px;
+		bottom: 15px;
+		width: 38px;
+		height: 38px;
+	}
 
-    .component-fancy__inner {
-        top: 0;
-        left: 40px;
-        display: flex;
-        overflow: hidden;
-        align-items: flex-start;
-        flex-direction: column;
-        width: calc(100% - 146px);
-        height: 100%;
+	.component-fancy__inner {
+		top: 0;
+		left: 40px;
+		display: flex;
+		overflow: hidden;
+		align-items: flex-start;
+		flex-direction: column;
+		width: calc(100% - 146px);
+		height: 100%;
 
-        img {
-            position: absolute;
-            top: 41px;
-            left: 0;
-            width: 100%;
-            max-width: 100%;
-            object-fit: cover;
-            object-position: center top;
-        }
-    }
+		img {
+			position: absolute;
+			top: 41px;
+			left: 0;
+			width: 100%;
+			max-width: 100%;
+			object-fit: cover;
+			object-position: center top;
+		}
+	}
 }
 
 /*
@@ -164,87 +166,87 @@ a.component-fancy(href="images/optish-result-1.png" data-fancybox="optish-result
 @media screen and (min-width:$desktopMin) {}
 
 @media screen and (max-width:$tabletMax) {
-    .component-fancy::after {
-        border-radius: 50%;
+	.component-fancy::after {
+		border-radius: 50%;
 
-        background-color: #2A2FFF;
-        width: 80px;
-        height: 80px;
-        bottom: 50%;
-        left: 50%;
-        transform: translate(-50%,50%);
-        background-size: 59%;
-        background-position: 45% 64%;
-    }
-
-
-    .component-fancy__text {
-        top: 13px;
-    }
+		background-color: #2A2FFF;
+		width: 80px;
+		height: 80px;
+		bottom: 50%;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		background-size: 59%;
+		background-position: 45% 64%;
+	}
 
 
+	.component-fancy__text {
+		top: 13px;
+	}
 
 
 
 
 
-    //на стр консолид отчётность
-    .component-fancy--with-text {
-        padding: 0 26px 0;
-
-        &::before {
-            display: block;
-            padding-top: calc(60% + 26px * 2);
-        }
-
-        &::after {
-            width: 38px;
-            height: 38px;
-            bottom: calc(63% - 39px);
-            top:  auto;
-        }
-
-        .component-fancy__inner {
-            left: 26px;
-            width: calc(100% - 26px * 2);
 
 
-            img {
-                top: 39px;
-                width: 100%;
-                max-width: 100%;
-            }
-        }
-    }
+	//на стр консолид отчётность
+	.component-fancy--with-text {
+		padding: 0 26px 0;
 
-    //на стр консолид отчётность
+		&::before {
+			display: block;
+			padding-top: calc(60% + 26px * 2);
+		}
 
-    .component-fancy--cons-rs-one-pic{
-        margin-top: 33px;
-        padding: 61px 80px 0;
+		&::after {
+			width: 38px;
+			height: 38px;
+			bottom: calc(63% - 39px);
+			top: auto;
+		}
 
-        &::before {
-            display: block;
-            padding-top: calc(21.7% + 80px * 2 - 61px);
-        }
-
-        &::after {
-            bottom: calc(66% - 61px);
-            top:  auto;
-        }
-
-        .component-fancy__inner {
-            left: 80px;
-            width: calc(100% - 80px * 2);
+		.component-fancy__inner {
+			left: 26px;
+			width: calc(100% - 26px * 2);
 
 
-            img {
-                top: 61px;
-                width: 100%;
-                max-width: 100%;
-            }
-        }
-    }
+			img {
+				top: 39px;
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+	}
+
+	//на стр консолид отчётность
+
+	.component-fancy--cons-rs-one-pic {
+		margin-top: 33px;
+		padding: 61px 80px 0;
+
+		&::before {
+			display: block;
+			padding-top: calc(21.7% + 80px * 2 - 61px);
+		}
+
+		&::after {
+			bottom: calc(66% - 61px);
+			top: auto;
+		}
+
+		.component-fancy__inner {
+			left: 80px;
+			width: calc(100% - 80px * 2);
+
+
+			img {
+				top: 61px;
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+	}
 }
 
 @media screen and (min-width:$tabletMin) and (max-width:$tabletMax) {}
@@ -253,51 +255,165 @@ a.component-fancy(href="images/optish-result-1.png" data-fancybox="optish-result
 
 @media screen and (max-width:$phoneMax) {
 
-    //на стр консолид отчётность
-    .component-fancy--with-text {
-        padding: 0 8px 0;
+	//на стр консолид отчётность
+	.component-fancy--with-text {
+		padding: 0 8px 0;
 
-        &::before {
-            padding-top: calc(77% + 8px * 2);
-        }
+		&::before {
+			padding-top: calc(77% + 8px * 2);
+		}
 
-        &::after {
-            bottom: calc(63% - 39px);
-        }
+		&::after {
+			bottom: calc(63% - 39px);
+		}
 
-        .component-fancy__inner {
-            left: 8px;
-            width: calc(100% - 8px * 2);
-        }
-    }
-    .component-fancy__text {
-        top: 15px;
-    }
+		.component-fancy__inner {
+			left: 8px;
+			width: calc(100% - 8px * 2);
+		}
+	}
 
-    //на стр консолид отчётность
-    .component-fancy--cons-rs-one-pic {
-        margin-top: 26px;
-        padding:0 35px 0;
+	.component-fancy__text {
+		top: 15px;
+	}
 
-        &::before {
-            padding-top: calc(47% + 35px * 2);
-        }
+	//на стр консолид отчётность
+	.component-fancy--cons-rs-one-pic {
+		margin-top: 26px;
+		padding: 0 35px 0;
 
-        &::after {
-            bottom: calc(58% - 35px);
-            width: 60px;
-            height: 60px;
-        }
+		&::before {
+			padding-top: calc(47% + 35px * 2);
+		}
 
-        .component-fancy__inner {
-            left: 35px;
-            width: calc(100% - 35px * 2);
-            img{
-                top: 35px;
-            }
-        }
+		&::after {
+			bottom: calc(58% - 35px);
+			width: 60px;
+			height: 60px;
+		}
+
+		.component-fancy__inner {
+			left: 35px;
+			width: calc(100% - 35px * 2);
+
+			img {
+				top: 35px;
+			}
+		}
 
 
-    }
+	}
 
+}
+
+
+///////////////слайдер на упр отч
+.component-fancy--with-slider {
+	&::after {
+		pointer-events: none;
+	}
+
+	.slick-dots {
+		position: absolute;
+		bottom: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+
+
+		li {
+			cursor: pointer;
+			display: block;
+			margin: 0 10px;
+
+			width: 6px;
+			height: 6px;
+			background: #FFFFFF;
+			border-radius: 50%;
+			position: relative;
+
+			#slick-slide-control22 {
+				&:hover {}
+
+				&:active {}
+
+				&:focus {}
+			}
+
+			button {
+				display: none;
+			}
+
+			&::before {
+				content: '';
+				display: block;
+				background: #FFFFFF;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				left: -2px;
+				top: -2px;
+				position: absolute;
+				opacity: 0;
+				transition-duration: .2s;
+			}
+
+			&.slick-active,
+			&:hover {
+				&::before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&:hover{
+		opacity: 1;
+		cursor: default;
+	}
+}
+
+.component-fancy-slider-uprotch {
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+
+	a {
+
+		display: block;
+
+		img {}
+	}
+
+
+}
+
+.cf-sup-item-name {
+display: block;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1;
+	/* or 18px */
+
+	text-align: center;
+
+	color: #FFFFFF;
+    padding-bottom: 16px;
+    padding-top: 3px;
+
+}
+
+.component-fancy--uprotch-1.component-fancy--with-slider {
+	padding-top: 33px;
+
+	&::before {
+		padding-top: calc(80.7% + 46px * 2 - 33px - 63px);
+	}
+
+	.component-fancy__inner {
+		top: 33px;
+		height: calc(100% - 63px - 33px);
+	}
 }

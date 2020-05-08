@@ -79,7 +79,7 @@ $(document).ready(function () {
 		initUprotchRsTripleSlider();
 		initWWSYuprotchSlider();
 	}
-	
+
 
 	$(window).resize(function () {
 		if (window.matchMedia('(max-width: 1025px)').matches) {
@@ -115,5 +115,29 @@ $(document).ready(function () {
             par.addClass('mobile-unwrap--dn');
         }, 200);
 	});
-	
+
+
+	$('.js-cf-slick-1').slick({
+		arrows:false,
+		infinite: false,
+		dots: true,
+		appendDots: $('#cf-slick-1-dots'),
+		autoplay:false
+	});
+
+	$(".js-cf-slick-afancy").fancybox({
+		animationEffect: false,
+		wheel: false,
+		afterShow: function (instance, current) {
+		  if (window.matchMedia("(min-width: 1300px)").matches) {
+			instance.scaleToActual(0, 0);
+		  }
+		},
+		backFocus:false,
+		afterClose: function() {
+			setTimeout(function(){
+				$('.js-cf-slick-1').slick('refresh');
+			}, 10);
+		}
+	  });
 });

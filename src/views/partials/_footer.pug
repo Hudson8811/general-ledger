@@ -1,3 +1,18 @@
+
+
+#modal-consult.modal-consult.modal-custom-close
+	h2.modcon-h2 Получить консультацию
+	input.inputbox.form-main-input(placeholder="Ваше имя" required)
+	input.inputbox.form-main-input.js-phone(placeholder="Телефон" required)
+	input.inputbox.form-main-input(placeholder="Email" type="email" required)
+	textarea.textarea.form-main-textarea.form-main-textarea--mc(placeholder="Ваше сообщение" required)
+	.modcon-captcha-container
+		#capcha1.g-recaptcha(data-sitekey="Ключ")
+		.text-danger#recaptchaError
+	button.form-main-button ОТПРАВИТЬ
+
+
+
 footer.site-footer
 	.sf-container.container
 		.sf-col-1
@@ -32,7 +47,10 @@ footer.site-footer
 				.sf-col-title Информация
 				a.btn.btn--with-right-arrow.btn--white.sf-a-btn(href="") Задать вопрос
 					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
-
+				.sf-polit-wrap
+					a(href="") Политика
+						br.tbr
+						|  конфиденциальности
 		.sf-col-4
 			a.sf-col-4-phone(href="tel:+74952119040") +7 (495) 211 90 40
 			.sf-col-4-work-time пн-пт с 9:00 до 18:00

@@ -149,6 +149,26 @@ $(document).ready(function () {
     },
   });
 
+//////////////////
+
+
+$('.js-modal-fancy-caller').click(function () {
+  modalFancyCaller($(this).attr('data-fancy-src'));
+});
+
+function modalFancyCaller(fancySrc) {
+  event.preventDefault();
+  $.fancybox.open({
+      src: fancySrc,
+      type: 'inline',
+      autoFocus: false,
+      touch: false
+  });
+}
+
+
+////////////////
+
   var $grid1;
   var grid1_isMansory = false;
   var grid1_isMansoryLayoutNow = false;
@@ -450,7 +470,7 @@ $(document).ready(function () {
     setTimeout(function () {
       $(".hww-block-mobile-unwrap").addClass("hww-block-mobile-unwrap--dn");
     }, 200);
-    
+
   });
 
   $(window).resize(function () {
@@ -658,7 +678,7 @@ $(document).ready(function () {
 		initUprotchRsTripleSlider();
 		initWWSYuprotchSlider();
 	}
-	
+
 
 	$(window).resize(function () {
 		if (window.matchMedia('(max-width: 1025px)').matches) {
@@ -694,7 +714,31 @@ $(document).ready(function () {
             par.addClass('mobile-unwrap--dn');
         }, 200);
 	});
-	
+
+
+	$('.js-cf-slick-1').slick({
+		arrows:false,
+		infinite: false,
+		dots: true,
+		appendDots: $('#cf-slick-1-dots'),
+		autoplay:false
+	});
+
+	$(".js-cf-slick-afancy").fancybox({
+		animationEffect: false,
+		wheel: false,
+		afterShow: function (instance, current) {
+		  if (window.matchMedia("(min-width: 1300px)").matches) {
+			instance.scaleToActual(0, 0);
+		  }
+		},
+		backFocus:false,
+		afterClose: function() {
+			setTimeout(function(){
+				$('.js-cf-slick-1').slick('refresh');
+			}, 10);
+		}
+	  });
 });
 
 
@@ -782,10 +826,12 @@ $(document).ready(function () {
 
 
     $('.profitb-controller-inner').click(function () {
+        $('.js-profitb-tabs-wrap.mCustomScrollbar').fadeOut(200)
         var ind = $(this).parent().index();
         $('.profitb-controller').removeClass('profitb-controller--active');
         $(this).parent().addClass('profitb-controller--active');
-        $('.profitb-tab').eq(ind).addClass('profitb-tab--active').siblings().removeClass('profitb-tab--active');
+        $('.profitb-tab').eq(ind).addClass('profitb-tab--active-desktop').siblings().removeClass('profitb-tab--active-desktop');
+          $('.js-profitb-tabs-wrap.mCustomScrollbar').fadeIn(200)
     });
 
     $('.lob-block-mobile-tablet-show-btn').click(function () {

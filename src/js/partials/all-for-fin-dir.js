@@ -35,10 +35,12 @@ $(document).ready(function () {
 
 
     $('.profitb-controller-inner').click(function () {
+        $('.js-profitb-tabs-wrap.mCustomScrollbar').fadeOut(200)
         var ind = $(this).parent().index();
         $('.profitb-controller').removeClass('profitb-controller--active');
         $(this).parent().addClass('profitb-controller--active');
-        $('.profitb-tab').eq(ind).addClass('profitb-tab--active').siblings().removeClass('profitb-tab--active');
+        $('.profitb-tab').eq(ind).addClass('profitb-tab--active-desktop').siblings().removeClass('profitb-tab--active-desktop');
+          $('.js-profitb-tabs-wrap.mCustomScrollbar').fadeIn(200)
     });
 
     $('.lob-block-mobile-tablet-show-btn').click(function () {

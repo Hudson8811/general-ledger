@@ -16,6 +16,26 @@ $(document).ready(function () {
     },
   });
 
+//////////////////
+
+
+$('.js-modal-fancy-caller').click(function () {
+  modalFancyCaller($(this).attr('data-fancy-src'));
+});
+
+function modalFancyCaller(fancySrc) {
+  event.preventDefault();
+  $.fancybox.open({
+      src: fancySrc,
+      type: 'inline',
+      autoFocus: false,
+      touch: false
+  });
+}
+
+
+////////////////
+
   var $grid1;
   var grid1_isMansory = false;
   var grid1_isMansoryLayoutNow = false;
@@ -317,7 +337,7 @@ $(document).ready(function () {
     setTimeout(function () {
       $(".hww-block-mobile-unwrap").addClass("hww-block-mobile-unwrap--dn");
     }, 200);
-    
+
   });
 
   $(window).resize(function () {
