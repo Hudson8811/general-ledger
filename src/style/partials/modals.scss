@@ -1,33 +1,27 @@
 .modal-consult {
-
-    width: 584px;
+    display: none;
     box-sizing: border-box;
+    width: 584px;
     max-width: 99%;
+    padding: 62px 80px 64px;
+    border-radius: 20px;
     background: #F5F6FB;
     box-shadow: 0px 4px 25px rgba(34, 35, 58, 0.15);
-    border-radius: 20px;
-    padding: 62px 80px 64px;
-
-
-
-
 }
 
 .form-main-textarea--mc {
-
     margin-bottom: 40px;
 }
 
 .modal-custom-close {
-
     .fancybox-button.fancybox-close-small {
-        padding: 0;
-        right: 20px;
         top: 20px;
-        background: url(../img/moadl-cc.svg) no-repeat center center;
-        background-size: contain;
+        right: 20px;
         width: 26px;
         height: 26px;
+        padding: 0;
+        background: url(../img/moadl-cc.svg) no-repeat center center;
+        background-size: contain;
 
         svg {
             display: none;
@@ -38,12 +32,12 @@
 }
 
 .modcon-h2 {
-    font-family: $fontG;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 125%;
-    color: #323340;
     margin-bottom: 40px;
+    color: #323340;
+    font-family: $fontG;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 125%;
 }
 
 .modcon-captcha-container {
@@ -73,12 +67,10 @@
 
     .modcon-captcha-container {
 
-
         &,
         * {
             max-width: 100%;
         }
-
     }
 }
 
@@ -96,9 +88,8 @@
         margin-bottom: 30px;
 
         iframe {
-            display: block;
             position: absolute;
-
+            display: block;
             transform: scale(.95);
             transform-origin: 0;
         }
