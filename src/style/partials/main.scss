@@ -352,6 +352,96 @@ input,textarea,select,button{
 }
 
 //---------RESULT-SECTION	------------------------------------------------------------------------------
+.result-section.result-section--uprot{
+  .rs-block-row__right{
+    width: calc(100% - 424px);
+  }
+  .rs-block-row-2.rs-block-row-2--uprotch{
+    .rs-block-row__left{
+      width: 501px;
+    }
+    .rs-block-row__right{
+      width: calc(100% - 507px);
+    }
+  }
+  .rs-block-row__right--text{
+    padding-right: 6%;
+  }
+  @media screen and (max-width:$tabletMax){
+    .component-fancy.component-fancy--uprotch-1.component-fancy--with-slider{
+      position: relative;
+        overflow: hidden;
+    }
+    .component-fancy--with-slider #cf-slick-1-dots{
+      display: none;
+    }
+    .component-fancy--uprotch-1{
+      padding: 23px 61px;
+      padding-bottom: 0;
+      &.component-fancy--with-slider::before{
+        padding-top: 50%;
+      }
+      .component-fancy__inner{
+        top: 20px;
+        left: 62px;
+        width: calc(100% - 61px * 2);
+        height: 100%;
+      }
+    }
+    .cf-sup-item-name{
+      text-align: left;
+    }
+    .rs-block-row-2.rs-block-row-2--uprotch .rs-block-row__left{
+      width: 100%;
+    }
+    .rs-block-row-2.rs-block-row-2--uprotch .rs-block-row__right{
+      width: 100%;
+    }
+    .rs-block-row__right{
+      width: 100%;
+    }
+    .component-fancy::after{
+      width: 64px;
+      height: 64px;
+    }
+    .wwsy-uprotch-arrow-next,.wwsy-uprotch-arrow-prev{
+      bottom: auto;
+      top: 50%;
+      z-index: 10;
+      background: #F5F6FB;
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .wwsy-uprotch-arrow-next{
+      right: 12px;
+    }
+    .wwsy-uprotch-arrow-prev{
+      left: 12px;
+    }
+  }
+  @media screen and (max-width:$phoneMax){
+    .wwsy-uprotch-arrow-next, .wwsy-uprotch-arrow-prev{
+      width: 29px;
+      height: 29px;
+    }
+    .component-fancy::after{
+      width: 56px;
+      height: 56px;
+    }
+    .component-fancy--uprotch-1{
+      padding: 64px 52px;
+      padding-bottom: 0;
+      .component-fancy__inner{
+        top: 24px;
+      }
+    }
+  }
+}
+
 .result-section {
   padding-top: 48px;
 }
