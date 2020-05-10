@@ -327,18 +327,10 @@ $(document).ready(function () {
       nextArrow:
         '<div class="hww-slick-next"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 15L7 8L1 0.999999" stroke="#555665" stroke-width="2"/></svg></div>',
     });
-    $(".wwsy-uprotch").on('afterChange', function (event, slick, currentSlide) {
-      $("#cp").text(currentSlide + 1);
-    });
+
   }
 
-  $(".hww-block-mobile-unwrap span").click(function () {
-    $(".hww-block").addClass("hww-block--shown");
-    setTimeout(function () {
-      $(".hww-block-mobile-unwrap").addClass("hww-block-mobile-unwrap--dn");
-    }, 200);
 
-  });
 
   $(window).resize(function () {
     if (window.matchMedia("(max-width: 1025px)").matches) {
@@ -447,20 +439,34 @@ $(document).ready(function () {
       .attr("src", src + "&autoplay=1");
   });
 
-  $(".client_block--btn").click(function () {
-    if ($(window).width() > 1026) {
-      $(this).toggleClass("active");
-      $(".client_block--item_wrapper").toggleClass("active");
-      $(".client_block--item_wrapper:nth-child(n+5)").slideToggle();
-    } else if ($(window).width() > 700) {
-      $(this).toggleClass("active");
-      $(".client_block--item_wrapper").toggleClass("active");
-      $(".client_block--item_wrapper:nth-child(n+3)").slideToggle();
-    }
-    else {
-      $(this).toggleClass("active");
-      $(".client_block--item_wrapper").toggleClass("active");
-      $(".client_block--item_wrapper:nth-child(n+4)").slideToggle();
-    };
-  });
+});
+
+
+$(".client_block--btn").click(function () {
+  if ($(window).width() > 1026) {
+    $(this).toggleClass("active");
+    $(".client_block--item_wrapper").toggleClass("active");
+    $(".client_block--item_wrapper:nth-child(n+5)").slideToggle();
+  } else if ($(window).width() > 700) {
+    $(this).toggleClass("active");
+    $(".client_block--item_wrapper").toggleClass("active");
+    $(".client_block--item_wrapper:nth-child(n+3)").slideToggle();
+  }
+  else {
+    $(this).toggleClass("active");
+    $(".client_block--item_wrapper").toggleClass("active");
+    $(".client_block--item_wrapper:nth-child(n+4)").slideToggle();
+  };
+});
+
+$(".hww-block-mobile-unwrap span").click(function () {
+  $(".hww-block").addClass("hww-block--shown");
+  setTimeout(function () {
+    $(".hww-block-mobile-unwrap").addClass("hww-block-mobile-unwrap--dn");
+  }, 200);
+
+});
+
+$(".wwsy-uprotch").on('afterChange', function (event, slick, currentSlide) {
+  $("#cp").text(currentSlide + 1);
 });
