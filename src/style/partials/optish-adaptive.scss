@@ -432,7 +432,7 @@
 
 
 
-@media screen and (max-width:$phoneMax) {\
+@media screen and (max-width:$phoneMax) {
 
 	.top-section--optish {
 		.ts-text-mobile {
@@ -669,6 +669,9 @@
 
 	.sp-pic-optish-2-cf::before {
 		padding-top: calc(31.3% + 64px * 2 - 15px * 2);
+	}
+	.wwsy-uprotch .slick-slide .wwsy-uprotch-item__text{
+		flex-direction: column;
 	}
 }
 

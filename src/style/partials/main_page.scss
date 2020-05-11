@@ -511,10 +511,10 @@
 @media screen and (max-width: $phoneMax) {
   .client_block-main{
     .client_block--item_wrapper{
-      &:nth-child(n+3){
+      &:nth-child(n+4){
         display: flex;
       }
-      &:nth-child(n+4){
+      &:nth-child(n+5){
         display: none;
       }
     }

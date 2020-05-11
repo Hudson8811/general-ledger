@@ -301,7 +301,7 @@ $(document).ready(function () {
 
   if (window.matchMedia("(max-width: 700px)").matches) {
     $(".wwsy-block:not(.js-wwsy-slider-tablet)").slick({
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 2000,
       infinite: false,
       prevArrow:
