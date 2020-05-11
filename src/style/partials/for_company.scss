@@ -109,6 +109,9 @@
     img {
       display: block;
       width: 100%;
+      &.castom_width{
+        width: 120%;
+      }
     }
   }
   &--name {
