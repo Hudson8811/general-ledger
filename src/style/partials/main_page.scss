@@ -1,9 +1,5 @@
 .client_block-main{
-  .client_block--item_wrapper{
-    &:nth-child(n+5){
-      display: none;
-    }
-  }
+
 }
 .top-section__main-page {
   margin-bottom: 0;
@@ -310,11 +306,7 @@
 
 @media screen and (max-width: $tabletMax) {
   .client_block-main{
-    .client_block--item_wrapper{
-      &:nth-child(n+3){
-        display: none;
-      }
-    }
+
   }
   .top-section__main-page {
     padding-bottom: 85px;
@@ -510,14 +502,7 @@
 
 @media screen and (max-width: $phoneMax) {
   .client_block-main{
-    .client_block--item_wrapper{
-      &:nth-child(n+4){
-        display: flex;
-      }
-      &:nth-child(n+5){
-        display: none;
-      }
-    }
+
   }
   .top-section__main-page {
     padding-bottom: 50px;
