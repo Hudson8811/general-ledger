@@ -116,9 +116,19 @@
         bottom: 0;
         left: 40px;
         cursor: pointer;
+        z-index: 2;
         &:hover {
           opacity: 0.8;
         }
+      }
+      .read2{
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        z-index: 1;
       }
     }
   }

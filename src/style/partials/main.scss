@@ -1769,20 +1769,29 @@ a.cat-block-iwt-text__line-2 {
     padding: 0;
     cursor: pointer;
   }
+
+  .col-xs-12{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
 }
 
 .social-block {
   margin-top: 38px;
   margin-bottom: 40px;
   display: flex;
+  margin-left: 10px;
 
   &-item {
     & + & {
-      margin-left: 24px;
+      margin-left: 45px;
     }
 
     img {
       display: block;
+      transform: scale(1.5);
     }
   }
 }

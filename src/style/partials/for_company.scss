@@ -50,6 +50,9 @@
       /* or 24px */
       /* серый на синем */
       color: #9d9ebf;
+      & + &{
+        margin-top: 10px;
+      }
     }
     .for_company__title_block--description.mobile {
       display: none;
