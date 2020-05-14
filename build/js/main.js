@@ -56,21 +56,31 @@ return t.apply(e,arguments)}}function a(){this.onload=null,e(t).addClass(d[2]),r
 
 $(document).ready(function () {
 	$('.js-video-yt .video-yt__preview').click(function () {
-		if ($(this).siblings('iframe').length === 0) {
-			var src = $(this).attr('data-src');
-			$(this).parent().addClass('video-yt-has-iframe').prepend('<iframe src="' + src + '" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+		if($(this).attr('data-video-type')=='html5'){
+			if ($(this).siblings('video').length === 0) {
+				var src = $(this).attr('data-src');
+				$(this).parent().addClass('video-yt-has-html5-video').prepend('<video autoplay controls src="' + src + '"></video>');
+			}
+
 		}
+		else{
+			if ($(this).siblings('iframe').length === 0) {
+				var src = $(this).attr('data-src');
+				$(this).parent().addClass('video-yt-has-iframe').prepend('<iframe src="' + src + '" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+			}
+		}
+
 	});
 
 /////////////////////////////////////////////////////
-	
+
 	$("[data-counter-id]").on('afterChange', function (event, slick, currentSlide) {
 		var id = $(this).attr('data-counter-id');
 		$('#' + id).text(currentSlide + 1);
 	});
 
 /////////////////////////////////////////////////////
-	
+
 	$('[data-mobile-unwrap-target-id] span').click(function () {
 		var par= $(this).parent();
 		var targetId=par.attr('data-mobile-unwrap-target-id');
@@ -613,7 +623,14 @@ $('.rs-ssb-main').slick({
 	nextArrow: '<div class="slider-white-next"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14.5" cy="14.5" r="14.5" transform="rotate(-180 14.5 14.5)" fill="#F5F6FB"/><path d="M13 21L19 14L13 7" stroke="#555665" stroke-width="2"/></svg></div>'
 
 });
+$('.js-pause-video-on-slide').on('afterChange', function(event, slick, currentSlide, nextSlide){
+	$(this).find('video').each(function(){
 
+        if(!this.paused){
+			this.pause();
+		}
+	});
+});
 function initUprotchRsTripleSlider() {
 	$('.js-rs-triple-ptd--uprotch').slick({
 		arrows: true,

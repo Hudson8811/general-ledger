@@ -8,7 +8,14 @@ $('.rs-ssb-main').slick({
 	nextArrow: '<div class="slider-white-next"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14.5" cy="14.5" r="14.5" transform="rotate(-180 14.5 14.5)" fill="#F5F6FB"/><path d="M13 21L19 14L13 7" stroke="#555665" stroke-width="2"/></svg></div>'
 
 });
+$('.js-pause-video-on-slide').on('afterChange', function(event, slick, currentSlide, nextSlide){
+	$(this).find('video').each(function(){
 
+        if(!this.paused){
+			this.pause();
+		}
+	});
+});
 function initUprotchRsTripleSlider() {
 	$('.js-rs-triple-ptd--uprotch').slick({
 		arrows: true,
