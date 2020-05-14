@@ -1775,14 +1775,16 @@ a.cat-block-iwt-text__line-2 {
   margin-top: 38px;
   margin-bottom: 40px;
   display: flex;
+  margin-left: 10px;
 
   &-item {
     & + & {
-      margin-left: 24px;
+      margin-left: 45px;
     }
 
     img {
       display: block;
+      transform: scale(1.5);
     }
   }
 }

@@ -1638,10 +1638,13 @@
 		width: calc(100% - 48px);
 	}
 
-	.modal-fc-slider-nav__dots {
-		margin: 0 36px;
+	.modal-fc-slider-nav__dots , .modal-fc-slider-nav__next::before, .modal-fc-slider-nav__prev::after{
+		display: none;
 	}
 
+	.modal-fc-slider-nav__next{
+		display: block;
+	}
 
 }
 
