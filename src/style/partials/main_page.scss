@@ -673,12 +673,8 @@
     &--item_wrapper {
       width: 100%;
       padding: 0px 58px !important;
-      &:nth-child(n + 3) {
-        display: flex;
-      }
-      &:nth-child(n + 4) {
-        
-      }
+     
+    
       .client_block--item {
         width: 100%;
         border-right: 0;
