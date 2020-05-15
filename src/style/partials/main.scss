@@ -1805,3 +1805,12 @@ a.cat-block-iwt-text__line-2 {
     }
   }
 }
+
+
+.table-overflow{
+  overflow-x: auto;
+  table{
+    min-width: 600px;
+    white-space: nowrap;
+  }
+}
