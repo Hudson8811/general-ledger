@@ -114,6 +114,7 @@
       width: 100%;
       &.castom_width{
         width: 120%;
+        height: 100%;
       }
     }
   }
@@ -332,6 +333,7 @@
       &--flex {
         flex-direction: column;
         padding-bottom: 57px;
+        text-align: center;
       }
       .for_company__title_block--description.desktop {
         display: none;
@@ -351,18 +353,19 @@
       }
       &--left {
         padding-top: 7px;
+        max-width: 471px;
+        margin: 0 auto;
       }
       &--banner {
-        margin-right: 0;
+        margin: 0 auto;
         width: 88%;
         margin-top: 21px;
-        margin-left: -39px;
       }
       &--subtitle {
         margin-bottom: 0;
       }
       &--description {
-        margin-top: 38px;
+        margin: 38px auto 0;
         max-width: 539px;
       }
     }

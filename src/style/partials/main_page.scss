@@ -15,9 +15,6 @@
     width: 971px;
     left: -60px;
   }
-  .ts-tablet {
-    display: none;
-  }
 }
 .skills_block {
   background: #36388f;
@@ -348,12 +345,6 @@
   }
   .top-section__main-page {
     padding-bottom: 85px;
-    .ts-tablet {
-      display: block;
-    }
-    .ts-desktop {
-      display: none;
-    }
     .ts-flex__left {
       padding-top: 46px;
     }
@@ -555,12 +546,6 @@
         top: -32px;
         left: -13px;
       }
-    }
-    .ts-tablet {
-      display: none;
-    }
-    .ts-desktop {
-      display: block;
     }
   }
   .skills_block {

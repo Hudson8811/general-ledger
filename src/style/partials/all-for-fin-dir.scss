@@ -67,6 +67,15 @@
       width: 100%;
     }
   }
+
+  @media (min-width: 1026px) {
+    .rs-block-li {
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+
   @media screen and (max-width: $tabletMax) {
     .rs-ssb-thumbs-item-inner::before {
       padding-top: 56.25%;
@@ -150,10 +159,6 @@
 
         .rs-block-row__left--text {
             padding-right: 37px;
-        }
-
-        .rs-block-title {
-            display: none;
         }
 
         .rs-block-digit.rs-block-digit-1 {

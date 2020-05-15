@@ -715,6 +715,16 @@ input,textarea,select,button{
 .hww-block-item-top__pic {
   width: calc(100% - 140px);
 
+  &--padding {
+    img {
+      padding-top: 100px;
+
+      @media (max-width: $tabletMax) {
+        padding-top: 0;
+      }
+    }
+  }
+
   img {
     //width: 100%;
     max-width: 100%;
