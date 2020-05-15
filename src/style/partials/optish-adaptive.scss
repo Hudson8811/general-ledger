@@ -499,13 +499,12 @@
 		.hww-block-item-top__pic {
 			padding-top: 0;
 
-			background: #F5F6FB;
 		}
 
 		.hww-block-item-top__text {}
 
 		.hww-block-item-bottom {
-			background: #F5F6FB;
+
 			padding: 21px 26px 26px 24px;
 		}
 
@@ -672,6 +671,7 @@
 	}
 	.wwsy-uprotch .slick-slide .wwsy-uprotch-item__text{
 		flex-direction: column;
+		display: block;
 	}
 }
 

@@ -225,6 +225,12 @@
   }
 }
 
+@media screen and (min-width:$desktopMin) {
+  .how-we-work-main-section .hww-block-item{
+    min-height: 462px;
+  }
+}
+
 .our-results-in-digits-main {
   margin-top: 15px;
   .orind-description {
@@ -352,7 +358,6 @@
       .ts-pic {
         width: 95%;
         margin: 0 auto;
-        top: -37px;
         left: 30px;
       }
     }
@@ -653,12 +658,11 @@
         width: 100%;
         margin-top: 35px;
         img {
-          max-width: none;
-          width: 100%;
+
         }
       }
       .hww-block-item-top__pic {
-        background: #f5f6fb;
+
       }
       .hww-block-item-step {
         margin-right: 0;
@@ -666,7 +670,7 @@
       .hww-block-item-bottom {
         padding-left: 24px;
         padding-right: 24px;
-        background: #f5f6fb;
+
         padding-bottom: 32px;
         .hww-block-item-title {
           margin-top: 0;

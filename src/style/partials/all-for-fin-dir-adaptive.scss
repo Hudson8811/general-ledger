@@ -253,6 +253,12 @@
     }
 }
 
+@media screen and (min-width:$tabletMin) and (max-width:$tabletMax) {
+    .wwsy-uprotch-mobile-counter--affd{
+        display: none;
+    }
+}
+
 @media screen and (max-width: $tabletMax) {
     .top-section--affd {
         .ts-pic {

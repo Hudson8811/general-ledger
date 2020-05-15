@@ -230,7 +230,7 @@
 
 
 .sh-sub-menu-wrap {
-	display: none;
+	display: none !important;
 }
 
 
@@ -393,7 +393,7 @@
 		}
 
 		&:first-child .sh-menu-item-a {
-			padding: 0;
+			/*padding: 0;*/
 		}
 	}
 
@@ -436,7 +436,8 @@
 @media screen and (max-width:$phoneMax) {
 
 	.sh-menu {
-		padding: 42px 0 0;
+		/*padding: 42px 0 0;*/
+		padding: 10px 0 0;
 	}
 
 	.sh-menu-item {
