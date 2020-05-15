@@ -1808,9 +1808,14 @@ a.cat-block-iwt-text__line-2 {
 
 
 .table-overflow{
-  overflow-x: auto;
+  overflow: auto;
   table{
     min-width: 600px;
     white-space: nowrap;
+  }
+}
+@media screen and (min-width:930px) {
+  .table-overflow{
+    margin-right: -70px;
   }
 }
