@@ -1194,7 +1194,7 @@
 	.hww-slick-next {
 		position: absolute;
 		z-index: 1;
-		top: 184px;
+		bottom: -60px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -1215,11 +1215,11 @@
 	}
 
 	.hww-slick-prev {
-		left: 16px;
+		left: 20%;
 	}
 
 	.hww-slick-next {
-		right: 16px;
+		right: 20%;
 	}
 
 
