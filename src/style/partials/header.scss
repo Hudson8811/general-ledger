@@ -57,7 +57,7 @@
 .sh-menu-wrap {
 	display: flex;
 	justify-content: center;
-	margin: 9px 80px 0 auto;
+	margin: 9px 60px 0 auto;
 }
 
 
@@ -70,6 +70,7 @@
 	color: #FFFFFF;
 	font-size: 16px;
 	line-height: 132%;
+	white-space: nowrap;
 
 	svg {
 		min-width: 17px;
@@ -240,6 +241,16 @@
 //          HEADER ADAPTIVE
 ///////////////////////////
 ///////////////////////////
+
+@media screen and (max-width:$desktopMax) {
+	.sh-menu-wrap{
+		margin-right: 30px;
+		margin-left: 20px;
+	}
+	.sh-menu-item{
+		padding: 0 12px;
+	}
+}
 
 
 @media screen and (max-width:1200px) {
