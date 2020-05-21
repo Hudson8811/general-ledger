@@ -6,8 +6,21 @@
 }
 
 @media screen and (max-width: $tabletMax) {
+
   .top-section--contacts{
     padding-bottom: 64px;
+    .ts-container{
+      width: 490px;
+    }
+    .ts-heading{
+      text-align: left;
+    }
+    .ts-text-mobile{
+      text-align: left;
+    }
+    .ts-pic{
+      width: 100%;
+    }
   }
   .top-section--contacts .ts-flex__right{
     margin-bottom: 0;

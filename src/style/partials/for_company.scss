@@ -268,7 +268,7 @@
       }
     }
     &:nth-child(n + 5) {
-      
+
     }
     &:nth-child(9),
     &:nth-child(10),
@@ -329,6 +329,15 @@
 }
 
 @media screen and (max-width: $tabletMax) {
+  .for_company__title_block--flex{
+    width: 490px;
+  }
+  .for_company__title_block--heading, .for_company__title_block--subtitle, .for_company__title_block--description.mobile{
+
+    text-align: left;
+  }
+
+
   .for_company {
     &__title_block {
       &--flex {
