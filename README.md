@@ -39,13 +39,14 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 это старый сайт:
 ftp://generalledger.ru/
-u0664420
-L5p6X8f7
+u0987742
+u0987742
+
 
 новый сайт:
 ftp://gl.finance/
-u0987742
-u0987742
+u0664420
+L5p6X8f7
 
 Админка
 admin
