@@ -465,8 +465,20 @@ input,textarea,select,button{
 
 .result-section {
   padding-top: 48px;
-  &--third{
 
+  &--third{
+    .component-fancy:after{
+      display: none;
+    }
+    .component-fancy{
+      cursor: auto;
+      pointer-events: none;
+    }
+  }
+}
+@media screen and (min-width:$desktopMin) {
+  .result-section.result-section--third{
+    padding-top: 90px;
   }
 }
 

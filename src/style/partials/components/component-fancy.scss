@@ -44,6 +44,13 @@
 		background: url(../img/lupe2.svg) no-repeat center center;
 		background-size: contain;
 	}
+
+	&.sp-pic-optish-1-cf--big .component-fancy__inner{
+		left:45px;
+		width: calc(100% - 45px * 2);
+		top:8px;
+		height: calc(100% - 20px);
+	}
 }
 
 .component-fancy__inner {
