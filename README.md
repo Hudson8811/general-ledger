@@ -44,7 +44,7 @@ u0987742
 
 
 новый сайт:
-ftp://gl.finance/
+ftp://glfinance.ru/
 u0664420
 L5p6X8f7
 

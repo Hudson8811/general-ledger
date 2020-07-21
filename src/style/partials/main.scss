@@ -938,6 +938,11 @@ input,textarea,select,button{
     margin-top: 16px;
     font-size: 16px;
     line-height: 125%;
+
+    ul{
+      margin-top: 10px;
+      list-style-position: inside;
+    }
   }
 }
 
