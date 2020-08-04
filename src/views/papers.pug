@@ -11,84 +11,40 @@ block vars
 block main
 	.papers
 		.container
-			.papers--heading Статьи и видео
-			.papers--grid
-				.papers--grid_item(style="background-image:url(images/papers_item1.jpg)")
-					span.paper Какой уровень учета нужен для бизнеса?
-					span.author Владимир Вавилов
-					a.read Читать
-					a.read2
-				.papers--grid_item(style="background-image:url(images/papers_item2.png)")
-					span.paper Как финансовая отчетность влияет на развитие бизнеса?
-					span.author Интервью
-					a.read Читать
-					a.read2
-				.papers--grid_item(style="background-image:url(images/papers_item3.png)")
-					span.paper Куда вложить миллион рублей так, чтобы заработать
-					span.author Олег Дранко
-					a.read Читать
-					a.read2
-				.papers--grid_item(style="background-image:url(images/papers_item4.png)")
-					span.paper Куда вложить деньги. Грамотное вложение денег
-					span.author Мария Царькова
-					a.read Читать
-					a.read2
-				.papers--grid_item(style="background-image:url(images/papers_item5.png)")
-					span.paper 5 инвестиций с низким уровнем риска и высокой доходностью
-					span.author Инна Шатохина
-					a.read Читать
-					a.read2
-				.papers--grid_item(style="background-image:url(images/papers_item6.png)")
-					span.paper Открытые и закрытые ПИФы – в чем разница?
-					span.author Владимир Вавилов
-					a.read Читать
-					a.read2
-				.papers--grid_item
-					span.paper Торговая стратегия «Уровни #[br(class="dbr")] Фибоначчи»: описание и #[br(class="dbr tbr")]применение в трейдинге
-					span.author Продолжительность: 14 мин
-					.papers_prewiew(style="background-image:url(images/papers_video.jpg)")
-						.papers_prewiew-overlay
-						img.papers_play(src="img/papers_play.svg", alt="play")
-					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/TzldwmbZSnw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				.papers--grid_item(style="background-image:url(images/papers_item7.jpg)")
-					span.paper Компания Forex Club:#[br(class="dbr tbr")]  передовые торговые условия
-					span.author Владимир Вавилов
-					a.read Читать
-					a.read2
-
-			.papers--grid
-				.papers--grid_item(style="background-image:url(images/papers_item1.png)")
-					span.paper Памятка на время сильных колебаний на финансовых  #[br(class="mbr")]рынках
-					span.author Владимир Вавилов
-					a.read Читать
-				.papers--grid_item(style="background-image:url(images/papers_item2.png)")
-					span.paper Будущее российской экономики признали непрогнозируемым
-					span.author Владимир Вавилов
-					a.read Читать
-				.papers--grid_item(style="background-image:url(images/papers_item3.png)")
-					span.paper Куда вложить миллион рублей так, чтобы заработать
-					span.author Олег Дранко
-					a.read Читать
-				.papers--grid_item(style="background-image:url(images/papers_item4.png)")
-					span.paper Куда вложить деньги. Грамотное вложение денег
-					span.author Мария Царькова
-					a.read Читать
-				.papers--grid_item(style="background-image:url(images/papers_item5.png)")
-					span.paper 5 инвестиций с низким уровнем риска и высокой доходностью
-					span.author Инна Шатохина
-					a.read Читать
-				.papers--grid_item(style="background-image:url(images/papers_item6.png)")
-					span.paper Открытые и закрытые ПИФы – в чем разница?
-					span.author Владимир Вавилов
-					a.read Читать
-				.papers--grid_item
-					span.paper Торговая стратегия «Уровни #[br(class="dbr")] Фибоначчи»: описание и #[br(class="dbr tbr")]применение в трейдинге
-					span.author Продолжительность: 14 мин
-					.papers_prewiew(style="background-image:url(images/papers_video.jpg)")
-						.papers_prewiew-overlay
-						img.papers_play(src="img/papers_play.svg", alt="play")
-					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/TzldwmbZSnw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				.papers--grid_item(style="background-image:url(images/papers_item7.jpg)")
-					span.paper Компания Forex Club:#[br(class="dbr tbr")]  передовые торговые условия
-					span.author Владимир Вавилов
-					a.read Читать
+			.papers__title Статьи и видео
+				.papers__wrapper
+					.papers-item
+						.papers-item__top(style='background-image: url(images/papers_item1.jpg)')
+							.papers-item__top-content
+								.papers-item__author Владимир Вавилов
+								.papers-item__title Какой уровень учета нужен <br> для бизнеса
+						.papers-item__bottom
+							.papers-item__desc Чем сложнее бизнес, тем больше “белых пятен” в движении денег. Это значит, нужно детализировать финансовую отчетность,
+																|  чтобы видеть реальную картину и принимать прибыльные решения.
+							.papers-item__nav
+								a.papers-item__read(href='#')
+									span Читать
+									img(src="img/arrow-right.svg" alt="")
+								.papers-item__info
+									.papers-item__views
+										img(src="img/view.svg" alt="")
+										span 465
+									.papers-item__date 26.06.2020
+					.papers-item
+						.papers-item__top(style='background-image: url(images/papers_item8.jpg)')
+							.papers-item__top-content
+								.papers-item__author Интервью
+								.papers-item__title Как финансовая отчетность влияет на развитие бизнеса
+						.papers-item__bottom
+							.papers-item__desc Интервью с участием Владимира Вавилова, в котором, используя простые аналогии, объясняется что такое финансовая
+																|  отчетность и чем она важна для удержания и развития собственного бизнеса. Обсуждается также вопрос кто в компании
+																|  должен заниматься ведением финансовой отчетности.
+							.papers-item__nav
+								a.papers-item__read(href='#')
+									span Читать
+									img(src="img/arrow-right.svg" alt="")
+								.papers-item__info
+									.papers-item__views
+										img(src="img/view.svg" alt="")
+										span 465
+									.papers-item__date 26.06.2020
