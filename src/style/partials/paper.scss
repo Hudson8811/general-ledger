@@ -1,160 +1,347 @@
-.paper_page{
-  background: #F5F6FB;
-  padding-top: 83px;
-  padding-bottom: 108px;
-  .container{
-    .paper_wrapper{
-      margin: 0;
-      max-width: 790px;
+.paper {
+	&__container {
+		width: 1119px;
+	}
+
+  &__wrapper {
+    padding-top: 85px;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    height: 590px;
+    padding: 82px;
+    background: no-repeat center / cover;
+    box-sizing: border-box;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(53, 44, 91, 1), transparent);
     }
   }
-  h1{
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: normal;
+
+  &__head-content {
+    position: relative;
+    text-align: center;
+  }
+
+  &__topic {
+    font-size: 24px;
+    line-height: 36px;
+    color: #f26419;
+  }
+
+  &__title {
+    font-family: 'Gilroy';
     font-size: 45px;
-    line-height: 125%;
-    /* or 56px */
-    /* основной шрифт */
-    color: #323340;
-    padding-bottom: 27px;
+    line-height: 48px;
+    color: #fff;
   }
-  ol, ul{
-    margin-left: 18px;
+
+  &__main {
+    display: flex;
+    padding: 50px 50px 80px 100px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
   }
-  img{
-    display: block;
-    max-width: 541px;
-    width: 100%;
-    margin-top: 48px;
-    padding-bottom: 25px;
+
+  &__content {
+    width: calc(78% - 46px);
   }
-  .description{
-    span:nth-child(1),span:nth-child(2){
+
+  &__sidebar {
+
+  }
+
+  &__share {
+    &::before,
+    &::after {
+      content: '';
       display: block;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 150%;
-      /* or 24px */
-      /* основной шрифт */
-      color: #323340;
+      width: 100%;
+      height: 1px;
+      background-color: #d9d9d9;
     }
-    span:nth-child(2){
-    color: #a0a0b1; 
-    font-weight: 400;
+
+    &::before {
+      margin: 42px 0 32px;
+    }
+
+    &::after {
+      margin: 50px 0 43px;
     }
   }
-  h2{
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 125%;
-    /* or 27px */
-    /* основной шрифт */
-    color: #323340;
-    padding-top: 60px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #DADAE8;
+
+  &__share-title {
+    font-family: 'Gilroy';
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 17px;
   }
-  p,span, ol, ul{
-    display: block;
-    font-family: Pragmatica;
-    font-weight:400;
+
+  &__socials {
+    display: flex;
+    margin: 0 -4.5px;
+  }
+
+  &__socials-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(33.3333% - 9px);
+    padding: 6px 0;
+    margin: 0 4.5px;
+    border-radius: 5px;
     font-size: 16px;
-    line-height: 150%;
-    /* or 24px */
-    /* основной шрифт */
-    color: #323340;
+    color: #fff;
+
+    img {
+      margin-right: 9px;
+    }
+
+    &--fb {
+      background-color: #4267b2;
+    }
+
+    &--vk {
+      background-color: #5181b8;
+    }
+
+    &--tw {
+      background-color: #2daae2;
+    }
   }
-  p, ol, ul{
-    margin-top: 24px;
+
+  &__result-title {
+    font-family: 'Gilroy';
+    font-size: 36px;
+    margin-bottom: 34px;
   }
-  .paper_navigations{
+
+  &__result-text {
+    p {
+      font-size: 16px;
+      line-height: 24px;
+
+      + p {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  &__consult {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 40px 48px 48px;
+    margin-top: 28px;
+    color: #fff;
+    background-color: #2c2e85;
+  }
+  &__consult-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 120px;
+      opacity: 0.3;
+    }
+  }
+
+  &__consult-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__consult-text {
+    font-family: 'Gilroy';
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 26px;
+  }
+
+  &__consult-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 275px;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #f26419;
+  }
+
+  &__bottom-nav {
     display: flex;
     justify-content: space-between;
+    margin-top: 37px;
+    margin-bottom: 113px;
+
+    a {
+      color: #757683;
+    }
+  }
+
+  &__next {
+    display: flex;
     align-items: center;
-    padding-top: 31px;
-    border-top: 1px solid #DADAE8;
-    margin-top: 50px;
-    a{
-      font-family: Pragmatica;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 19px;
-      /* дополнительный шрифт */
-      color: #555665;
-    }
-    &--left{
-      display: flex;justify-content: flex-start;
-      align-items: center;
-      a{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        svg{
-          opacity: .8;
-          transition: opacity .5s;
-        }
-        @media screen and (min-width:1146px){
-          &:hover{
-            svg{
-              opacity: 1;
-            }
-          }
-        }
-      }
-      .prev{
-        svg{
-          transform: rotate(180deg);
-          flex-shrink: 0;
-          margin-right: 16px;
-        }
-        margin-right: 45px;
-      }
-      .next{
-        svg{
-          flex-shrink: 0;
-          margin-left: 16px;
-        }
-      }
+
+    img {
+      width: 11px;
+      height: 16px;
+      margin-left: 15px;
     }
   }
 }
 
-@media screen and (max-width:700px){
-  .paper_page {
-    h1{
-      font-family: Gilroy;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 22px;
-      line-height: 125%;
-      /* or 27px */
-      /* основной шрифт */
-      color: #323340;
+.paper-part {
+  &__title {
+    font-family: 'Gilroy';
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto 14px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    h2{
+  }
+
+  &__desc {
+    p {
       font-size: 16px;
-    }
-    padding-top: 35px;
-    padding-bottom: 35px;
-    .paper_navigations{
-      flex-direction: column;
-      a{
-        margin-bottom: 10px;
+      line-height: 24px;
+
+      + p {
+        margin-top: 24px;
       }
     }
-    p,span, ol, ul{
-      font-size: 14px;
-    }
-    p, ol, ul{margin-top: 10px;}
   }
-}
 
-@media screen and (max-width:450px){
-  .paper_page .paper_navigations--left{
-    flex-direction: column;
+  &__table {
+    width: 100%;
+    margin: 22px 0 38px;
+    border-collapse: collapse;
+    font-size: 16px;
+
+    td,
+    th {
+      padding: 8.5px 15px;
+      border: 1px solid #dae0e7;
+    }
+
+    th {
+      font-weight: 400;
+      text-align: center;
+    }
+
+    &--big {
+      font-size: 13px;
+
+      td,
+      th {
+        padding: 11px 5.6px;
+      }
+
+      td:not(:first-child) {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &__quote {
+    width: 100%;
+    padding: 47px 204px 47px 203px;
+    margin: 58px -100px 0;
+    background-color: #333483;
+    color: #fff;
+  }
+
+  &__quote-text {
+    font-family: 'Gilroy';
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    padding-right: 50px;
+    margin-bottom: 3px;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 113px;
+      height: 96px;
+      position: absolute;
+      top: -32px;
+      left: -49px;
+      background: url("../img/quote2.svg") no-repeat center center;
+      background-size: cover;
+    }
+    
+    span {
+      position: relative;
+    }
+  }
+
+  &__quote-author {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: right;
+  }
+
+  &__quote-author-position {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+  }
+
+  &--one {
+    margin-top: 0;
+  }
+
+  &--two {
+    margin-top: 84px;
+  }
+
+  &--three {
+    margin-top: 43px;
+  }
+
+  &--four {
+    margin-top: 85px;
   }
 }

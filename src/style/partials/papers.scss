@@ -1,16 +1,27 @@
 .papers {
-	padding-bottom: 112px;
+	padding-bottom: 34px;
 	background-color: #f5f6fb;
+
+	@media (min-width: 768px) {
+		padding-bottom: 143px;
+	}
 
 	&__title {
 		font-family: Gilroy;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 45px;
-		line-height: 125%;
+		font-size: 34px;
+		line-height: 38px;
 		color: #323340;
-		padding-top: 84px;
-		padding-bottom: 55px;
+		padding-top: 62px;
+		padding-bottom: 25px;
+
+		@media (min-width: 768px) {
+			padding-top: 103px;
+			padding-bottom: 55px;
+			font-size: 45px;
+			line-height: 24px;
+		}
 	}
 
 	&__wrapper {
@@ -19,9 +30,9 @@
 		flex-wrap: wrap;
 		margin: 20px 0;
 
-		@media (min-width: 1000px) {
+		@media (min-width: 1024px) {
 			flex-direction: row;
-			margin: 60px -13.5px 0;
+			margin: 0 -13.5px;
 		}
 	}
 }
@@ -33,11 +44,11 @@
 	box-sizing: border-box;
 	transition: box-shadow 0.3s ease;
 	cursor: pointer;
-	margin-bottom: 20px;
+	margin-bottom: 27px;
 
-	@media (min-width: 1000px) {
+	@media (min-width: 1024px) {
 		width: calc(50% - 27px);
-		margin: 0 13.5px 20px;
+		margin: 0 13.5px 27px;
 	}
 
 	&:hover {
@@ -49,9 +60,13 @@
 		flex-direction: column;
 		justify-content: flex-end;
 		position: relative;
-		height: 320px;
-		padding: 32px;
+		height: 256px;
+		padding: 20px;
 		background: no-repeat center / cover;
+
+		@media (min-width: 768px) {
+			padding: 32px;
+		}
 
 		&::before {
 			content: '';
@@ -69,23 +84,43 @@
 		color: #fff;
 		line-height: 36px;
 		font-weight: 500;
+		font-family: 'Gilroy';
 	}
 
 	&__author {
-		font-size: 18px;
+		font-size: 16px;
+
+		@media (min-width: 768px) {
+			font-size: 18px;
+		}
 	}
 
 	&__title {
-		font-size: 32px;
+		font-size: 26px;
+		line-height: 28px;
+
+		@media (min-width: 768px) {
+			font-size: 32px;
+			line-height: 36px;
+		}
 	}
 	
 	&__bottom {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		height: 250px;
-		padding: 35px 50px 35px 32px;
+		height: 340px;
+		padding: 20px;
 		background-color: #fff;
+
+		@media (min-width: 768px) {
+			height: 187px;
+		}
+
+		@media (min-width: 1024px) {
+			padding: 28px 37px 35px 32px;
+			height: 187px;
+		}
 	}
 
 	&__desc {
@@ -95,8 +130,13 @@
 
 	&__nav {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+
+		@media (min-width: 768px) {
+			flex-direction: row;
+		}
 	}
 
 	&__info {
@@ -111,15 +151,27 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		margin-bottom: 10px;
 		border-radius: 20px;
 		background-color: #f26419;
 		font-size: 18px;
 		line-height: 24px;
 		color: #fff;
 
+		&:hover {
+			img {
+				transform: translateX(5px);
+			}
+		}
+
+		@media (min-width: 768px) {
+			margin-bottom: 0;
+		}
+
 		img {
 			margin-top: 3px;
 			margin-left: 9px;
+			transition: transform 0.3s ease;
 		}
 	}
 
