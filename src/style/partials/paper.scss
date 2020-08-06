@@ -264,7 +264,23 @@
     padding: 20px;
     margin-top: 28px;
     color: #fff;
+    background: no-repeat 120px;
+    background-size: cover;
     background-color: #2c2e85;
+
+    @media (min-width: 768px) {
+      padding: 32px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(30, 19, 72, 0.8);
+    }
 
     @media (min-width: 768px) {
       padding: 30px;
