@@ -87,7 +87,7 @@
 		font-family: 'Gilroy';
 	}
 
-	&__author {
+	&__topic {
 		font-size: 16px;
 
 		@media (min-width: 768px) {
@@ -141,6 +141,7 @@
 
 	&__info {
 		display: flex;
+		align-items: center;
 		font-size: 16px;
 		color: #c7c7d5;
 	}

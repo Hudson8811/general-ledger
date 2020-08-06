@@ -153,52 +153,6 @@
     color: #a0a0b1;
   }
 
-  &__sidebar-quote {
-    position: relative;
-    font-size: 15px;
-    line-height: 24px;
-    color: #4e6aa3;
-    margin-top: 34px;
-
-    &::before {
-      content: '';
-      display: block;
-      width: 113px;
-      height: 96px;
-      position: absolute;
-      top: -32px;
-      left: -35px;
-      background: url("../img/quote3.svg") no-repeat center center;
-      background-size: cover;
-    }
-
-    span {
-      position: relative;
-    }
-  }
-
-  &__sidebar-quote-author {
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 10px;
-    text-align: right;
-
-    @media (min-width: 1024px) {
-      text-align: left;
-    }
-  }
-
-  &__sidebar-quote-position {
-    font-size: 14px;
-    line-height: 18px;
-    color: #a0a0b1;
-    text-align: right;
-
-    @media (min-width: 1024px) {
-      text-align: left;
-    }
-  }
-
   &__share {
     &::before,
     &::after {
@@ -312,7 +266,7 @@
     }
 
     @media (min-width: 1024px) {
-      padding: 40px 48px 48px;
+      padding: 29px 48px 41px;
     }
   }
   &__consult-bg {
@@ -339,10 +293,19 @@
 
   &__consult-text {
     font-family: 'Gilroy';
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 26px;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 20px;
     text-align: center;
+    max-width: 470px;
+
+    p:last-child {
+      font-family: 'Pragmatica';
+      font-size: 16px;
+      line-height: 24px;
+      color: #ebebf1;
+      margin-top: 8px;
+    }
 
     @media (min-width: 768px) {
       text-align: left;
@@ -358,7 +321,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 275px;
+    max-width: 150px;
     width: 100%;
     height: 40px;
     font-size: 14px;
@@ -370,6 +333,10 @@
     @media (min-width: 768px) {
       margin: 0;
       font-size: 18px;
+    }
+
+    img {
+      margin-left: 10px;
     }
   }
 
@@ -415,29 +382,6 @@
 
 .paper-part {
   position: relative;
-
-  &__note {
-    font-size: 14px;
-    line-height: 24px;
-    color: #a0a0b1;
-    margin-bottom: 15px;
-
-    @media (min-width: 1024px) {
-      max-width: 210px;
-      position: absolute;
-      top: 206px;
-      right: -22.4vw;
-      margin-bottom: 0;
-    }
-
-    @media (min-width: 1280px) {
-      right: -17.4vw;
-    }
-
-    @media (min-width: 1700px) {
-      right: -13.4vw;
-    }
-  }
 
   &__title {
     font-family: 'Gilroy';
@@ -535,7 +479,7 @@
     color: #fff;
 
     @media (min-width: 1024px) {
-      padding: 47px 204px 47px 203px;
+      padding: 54px 204px 64px 203px;
     }
   }
 
@@ -572,19 +516,6 @@
     span {
       position: relative;
     }
-  }
-
-  &__quote-author {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    text-align: right;
-  }
-
-  &__quote-author-position {
-    font-size: 14px;
-    line-height: 18px;
-    text-align: right;
   }
 
   &--one {

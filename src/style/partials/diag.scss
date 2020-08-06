@@ -1,4 +1,6 @@
 .top-section--diag {
+  margin-bottom: 90px;
+
   .ts-flex__left {
     width: 650px;
     max-width: 100%;
@@ -20,7 +22,84 @@
   }
 }
 
+.why-need-section {
+  .wns-block {
+    font-family: 'Gilroy';
 
+    &__head {
+      display: flex;
+      padding-left: 170px;
+    }
+
+    &__head-title {
+      width: 43.3%;
+      font-size: 22px;
+      line-height: 30px;
+      font-weight: 600;
+      color: #555665;
+    }
+  }
+
+  .wns-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 88px;
+    padding: 12px 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+
+    + .wns-item {
+      margin-top: 12px;
+    }
+
+    &__digit {
+      display: flex;
+      font-size: 45px;
+      color: #DADAE8;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        background: #DADAE8;
+        margin: 0 40px;
+      }
+    }
+
+    &__question,
+    &__answer {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    &__question {
+      width: 40%;
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    &__arrows {
+      display: flex;
+      position: absolute;
+      top: 11px;
+      right: 0;
+
+      img:last-child {
+        margin-left: -10px;
+      }
+    }
+
+    &__answer {
+      width: 40%;
+    }
+  }
+}
 
 .we-will-suit-you-section--diag__not-tab-slider {
   @media screen and (min-width:$desktopMin) {
