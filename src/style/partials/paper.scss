@@ -384,7 +384,6 @@
     line-height: 24px;
     margin-bottom: 20px;
     text-align: center;
-    max-width: 470px;
 
     p:last-child {
       font-family: 'Pragmatica';
@@ -401,6 +400,7 @@
     }
 
     @media (min-width: 768px) {
+      max-width: 470px;
       text-align: left;
     }
 
