@@ -117,6 +117,54 @@
   }
 }
 
+.need-condition-section {
+  margin-top: 87px;
+
+  .ncs-block {
+    margin: 93px -10px 0;
+  }
+
+  .ncs-block-item {
+    width: calc(50% - 20px);
+    padding: 87px 90px 48px 48px;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;
+
+    &__circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      position: absolute;
+      top: -54px;
+      left: 48px;
+      background-color: #2C2E85;
+    }
+
+    &__title {
+      font-family: 'Gilroy';
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 21px;
+    }
+
+    &__explanation {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__note {
+      margin-top: 24px;
+      color: #F26419;
+    }
+  }
+}
+
 .we-will-suit-you-section--diag__not-tab-slider {
   @media screen and (min-width:$desktopMin) {
     .wwsy-block-item {
