@@ -43,16 +43,31 @@
   }
 
   &__topic {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 24px;
     color: #f26419;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 24px;
+      line-height: 36px;
+    }
   }
 
   &__title {
     font-family: 'Gilroy';
-    font-size: 34px;
-    line-height: 37px;
+    font-size: 24px;
+    line-height: 26px;
     color: #fff;
+
+    @media (min-width: 768px) {
+      font-size: 34px;
+      line-height: 36px;
+    }
 
     @media (min-width: 1024px) {
       font-size: 45px;
@@ -84,6 +99,28 @@
     @media (min-width: 1024px) {
       width: 76%;
       margin-right: 44px;
+    }
+  }
+
+  &__video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media (min-width: 1024px) {
+      margin-top: 0;
+      margin-bottom: 55px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 
@@ -314,8 +351,8 @@
 
   &__consult-text {
     font-family: 'Gilroy';
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 22px;
+    line-height: 24px;
     margin-bottom: 20px;
     text-align: center;
     max-width: 470px;
@@ -384,19 +421,106 @@
     }
   }
 
-  &__next {
+  &__bottom-nav-wrapper {
     display: flex;
-    align-items: center;
-    margin-top: 20px;
 
-    @media (min-width: 768px) {
-      margin-top: 0;
+    a {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+
+      @media (min-width: 768px) {
+        margin-top: 0;
+      }
+
+      img {
+        width: 11px;
+        height: 16px;
+        margin-left: 15px;
+      }
     }
+  }
+
+  &__prev {
+    margin-right: 45px;
 
     img {
-      width: 11px;
-      height: 16px;
-      margin-left: 15px;
+      margin-left: 0;
+      margin-right: 15px;
+      transform: rotate(180deg);
+    }
+  }
+
+  &--interview {
+    .paper {
+      &__wrapper {
+        @media (min-width: 1024px) {
+          padding-top: 97px;
+        }
+      }
+
+      &__main {
+        @media (min-width: 1024px) {
+          padding: 60px 50px 80px 100px;
+        }
+      }
+
+      &__author {
+        margin-top: 0;
+      }
+
+      &__author-photo {
+        margin-right: 12px;
+      }
+
+      &__consult {
+        @media (min-width: 1024px) {
+          padding: 37px 34px 33px;
+        }
+      }
+
+      &__consult-text {
+        max-width: 100%;
+
+        p:last-child {
+          margin-top: 13px;
+        }
+      }
+
+      &__consult-button {
+        max-width: 131px;
+      }
+    }
+
+    .paper-part {
+      &__desc {
+        span {
+          font-weight: 500;
+        }
+
+        ol {
+          list-style: none;
+          counter-reset: item;
+          margin: 24px 0;
+
+          li {
+            display: flex;
+            position: relative;
+
+            &::before {
+              content: counter(item) ' ';
+              counter-increment: item;
+              position: absolute;
+            }
+
+            span {
+              font-weight: 400;
+              padding-left: 25px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
     }
   }
 }
