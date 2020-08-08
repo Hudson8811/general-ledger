@@ -258,38 +258,50 @@ block main
 								li Часто бывает, что для улучшения сферы сначала нужно подготовить базу. Например, для улучшения автоматизации сначала надо внедрить единую методологию учета.
 								li Мы делаем карту улучшений, зная, какие этапы должны быть сначала, чтобы улучшить эту сферу.
 						.wrs-block-item__picture
-	section.result-section.result-section--diag
-		.rs-container.container
-			h2.default-h2 Что Вы получите в результате
-			.rs-block-mobile-digit-1 1
-			.rs-block
-				.rs-block-row.rs-block-row-1
-					.rs-block-row__left.rs-block-row__left--text.customized-ul-wrap
-						.rs-block-digit.rs-block-digit-1 1
-						.rs-block-title Полную картину
-							br.mbr
-							|  финансов бизнеса
-						ul.rs-block-ul
-							li.rs-block-li Факторы риска – список проблемных точек в управлении финансами
-								br.tbr
-								|  и бизнесом, насколько они критичны
-							li.rs-block-li Точки роста – где есть потенциал для роста, как его извлечь, какие проблемы при этом решить
-							li.rs-block-li Ясность в финансах – что на что влияет, что менять, чтобы достичь финансовых целей
-					.rs-block-row__right
-						a.component-fancy.component-fancy-diag-rs-pic-1(href="/bitrix/templates/GL/images/diag/1-big.png" data-fancybox="optish-results-1")
-							.component-fancy__inner
-								img(src="/bitrix/templates/GL/images/diag/1.png", alt="")
-				.rs-block-row.rs-block-row-2
-					.rs-block-row__left
-						a.component-fancy.component-fancy-diag-rs-pic-2(href="/bitrix/templates/GL/images/diag/2-big.png" data-fancybox="optish-results-1")
-							.component-fancy__inner
-								img(src="/bitrix/templates/GL/images/diag/2.png", alt="")
-					.rs-block-row__right.rs-block-row__right--text.customized-ul-wrap
-						.rs-block-digit.rs-block-digit-2 2
-						.rs-block-title Дорожную карту решения проблем
-						ul.rs-block-ul
-							li.rs-block-li.rs-block-li__mobile-fsz16 Список сбоев и проблем в системе управления финансами и активами
-							li.rs-block-li.rs-block-li__mobile-fsz16 Дорожную карту решения проблем - в каком направлении искать глубже, план конкретных действий
+
+	section.we-will-suit-you-section.we-will-suit-you-section--uprotch.we-will-suit-you-section--new
+		.wwsy-container.container
+			h2.default-h2 Это нужно прямо сейчас, если у Вас есть хотя бы 2 вопроса из этого списка:
+			.wwsy-uprotch-wrapper
+				.wwsy-uprotch.js-wwsy-diag(data-counter-id="optish-wwsy-2-counter")
+					.wwsy-uprotch-item(style='background-color: #fff;')
+						.wwsy-uprotch-item__number
+							img(src="img/check.svg" alt="")
+						.wwsy-uprotch-item__text Что в сухом остатке бизнеса – мешок денег или долги учредителей?
+					.wwsy-uprotch-item(style='background-color: #F9F9FC;')
+						.wwsy-uprotch-item__number
+							img(src="img/check.svg" alt="")
+						.wwsy-uprotch-item__text На сколько хватит финансовых резервов компании?
+					.wwsy-uprotch-item(style='background-color: #F0F0F8;')
+						.wwsy-uprotch-item__number
+							img(src="img/check.svg" alt="")
+						.wwsy-uprotch-item__text Переживет ли компания этот и следующий год?
+					.wwsy-uprotch-item(style='background-color: #E6E5F1;')
+						.wwsy-uprotch-item__number
+							img(src="img/check.svg" alt="")
+						.wwsy-uprotch-item__text Какие подразделения прибыльны, а какие тащат компанию ко дну?
+					.wwsy-uprotch-item(style='background-color: #F9F9FC;')
+						.wwsy-uprotch-item__number
+							img(src="img/check.svg" alt="")
+						.wwsy-uprotch-item__text Как получить полную картину по деньгам компании?
+					.wwsy-uprotch-item(style='background-color: #F0F0F8;')
+						.wwsy-uprotch-item__number
+							img(src="img/check.svg" alt="")
+						.wwsy-uprotch-item__text На сколько увеличить продажи для роста прибыли на 10%?
+					.wwsy-uprotch-item(style='background-color: #E6E5F1;')
+						.wwsy-uprotch-item__number
+							img(src="img/check.svg" alt="")
+						.wwsy-uprotch-item__text Как решать проблемы компании, если нет времени найти их причины?
+					.wwsy-uprotch-item(style='background-color: #DCDAEA;')
+						.wwsy-uprotch-item__number
+							img(src="img/check.svg" alt="")
+						.wwsy-uprotch-item__text Хватит ли мощности производства, капитала и сотрудников для достижения мечты
+			.wwsy-uprotch-mobile-counter
+				#optish-wwsy-2-counter.wwsy-uprotch-mobile-counter__current 1
+				.wwsy-uprotch-mobile-counter__slash /
+				.wwsy-uprotch-mobile-counter__max.tablet 2
+				.wwsy-uprotch-mobile-counter__max.mobile 2
+
 
 	section.we-will-suit-you-section(data-counter-id="ind-wwsy-1-counter").we-will-suit-you-section--diag__not-tab-slider
 		.wwsy-container.container
@@ -319,40 +331,6 @@ block main
 				#ind-wwsy-1-counter.wwsy-block-mobile-counter__current 1
 				.wwsy-block-mobile-counter__slash /
 				.wwsy-block-mobile-counter__max 3
-
-	section.we-will-suit-you-section.we-will-suit-you-section--uprotch.we-will-suit-you-section--diag
-		.wwsy-container.container
-			h2.default-h2 Это нужно прямо
-				br.mbr
-				|   сейчас, если:
-			.wwsy-uprotch.wwsy-uprotch--diag
-				.wwsy-uprotch-item
-					.wwsy-uprotch-item__number
-						span 1
-					.wwsy-uprotch-item__text Нужно увеличить прибыль
-						br.dbr
-						|  и сократить расходы
-				.wwsy-uprotch-item
-					.wwsy-uprotch-item__number
-						span 2
-					.wwsy-uprotch-item__text Нет твердой ясности, насколько хорошо идут дела у холдинга в целом и отдельных компаний
-				.wwsy-uprotch-item
-					.wwsy-uprotch-item__number
-						span 3
-					.wwsy-uprotch-item__text Нужно что-то менять в управлении финансами, но непонятно, что делать и нет времени, чтобы разобраться
-				.wwsy-uprotch-item
-					.wwsy-uprotch-item__number
-						span 4
-					.wwsy-uprotch-item__text Нет времени, чтобы найти и устранить причины проблем вместо борьбы с симптомами
-				.wwsy-uprotch-item
-					.wwsy-uprotch-item__number
-						span 5
-					.wwsy-uprotch-item__text Нужно увеличить стоимость бизнеса
-				.wwsy-uprotch-item
-					.wwsy-uprotch-item__number
-						span 6
-					.wwsy-uprotch-item__text Уменьшилась управляемость&nbsp;- недостаточно информации, затягивание действий, потери из-за несогласованности
-
 
 
 	section.how-we-work-section.how-we-work-section--optish.how-we-work-section--diag
@@ -581,7 +559,34 @@ block main
 				#ind-counter.wwsy-block-mobile-counter__current 1
 				.wwsy-block-mobile-counter__slash /
 				.wwsy-block-mobile-counter__max 4
-	section.cost-and-terms-section.cost-and-terms-section--diag
+
+	section.feedback-section
+		.container
+			.feedback-section__wrapper
+				.feedback-section__col
+					.feedback-section__title Бесплатная консультация
+					a.feedback-section__button.js-modal-fancy-caller(data-fancy-src="#modal-consult")
+						span Получить консультацию
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
+				.feedback-section__col
+					.feedback-section__title.feedback-section__title--call Свяжитесь с нами
+					.feedback-section__contacts
+						.feedback-section__contact-item-col
+							.feedback-section__contact-item
+								img(src="img/contacts/tp-phone.svg" alt="")
+								a(href='tel:+74952119040' style='font-weight: 500;') +7 (495) 211 90 40
+							.feedback-section__contact-item
+								img(src="img/contacts/tp-mail.svg" alt="")
+								a(href='mailto:info@glfinance.ru' style='text-decoration: underline;') info@glfinance.ru
+						.feedback-section__contact-item-col
+							.feedback-section__contact-item
+								img(src="img/contacts/tp-wa.svg" alt="")
+								a(href='' target='_blank') What’s App
+							.feedback-section__contact-item
+								img(src="img/contacts/tp-tg.svg" alt="")
+								a(href='tel:+74952119040' target='_blank') Telegram
+
+	//section.cost-and-terms-section.cost-and-terms-section--diag
 		.cat-container.container
 			.cat-block
 				.cat-block-top
