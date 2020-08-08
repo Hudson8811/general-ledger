@@ -41,73 +41,95 @@ block main
 				.wns-block__head
 					.wns-block__head-title Отвечает на вопрос
 					.wns-block__head-title Показывает возможность
-				.wns-block__wrapper
+				.wns-block__wrapper.js-wns-slider(data-counter-id='wns-counter')
 					.wns-item
 						.wns-item__digit 01
 						.wns-item__question
+							.wns-item__title-mobile Отвечает на вопрос
 							span Где прибыль компании?
 							.wns-item__arrows
 								img(src="img/arrow-light-gray.svg" alt="")
 								img(src="img/arrow-orange.svg" alt="")
-						.wns-item__answer Увеличить прибыль
+						.wns-item__answer
+							.wns-item__title-mobile Показывает возможность
+							span Увеличить прибыль
 					.wns-item
 						.wns-item__digit 02
 						.wns-item__question
+							.wns-item__title-mobile Отвечает на вопрос
 							span Деньги под контролем?
 							.wns-item__arrows
 								img(src="img/arrow-light-gray.svg" alt="")
 								img(src="img/arrow-orange.svg" alt="")
-						.wns-item__answer Увеличить денежный поток
+						.wns-item__answer
+							.wns-item__title-mobile Показывает возможность
+							span Увеличить денежный поток
 					.wns-item
 						.wns-item__digit 03
 						.wns-item__question
+							.wns-item__title-mobile Отвечает на вопрос
 							span Хватает ли оборотного капитала?
 							.wns-item__arrows
 								img(src="img/arrow-light-gray.svg" alt="")
 								img(src="img/arrow-orange.svg" alt="")
-						.wns-item__answer Уменьшить дефицит оборотных средств
+						.wns-item__answer
+							.wns-item__title-mobile Показывает возможность
+							span Уменьшить дефицит <br> оборотных средств
 					.wns-item
 						.wns-item__digit 04
 						.wns-item__question
+							.wns-item__title-mobile Отвечает на вопрос
 							span Учет корректный, цели достигаются?
 							.wns-item__arrows
 								img(src="img/arrow-light-gray.svg" alt="")
 								img(src="img/arrow-orange.svg" alt="")
-						.wns-item__answer Достигнуть финансовой цели месяца, квартала
+						.wns-item__answer
+							.wns-item__title-mobile Показывает возможность
+							span Достигнуть финансовой <br> цели месяца, квартала
 					.wns-item
 						.wns-item__digit 05
 						.wns-item__question
+							.wns-item__title-mobile Отвечает на вопрос
 							span Компания соответствует условиям рынка?
 							.wns-item__arrows
 								img(src="img/arrow-light-gray.svg" alt="")
 								img(src="img/arrow-orange.svg" alt="")
-						.wns-item__answer Обогнать конкурентов
+						.wns-item__answer
+							.wns-item__title-mobile Показывает возможность
+							span Обогнать конкурентов
 					.wns-item
 						.wns-item__digit 06
 						.wns-item__question
+							.wns-item__title-mobile Отвечает на вопрос
 							span Используются все возможности для роста?
 							.wns-item__arrows
 								img(src="img/arrow-light-gray.svg" alt="")
 								img(src="img/arrow-orange.svg" alt="")
-						.wns-item__answer Рост бизнеса, несмотря на кризисы
+						.wns-item__answer
+							.wns-item__title-mobile Показывает возможность
+							span Рост бизнеса, несмотря на кризисы
+				.wns-mobile-counter
+					#wns-counter.wns-mobile-counter__current 1
+					.wns-mobile-counter__slash /
+					.wns-mobile-counter__max.tablet 6
 	section.need-condition-section
 		.container
 			h2.default-h2 Эта диагностика нужна Вам, если:
-			.ncs-block
+			.ncs-block.js-scroll-condition.js-ncs-slider(data-counter-id='ncs-counter')
 				.ncs-block-item
 					.ncs-block-item__circle(style='padding: 14px 15px 13px 16px;')
 						img(src="img/icons/icon-7-white.svg" alt="")
 					.ncs-block-item__title У бизнеса проблемы
 					.ncs-block-item__explanation Прибыль есть, а денег нет. Затраты растут, доходность падает. Не хватает денег на платежи. Растет просроченная задолженность. Отчеты не
 																			|  отражают реальной картины
-					.ncs-block-item__note Диагностика покажет причины проблем, чтобы устранить их
+					.ncs-block-item__note Диагностика покажет причины <br> проблем, чтобы устранить их
 				.ncs-block-item
 					.ncs-block-item__circle(style='padding: 18px 13px 18px 19px;')
 						img(src="img/icons/icon-6-white.svg" alt="")
 					.ncs-block-item__title Все хорошо, прибыль стабильная
 					.ncs-block-item__explanation А это точно максимальная прибыль, которую может давать Ваш бизнес? Возможно, прибыль могла бы
 																			|  быть на 10%, 15%, 20% больше за счет активации внутренних резервов?
-					.ncs-block-item__note Диагностика покажет, в каком направлении искать внутренние резервы, чтобы увеличить прибыль.
+					.ncs-block-item__note Диагностика покажет, в каком направлении искать внутренние <br> резервы, чтобы увеличить прибыль.
 				.ncs-block-item
 					.ncs-block-item__circle(style='padding: 16px 17px 18px 17px;')
 						img(src="img/icons/icon-5-white.svg" alt="")
@@ -122,10 +144,14 @@ block main
 					.ncs-block-item__explanation Вложили в бизнес десятки миллионов, а на выхлопе прибыль как от аренды однушки. Сотрудники
 																			|  работают с утра до вечера, а денег больше не становится.
 					.ncs-block-item__note Диагностика покажет, какие расходы можно сократить, чтобы увеличить рентабельность.
+			.ncs-mobile-counter
+				#ncs-counter.ncs-mobile-counter__current 1
+				.ncs-mobile-counter__slash /
+				.ncs-mobile-counter__max.tablet 4
 	section.what-we-see-section
 		.container
 			h2.default-h2 Что смотрим на диагностике
-			.wwss-block
+			.wwss-block(data-counter-id='wwss-counter')
 				.wwss-block-item
 					.wwss-block-item__top
 						.wwss-block-item__title Капитал
@@ -192,6 +218,10 @@ block main
 						li Налоговый учет
 						li Консолидация отчетности
 						li Автоматизация
+			.wwss-mobile-counter
+				#wwss-counter.wwss-mobile-counter__current 1
+				.wwss-mobile-counter__slash /
+				.wwss-mobile-counter__max.tablet 6
 	section.what-result-section
 		.container
 			h2.default-h2 Что вы получите в результате
@@ -200,39 +230,34 @@ block main
 					.wrs-block-item__wrapper
 						.wrs-block-item__content
 							.wrs-block-item__digit 1
-							.wrs-block-item__title Оцениваем состояние бизнеса
+							.wrs-block-item__title Оцениваем <br> состояние бизнеса
 							ul.wrs-block-item__list
 								li Рассматриваем 6 сфер бизнеса - доходы и расходы, капитал, движение денег, учет, экономику и т. д.
 								li Каждая сфера получает 2 оценки – насколько она важна для компании сейчас и насколько хорошо в ней идут дела.
 								li Отняв от оценки важности оценку удовлетворенности, получаем потенциал роста сферы. Например, управленческий учет получил по важности 9, а по состоянию дел 4. Его потенциал роста 5.
-						.wrs-block-item__picture
+						.wrs-block-item__picture.wrs-block-item__picture--big
 							img(src="images/diag/1.png" alt="")
 				.wrs-block-item.wrs-block-item
 					.wrs-block-item__wrapper
 						.wrs-block-item__content
 							.wrs-block-item__digit 2
-							.wrs-block-item__title.wrs-block-item__title--top Ранжируем проблемы по важности
+							.wrs-block-item__title.wrs-block-item__title--top Ранжируем проблемы <br> по важности
 							ul.wrs-block-item__list
 								li Улучшения в одной сфере, дают улучшения и в других, потому что в бизнесе все связано.
-								li Чем больше потенциал роста, тем сильнее <br> улучшения в этой сфере повлияют на улучшения <br> во всей компании.
-								li Поэтому мы выстраиваем все оцененные сферы <br> по порядку убывания потенциала роста, чтобы <br> увидеть ТОП-10.
+								li Чем больше потенциал роста, тем сильнее улучшения в этой сфере повлияют на улучшения во всей компании.
+								li Поэтому мы выстраиваем все оцененные сферы по порядку убывания потенциала роста, чтобы увидеть ТОП-10.
 						.wrs-block-item__picture
 							img(src="images/diag/2.png" alt="")
 				.wrs-block-item
 					.wrs-block-item__wrapper
 						.wrs-block-item__content
 							.wrs-block-item__digit 3
-							.wrs-block-item__title Оцениваем состояние бизнеса
+							.wrs-block-item__title Оцениваем <br> состояние бизнеса
 							ul.wrs-block-item__list
-								li Видя потенциал роста каждой сферы в своем бизнесе, <br> Вы решаете, что нужно улучшить в первую очередь
+								li Видя потенциал роста каждой сферы в своем бизнесе, Вы решаете, что нужно улучшить в первую очередь
 								li Часто бывает, что для улучшения сферы сначала нужно подготовить базу. Например, для улучшения автоматизации сначала надо внедрить единую методологию учета.
 								li Мы делаем карту улучшений, зная, какие этапы должны быть сначала, чтобы улучшить эту сферу.
 						.wrs-block-item__picture
-	section.who-make-section
-		.container
-			h2.default-h2 Кто делает диагностику
-			.wms-block
-				.wms-block-item
 	section.result-section.result-section--diag
 		.rs-container.container
 			h2.default-h2 Что Вы получите в результате
@@ -492,6 +517,42 @@ block main
 						.orind-description Защитили
 							br.mbr
 							|  активы клиентов
+
+	section.who-make-section
+		.container
+			h2.default-h2 Кто делает диагностику
+			.wms-block.js-wms-slider(data-counter-id="wms-counter")
+				.wms-block-item
+					.wms-block-item__expert
+						img(src="images/user1.png" alt="")
+					.wms-block-item__name Владимир Вавилов
+					.wms-block-item__position Эксперт по управлению <br> корпоративными финансами
+					ul.wms-block-item__list
+						li Профессиональный финансовый директор
+						li 12-ти летний опыт работы в <br> крупных российских холдингах на ТОП-позициях
+						li Более 50 реализованных проектов в области финансов и автоматизации бизнес-процессов
+				.wms-block-item
+					.wms-block-item__expert
+						img(src="images/user2.png" alt="")
+					.wms-block-item__name Олег Дранко
+					.wms-block-item__position Эксперт по управлению <br> корпоративными финансами
+					ul.wms-block-item__list
+						li Доктор технических наук, доцент
+						li 25-летний практический опыт разработки и реализации <br> проектов по корпоративным финансам России и СНГ
+						li Более 180 реализованных проектов <br> в области управления корпоративными финансами
+				.wms-block-item
+					.wms-block-item__expert
+						img(src="images/user5.png" alt="")
+					.wms-block-item__name Анастасия Пилипенко
+					.wms-block-item__position Специалист по <br>  корпоративным финансам
+					ul.wms-block-item__list
+						li 10-ти летний опыт работы в крупных производственных холдингах
+						li Финансовый менеджмент <br> портфеля проектов на сумму <br> более 1,5 млрд. руб.
+			.wms-mobile-counter
+				#wms-counter.wms-mobile-counter__current 1
+				.wms-mobile-counter__slash /
+				.wms-mobile-counter__max.tablet 2
+				.wms-mobile-counter__max.mobile 3
 
 
 	section.we-will-suit-you-section.we-will-suit-you-section--diag-complect(data-counter-id="ind-counter")

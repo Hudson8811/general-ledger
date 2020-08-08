@@ -17,3 +17,4 @@
 //= partials/upr-otch.js
 //= partials/optish.js
 //= partials/all-for-fin-dir.js
+//= partials/diag.js
