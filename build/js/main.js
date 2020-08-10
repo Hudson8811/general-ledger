@@ -135,7 +135,7 @@ $(document).ready(function () {
 
   ////////////////
 
-  var $grid1;
+  /*var $grid1;
   var grid1_isMansory = false;
   var grid1_isMansoryLayoutNow = false;
 
@@ -178,7 +178,7 @@ $(document).ready(function () {
         }
       }
     }
-  });
+  });*/
 
   $(".oc-slider").slick({
     dots: true,

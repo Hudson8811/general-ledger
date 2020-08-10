@@ -209,28 +209,6 @@
 
       color: #323340;
     }
-    &:nth-child(3) {
-      .hww-block-item-top__pic {
-        width: calc(100% - 206px);
-      }
-      .hww-block-item-top {
-        justify-content: space-between;
-      }
-    }
-    &:nth-child(3),
-    &:nth-child(4) {
-      .hww-block-item-top__text {
-        padding-top: 0;
-      }
-    }
-    &:nth-child(4) {
-      .hww-block-item-top__pic {
-        width: calc(100% - 70px);
-      }
-    }
-    &:nth-child(1) {
-      padding-bottom: 77px;
-    }
   }
 }
 

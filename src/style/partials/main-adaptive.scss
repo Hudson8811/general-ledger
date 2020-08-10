@@ -89,6 +89,18 @@
 
 		img {}
 	}
+
+	.hww-block-mobile-tab {
+		max-width: 100% !important;
+	}
+
+	.hww-block-item--active {
+		display: flex !important;
+	}
+
+	.hww-block {
+		border-radius: 0 0 30px 30px !important;
+	}
 }
 
 
@@ -636,9 +648,20 @@
 		min-width: 400px;
 	}
 
+}
+
+@media screen and (min-width:$tabletMin) {
+
+	.hww-block-mobile-unwrap,
+	.rs-block-mobile-digit-1,
+	.wwsy-block-mobile-counter,
+	.wcu-uprotch-mobile-counter {
+		display: none;
+	}
+
 	//------------------------------------------------
 	.how-we-work-section {
-		margin-top: 28px;
+		margin-top: 90px;
 		padding-bottom: 60px;
 
 	}
@@ -745,7 +768,6 @@
 		transition-duration: .2s;
 		border-radius: 0 30px 30px 30px;
 		background: #FFFFFF;
-
 	}
 
 	.hww-block-item:not(.hww-block-item--active),
@@ -785,18 +807,6 @@
 		box-sizing: border-box;
 		padding-right: 13px;
 	}
-
-}
-
-@media screen and (min-width:$tabletMin) {
-
-	.hww-block-mobile-unwrap,
-	.rs-block-mobile-digit-1,
-	.wwsy-block-mobile-counter,
-	.wcu-uprotch-mobile-counter {
-		display: none;
-	}
-
 }
 
 @media screen and (max-width:740px) {
@@ -1153,8 +1163,6 @@
 				width: auto;
 				max-width: 299px;
 				height: auto;
-				margin-right: auto;
-				margin-left: auto;
 				object-fit: cover;
 				object-position: center center;
 			}
@@ -1166,6 +1174,10 @@
 			justify-content: center;
 			width: 100%;
 			padding-top: 0;
+
+			&--desktop {
+				display: none;
+			}
 		}
 	}
 

@@ -64,12 +64,12 @@
 	}
 
 	.hww-block--not-mansory {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-
 		.hww-block-item {
 			padding-bottom: 42px;
+
+			&--active {
+				display: flex;
+			}
 		}
 
 		.hww-block-item-desc {
@@ -504,8 +504,7 @@
 		.hww-block-item-top__text {}
 
 		.hww-block-item-bottom {
-
-			padding: 21px 26px 26px 24px;
+			padding: 21px 0 26px 0;
 		}
 
 		.hww-block-item-title {
