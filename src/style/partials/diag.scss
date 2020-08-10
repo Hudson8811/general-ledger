@@ -79,6 +79,14 @@
 				margin-top: 23px;
 			}
 		}
+
+		.slick-track {
+			display: flex !important;
+		}
+
+		.slick-slide {
+			height: inherit !important;
+		}
   }
 
 	.wns-mobile-counter {
@@ -86,7 +94,7 @@
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-		margin-top: 0;
+		margin-top: 14px;
 		color: #a0a0b1;
 		font-weight: 500;
 		font-size: 20px;
@@ -153,14 +161,6 @@
 				margin-top: 12px;
 			}
     }
-
-		.slick-track {
-			display: flex !important;
-		}
-
-		.slick-slide {
-			height: inherit !important;
-		}
 
     &__digit {
       display: flex;
@@ -353,6 +353,7 @@
 		align-items: center;
 		justify-content: center;
 		width: 100%;
+		margin-top: 24px;
 		color: #a0a0b1;
 		font-weight: 500;
 		font-size: 20px;
@@ -371,7 +372,7 @@
 
 	.wwsy-uprotch-arrow-prev,
 	.wwsy-uprotch-arrow-next {
-		bottom: -28px;
+		bottom: -52px;
 	}
 
 	.wwsy-uprotch-arrow-prev {
@@ -462,9 +463,12 @@
     }
 
     &__note {
-      max-width: 430px;
       margin-top: 18px;
       color: #F26419;
+
+			@media (min-width: 768px) {
+				max-width: 430px;
+			}
 
 			br {
 				@media (min-width: 1024px) {
@@ -644,7 +648,7 @@
     background-color: #fff;
     border-radius: 20px;
 
-		@media (min-width: 768px) {
+		@media (min-width: 701px) {
 			padding: 14px 56px 56px 58px;
 		}
 
@@ -1022,39 +1026,14 @@
   }
 }
 
-.we-will-suit-you-section--new {
-	.wwsy-uprotch-wrapper {
-		border-radius: 20px;
-		overflow: hidden;
-		margin-top: 36px;
-		padding-bottom: 62px;
-	}
-
-	.wwsy-uprotch {
-		margin-top: 0;
-
-		.slick-slide {
-			margin-top: 0;
+.we-will-suit-you-section {
+	.default-h2--diag {
+		@media (min-width: 768px) {
+			max-width: 630px;
+			margin: 0 auto;
 		}
 	}
 
-	.wwsy-uprotch-mobile-counter {
-		margin-top: -30px;
-	}
-
-	.wwsy-uprotch-item {
-		padding: 48px 64px 40px 48px;
-		min-height: 250px;
-
-		@media (max-width: 767px) {
-			background-color: #F5F6FB;
-		}
-	}
-
-	.wwsy-uprotch-item__number::before,
-	.wwsy-uprotch-item__number::after {
-		display: none;
-	}
 }
 
 .feedback-section {
@@ -1170,15 +1149,20 @@
 		box-sizing: border-box;
 		cursor: pointer;
 		transition: background-color 0.3s ease;
-		margin: 0 auto;
 
 		@media (min-width: 768px) {
 			width: 364px;
+			margin: 0 auto;
 			letter-spacing: 0.1em;
 		}
 
 		@media (min-width: 1024px) {
+			width: 318px;
 			margin: 0;
+		}
+
+		@media (min-width: 1280px) {
+			width: 364px;
 		}
 
 		&:hover {
@@ -1210,9 +1194,11 @@
 
 	&__contacts {
 		display: flex;
+		flex-direction: column;
 		flex-wrap: wrap;
 
 		@media (min-width: 768px) {
+			flex-direction: row;
 			justify-content: center;
 		}
 
