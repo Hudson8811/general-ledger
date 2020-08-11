@@ -251,6 +251,8 @@ $(document).ready(function () {
         "hww-block-item--active-visible"
       );
       setTimeout(function () {
+        var trans = index * (-100);
+        $(".hww-block-item").css({'transform' : 'translateX('+trans+'%)'});
         $(".hww-block-item--active").removeClass("hww-block-item--active");
         $(".hww-block-item, .hww-block-item--fw")
           .eq(index)

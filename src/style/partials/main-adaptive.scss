@@ -93,7 +93,9 @@
 	.hww-block-mobile-tab {
 		max-width: 100% !important;
 	}
-
+	.hww-block-item {
+		display: flex !important;
+	}
 	.hww-block-item--active {
 		display: flex !important;
 	}
@@ -768,16 +770,19 @@
 		transition-duration: .2s;
 		border-radius: 0 30px 30px 30px;
 		background: #FFFFFF;
+		width: auto;
+		display: flex;
 	}
 
 	.hww-block-item:not(.hww-block-item--active),
 	.hww-block-item--fw:not(.hww-block-item--active) {
-		display: none;
+		//display: none;
 	}
 
 	.hww-block-item,
 	.hww-block-item--fw {
-		display: none;
+		//display: none;
+		flex-shrink: 0;
 		width: 100%;
 		transition-duration: .2s;
 		opacity: 0;
