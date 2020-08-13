@@ -38,6 +38,7 @@
 }
 
 .papers-item {
+	display: block;
 	width: 100%;
 	border-radius: 20px;
 	overflow: hidden;
@@ -56,8 +57,10 @@
 	}
 
 	&:hover {
-		@media (min-width: 1024px) {
-			box-shadow: 0 0 30px rgba(14, 23, 31, 0.15);
+		box-shadow: 0 0 30px rgba(14, 23, 31, 0.15);
+
+		.papers-item__read img {
+			transform: translateX(5px);
 		}
 	}
 
@@ -148,6 +151,7 @@
 	&__desc {
 		font-size: 16px;
 		line-height: 24px;
+		color: #323340;
 	}
 
 	&__nav {
@@ -184,12 +188,6 @@
 		font-size: 18px;
 		line-height: 24px;
 		color: #fff;
-
-		&:hover {
-			img {
-				transform: translateX(5px);
-			}
-		}
 
 		&::before {
 			content: '';

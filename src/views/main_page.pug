@@ -446,16 +446,16 @@ block main
 		.container
 			h2.default-h2.default-h2--margin Новые статьи и видео
 			.papers__wrapper
-				.papers-item
-					.papers-item__top(style='background-image: url(images/papers_item1-new.jpg)')
+				a(href='#').papers-item
+					figure.papers-item__top(style='background-image: url(images/papers_item1-new.jpg)')
 						.papers-item__top-content
 							.papers-item__author История
 							.papers-item__title Какой уровень учета нужен <br> для бизнеса
-					.papers-item__bottom
+					figure.papers-item__bottom
 						.papers-item__desc Простая и наглядная история о том, как должен изменяться финансовый учет по мере роста бизнеса от торговой
 														|  точки к сети магазинов, чтобы вовремя предотвращать потери денег и зарабатывать больше.
 						.papers-item__nav
-							a.papers-item__read(href='#')
+							.papers-item__read
 								span Читать
 								img(src="img/arrow-right.svg" alt="")
 							.papers-item__info
@@ -463,17 +463,17 @@ block main
 									img(src="img/view.svg" alt="")
 									span 465
 								.papers-item__date 26.06.2020
-				.papers-item
-					.papers-item__top(style='background-image: url(images/papers_item8.jpg)')
+				a(href='#').papers-item
+					figure.papers-item__top(style='background-image: url(images/papers_item8.jpg)')
 						.papers-item__top-content
 							.papers-item__author Интервью
 							.papers-item__title Как финансовая отчетность влияет на развитие бизнеса
-					.papers-item__bottom
+					figure.papers-item__bottom
 						.papers-item__desc Интервью с участием Владимира Вавилова, в котором, используя простые аналогии, объясняется что такое финансовая
 							|  отчетность и чем она важна для удержания и развития собственного бизнеса. Обсуждается также вопрос кто в компании
 							|  должен заниматься ведением финансовой отчетности.
 						.papers-item__nav
-							a.papers-item__read(href='#')
+							.papers-item__read
 								span Читать
 								img(src="img/arrow-right.svg" alt="")
 							.papers-item__info
