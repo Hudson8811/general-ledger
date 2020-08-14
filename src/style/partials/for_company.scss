@@ -411,5 +411,19 @@
     &--item {
       width: 100%;
     }
+
+    &--user {
+      margin: 0 auto 24px;
+    }
+
+    &--name {
+      margin: 0 auto 6px;
+      text-align: center;
+    }
+
+    &--subname {
+      margin: 0 auto;
+      text-align: center;
+    }
   }
 }

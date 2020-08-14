@@ -129,7 +129,7 @@
 	.ts-flex__left {
 		width: 100%;
 		padding-top: 49px;
-		padding-bottom: 0;
+		padding-bottom: 40px;
 	}
 
 	.ts-heading {
@@ -144,6 +144,10 @@
 
 	.ts-text-mobile {
 		display: block;
+
+		p + p {
+			margin-top: 15px;
+		}
 	}
 
 	.ts-btn-desktop {
@@ -1173,6 +1177,7 @@
 				height: auto;
 				object-fit: cover;
 				object-position: center center;
+				margin: 0 auto;
 			}
 		}
 
