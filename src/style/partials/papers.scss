@@ -214,6 +214,10 @@
 			width: 200px;
 			margin: 40px auto 0;
 
+			&::before {
+				display: none;
+			}
+
 			&:hover {
 				img {
 					transform: translateX(5px);
