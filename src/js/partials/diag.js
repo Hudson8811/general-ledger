@@ -93,7 +93,7 @@ function initSliders() {
 			});
 		}
 	} else {
-		if($('.wms-slider').hasClass('slick-initialized')){
+		if($('.js-wms-slider').hasClass('slick-initialized')){
 			$('.js-wms-slider').slick('unslick');
 		}
 	}
