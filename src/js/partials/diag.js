@@ -70,7 +70,7 @@ function initSliders() {
 		$('.js-wms-slider').slick('unslick');
 	}
 
-	/*if (window.matchMedia('(min-width: 768px)').matches && window.matchMedia('(max-width: 1023px)').matches) {
+	if (window.matchMedia('(min-width: 768px)').matches && window.matchMedia('(max-width: 1023px)').matches) {
 		$('.js-scroll-condition').mCustomScrollbar({
 			axis: 'x',
 			scrollButtons: {
@@ -80,5 +80,5 @@ function initSliders() {
 		});
 	} else {
 		$('.js-scroll-condition').mCustomScrollbar('destroy');
-	}*/
+	}
 }
