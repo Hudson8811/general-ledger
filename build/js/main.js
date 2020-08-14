@@ -828,7 +828,7 @@ function initSliders() {
 					},
 					theme: "custom-theme mCS-custom-theme-sp"
 				});
-			}, 4000);
+			}, 1000);
 
 			$('.js-ncs-slider').mCustomScrollbar("update");
 		}
