@@ -364,19 +364,19 @@ block main
 					.feedback-section__title.feedback-section__title--call Свяжитесь с нами
 					.feedback-section__contacts
 						.feedback-section__contact-item-col
-							.feedback-section__contact-item
+							a(href='tel:+74952119040' style='font-weight: 500;').feedback-section__contact-item
 								img(src="img/contacts/tp-phone.svg" alt="")
-								a(href='tel:+74952119040' style='font-weight: 500;') +7 (495) 211 90 40
-							.feedback-section__contact-item
+								span +7 (495) 211 90 40
+							a(href='mailto:info@glfinance.ru').feedback-section__contact-item
 								img(src="img/contacts/tp-mail.svg" alt="")
-								a(href='mailto:info@glfinance.ru' style='text-decoration: underline;') info@glfinance.ru
+								span(style='text-decoration: underline;') info@glfinance.ru
 						.feedback-section__contact-item-col
-							.feedback-section__contact-item
+							a(onclick="ym(63508015,'reachGoal','whatsapp');"  href="https://wa.me/79852119040" target="_blank").feedback-section__contact-item
 								img(src="img/contacts/tp-wa.svg" alt="")
-								a(href='' target='_blank') What’s App
-							.feedback-section__contact-item
+								span What’s App
+							a(onclick="ym(63508015,'reachGoal','telega');"  href="https://t.me/glfinance" target="_blank").feedback-section__contact-item
 								img(src="img/contacts/tp-tg.svg" alt="")
-								a(href='tel:+74952119040' target='_blank') Telegram
+								span Telegram
 
 	section.our-clients-section
 		.oc-container.container
