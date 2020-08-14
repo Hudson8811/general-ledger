@@ -208,6 +208,22 @@
 			margin-left: 9px;
 			transition: transform 0.3s ease;
 		}
+
+		&--services {
+			max-width: 100%;
+			width: 200px;
+			margin: 45px auto 0;
+
+			&:hover {
+				img {
+					transform: translateX(5px);
+				}
+			}
+
+			img {
+				transition: transform 0.3s ease;
+			}
+		}
 	}
 
 	&__views {
