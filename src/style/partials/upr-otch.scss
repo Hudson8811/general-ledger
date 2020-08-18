@@ -429,6 +429,10 @@
 
 			&__list {
 				margin-top: 33px;
+
+				@media (min-width: 768px) and (max-width: 1023px) {
+					margin-top: 0;
+				}
 			}
 		}
 	}
@@ -488,6 +492,14 @@
 
 			@media (min-width: 768px) {
 				left: -40px;
+			}
+		}
+
+		&--wide {
+			max-width: 200px;
+
+			@media (min-width: 768px) and (max-width: 1023px) {
+				max-width: 131px;
 			}
 		}
 	}
