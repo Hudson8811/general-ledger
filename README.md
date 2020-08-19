@@ -45,8 +45,8 @@ u0987742
 
 новый сайт:
 ftp://glfinance.ru/
-u0664420
-L5p6X8f7
+u0987742
+TvbZD!36
 
 Админка
 admin
