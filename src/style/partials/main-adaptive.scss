@@ -11,6 +11,7 @@
 @media screen and (min-width:$desktopMin) {
 
 
+
 	.cat-block-bottom__presentation{
 		padding-left: 10px;
 	}
@@ -687,7 +688,7 @@
 		justify-content: center;
 		box-sizing: border-box;
 		//padding: 19px 56px 38px 57px;
-		max-width: 161px;
+		/*max-width: 161px;*/
 		height: 77px;
 		padding-top: 19px;
 		cursor: pointer;
@@ -803,7 +804,7 @@
 	}
 
 	.hww-block-item-top__pic img {
-		//width: 364px;
+		width: 364px;
 		padding: 0 !important;
 	}
 
@@ -919,8 +920,6 @@
 
 	.rs-block-title {
 		padding: 0;
-		font-size: 16px;
-		line-height: 135%;
 	}
 
 	.rs-block-ul {

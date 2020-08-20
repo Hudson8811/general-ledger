@@ -28,12 +28,12 @@ block main
 							br.mbr.tbr
 							|  подскажем, как сдавать и общаться в банке
 						p От 300 000 руб./ за год
-					a.btn.btn--white.btn--with-right-arrow.ts-btn.ts-btn-desktop.js-modal-fancy-caller(data-fancy-src="#modal-consult") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+					a.btn.btn--white.btn--with-right-arrow.ts-btn.ts-btn-desktop.js-modal-fancy-caller(data-fancy-src="#modal-consult" onclick="ym(63508015,'reachGoal','consult-konsolidirovannaya-otchetnost');") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
 
 				.ts-flex__right
 					img.ts-pic(src="/bitrix/templates/GL/img/ts.png" alt="")
-					.btn.btn--orange.btn--with-right-arrow.ts-btn.ts-btn-mobile.js-modal-fancy-caller(data-fancy-src="#modal-consult") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+					.btn.btn--orange.btn--with-right-arrow.ts-btn.ts-btn-mobile.js-modal-fancy-caller(data-fancy-src="#modal-consult" onclick="ym(63508015,'reachGoal','consult-konsolidirovannaya-otchetnost');") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
 
 	section.definitely-need-section--v2
@@ -74,12 +74,14 @@ block main
 	section.result-section
 		.rs-container.container
 			h2.default-h2 Что Вы получите в результате
-			.rs-block-mobile-digit-1 1
+
 			.rs-block
 				.rs-block-row.rs-block-row-1
 					.rs-block-row__left.rs-block-row__left--text.customized-ul-wrap
-						.rs-block-digit.rs-block-digit-1 1
-						.rs-block-title Консолидированную финансовую отчетность
+
+						.rs-block-title
+							.rs-block-digit 1
+							| Консолидированную финансовую отчетность
 						ul.rs-block-ul
 							li.rs-block-li Консолидированный финансовый отчет РСБУ по форме №1, форме №2 и форме №4
 							li.rs-block-li Консолидированный управленческий баланс, отчет о доходах и расходах, отчет о движении денежных средств по всей группе компаний
@@ -126,8 +128,10 @@ block main
 								img(src="/bitrix/templates/GL/images/consolid-otch-table-1.png", alt="")
 
 					.rs-block-row__right.rs-block-row__right--text.customized-ul-wrap
-						.rs-block-digit.rs-block-digit-2 2
-						.rs-block-title Финансовый анализ и интерпретацию
+
+						.rs-block-title
+							.rs-block-digit 2
+							| Финансовый анализ и интерпретацию
 						ul.rs-block-ul
 							li.rs-block-li.rs-block-li__mobile-fsz16 Презентацию с обоснованием каждой&nbsp;цифры, ответы на вопросы
 							li.rs-block-li.rs-block-li__mobile-fsz16 Консультацию по предоставлению отчетности в банк&nbsp;для получения лучших условий кредита
@@ -315,7 +319,7 @@ block main
 			.wms-block.js-wms-slider(data-counter-id="wms-counter")
 				.wms-block-item
 					.wms-block-item__expert
-						img(src="images/user1.png" alt="")
+						img(src="/bitrix/templates/GL/images/user1.png" alt="")
 					.wms-block-item__name Владимир Вавилов
 					.wms-block-item__position Эксперт по управлению <br> корпоративными финансами
 					ul.wms-block-item__list
@@ -324,7 +328,7 @@ block main
 						li Более 50 реализованных проектов в области финансов и автоматизации бизнес-процессов
 				.wms-block-item
 					.wms-block-item__expert
-						img(src="images/user10.jpg" alt="")
+						img(src="/bitrix/templates/GL/images/user10.jpg" alt="")
 					.wms-block-item__name Денис Степин
 					.wms-block-item__position Специалист по внешнему финансированию
 					ul.wms-block-item__list
@@ -333,7 +337,7 @@ block main
 						li Опыт успешного привлечения финансирования под крупные инфраструктурные проекты на сумму более 5 млрд рублей
 				.wms-block-item
 					.wms-block-item__expert
-						img(src="images/user6.png" alt="")
+						img(src="/bitrix/templates/GL/images/user6.png" alt="")
 					.wms-block-item__name Алла Семенова
 					.wms-block-item__position Эксперт по управленческому учету, методолог
 					ul.wms-block-item__list
@@ -393,7 +397,7 @@ block main
 			.feedback-section__wrapper
 				.feedback-section__col
 					.feedback-section__title Бесплатная консультация
-					a.feedback-section__button.js-modal-fancy-caller(data-fancy-src="#modal-consult")
+					a.feedback-section__button.js-modal-fancy-caller(data-fancy-src="#modal-consult" onclick="ym(63508015,'reachGoal','consult-konsolidirovannaya-otchetnost');")
 						span Получить консультацию
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
 				.feedback-section__col
@@ -401,17 +405,17 @@ block main
 					.feedback-section__contacts
 						.feedback-section__contact-item-col
 							a(href='tel:+74952119040' style='font-weight: 500;').feedback-section__contact-item
-								img(src="img/contacts/tp-phone.svg" alt="")
+								img(src="/bitrix/templates/GL/img/contacts/tp-phone.svg" alt="")
 								span +7 (495) 211 90 40
 							a(href='mailto:info@glfinance.ru').feedback-section__contact-item
-								img(src="img/contacts/tp-mail.svg" alt="")
+								img(src="/bitrix/templates/GL/img/contacts/tp-mail.svg" alt="")
 								span(style='text-decoration: underline;') info@glfinance.ru
 						.feedback-section__contact-item-col
 							a(onclick="ym(63508015,'reachGoal','whatsapp');"  href="https://wa.me/79852119040" target="_blank").feedback-section__contact-item
-								img(src="img/contacts/tp-wa.svg" alt="")
+								img(src="/bitrix/templates/GL/img/contacts/tp-wa.svg" alt="")
 								span What’s App
 							a(onclick="ym(63508015,'reachGoal','telega');"  href="https://t.me/glfinance" target="_blank").feedback-section__contact-item
-								img(src="img/contacts/tp-tg.svg" alt="")
+								img(src="/bitrix/templates/GL/img/contacts/tp-tg.svg" alt="")
 								span Telegram
 
 	section.our-clients-section

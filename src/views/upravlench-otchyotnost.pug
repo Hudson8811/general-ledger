@@ -24,12 +24,12 @@ block main
 						p Для компаний из 2-15 юрлиц и оборотом от 20 млн руб в месяц
 						p Покажем объективную картину бизнеса, сделаем прогноз достижения Ваших целей
 						p От 500 тыс. руб./ за год
-					a.btn.btn--white.btn--with-right-arrow.ts-btn.ts-btn-desktop.js-modal-fancy-caller(data-fancy-src="#modal-consult") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+					a.btn.btn--white.btn--with-right-arrow.ts-btn.ts-btn-desktop.js-modal-fancy-caller(data-fancy-src="#modal-consult" onclick="ym(63508015,'reachGoal','consult-upravlench-otchyotnost-holding');") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
 
 				.ts-flex__right
 					img.ts-pic(src="/bitrix/templates/GL/img/upr-otch-ts-pic.png" alt="")
-					a.btn.btn--orange.btn--with-right-arrow.ts-btn.ts-btn-mobile.js-modal-fancy-caller(data-fancy-src="#modal-consult") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+					a.btn.btn--orange.btn--with-right-arrow.ts-btn.ts-btn-mobile.js-modal-fancy-caller(data-fancy-src="#modal-consult" onclick="ym(63508015,'reachGoal','consult-upravlench-otchyotnost-holding');") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
 
 	section.definitely-need-section
@@ -89,12 +89,14 @@ block main
 	section.result-section.result-section--uprot
 		.rs-container.container
 			h2.default-h2 Что Вы получите в результате
-			.rs-block-mobile-digit-1.rs-block-mobile-digit-1--uprotch 1
+
 			.rs-block
 				.rs-block-row.rs-block-row-1
 					.rs-block-row__left.rs-block-row__left--text.customized-ul-wrap.customized-ul-wrap--uo
-						.rs-block-digit.rs-block-digit-1.rs-block-digit-1--uprotch 1
-						.rs-block-title Консолидированную управленческую отчетность с детализацией до отдельных операций по холдингу и отдельным компаниям группы
+
+						.rs-block-title
+							.rs-block-digit 1
+							| Консолидированную управленческую отчетность с детализацией до отдельных операций по холдингу и отдельным компаниям группы
 						ul.rs-block-ul
 							li.rs-block-li Управленческий баланс, отчет о доходах и
 								br.dbr
@@ -126,8 +128,10 @@ block main
 								img(src="/bitrix/templates/GL/images/uprotch-pic-2.png", alt="")
 
 					.rs-block-row__right.rs-block-row__right--text.customized-ul-wrap.customized-ul-wrap--uo
-						.rs-block-digit.rs-block-digit-2 2
-						.rs-block-title Фин. модель холдинга для проверки
+
+						.rs-block-title
+							.rs-block-digit 2
+							| Фин. модель холдинга для проверки
 							br.mbr
 							|    целей
 							br.dbr.tbr
@@ -155,8 +159,10 @@ block main
 								|  чтобы достичь месячной, квартальной и годовой финансовой цели
 				.rs-block-row.rs-block-row-3.rs-block-row-mobile-hidden
 					.rs-block-row__left.rs-block-row__left--text.customized-ul-wrap.customized-ul-wrap--uo
-						.rs-block-digit.rs-block-digit-1.rs-block-digit-3--uprotch 3
-						.rs-block-title Удобный контроль показателей для достижения месячных, квартальных и годовых целей
+
+						.rs-block-title
+							.rs-block-digit 3
+							| Удобный контроль показателей для достижения месячных, квартальных и годовых целей
 						ul.rs-block-ul
 							li.rs-block-li Регулярный консолидированный отчет по выбранным
 								br.tbr
@@ -520,7 +526,7 @@ block main
 			.wms-block.js-wms-slider(data-counter-id="wms-counter")
 				.wms-block-item
 					.wms-block-item__expert
-						img(src="images/user1.png" alt="")
+						img(src="/bitrix/templates/GL/images/user1.png" alt="")
 					.wms-block-item__name Владимир Вавилов
 					.wms-block-item__position Эксперт по управлению <br> корпоративными финансами
 					ul.wms-block-item__list
@@ -529,7 +535,7 @@ block main
 						li Более 50 реализованных проектов в области финансов и автоматизации бизнес-процессов
 				.wms-block-item
 					.wms-block-item__expert
-						img(src="images/user6.png" alt="")
+						img(src="/bitrix/templates/GL/images/user6.png" alt="")
 					.wms-block-item__name Алла Семенова
 					.wms-block-item__position Эксперт по управленческому учету, методолог
 					ul.wms-block-item__list
@@ -538,7 +544,7 @@ block main
 						li Трансформация финансовой отчетности в более 100 компаниях
 				.wms-block-item
 					.wms-block-item__expert
-						img(src="images/user7.png" alt="")
+						img(src="/bitrix/templates/GL/images/user7.png" alt="")
 					.wms-block-item__name Сергей Игнатов
 					.wms-block-item__position Эксперт по автоматизации учета и отчетности
 					ul.wms-block-item__list
@@ -627,7 +633,7 @@ block main
 			.feedback-section__wrapper
 				.feedback-section__col
 					.feedback-section__title Бесплатная консультация
-					a.feedback-section__button.js-modal-fancy-caller(data-fancy-src="#modal-consult")
+					a.feedback-section__button.js-modal-fancy-caller(data-fancy-src="#modal-consult" onclick="ym(63508015,'reachGoal','consult-upravlench-otchyotnost-holding');")
 						span Получить консультацию
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
 				.feedback-section__col
@@ -635,17 +641,17 @@ block main
 					.feedback-section__contacts
 						.feedback-section__contact-item-col
 							a(href='tel:+74952119040' style='font-weight: 500;').feedback-section__contact-item
-								img(src="img/contacts/tp-phone.svg" alt="")
+								img(src="/bitrix/templates/GL/img/contacts/tp-phone.svg" alt="")
 								span +7 (495) 211 90 40
 							a(href='mailto:info@glfinance.ru').feedback-section__contact-item
-								img(src="img/contacts/tp-mail.svg" alt="")
+								img(src="/bitrix/templates/GL/img/contacts/tp-mail.svg" alt="")
 								span(style='text-decoration: underline;') info@glfinance.ru
 						.feedback-section__contact-item-col
 							a(onclick="ym(63508015,'reachGoal','whatsapp');"  href="https://wa.me/79852119040" target="_blank").feedback-section__contact-item
-								img(src="img/contacts/tp-wa.svg" alt="")
+								img(src="/bitrix/templates/GL/img/contacts/tp-wa.svg" alt="")
 								span What’s App
 							a(onclick="ym(63508015,'reachGoal','telega');"  href="https://t.me/glfinance" target="_blank").feedback-section__contact-item
-								img(src="img/contacts/tp-tg.svg" alt="")
+								img(src="/bitrix/templates/GL/img/contacts/tp-tg.svg" alt="")
 								span Telegram
 
 

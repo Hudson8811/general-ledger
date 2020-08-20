@@ -662,6 +662,8 @@
     &__wrapper {
       display: flex;
 			flex-direction: column;
+		position: relative;
+		z-index: 1;
 
 			@media (min-width: 1024px) {
 				flex-direction: row;
@@ -776,24 +778,21 @@
       font-weight: 600;
       color: #DADAE8;
       position: absolute;
-      top: -5px;
-      left: 173px;
-
-			@media (min-width: 768px) {
-				left: -19px;
-			}
+      left: -20px;
+		top: -37px;
+		z-index: -1;
     }
 
     &__title {
       font-family: 'Gilroy';
       font-size: 20px;
       font-weight: 500;
-      padding-top: 26px;
+      margin-top: 26px;
       margin-bottom: 31px;
       position: relative;
 
 			@media (min-width: 768px) {
-				padding-top: 32px;
+				margin-top: 32px;
 			}
 
 			br {
@@ -801,10 +800,6 @@
 					display: none;
 				}
 			}
-
-      &--top {
-        padding-top: 42px;
-      }
     }
 
     &__list {
@@ -1114,9 +1109,10 @@
 			margin-bottom: 24px;
 
 			@media (min-width: 1024px) {
-				padding: 64px 125px 56px;
+				padding: 64px 0 56px;
 				margin-bottom: 0;
 				border-bottom: none;
+				text-align: center;
 			}
 		}
 
@@ -1194,7 +1190,7 @@
 
 		@media (min-width: 1024px) {
 			width: 318px;
-			margin: 0;
+			margin: 0 auto;
 		}
 
 		@media (min-width: 1280px) {
