@@ -1,5 +1,5 @@
 .list-on-blue-section {
-  margin-top: 88px;
+  margin-top: 86px;
   padding: 78px 0 56px;
   background: #2c2e85;
 
@@ -44,6 +44,15 @@
       content: "";
       border-radius: 50%;
       background: #f26419;
+    }
+  }
+}
+
+/////////////////////////
+@media screen and (min-width: 1026px){
+  .we-will-suit-you-section.we-will-suit-you-section--affd .wwsy-uprotch-item:nth-child(5){
+    .wwsy-uprotch-item__text{
+      width: 250px;
     }
   }
 }

@@ -10,7 +10,7 @@ block vars
 
 
 block main
-	.oveflow-section(style="overflow:hidden;")
+	.oveflow-section
 		section.top-section.top-section--affd
 			.ts-container.container
 				.ts-flex
@@ -30,7 +30,7 @@ block main
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
 
 					.ts-flex__right
-						img.ts-pic(src="images/affd-ts.png" alt="" style="max-width:776px;")
+						img.ts-pic(src="/bitrix/templates/GL/images/affd-ts.png" alt="" style="max-width:776px;")
 						a.btn.btn--orange.btn--with-right-arrow.ts-btn.ts-btn-mobile.js-modal-fancy-caller(data-fancy-src="#modal-consult" onclick="ym(63508015,'reachGoal','consult-nabor-dannih-direktora')") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
 
@@ -81,7 +81,7 @@ block main
 
 
 
-	section.we-will-suit-you-section.we-will-suit-you-section--uprotch.we-will-suit-you-section--diag
+	section.we-will-suit-you-section.we-will-suit-you-section--uprotch.we-will-suit-you-section--diag.we-will-suit-you-section--affd
 		.wwsy-container.container
 			h2.default-h2 Идеально подойдет Вам, если:
 			.wwsy-uprotch.wwsy-uprotch--diag(data-counter-id="optish-wwsy-1-counter")
@@ -109,7 +109,8 @@ block main
 				.wwsy-uprotch-item
 					.wwsy-uprotch-item__number
 						span 6
-					.wwsy-uprotch-item__text У Вас нет возможности тратить на внедрение автоматизации нужных отчетов год и 1-3 млн руб.
+					.wwsy-uprotch-item__text У Вас нет возможности тратить на внедрение автоматизации нужных отчетов год и 1
+						span(style="white-space:nowrap;") -3 млн руб.
 
 			.wwsy-uprotch-mobile-counter.wwsy-uprotch-mobile-counter--affd
 				#optish-wwsy-1-counter.wwsy-uprotch-mobile-counter__current 1

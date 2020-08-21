@@ -3,10 +3,10 @@
 }
 
 .why-need-section {
-	margin-top: 168px;
+	margin-top: 150px;
 
 	@media (min-width: 1024px) {
-		margin-top: 0;
+		margin-top: 86px;
 	}
 
   .wns-block {
@@ -289,15 +289,7 @@
 }
 
 .need-condition-section {
-  margin-top: 50px;
-
-	@media (min-width: 768px) {
-		margin-top: 78px;
-	}
-
-	@media (min-width: 1024px) {
-		margin-top: 87px;
-	}
+  margin-top: 86px;
 
   .ncs-block {
 		display: flex;
@@ -460,15 +452,7 @@
 }
 
 .what-we-see-section {
-  margin-top: 57px;
-
-	@media (min-width: 768px) {
-		margin-top: 77px;
-	}
-
-	@media (min-width: 1024px) {
-		margin-top: 86px;
-	}
+  margin-top: 86px;
   
   .wwss-block {
     display: flex;
@@ -617,11 +601,7 @@
 }
 
 .what-result-section {
-  margin-top: 52px;
-
-	@media (min-width: 1024px) {
-		margin-top: 66px;
-	}
+  margin-top: 86px;
 
   .wrs-block {
     margin-top: 30px;
@@ -690,10 +670,10 @@
       background-color: #222265;
       box-sizing: border-box;
 			position: relative;
-			cursor: pointer;
+			/*cursor: pointer;*/
 			transition: opacity 0.3s ease;
 
-			&:hover {
+			/*&:hover {
 				opacity: 0.8;
 			}
 
@@ -720,7 +700,7 @@
 					background-size: 59%;
 					background-position: 45% 64%;
 				}
-			}
+			}*/
 
 			@media (min-width: 768px) {
 				height: 330px;
@@ -822,7 +802,7 @@
 }
 
 .who-make-section {
-	margin-top: 100px;
+	margin-top: 86px;
 
 	.wms-block {
 		display: flex;
@@ -1046,12 +1026,8 @@
 }
 
 .feedback-section {
-	margin-top: 74px;
+	margin-top: 86px;
 	position: relative;
-
-	@media (min-width: 1024px) {
-		margin-top: 88px;
-	}
 
 	&__wrapper {
 		display: flex;

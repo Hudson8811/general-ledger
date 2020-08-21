@@ -306,6 +306,9 @@ input,textarea,select,button{
 }
 
 //---------------------первая секция---------------------------
+.oveflow-section{
+  overflow: hidden;
+}
 .top-section {
   background: #2c2e85;
 }
@@ -470,8 +473,14 @@ input,textarea,select,button{
   }
 }
 
+.oveflow-section + .result-section{
+  margin-top: 150px;
+  @media screen and (min-width: 1024px){
+    margin-top: 86px;
+  }
+}
 .result-section {
-  padding-top: 48px;
+  margin-top: 86px;
 
   &--third{
     .component-fancy:after{
@@ -481,11 +490,6 @@ input,textarea,select,button{
       cursor: auto;
       pointer-events: none;
     }
-  }
-}
-@media screen and (min-width:$desktopMin) {
-  .result-section.result-section--third{
-    padding-top: 90px;
   }
 }
 
@@ -648,7 +652,7 @@ input,textarea,select,button{
 }
 
 .we-will-suit-you-section {
-  margin-top: 90px;
+  margin-top: 86px;
 }
 
 .wwsy-block {
@@ -711,8 +715,7 @@ input,textarea,select,button{
 
 //------------Секция Как мы готовим вашу отчетность------------------------------------------------
 .how-we-work-section {
-  margin-top: 90px;
-  padding-bottom: 67px;
+  margin-top: 86px;
 }
 
 .hww-block-mobile-tabs {
@@ -759,6 +762,10 @@ input,textarea,select,button{
 
 .hww-block-item-top__pic {
   width: calc(100% - 140px);
+
+  @media screen and (min-width: $desktopMin){
+    text-align: center;
+  }
 
 	@media (min-width: $desktopMin) {
 		width: 100%;
@@ -896,6 +903,7 @@ input,textarea,select,button{
   padding-top: 82px;
   padding-bottom: 68px;
   background: #2c2e85;
+  margin-top: 86px;
 }
 
 .wcu-h2 {
@@ -948,14 +956,14 @@ input,textarea,select,button{
 //------------------------------------------------------------------
 
 .solution-package-section {
-  padding-top: 90px;
+  margin-top: 86px;
 }
 
 .sp-block {
   display: flex;
   justify-content: space-between;
   margin: 0 -10px;
-  padding-top: 36px;
+  margin-top: 36px;
 }
 
 .sp-block-item {
@@ -1168,7 +1176,9 @@ a.cat-block-iwt-text__line-2 {
 .our-clients-section {
   padding-top: 90px;
 }
-
+.client_block-main + .our-clients-section{
+  padding-top: 0;
+}
 .oc-slider-wrap {
   display: flex;
   min-width: 100%;

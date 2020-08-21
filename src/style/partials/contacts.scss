@@ -2,18 +2,16 @@
   .top-section--contacts{
     padding-bottom: 126px;
     margin-bottom: 0;
+    .ts-flex{
+      min-height: 500px;
+    }
     .ts-pic{
-      width: 689px;
-      position: relative;
-      display: block;
-      margin-top: -14px;
-      left:0;
+
     }
     .ts-flex__right{
       width: calc(100% - 551px);
     }
     .ts-flex__left{
-      padding-top: 140px;
       width: 551px;
       display: flex;
       justify-content: center;

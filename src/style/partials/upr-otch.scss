@@ -4,10 +4,6 @@
 
 
 //////////////////////////
-.result-section--uprot {
-	padding-top: 50px;
-}
-
 .rs-block-row__right {}
 
 .rs-synchro-slider-block {}
@@ -254,12 +250,6 @@
 }
 
 
-/////////////////////
-.how-we-work-section--uprotch {
-	padding-bottom: 88px;
-}
-
-
 ///////////////
 .why-choose-us-section--uprotch {
 	padding-bottom: 46px;
@@ -376,20 +366,12 @@
 .definitely-need-section {
 	margin-top: 150px;
 
-	@media (min-width: 768px) {
-		margin-top: 116px;
-	}
-
 	@media (min-width: 1024px) {
 		margin-top: 86px;
 	}
 
 	&--v2 {
 		margin-top: 150px;
-
-		@media (min-width: 768px) {
-			margin-top: 116px;
-		}
 
 		@media (min-width: 1024px) {
 			margin-top: 86px;

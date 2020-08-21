@@ -113,11 +113,15 @@
 	}
 
 	//---------------------------
+	.oveflow-section{
+		overflow: visible;
+	}
 	.top-section {
 		margin-bottom: 0;
 	}
 
 	.ts-flex {
+		min-height: auto;
 		align-items: center;
 		flex-direction: column;
 		text-align: center;
@@ -125,6 +129,8 @@
 
 	.ts-pic {
 		position: static;
+		left:auto;
+		transform: translateX(0);
 	}
 
 	.ts-flex__left {
@@ -156,8 +162,13 @@
 	}
 
 	.ts-btn-mobile {
+		white-space: nowrap;
 		display: inline-flex;
 		margin-top: 41px;
+		position: absolute;
+		left:50%;
+		transform: translateX(-50%);
+		bottom:-90px;
 	}
 
 	.ts-flex__right {
@@ -165,19 +176,19 @@
 		align-items: center;
 		flex-direction: column;
 		width: 100%;
-		margin-bottom: -116px;
+		margin-bottom: 0;
 
 	}
 
 	.ts-pic {
-		left: 0;
-		width: 76%;
-		max-width: 100%;
-		margin-top: 39px;
+		width: auto;
+		max-width: 76%;
+		margin-top: 0;
+		max-height: 380px;
 	}
 
 	.result-section {
-		padding-top: 199px;
+
 	}
 
 	.rs-block {
@@ -277,7 +288,7 @@
 	//---------------------------------------------
 
 	.we-will-suit-you-section {
-		margin-top: 82px;
+
 	}
 
 	.wwsy-block {
@@ -389,7 +400,7 @@
 
 	//--------------------------------------------------
 	.solution-package-section {
-		padding-top: 82px;
+
 	}
 
 	.sp-block-wrap {
@@ -398,7 +409,7 @@
 
 	.sp-block {
 		justify-content: flex-start;
-		padding-top: 28px;
+		margin-top: 0;
 	}
 
 	.sp-block-item {
@@ -668,8 +679,6 @@
 
 	//------------------------------------------------
 	.how-we-work-section {
-		margin-top: 90px;
-		padding-bottom: 60px;
 
 	}
 
@@ -804,7 +813,7 @@
 	}
 
 	.hww-block-item-top__pic img {
-		width: 364px;
+		width: 250px;
 		padding: 0 !important;
 	}
 
@@ -858,12 +867,11 @@
 	}
 
 	.ts-pic {
-		width: 93%;
-		margin-top: 31px;
+		max-width: 93% !important;
 	}
 
 	.ts-flex__right {
-		margin-bottom: -100px;
+
 	}
 
 	.ts-btn-mobile {
@@ -877,7 +885,6 @@
 	}
 
 	.result-section {
-		padding-top: 164px;
 		background: #ffffff;
 
 		.default-h2 {
@@ -985,13 +992,10 @@
 	}
 
 	.result-section {
-		padding-bottom: 60px;
+
 	}
 
 	.we-will-suit-you-section {
-		margin-top: 30px;
-		padding-top: 57px;
-		padding-bottom: 46px;
 
 		.default-h2 {
 			width: 230px;
@@ -1068,10 +1072,12 @@
 
 	//----------------
 	.how-we-work-section {
-		margin-top: 0;
-		padding-top: 66px;
-		padding-bottom: 0;
 		background: #ffffff;
+		&:not(.how-we-work-section--affd){
+			@media screen and (max-width: $phoneMax){
+				margin-bottom: -70px;
+			}
+		}
 
 		.default-h2 {
 			width: 200px;
@@ -1333,7 +1339,7 @@
 
 	//---------------------------------------
 	.solution-package-section {
-		padding-top: 65px;
+
 
 		.default-h2 {
 			width: 220px;
@@ -1444,7 +1450,6 @@
 
 	//-----
 	.our-clients-section {
-		padding-top: 65px;
 
 		.default-h2 {
 			width: 168px;
