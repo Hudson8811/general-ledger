@@ -1,29 +1,7 @@
 @media screen and (min-width: $desktopMin) {
 
     .top-section--affd {
-        overflow-x: hidden;
-        overflow-y: visible;
 
-        .ts-flex__left {
-            width: 760px;
-        }
-
-        .ts-pic {
-            position: absolute;
-            margin: 57px 0 0 0;
-            left: -63px;
-            bottom: 0;
-            width: 756px;
-            max-width: 121%;
-        }
-
-        .btn {
-            margin-top: 56px;
-        }
-
-        .ts-flex__left {
-            padding-bottom: 147px;
-        }
     }
 
 
@@ -221,20 +199,8 @@
 }
 
 @media screen and (max-width: 1430px) and (min-width: $desktopMin) {
-    .top-section--affd {
-        .ts-pic {
-            left: auto;
-            right: -70px;
-            max-width: 62vw;
-        }
-    }
-
     .ts-flex__right {
         z-index: 0;
-    }
-
-    .top-section--affd .ts-flex__left {
-        z-index: 1;
     }
 }
 
@@ -261,28 +227,7 @@
 
 @media screen and (max-width: $tabletMax) {
     .top-section--affd {
-        .ts-pic {
-            position: static;
-            margin: 0;
-            max-width: 100%;
 
-            width: 75%;
-            margin-top: 22px;
-        }
-
-        .ts-text-mobile {
-            font-size: 20px;
-            line-height: 125%;
-            margin-top: 16px;
-
-            p+p {
-                margin-top: 15px;
-            }
-        }
-
-        .ts-flex__right {
-            margin-bottom: -89px;
-        }
     }
 
 
@@ -547,23 +492,7 @@
 @media screen and (max-width: $phoneMax) {
 
     .top-section--affd {
-        .ts-heading {
-            width: 315px;
-        }
 
-        .ts-text-mobile {
-            font-size: 16px;
-            line-height: 135%;
-        }
-
-        .ts-pic {
-            width: 92%;
-            margin-top: 17px;
-        }
-
-        .ts-flex__right {
-            margin-bottom: -105px;
-        }
     }
 
     .result-section--affd {

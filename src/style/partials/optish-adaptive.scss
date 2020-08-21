@@ -6,33 +6,8 @@
 
 @media screen and (min-width: $desktopMin) {
 	.top-section--optish {
-		.ts-flex__left {
-			width: 550px;
-			padding-top: 106px;
-			padding-bottom: 148px;
-		}
 
-		.ts-flex__right {
-			width: calc(100% - 550px);
-		}
-
-		.ts-heading {
-			margin-bottom: 26px;
-		}
-
-		.ts-btn {
-			margin-top: 52px;
-		}
-
-		.ts-pic {
-			bottom: 0;
-			left: 2px;
-			width: 661px;
-			max-width: 100%;
-		}
 	}
-
-
 
 	.sp-block--optish-sp-1 {
 		.sp-block-item-pic-inner {
@@ -206,26 +181,7 @@
 	}
 
 	.top-section--optish {
-		.ts-text-mobile {
-			width: 500px;
-			margin: 16px auto 0;
-			max-width: 100%;
-			line-height: 136%;
 
-			p+p {
-				margin-top: 12px;
-			}
-		}
-
-		.ts-pic {
-			width: 426px;
-			margin-top: -13px;
-			margin-left: -18px;
-		}
-
-		.ts-flex__right {
-			margin-bottom: -89px;
-		}
 	}
 
 
@@ -435,29 +391,6 @@
 @media screen and (max-width:$phoneMax) {
 
 	.top-section--optish {
-		.ts-text-mobile {
-			font-size: 16px;
-			line-height: 135%;
-		}
-
-		.ts-pic {
-			width: 80%;
-			margin-top: -1px;
-			margin-left: -9px;
-		}
-
-		.ts-flex__right {
-			margin-bottom: -100px;
-		}
-
-		.ts-heading {
-			width: 270px;
-
-		}
-
-		.ts-btn-mobile {
-			margin-top: 52px;
-		}
 
 	}
 

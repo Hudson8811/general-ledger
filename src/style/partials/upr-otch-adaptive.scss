@@ -1,7 +1,4 @@
 @media screen and (min-width: $desktopMin) {
-	.top-section--upr-ot {
-		overflow-x: hidden;
-	}
 
 	.sp-block--uprotch {
 		flex-wrap: wrap;
@@ -133,40 +130,7 @@
 
 @media screen and (max-width: $tabletMax) {
 	.top-section--upr-ot {
-		.ts-flex__left {
-			box-sizing: border-box;
-			width: 100%;
-			padding-top: 51px;
-			padding-bottom: 42px;
-		}
 
-		.ts-heading {
-			width: 550px;
-			max-width: 100%;
-			margin: 0 auto;
-		}
-
-		.ts-text-mobile {
-			margin-top: 17px;
-			font-size: 18px;
-			line-height: 135%;
-		}
-
-
-		.ts-pic {
-			position: static;
-			margin-top: 0;
-		}
-
-		.ts-flex__right {
-			width: 461px;
-			max-width: 100%;
-			margin-bottom: -88px;
-		}
-
-		.ts-btn {
-			margin-top: 40px;
-		}
 	}
 
 	.result-section--uprot {
@@ -413,33 +377,6 @@
 		.default-h2 {
 			width: 100%;
 		}
-	}
-
-	.top-section--upr-ot .ts-flex__left {
-		padding-top: 42px;
-	}
-
-	.top-section--upr-ot .ts-text-mobile {
-		font-size: 16px;
-
-		p:not(:last-child) {
-			margin-bottom: 12px;
-		}
-	}
-
-	.top-section--upr-ot .ts-pic {
-		bottom: 0;
-		left: -17px;
-		width: 95%;
-		max-width: 100%;
-	}
-
-	.top-section--upr-ot .ts-btn {
-		margin-top: 31px;
-	}
-
-	.top-section--upr-ot .ts-flex__right {
-		margin-bottom: -79px;
 	}
 
 	.result-section--uprot {
@@ -768,9 +705,7 @@
 }
 
 @media screen and (max-width:377px) {
-	.top-section--upr-ot .ts-flex__right {
-		margin-bottom: -100px;
-	}
+
 }
 
 @media screen and (max-width:335px) {
@@ -780,11 +715,4 @@
 		right: 0;
 		left: auto;
 	}
-}
-
-.top-section--upr-ot.top-section--upr-otdelnaya .ts-pic {
-	bottom: 0;
-	left: 39px;
-	width: 649px;
-	max-width: 100%;
 }
