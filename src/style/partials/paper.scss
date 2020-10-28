@@ -499,6 +499,34 @@
     text-align: right;
   }
 
+  ul {
+    list-style: none;
+    margin: 24px 0;
+
+    li {
+      display: flex;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #000;
+        top: 10px;
+        left: 0;
+      }
+
+      span {
+        font-weight: 400;
+        padding-left: 25px;
+        line-height: 24px;
+      }
+    }
+  }
+
   &--interview {
     .paper {
       &__wrapper {
@@ -542,7 +570,7 @@
 
     .paper-part {
       &__desc {
-        span {
+        p > span {
           font-weight: 500;
         }
 
