@@ -1,0 +1,353 @@
+extends layouts/default
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+
+
+
+block main
+    .paper
+        .container.paper__container
+            .paper__wrapper
+                .paper__head(style='background-image: url(images/papers_item14-new.jpg)')
+                    .paper__head-content
+                        .paper__topic Фундамент
+                        .paper__title Что есть НДС
+                .paper__main
+                    .paper__content
+                        .paper-part.paper-part--one
+                            .paper-part__desc
+                                p Наверное, каждый человек, живущий в нашей стране, хоть раз в жизни слышал загадочную аббревиатуру «НДС». Многие – не обязательно профессиональные экономисты и финансисты – даже знают, что это расшифровывается как «налог на добавленную стоимость».
+                                p Но, исходя из обширного опыта общения с профессиональными бухгалтерами и финансистами, можно с уверенностью сказать, что даже среди них далеко не все понимают так называемый «физический смысл» этого налога. Казалось бы, как посчитать этот налог знают все квалифицированные главные бухгалтеры и их заместители. Но что это фактически отдельно стоящая переменная знают единицы.
+                                p Это утверждение основывается на том, что при проведении собеседований на вакансию главного бухгалтера на протяжении последних 15 лет всем без исключения соискателям (а их было несколько сотен) задавался один и тот же вопрос – что есть физический смысл НДС?
+                                p 9 человек из 10 начинали рассказывать, что это разница между НДС с продаж и НДС с закупок... А сейчас остановитесь и дайте ответ: Вы тоже так думаете? Если “нет” – то Вы проникли в самую суть этого загадочного налога и хорошо его понимаете. Ну а если “да” – эта статья для Вас. Дополнительно стоит прочесть статью руководителям и собственникам компаний. Просто для того, чтобы в любой момент просчитать, сколько нужно заплатить НДС. Понимаете? Не ждать, пока «приедут» все многочисленные документы и от покупателей, и от поставщиков, а взглянув на несколько цифр, сразу сделать расчет.
+
+
+                        .paper-part.paper-part--two
+                            .paper-part__subtitle Суть налога через простые модели
+                            .paper-part__desc
+                                p Для того, чтобы вникнуть во все нюансы, не нужно перечитывать “простыни” текста и копаться в теории. Мы перейдем сразу к конкретным примерам.
+                                p Представим себе булочную, которая в одном месяце закупает продукты для своих булок, печет их, и в этом же месяце их полностью продает. Так как ситуация идеальна, то и вся документация правильная и получена вовремя. А теперь показываем несколько простых таблиц.
+                                p Таблица №1.
+                                p В этой мини-пекарне ценообразование идет от затрат (прямых и косвенных). Чтобы получить конкретную себестоимость продукта суммированы все затраты, очищенные от НДС (столбец 1, строка 9).
+                                .paper-part__table-wrapper
+                                    table.paper-part__table.paper-part__table--small
+                                        tr
+                                            td(style="text-align: center") № строки
+                                            td(style="text-align: center") Показатель
+                                            td(style="text-align: center") стоимость без НДС
+                                            td(style="text-align: center") НДС 20%
+                                            td(style="text-align: center") стоимость с НДС
+                                        tr
+                                            td
+                                            td
+                                            td(style="text-align: center") 1
+                                            td(style="text-align: center") 2
+                                            td(style="text-align: center") 3
+                                        tr(style="font-weight: 700; font-style:italic;")
+                                            td(style="text-align: center") 1
+                                            td затраты прямые
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                        tr
+                                            td(style="text-align: center") 2
+                                            td продукты
+                                            td(style="text-align: right") 50
+                                            td(style="text-align: right") 10
+                                            td(style="text-align: right") 60
+                                        tr
+                                            td(style="text-align: center") 3
+                                            td зп пекаря
+                                            td(style="text-align: right") 30
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                        tr(style="font-weight: 700; font-style:italic;")
+                                            td(style="text-align: center") 4
+                                            td затраты косвенные
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                        tr
+                                            td(style="text-align: center") 5
+                                            td аренда
+                                            td(style="text-align: right") 20
+                                            td(style="text-align: right") 4
+                                            td(style="text-align: right") 24
+                                        tr
+                                            td(style="text-align: center") 6
+                                            td транспорт
+                                            td(style="text-align: right") 10
+                                            td(style="text-align: right") 2
+                                            td(style="text-align: right") 12
+                                        tr
+                                            td(style="text-align: center") 7
+                                            td реклама
+                                            td(style="text-align: right") 10
+                                            td(style="text-align: right") 2
+                                            td(style="text-align: right") 12
+                                        tr
+                                            td(style="text-align: center") 8
+                                            td зп директора
+                                            td(style="text-align: right") 10
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                        tr(style="font-weight: 700;")
+                                            td(style="text-align: center") 9
+                                            td итого с/стоимость
+                                            td(style="text-align: right") 130
+                                            td(style="text-align: right") 18
+                                            td(style="text-align: right") 148
+
+                                p Таблица №2
+                                p Далее добавлена наценка, установленная владельцем (столбец 1, строка 10) и рассчитан налог на прибыль, т.к. это тоже затрата (столбец 1, строка 12). Полученная сумма обложена тем самым НДС и получилась цена на полке – <strong>199,2 руб.</strong> (столбец 3, строка 13), а также был подсчитан весь НДС с продаж – <strong>133,2 руб.</strong> (столбец 2, строка 13)
+                                .paper-part__table-wrapper
+                                    table.paper-part__table.paper-part__table--small
+                                        tr
+                                            td(style="text-align: center") № строки
+                                            td(style="text-align: center") Показатель
+                                            td(style="text-align: center") стоимость без НДС
+                                            td(style="text-align: center") НДС 20%
+                                            td(style="text-align: center") стоимость с НДС
+                                        tr
+                                            td
+                                            td
+                                            td(style="text-align: center") 1
+                                            td(style="text-align: center") 2
+                                            td(style="text-align: center") 3
+                                        tr
+                                            td(style="text-align: center") 10
+                                            td торговая наценка
+                                            td(style="text-align: right") 30
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                        tr
+                                            td(style="text-align: center") 11
+                                            td розничная цена
+                                            td(style="text-align: right") 160
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                        tr
+                                            td(style="text-align: center") 12
+                                            td налог на прибыль
+                                            td(style="text-align: right") 6
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                        tr(style="font-weight: 700;")
+                                            td(style="text-align: center") 13
+                                            td итого цена, выручка
+                                            td(style="text-align: right") 166
+                                            td(style="text-align: right") 33,2
+                                            td(style="text-align: right") 192,2
+
+                                p В таблице №1 уже был также подсчитан весь НДС с покупок – <strong>18 руб.</strong> (таблица №1, столбец 2, строка 9).
+                                p И все это вместе у нас дает следующую таблицу.
+                                p Таблица №3:
+                                .paper-part__table-wrapper
+                                    table.paper-part__table.paper-part__table--small
+                                        tr
+                                            td(style="text-align: center") № строки
+                                            td(style="text-align: center") Показатель
+                                            td(style="text-align: center") стоимость без НДС
+                                            td(style="text-align: center") НДС 20%
+                                            td(style="text-align: center") стоимость с НДС
+                                            td(style="text-align: center; font-weight: 700; background: #e2ffd4;") НДС к уплате расчетный от показателей
+                                            td(style="text-align: center; font-weight: 700; background: #fff8c7;") НДС к уплате как разница между продажей и закупкой
+                                        tr
+                                            td
+                                            td
+                                            td(style="text-align: center") 1
+                                            td(style="text-align: center") 2
+                                            td(style="text-align: center") 3
+                                            td(style="text-align: center; font-weight: 700; background: #e2ffd4;") 4
+                                            td(style="text-align: center; font-weight: 700; background: #fff8c7;") 5
+                                        tr(style="font-weight: 700; font-style:italic;")
+                                            td(style="text-align: center") 1
+                                            td затраты прямые
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                            td(style="text-align: right; font-weight: 700; background: #e2ffd4;")
+                                            td(style="text-align: right; font-weight: 700; background: #fff8c7;")
+                                        tr
+                                            td(style="text-align: center") 2
+                                            td продукты
+                                            td(style="text-align: right") 50
+                                            td(style="text-align: right") 10
+                                            td(style="text-align: right") 60
+                                            td(style="text-align: right; font-weight: 700; background: #e2ffd4;")
+                                            td(style="text-align: right; font-weight: 700; background: #fff8c7;")
+                                        tr
+                                            td(style="text-align: center") 3
+                                            td зп пекаря
+                                            td(style="text-align: right") 30
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                            td(style="text-align: right; font-weight: 700; background: #e2ffd4;")
+                                            td(style="text-align: right; font-weight: 700; background: #fff8c7;")
+                                        tr(style="font-weight: 700; font-style:italic;")
+                                            td(style="text-align: center") 4
+                                            td затраты косвенные
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                            td(style="text-align: right; font-weight: 700; background: #e2ffd4;")
+                                            td(style="text-align: right; font-weight: 700; background: #fff8c7;")
+                                        tr
+                                            td(style="text-align: center") 5
+                                            td аренда
+                                            td(style="text-align: right") 20
+                                            td(style="text-align: right") 4
+                                            td(style="text-align: right") 24
+                                            td(style="text-align: right; font-weight: 700; background: #e2ffd4;")
+                                            td(style="text-align: right; font-weight: 700; background: #fff8c7;")
+                                        tr
+                                            td(style="text-align: center") 6
+                                            td транспорт
+                                            td(style="text-align: right") 10
+                                            td(style="text-align: right") 2
+                                            td(style="text-align: right") 12
+                                            td(style="text-align: right; font-weight: 700; background: #e2ffd4;")
+                                            td(style="text-align: right; font-weight: 700; background: #fff8c7;")
+                                        tr
+                                            td(style="text-align: center") 7
+                                            td реклама
+                                            td(style="text-align: right") 10
+                                            td(style="text-align: right") 2
+                                            td(style="text-align: right") 12
+                                            td(style="text-align: right; font-weight: 700; background: #e2ffd4;")
+                                            td(style="text-align: right; font-weight: 700; background: #fff8c7;")
+                                        tr
+                                            td(style="text-align: center") 8
+                                            td зп директора
+                                            td(style="text-align: right") 10
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                            td(style="text-align: right; font-weight: 700; background: #e2ffd4;")
+                                            td(style="text-align: right; font-weight: 700; background: #fff8c7;")
+                                        tr(style="font-weight: 700;")
+                                            td(style="text-align: center") 9
+                                            td итого с/стоимость
+                                            td(style="text-align: right") 130
+                                            td(style="text-align: right") 18
+                                            td(style="text-align: right") 148
+                                            td(style="text-align: right; font-weight: 700; background: #e2ffd4;")
+                                            td(style="text-align: right; font-weight: 700; background: #fff8c7;")
+                                        tr
+                                            td(style="text-align: center") 10
+                                            td торговая наценка
+                                            td(style="text-align: right") 30
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                            td(style="text-align: right; font-weight: 700; background: #e2ffd4;")
+                                            td(style="text-align: right; font-weight: 700; background: #fff8c7;")
+                                        tr
+                                            td(style="text-align: center") 11
+                                            td розничная цена
+                                            td(style="text-align: right") 160
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                            td(style="text-align: right; font-weight: 700; background: #e2ffd4;")
+                                            td(style="text-align: right; font-weight: 700; background: #fff8c7;")
+                                        tr
+                                            td(style="text-align: center") 12
+                                            td налог на прибыль
+                                            td(style="text-align: right") 6
+                                            td(style="text-align: right")
+                                            td(style="text-align: right")
+                                            td(style="text-align: right; font-weight: 700; background: #e2ffd4;")
+                                            td(style="text-align: right; font-weight: 700; background: #fff8c7;")
+                                        tr(style="font-weight: 700;")
+                                            td(style="text-align: center") 13
+                                            td итого цена, выручка
+                                            td(style="text-align: right") 166
+                                            td(style="text-align: right") 33,2
+                                            td(style="text-align: right") 192,2
+                                            td(style="text-align: right; font-weight: 700; background: #e2ffd4;")
+                                            td(style="text-align: right; font-weight: 700; background: #fff8c7;")
+                                        tr(style="font-weight: 700;")
+                                            td(style="text-align: center; background: #e2ffd4;") 14
+                                            td(style="background: #e2ffd4;") сумма ФОТ, наценки и налога на прибыль
+                                            td(style="text-align: right; background: #e2ffd4;") 76
+                                            td(style="text-align: right; background: #e2ffd4;")
+                                            td(style="text-align: right; background: #e2ffd4;")
+                                            td(style="text-align: right; font-weight: 700; background: #e2ffd4;") 15,2
+                                            td(style="text-align: right; font-weight: 700; background: #fff8c7;") 15,2
+
+
+                                p Последняя строка  – это и есть расчеты по нашему НДС. Как видим, к уплате, получается <strong>15,2 руб.</strong> (столбец 5, строка 14). Как мы получили эту сумму? Смотрим столбец 1 в этой же строке. Это сумма зп пекаря и директора, плюс наценки и налог на прибыль. У нас это сумма в 76 рублей. А столбец 4 – это 20% от нее, т.е. НДС от этих 76 руб. – <strong>15,2 руб.</strong>
+                                p Что это значит? А это значит, что НАЛОГ НА ДОБАВЛЕННУЮ СТОИМОСТЬ платится с заработной платы сотрудников, наценки и, как это ни смешно звучит с налога на прибыль. Да, именно налог с налога. Самый трудно оптимизируемый налог в нашем государстве.
+                                p А если вслушаться в его название – налог на ДОБАВЛЕННУЮ СТОИМОСТЬ – что же такое эта добавленная стоимость? Это только наш с вами труд, работа ваших подчиненных и сотрудников. Энергия, которая направлена на создание чего-то нового, пусть даже не физически осязаемого (услуги).  Вывел эту нехитрую формулировку – добавленная стоимость - еще дедушка Карл Маркс, труд «Капитал».
+
+                                .paper-part__quote
+                                    .paper-part__quote-text
+                                        span Считать один из самых сложных налогов легко, когда понимаешь, на что именно и как он начисляется. Достаточно понять основную формулу для того, чтобы держать под контролем финансы собственной компании.
+
+
+                        .paper-part.paper-part--three
+                            .paper-part__title Знаешь суть - контролируешь бизнес
+                            .paper-part__desc
+                                p Вот мы и добрались до еще одного вопроса: а зачем собственнику или директору разбираться в этих цифрах и расчетах? А для того, чтобы не ждать, когда же  бухгалтерия соберет все свои бумажки в кучу и принесет на рассмотрение. Достаточно взять ФОТ за месяц, свою наценку на все продукты и даже без расчета налога на прибыль (погрешность будет в районе 7-8%), умножить это всё на 20%. Все еще не понимаете зачем это нужно?
+                                p Контроль – вот основная задача руководителя, верно? И все описанные в статье действия прекрасно помогут контролировать не только финансы, но и работу бухгалтерии. Потому что ни для кого не секрет, что когда тот или иной специалист годами «погружен» в один процесс то глаз «замыливается». Могут возникать ошибки, незаметные на первый взгляд. Так вот. Если собственник посчитал, что его НДС в этом периоде 20 руб., а главный бухгалтер ему говорит, что 50 руб., то возникает справедливый вопрос: почему?
+                                p И в процессе ответа начинают находиться ошибки, которые были пропущены при расчетах. А значит, работа компании будет идти в верном направлении и без ошибок или убытков. И поверьте, в таких компаниях, где собственник «держит руку на пульсе», бухгалтерия будет работать в разы эффективней. И любой документ, прежде чем предоставляться руководству, будет перепроверяться не один раз.
+
+
+                        .paper-part.paper-part--three
+                            .paper-part__subtitle Немного о возражениях
+                            .paper-part__desc
+                                p Многие могут спорить и приводить разные доводы, что таких идеальных компаний не существует. Или же их единицы по всей стране. Да, все так. В одном периоде купить всё сырье и произвести продукт, да еще и продать его получится далеко не у каждой компании. Опять же – рынок услуг, в котором нет ни закупок сырья, ни производства на заводах, там все затраты как раз и состоят из труда и затрат на содержание офиса и поддержание его жизнеобеспечения. И таких компаний у нас вообще немало.
+                                p Но задумайтесь, что меняет временной лаг? НДС у нас налог поквартальный. А компаний, у которых полный цикл 90 дней уже становится не так уж и мало. Но даже крупный бизнес, с длительными циклами может пользоваться нашим методом. Потому что НДС можно ЗАПЛАНИРОВАТЬ наперед, по крайней мере приблизительно, с допустимой погрешностью на случай ЧП. На квартал, на полгода, на год. Заманчиво звучит?
+                                p Следующим возражением будет то, что очень проблематично вовремя и полностью собрать все документы, на основании которых можно весь причитающийся по закону НДС взять в зачет. И здесь тоже все верно. Но давайте будем честными, дорогие собственники, это же ваши деньги, и в ваших интересах научиться ими правильно распоряжаться. Требуйте своевременного предоставления документов, мотивируйте премиями или наоборот, лишайте премий за просрочки по документации. Не позволяйте государству необоснованно обогащаться за счет нерадивости ваших сотрудников, а в итоге за ваш счет.
+
+
+                        .paper-part.paper-part--four
+                            .paper-part__title Поговорим об итогах
+                            .paper-part__desc
+                                p Что можно сказать в завершение? По итогам статьи можно сделать следующий вывод: руководству нужно обращать внимание не только на доходы/расходы. Только разбираясь во всех финансовых делах компании ее можно развивать и продвигать вперед.
+                                p Как мы показываем в наших статьях, не нужно глубоко изучать бухгалтерию, чтобы это делать. На любое сложное действие можно найти более простое и понятное решение. Откажитесь от сложных терминов, изучайте вопросы налогов или финансов там, где все описано понятными ВАМ словами. И тогда вы сможете быть действительно эффективным и перспективным собственником успешного бизнеса.
+
+
+                        .paper__share
+                            .paper__share-title Понравилась статья? Расскажите друзьям:
+                            .paper__socials
+                                a(href="http://www.facebook.com/sharer.php?s=100&amp;p[url]=https://glfinance.ru/stati/kakoy-uroven-ucheta-nuzhen-dlya-biznesa/&amp;p[title]=Какой уровень учета нужен для бизнеса&amp;p[summary]=Простая и наглядная история о том, как должен изменяться финансовый учет по мере роста бизнеса от торговой точки к сети магазинов, чтобы вовремя предотвращать потери денег и зарабатывать больше.&amp;p[images][0]=https://glfinance.ru/upload/iblock/087/08745af8841dda89451f4b72af2aae67.png" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target='_blank').paper__socials-item.paper__socials-item--fb
+                                    img(src="img/contacts/fb-white.png" alt="")
+                                    span Поделиться в Facebook
+                                a(href="http://vkontakte.ru/share.php?url=https://glfinance.ru/stati/kakoy-uroven-ucheta-nuzhen-dlya-biznesa/&amp;title=Какой уровень учета нужен для бизнеса&amp;description=Простая и наглядная история о том, как должен изменяться финансовый учет по мере роста бизнеса от торговой точки к сети магазинов, чтобы вовремя предотвращать потери денег и зарабатывать больше.&amp;image=https://glfinance.ru/upload/iblock/087/08745af8841dda89451f4b72af2aae67.png&amp;noparse=true" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target='_blank').paper__socials-item.paper__socials-item--vk
+                                    img(src="img/contacts/vk-white.png" alt="")
+                                    span Поделиться в VK
+                                a(href="http://twitter.com/share?text=Простая и наглядная история о том, как должен изменяться финансовый учет по мере роста бизнеса от торговой точки к сети магазинов, чтобы вовремя предотвращать потери денег и зарабатывать больше.&amp;url=https://glfinance.ru/stati/kakoy-uroven-ucheta-nuzhen-dlya-biznesa/ ?>" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target='_blank').paper__socials-item.paper__socials-item--tw
+                                    img(src="img/contacts/tw-white.png" alt="")
+                                    span Поделиться в Twitter
+
+                        a.paper__consult(style='background-image: url(images/skills2.png);display:block;' href='/uslugi/upravlench-otchyotnost-holding/')
+                            .paper__consult-content
+                                .paper__consult-text
+                                    p Получите полную картину<br> финансов бизнеса
+                                    p улучшайте прибыльность, рентабельность<br> и финансовую устойчивость
+                                .paper__consult-button
+                                    span Перейти
+                                    img(src="img/arrow-right.svg" alt="")
+
+                    .paper__sidebar
+                        .paper__author
+                            .paper__author-photo
+                                img(src="images/user3.jpg" alt="")
+                            .paper__author-wrapper
+                                .paper__author-name Инна Шатохина
+                                .paper__author-position Эксперт в области налогообложения
+                        .paper__info
+                            .paper__views
+                                img(src="img/view.svg" alt="")
+                                span 465
+                            .paper__date 02.11.2020
+            .paper__bottom-nav
+                a(href='#').paper__back Вернуться к списку статей
+                .paper__bottom-nav-wrapper
+                    a(href='#').paper__next
+                        span Следующая статья
+                        img(src="img/arrow-right-gray.svg" alt="")

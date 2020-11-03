@@ -185,6 +185,8 @@
     img {
       height: 100%;
       object-fit: cover;
+      width: 100%;
+      border-radius: 100%;
     }
   }
 
@@ -690,6 +692,14 @@
 
       td:not(:first-child) {
         white-space: nowrap;
+      }
+    }
+    &--small {
+      font-size: 13px;
+
+      td,
+      th {
+        padding: 11px 5.6px;
       }
     }
   }

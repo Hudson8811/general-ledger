@@ -1,0 +1,726 @@
+extends layouts/default
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+
+
+
+block main
+    .paper
+        .container.paper__container
+            .paper__wrapper
+                .paper__head(style='background-image: url(images/papers_item12-new.jpg)')
+                    .paper__head-content
+                        .paper__topic Фундамент
+                        .paper__title Бухучет как он есть
+                .paper__main
+                    .paper__content
+                        .paper-part.paper-part--one
+                            .paper-part__desc
+                                p Слова «бухгалтерский учет», «баланс», «де́бет», «кре́дит», «сальдо» слышал каждый человек, живущий в нашей стране. Но их значение и применение известно только профессионалам, а именно бухгалтерам. И ни одна компания не может обойтись без такого сотрудника в штате.
+                                p Обратившись в википедию мы читаем следующее: «бухгалтерский учёт — упорядоченная система сбора, регистрации и обобщения  информации в денежном выражении о состоянии имущества, обязательствах и капитале организации  и их изменениях путём сплошного, непрерывного и документального отражения всех хозяйственных операций». Очень интересно, но ничего не понятно.
+                                p Вот так вот прочитаешь, и отпадает вообще всякое желание разбираться в этом дальше. А все почему? Потому что написано сложно и запутанно. В этой статье мы объясним «на пальцах», что такое бухгалтерский учет и для чего он нужен, хотя бы в первом приближении. Потому что любой собственник бизнеса просто обязан ПОНИМАТЬ что такое бухучет, пусть и не вникая в нюансы.
+
+
+                        .paper-part.paper-part--two
+                            .paper-part__subtitle Основное задание бухучета
+                            .paper-part__desc
+                                p Итак, в чем основной смысл бухучета? В страшном и непонятном термине «двойная запись». Кстати, систематизировали ее еще 500 лет назад. А теперь своими словами: вы хотите контролировать, на что вы тратите свои деньги, верно?.
+                                p Здесь мы переходим к первым терминам: «кре́дит» и «де́бет». Скажем, вы потратили 100 рублей, это нужно зафиксировать. То есть, «отразить по «кре́диту» на конкретном счете» с конкретной датой. Но только одного этого недостаточно, ведь деньги вы не просто выбросили, а купили, например, ручку. Фактически, ваши деньги превратились в ручку. Вот мы и дошли до двойной записи. По этому принципу на другом определенном «счете» вы также отразили уже по «де́бету» эту ручку этой же датой. Две записи образовали вам баланс.
+                                p С терминами разобрались, только для чего это делать? А затем, что если вам через время нужно будет узнать, на что же конкретно были потрачены деньги, запись вам поможет. А если бы не было «двойной записи», то вы не смогли бы контролировать свои траты, вы бы их только фиксировали: «вот потратил 100 руб.».
+                                p Эта технология – закрытая система сообщающихся сосудов, количество жидкости в которых всегда одинаково, или это весы с двумя чашами, где на обеих постоянно равный вес. С помощью таких «весов» вы сможете абсолютно четко в каждый отдельный момент времени знать, сколько ваших денег и когда вы потратили, и что и когда вы получили взамен этих денег.
+
+
+
+                        .paper-part.paper-part--three
+                            .paper-part__subtitle Еще немного терминологии
+                            .paper-part__desc
+                                p Перед примером, который мы рассмотрим ниже, нужно разобрать еще 2 термина: «активы» и «пассивы».
+                                p Принцип бухучета и двойной записи это: «активы всегда равны пассивам». Это и есть «баланс». Что такое «активы»? Это всё то, что у вас есть на сегодняшний день – деньги, наличные и безналичные, запасы товаров, абсолютно любое движимое или недвижимое имущество. Активами также является то, что вам должны. Вы отправили покупателю товар, но деньги по обоюдной договоренности он отдаст через неделю –  это тоже актив. Это ваши деньги, просто получите вы их позднее.
+                                p Что такое «пассивы»? В стандарте это то, что должны вы – кредит, который вы взяли, но пока не вернули, товар, который вам уже привезли, но деньги вы за него отдадите через неделю. Все очень просто.
+
+
+
+
+                        .paper-part.paper-part--four
+                            .paper-part__title Обратимся к примерам
+                            .paper-part__desc
+                                p А вот мы и пришли к конкретным примерам. Есть у нас замечательный предприниматель по имени Сергей. У него есть 50 тыс.рублей, на которые он открывает фирму ООО «Мечта». Мы рассмотрим математику прироста его денег, и как в итоге он поймет, что он заработал. Конечно же, при помощи бухучета и волшебной технологии двойной записи.
+                                p Первый шаг – внести эти деньги на расчетный счет компании. Это также является началом ведения бухгалтерского учета. Весь «производственный процесс» ООО «Мечта», от внесения денег на расчетный счет до формирования итоговой прибыли, состоит из 10 шагов, которые мы сейчас здесь увидим.
+                                p №1: Сергей внес свои 50 тыс. на расчетный счет – это называется «учредитель сформировал уставный капитал». Это отражается по де́бету счета 51 (расчетный счет) и кре́диту счета 80 (учредитель):
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 51 деньги
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none;") 1
+                                            td(style="color: #000000; border-left: none; text-align: right;") 50 000
+                                            td(style="color: #000000; border-right: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right;")
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 50 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 0
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;") 50 000
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;")
+
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 80 учредитель
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right;")
+                                            td(style="color: #000000; border-right: none;") 1
+                                            td(style="color: #000000; border-left: none; text-align: right;") 50 000
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 0
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 50 000
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;")
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;") 50 000
+
+                                p №2: Сергей оплатил 50 тыс. руб. поставщику за товар, например, зап.части для автомобиля, который он потом продаст. Это отражается по кре́диту счета 51 (расчетный счет) и де́бету счета 60 (поставщики)
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 51 деньги
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 1
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 50 000
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none;") 2
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;") 50 000
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 50 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 50 000
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;") 0
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;")
+
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 60 поставщик
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 2
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 50 000
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 50 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 0
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;") 50 000
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;")
+
+                                p №3: Через неделю Сергею привезли зап.части. Это отражается по кре́диту счета 60 (поставщики) и де́бету счета 41 (товар):
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 60 поставщик
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 2
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 50 000
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none;") 3
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;") 50 000
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 50 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 50 000
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;") 0
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;")
+
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 41 товар
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 3
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 50 000
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 50 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 0
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;") 50 000
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;")
+
+                                p Если посмотреть на 3 предыдущие картинки, то мы видим следующее: у Сергея было 50 тыс. руб, которые трансформировались в зап.части. Это отразилось в строке «сальдо». Что такое это? Приведем бытовой пример – это то, что осталось в конце месяца, например, от вашей зарплаты – вы получили зп 100 руб., потратили на всякие покупки 80 руб., сальдо вашего личного бюджета 20 руб., т.е. приход 100 руб. минус расход 80 руб.
+                                p Глобальный смысл бухучета показать на всех стадиях, как деньги превращаются во что-то, чтобы потом опять превратиться в деньги, и в итоге оценить, где и что было сделано правильно, а где и что нет. Смотри дальше.
+                                p №4: Сергей продал свои зап.части за 90 тыс.руб.:
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 62 покупатель
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 4
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 90 000
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 90 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;")
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;") 90 000
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;")
+
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 90 доход/расход
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;")
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none;") 4
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;") 90 000
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;")
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 90 000
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;")
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;") 90 000
+
+                                p Реализованные запчасти превратились в «доход» - кре́дит сч.90 (доход/расход), а также у нас появился долг покупателя Сергею (знакомое многим слово «дебиторка»), т.к. запчасти он покупателю отвез, все документы подписал, и договорился, что деньги  получит через три дня.
+                                p Теперь товар нужно со склада «списать»
+                                p №5: Списываем запчасти со склада:
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 90 доход/расход
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;")
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 4
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 90 000
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;") 5
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;") 50 000
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 50 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 90 000
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;")
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;") 40 000
+
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 41 товар
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 3
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 50 000
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none;") 5
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;") 50 000
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 50 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 50 000
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;") 0
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;")
+
+                                p Что мы видим в итоге? «Доход» - кре́дит сч.90 (доход/расход), очищенный от «расхода» равен 40 тыс.руб. – сальдо сч.90 (доход/расход).
+                                p №6: Через три дня Сергей получил деньги от покупателя. Это отражается по де́бету сч.51 (расчетный счет) и кре́диту сч.62 (покупатели):
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 51 деньги
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 1
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 90 000
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;") 2
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;") 50 000
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;") 6
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;") 90 000
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 140 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 50 000
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;") 90 000
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;")
+
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 62 покупатель
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 4
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 90 000
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;") 6
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;") 90 000
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 90 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 90 000
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;") 0
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;")
+
+
+                                p По факту, Сергей сделал 3 операции: внес деньги на р/счет, купил зап.части и продал их. Но в бухучете у нас получилось 6 шагов. Именно они дают развернутый ответ: как, почему и когда деньги превратились в материальные ценности и потом обратно в деньги.
+                                p Но это еще не все. Чтобы купить товар и отвезти его покупателю, Сергею пришлось привлечь грузчика и водителя. Соответственно, им нужно платить заработную плату. Чтобы заплатить, ее нужно сначала посчитать – на языке бухучета «начислить».
+                                p №7: Начислена заработная плата сотрудникам – де́бет сч.90 (доход/расход), кре́дит сч.70 (заработная плата).
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 70 зарплата
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;")
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 7
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 20 000
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;")
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 20 000
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;")
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;") 20 000
+
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 90 доход/расход
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 5
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 50 000
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 4
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 90 000
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;") 7
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;") 20 000
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 70 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 90 000
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;")
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;") 20 000
+
+                                p И №8: Выплачена заработная плата сотрудникам – де́бет сч.70 (заработная плата), кре́дит сч.51 (расчетный счет):
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 70 зарплата
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;")
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 7
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 20 000
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;") 8
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;") 20 000
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 20 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 20 000
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;") 0
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;")
+
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 51 деньги
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 1
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 50 000
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;") 2
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;") 50 000
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;") 6
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;") 90 000
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none;") 8
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;") 20 000
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 140 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 70 000
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;") 70 000
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;")
+
+                                p Что мы в итоге видим? У Сергея есть 70 тыс.руб. денег, но есть какое-то сальдо на сч.90 (доходы/расходы) – 20 тыс.руб. Что это? А это его прибыль. Но, к сожалению, радоваться еще рано. В нашем государстве принято платить налоги, поэтому это пока еще не чистая его прибыль, а «прибыль до налогообложения». Поэтому:
+                                p №9: Уплачен налог на прибыль. Он составляет 20%, поэтому 20 тыс.руб * 20% = 4 тыс.руб. Это отражается по де́бету сч.90 (доходы/расходы) и кре́диту сч.51 (расчетный счет):
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 51 деньги
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 1
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 50 000
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;") 2
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;") 50 000
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;") 5
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;") 90 000
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;") 7
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;") 20 000
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none;") 9
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;") 4 000
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 140 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 74 000
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;") 66 000
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;")
+
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 90 доход/расход
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 4
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 50 000
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 90 000
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;") 6
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;") 20 000
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;") 9
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;") 4 000
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 74 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 90 000
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;")
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;") 16 000
+
+                                p Итак, кажется все. Но в начале описания было сказано, что весь процесс будет в 10 шагов, а у нас 9. Не хватает последнего шага. И что же это?  А это вычет тех самых 50 тыс.руб, которые Сергей вложил в бизнес.
+                                p №10: Произведены расчеты с учредителем. Это отражается по де́бету сч.80 (учредитель) и кре́диту сч.51 (расчетный счет):
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 51 деньги
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 1
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 50 000
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;") 2
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;") 50 000
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;") 5
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;") 90 000
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;") 7
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;") 20 000
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;") 8
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;") 4 000
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                            td(style="color: #000000; border-right: none; border-top: none;") 9
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;") 50 000
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 140 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 124 000
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;") 16 000
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;")
+
+                                .paper-part__table-wrapper
+                                    table.paper-part__table
+                                        tr
+                                            td(style="color: #c65911;") Дт
+                                            td(colspan='2' style="color: #c65911; text-align:center;") 90 доход/расход
+                                            td(style="color: #c65911; text-align: right;") Кт
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-bottom: none;") 4
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 50 000
+                                            td(style="color: #000000; border-right: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-bottom: none;") 90 000
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;") 6
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;") 20 000
+                                            td(style="color: #000000; border-right: none; border-top: none; border-bottom: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none; border-bottom: none;")
+                                        tr
+                                            td(style="color: #000000; border-right: none; border-top: none;") 8
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;") 4 000
+                                            td(style="color: #000000; border-right: none; border-top: none;")
+                                            td(style="color: #000000; border-left: none; text-align: right; border-top: none;")
+                                        tr
+                                            td(style="color: #305496; border-right: none;") Итого
+                                            td(style="color: #305496; border-left: none; text-align: right;") 74 000
+                                            td(style="color: #305496; border-right: none;")
+                                            td(style="color: #305496; border-left: none; text-align: right;") 90 000
+                                        tr
+                                            td(style="color: #658e49; border-right: none;") Сальдо
+                                            td(style="color: #658e49; border-left: none; border-right: none; text-align: right;")
+                                            td(style="color: #658e49; border-right: none; border-left: none;")
+                                            td(style="color: #658e49; border-left: none; text-align: right;") 16 000
+
+                                p Результат деятельности бизнеса виден в сальдо сч.51 (расчетный счет) – 16 тыс.рублей. Но итоговая картинка должна быть следующая:
+
+                                p Производственный цикл бизнеса Сергея завершился. Он заработал 16 тыс.рублей. В результате в его бухгалтерии осталось только 2 сальдо – остаток денег на его счете, и сумма его прибыли. И они равны! Это очень изящный и наглядный результат деятельности.
+                                p Если все операции, происходящие в бизнесе, отражены правильно, в правильной последовательности, то можно наблюдать стройную картину «трансформации» денег в одну «субстанцию», в другую, в третью, а потом обратно в деньги.
+
+                                .paper-part__quote
+                                    .paper-part__quote-text
+                                        span Не обязательно вникать в бухгалтерское дело с головой, чтобы понимать принципы ведения финансовой линии бизнеса. Руководителю достаточно знать основные принципы, чтобы компания могла работать в полную силу.
+
+
+                        .paper-part.paper-part--four
+                            .paper-part__title Подводим итоги
+                            .paper-part__desc
+                                p Ничего сложного или страшного в бухгалтерском учете нет. Конечно, здесь разобран примитивный пример с минимальным набором операций, которые мы еще больше упростили. Но это не меняет сути бухучета – он помогает в каждый конкретный момент времени понять, что происходит с вашими деньгами, на что они потрачены, сколько их еще осталось, кто вам должен, кому вы должны.
+                                p А в итоге, когда уже все расчеты проведены, долги собраны и розданы, вы видите результат вашего труда, выраженный в деньгах.
+                                p Предприниматель обычно бежит от бухучета, как от огня, он его боится, т.к. не понимает сложных терминов. Мы сегодня выяснили, что бухучет – это структура, которую стоит понять одни раз, и дальше уже в ней разбираться просто. Это еще одна  опора для бизнесмена. От того, насколько хорошо или плохо ведется бухучет, зависит, узнает ли предприниматель о пробоинах в его судне, куда утекают деньги.
+
+
+                        .paper__share
+                            .paper__share-title Понравилась статья? Расскажите друзьям:
+                            .paper__socials
+                                a(href="http://www.facebook.com/sharer.php?s=100&amp;p[url]=https://glfinance.ru/stati/kakoy-uroven-ucheta-nuzhen-dlya-biznesa/&amp;p[title]=Какой уровень учета нужен для бизнеса&amp;p[summary]=Простая и наглядная история о том, как должен изменяться финансовый учет по мере роста бизнеса от торговой точки к сети магазинов, чтобы вовремя предотвращать потери денег и зарабатывать больше.&amp;p[images][0]=https://glfinance.ru/upload/iblock/087/08745af8841dda89451f4b72af2aae67.png" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target='_blank').paper__socials-item.paper__socials-item--fb
+                                    img(src="img/contacts/fb-white.png" alt="")
+                                    span Поделиться в Facebook
+                                a(href="http://vkontakte.ru/share.php?url=https://glfinance.ru/stati/kakoy-uroven-ucheta-nuzhen-dlya-biznesa/&amp;title=Какой уровень учета нужен для бизнеса&amp;description=Простая и наглядная история о том, как должен изменяться финансовый учет по мере роста бизнеса от торговой точки к сети магазинов, чтобы вовремя предотвращать потери денег и зарабатывать больше.&amp;image=https://glfinance.ru/upload/iblock/087/08745af8841dda89451f4b72af2aae67.png&amp;noparse=true" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target='_blank').paper__socials-item.paper__socials-item--vk
+                                    img(src="img/contacts/vk-white.png" alt="")
+                                    span Поделиться в VK
+                                a(href="http://twitter.com/share?text=Простая и наглядная история о том, как должен изменяться финансовый учет по мере роста бизнеса от торговой точки к сети магазинов, чтобы вовремя предотвращать потери денег и зарабатывать больше.&amp;url=https://glfinance.ru/stati/kakoy-uroven-ucheta-nuzhen-dlya-biznesa/ ?>" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target='_blank').paper__socials-item.paper__socials-item--tw
+                                    img(src="img/contacts/tw-white.png" alt="")
+                                    span Поделиться в Twitter
+
+                        a.paper__consult(style='background-image: url(images/skills2.png);display:block;' href='/uslugi/upravlench-otchyotnost-holding/')
+                            .paper__consult-content
+                                .paper__consult-text
+                                    p Получите полную картину<br> финансов бизнеса
+                                    p улучшайте прибыльность, рентабельность<br> и финансовую устойчивость
+                                .paper__consult-button
+                                    span Перейти
+                                    img(src="img/arrow-right.svg" alt="")
+
+                    .paper__sidebar
+                        .paper__author
+                            .paper__author-photo
+                                img(src="images/user3.jpg" alt="")
+                            .paper__author-wrapper
+                                .paper__author-name Инна Шатохина
+                                .paper__author-position Эксперт в области налогообложения
+                        .paper__info
+                            .paper__views
+                                img(src="img/view.svg" alt="")
+                                span 465
+                            .paper__date 30.10.2020
+            .paper__bottom-nav
+                a(href='#').paper__back Вернуться к списку статей
+                .paper__bottom-nav-wrapper
+                    a(href='#').paper__next
+                        span Следующая статья
+                        img(src="img/arrow-right-gray.svg" alt="")
