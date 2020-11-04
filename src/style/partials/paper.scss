@@ -712,7 +712,14 @@
     color: #fff;
 
     @media (min-width: 1024px) {
-      padding: 54px 204px 64px 203px;
+      padding: 54px 307px 64px 100px;
+      background-position: right center;
+      background-size: auto 70%;
+      background-repeat: no-repeat;
+    }
+    @media (max-width: 1023px)
+    {
+      background-image: none!important;
     }
   }
 
