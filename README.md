@@ -36,25 +36,3 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
-
-это старый сайт:
-ftp://generalledger.ru/
-u0987742
-u0987742
-
-
-новый сайт:
-ftp://glfinance.ru/
-u0987742
-TvbZD!36
-
-Админка
-admin
-200820092010
-
-БД
-u0987742_default
-u0987742_default
-3r_N!ZBS
-
-https://www.figma.com/file/NtcM2E7HIM9fIgelJKXAeN/General-Ledger?node-id=804%3A22&viewport=408%2C2603%2C0.5831471681594849
