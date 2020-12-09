@@ -72,7 +72,7 @@
       background: linear-gradient(90deg, #36388f 20.87%, rgba(54, 56, 143, 0) 88.75%);
       z-index: 0;
     }
-    &:nth-child(3n) {
+    &:nth-child(2n) {
       &::before {
         border-right: 1px solid #585aa2;
       }
