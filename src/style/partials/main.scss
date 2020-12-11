@@ -406,15 +406,15 @@ input,textarea,select,button{
       display: none;
     }
     .component-fancy--uprotch-1{
-      padding: 23px 71px;
+      padding: 23px 90px;
       padding-bottom: 0;
       &.component-fancy--with-slider::before{
         padding-top: 60.6%;
       }
       .component-fancy__inner{
         top: 20px;
-        left: 72px;
-        width: calc(100% - 71px * 2);
+        left: 92px;
+        width: calc(100% - 91px * 2);
         height: 100%;
       }
     }
@@ -468,6 +468,8 @@ input,textarea,select,button{
       padding-bottom: 0;
       .component-fancy__inner{
         top: 24px;
+        left:52px;
+        width: calc(100% - 52px * 2);
       }
     }
   }
