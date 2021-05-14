@@ -28,7 +28,7 @@
         box-sizing: border-box;
         padding: 5px 40px 25px;
 
-        background: #2C2E85;
+        background: #000;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -41,7 +41,7 @@
         &--active,
         &:hover {
             .profitb-controller-inner {
-                background: #F26419;
+                background: #FFB800;
                 box-shadow: -3px 0px 15px rgba(0, 0, 0, 0.25);
                 padding-left: 47px;
                 border-radius: 10px 0 0 10px;
@@ -49,7 +49,7 @@
 
 
                 .profitb-controller__number {
-                    opacity: 0.25;
+                    opacity: 0.5;
                 }
             }
         }
@@ -63,7 +63,7 @@
         }
 
         &:not(:last-child) {
-            border-bottom: 1px solid #464794;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         }
     }
 
@@ -106,7 +106,7 @@
         font-size: 60px;
         line-height: 125%;
         color: #DADAE8;
-        opacity: 0.2;
+        opacity: 0.5;
         position: absolute;
         left: -14px;
         top: -23px;
@@ -361,7 +361,7 @@
 
     .profitb-tab-non-desktop-head {
         padding: 40px 85px 36px 55px;
-        background: #2C2E85;
+        background: #000;
         border-radius: 15px;
         position: relative;
 
@@ -407,6 +407,11 @@
         position: relative;
         width: 320px;
         max-width: 100%;
+
+        span {
+            position: relative;
+            z-index: 1;
+        }
     }
 
 
@@ -418,7 +423,7 @@
         font-size: 60px;
         line-height: 125%;
         color: #DADAE8;
-        opacity: 0.2;
+        opacity: 0.8;
         font-family: $fontG;
     }
 
@@ -467,7 +472,7 @@
         .profitb-p {}
 
         .profitb-tab-non-desktop-head {
-            background: #F26419;
+            background: #FFB800;
 
             &::after {
                 transform: rotate(180deg);

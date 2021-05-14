@@ -1,7 +1,7 @@
 /////////////////////////////////HEADER/////////////////////////////////
 .site-header {
 	position: relative;
-	background: #2C2E85;
+	background: #000;
 
 	&::after {
 		position: absolute;
@@ -82,10 +82,10 @@
 	}
 
 	&:hover {
-		color: #f26419;
+		color: #FFB800;
 
 		svg path {
-			fill: #f26419;
+			fill: #FFB800;
 		}
 	}
 
@@ -279,7 +279,7 @@
 			line-height: 132%;
 
 			&:hover {
-				color: #F26419;
+				color: #FFB800;
 			}
 
 			&:active {}
@@ -296,14 +296,14 @@
 				transition: .2s;
 				pointer-events: none;
 				opacity: 0;
-				background: #F26419;
+				background: #FFB800;
 			}
 		}
 	}
 
 	.sh-menu-item-active {
 		.sh-menu-item-a {
-			color: #F26419;
+			color: #FFB800;
 
 			&::after {
 				opacity: 1;
@@ -397,7 +397,7 @@
 			line-height: 220%;
 
 			&:hover {
-				color: #f26419;
+				color: #FFB800;
 			}
 
 			padding: 16px 0 8px;

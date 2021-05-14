@@ -187,17 +187,17 @@ input,textarea,select,button{
       }
 
       circle {
-        fill: #f26419;
+        fill: #FFB800;
       }
     }
 
     &:hover {
-      border: 1px solid #f26419;
-      background-color: #f26419;
+      border: 1px solid #FFB800;
+      background-color: #FFB800;
 
       svg {
         path {
-          stroke: #f26419;
+          stroke: #FFB800;
         }
 
         circle {
@@ -231,7 +231,7 @@ input,textarea,select,button{
         }
 
         circle {
-          fill: #f26419;
+          fill: #FFB800;
         }
       }
     }
@@ -239,12 +239,12 @@ input,textarea,select,button{
 
   &--orange {
     color: #ffffff;
-    border: 1px solid #f26419;
-    background-color: #f26419;
+    border: 1px solid #FFB800;
+    background-color: #FFB800;
 
     svg {
       path {
-        stroke: #f26419;
+        stroke: #FFB800;
       }
 
       circle {
@@ -310,7 +310,7 @@ input,textarea,select,button{
   overflow: hidden;
 }
 .top-section {
-  background: #2c2e85;
+  background-color: #000;
 }
 
 .ts-flex {
@@ -679,7 +679,7 @@ input,textarea,select,button{
     padding: 16px 24px;
     height: 110px;
     border-radius: 50%;
-    background: #2c2e85;
+    background: #000;
     box-sizing: border-box;
 
     img {
@@ -904,7 +904,7 @@ input,textarea,select,button{
 .why-choose-us-section {
   padding-top: 82px;
   padding-bottom: 68px;
-  background: #2c2e85;
+  background: #000;
   margin-top: 86px;
 }
 
@@ -989,7 +989,7 @@ input,textarea,select,button{
   }
 
   &--blue {
-    background: #2c2e85;
+    background: #000;
   }
 
   &--orange {
@@ -1350,7 +1350,7 @@ a.cat-block-iwt-text__line-2 {
         transition-duration: 0.2s;
         opacity: 0;
         border-radius: 50%;
-        background: #2b2fff;
+        background: #FFB800;
       }
 
       &:hover {
@@ -1863,7 +1863,7 @@ a.cat-block-iwt-text__line-2 {
   }
 
   &-button {
-    background: #f2641a;
+    background: #FFB800;
     font-size: 16px;
     letter-spacing: 0.1em;
     line-height: 19px;

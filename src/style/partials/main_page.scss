@@ -10,7 +10,7 @@
 }
 
 .skills_block {
-  background: #36388f;
+  background: #000;
   &--container {
     display: flex;
     justify-content: flex-start;
@@ -58,8 +58,8 @@
       left: 0;
       top: 0;
       position: absolute;
-      border-left: 1px solid #585aa2;
-      border-bottom: 1px solid #585aa2;
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
       z-index: 1;
     }
     &:after {
@@ -69,12 +69,12 @@
       top: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(90deg, #36388f 20.87%, rgba(54, 56, 143, 0) 88.75%);
+      background: linear-gradient(90deg, #000 20.87%, rgba(54, 56, 143, 0) 88.75%);
       z-index: 0;
     }
     &:nth-child(2n) {
       &::before {
-        border-right: 1px solid #585aa2;
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
       }
     }
     p {
@@ -126,7 +126,7 @@
       }
 
       .more_btn {
-        background-color: #f26419;
+        background-color: #FFB800;
       }
     }
     .skills_block--link {
@@ -485,7 +485,7 @@
         border-left: none !important;
       }
       .more_btn {
-        background-color: #f26419;
+        background-color: #FFB800;
       }
     }
   }
