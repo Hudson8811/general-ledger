@@ -1,8 +1,6 @@
 @media screen and (min-width: $desktopMin) {
 
-    .top-section--affd {
-
-    }
+    .top-section--affd {}
 
 
     /////////////////////
@@ -13,13 +11,13 @@
 
     /////////////////////
 
-    .section-profitable{
+    .section-profitable {
         margin-top: 86px;
     }
+
     .profit-block {
         margin-top: 48px;
         background: #FFFFFF;
-        border-radius: 20px;
         display: flex;
     }
 
@@ -29,7 +27,6 @@
         padding: 5px 40px 25px;
 
         background: #000;
-        border-radius: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -41,7 +38,7 @@
         &--active,
         &:hover {
             .profitb-controller-inner {
-                background: #FFB800;
+                background: #FFE81B;
                 box-shadow: -3px 0px 15px rgba(0, 0, 0, 0.25);
                 padding-left: 47px;
                 border-radius: 10px 0 0 10px;
@@ -207,12 +204,13 @@
 }
 
 @media screen and (min-width: 1300px) {
-    .result-section__new_video .rs-block--affd{
+    .result-section__new_video .rs-block--affd {
         .rs-block-row__left--text {
             padding-right: 33px;
         }
     }
 }
+
 @media screen and (max-width: 1300px) {
 
     .video-slider-affd-wrap {
@@ -222,15 +220,13 @@
 }
 
 @media screen and (min-width:$tabletMin) and (max-width:$tabletMax) {
-    .wwsy-uprotch-mobile-counter--affd{
+    .wwsy-uprotch-mobile-counter--affd {
         display: none;
     }
 }
 
 @media screen and (max-width: $tabletMax) {
-    .top-section--affd {
-
-    }
+    .top-section--affd {}
 
 
 
@@ -250,9 +246,7 @@
         }
     }
 
-    .we-will-suit-you-section--diag {
-
-    }
+    .we-will-suit-you-section--diag {}
 
     .list-on-blue-section {
         padding: 73px 0 44px;
@@ -283,7 +277,7 @@
             width: 100%;
             height: 1px;
             content: '';
-            background: #464794;
+            background: #828282;
         }
 
         span {
@@ -300,7 +294,7 @@
             margin: 0 auto 0;
             padding: 0 48px;
             padding-top: 12px;
-            color: #9D9EBF;
+            color: #828282;
             font-size: 16px;
             line-height: 125%;
 
@@ -472,7 +466,7 @@
         .profitb-p {}
 
         .profitb-tab-non-desktop-head {
-            background: #FFB800;
+            background: #FFE81B;
 
             &::after {
                 transform: rotate(180deg);
@@ -493,9 +487,7 @@
 
 @media screen and (max-width: $phoneMax) {
 
-    .top-section--affd {
-
-    }
+    .top-section--affd {}
 
     .result-section--affd {
 

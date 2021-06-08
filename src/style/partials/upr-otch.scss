@@ -1,12 +1,9 @@
-.top-section--upr-ot {
-}
+.top-section--upr-ot {}
 
 //////////////////////////
-.rs-block-row__right {
-}
+.rs-block-row__right {}
 
-.rs-synchro-slider-block {
-}
+.rs-synchro-slider-block {}
 
 .rs-ssb-main {
   width: 100%;
@@ -219,10 +216,10 @@
   }
 }
 
-.rs-block-row-2--uprotch {
-}
+.rs-block-row-2--uprotch {}
 
 @media screen and (min-width: $desktopMin) {
+
   .rs-block-row-2--upr-otdelnaya,
   .rs-block-row-3--upr-otdelnaya {
     .rs-block-row__right {
@@ -329,7 +326,6 @@
 
 .component-fancy--uprotch-sp-pics {
   padding: 18px;
-  border-radius: 20px;
 
   &::before {
     padding-top: calc(44%);
@@ -410,7 +406,6 @@
   margin-bottom: 20px;
   background-color: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
   box-sizing: border-box;
   position: relative;
 
@@ -509,7 +504,7 @@
         background: #27ae60;
       }
 
-      + li {
+      +li {
         margin-top: 13px;
 
         @media (min-width: 768px) {

@@ -14,7 +14,7 @@
         display: block;
         width: 5px;
         height: 43px;
-        background: #FFB800;
+        background: #F3DB00;
         left: -48px;
         top: 1px;
 
@@ -239,19 +239,22 @@
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
         border-radius: 20px;
 
-        .slick-track{
+        .slick-track {
             display: flex;
             align-items: stretch;
         }
+
         .slick-slide {
             margin-top: 0;
             padding-top: 8px;
             display: flex;
             flex-direction: column;
             height: auto;
-            &>div{
+
+            &>div {
                 flex-grow: 1;
             }
+
             &>div:not(:last-child) {
                 .wwsy-uprotch-item {
                     border-bottom: 1px solid #DADAE8;

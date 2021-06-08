@@ -1,7 +1,7 @@
 .paper {
-	&__container {
-		width: 1119px;
-	}
+  &__container {
+    width: 1119px;
+  }
 
   &__wrapper {
     padding-top: 25px;
@@ -228,6 +228,7 @@
   }
 
   &__share {
+
     &::before,
     &::after {
       content: '';
@@ -320,7 +321,7 @@
       font-size: 16px;
       line-height: 24px;
 
-      + p {
+      +p {
         margin-top: 24px;
       }
     }
@@ -328,7 +329,6 @@
 
   &__consult {
     position: relative;
-    border-radius: 15px;
     overflow: hidden;
     padding: 20px;
     margin-top: 28px;
@@ -360,6 +360,7 @@
       padding: 29px 48px 41px;
     }
   }
+
   &__consult-bg {
     position: absolute;
     top: 0;
@@ -574,7 +575,7 @@
 
     .paper-part {
       &__desc {
-        p > span {
+        p>span {
           font-weight: 500;
         }
 
@@ -648,7 +649,7 @@
       font-size: 16px;
       line-height: 24px;
 
-      + p {
+      +p {
         margin-top: 24px;
       }
     }
@@ -696,6 +697,7 @@
         white-space: nowrap;
       }
     }
+
     &--small {
       font-size: 13px;
 
@@ -719,9 +721,9 @@
       background-size: auto 70%;
       background-repeat: no-repeat;
     }
-    @media (max-width: 1023px)
-    {
-      background-image: none!important;
+
+    @media (max-width: 1023px) {
+      background-image: none !important;
     }
   }
 
@@ -754,7 +756,7 @@
         left: -49px;
       }
     }
-    
+
     span {
       position: relative;
     }
