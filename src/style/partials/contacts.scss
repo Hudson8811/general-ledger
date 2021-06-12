@@ -95,10 +95,15 @@
     margin-bottom: 21px;
 
     a {
-      color: #FFE81B;
+      color: #3E85F3;
+      transition: .3s ease;
       padding-left: 40px;
       position: relative;
       text-decoration: underline;
+
+      &:hover {
+        color: #FFE81B;
+      }
 
       &:before {
         content: '';

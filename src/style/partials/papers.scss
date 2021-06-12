@@ -177,7 +177,7 @@
 	}
 
 	&__read {
-		width: 138px;
+		padding: 0 16px;
 		height: 40px;
 		display: flex;
 		align-items: center;
@@ -210,8 +210,9 @@
 
 		&--services {
 			max-width: 100%;
-			width: 200px;
+			width: 130px;
 			margin: 40px auto 0;
+			box-sizing: border-box;
 
 			&::before {
 				display: none;
