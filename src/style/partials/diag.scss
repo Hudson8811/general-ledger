@@ -145,7 +145,7 @@
       justify-content: center;
       font-size: 40px;
       font-weight: 500;
-      color: #dadae8;
+      color: #DFDFDF;
       position: relative;
       max-width: 48px;
       width: 100%;
@@ -169,7 +169,7 @@
         display: none;
         width: 1px;
         margin-left: auto;
-        background: #dadae8;
+        background: #DFDFDF;
 
         @media (min-width: 768px) {
           display: inline-block;
@@ -195,7 +195,7 @@
       margin-top: 6px;
       box-sizing: border-box;
       text-align: center;
-      border-top: 1px solid #dadae8;
+      border-top: 1px solid #DFDFDF;
 
       @media (min-width: 768px) {
         display: flex;
@@ -555,7 +555,7 @@
     &__digit {
       font-size: 60px;
       font-weight: 500;
-      color: #dadae8;
+      color: #DFDFDF;
     }
 
     &__list {
@@ -567,7 +567,7 @@
         width: 100%;
         height: 1px;
         margin: 10px 0 23px;
-        background-color: #dadae8;
+        background-color: #DFDFDF;
       }
 
       li {
@@ -632,7 +632,7 @@
     &:not(:first-child) {
       padding-top: 0;
       margin-top: 31px;
-      border-top: 1px solid #dadae8;
+      border-top: 1px solid #DFDFDF;
 
       @media (min-width: 768px) {
         padding-top: 28px;
@@ -734,7 +734,7 @@
       font-family: 'Gilroy';
       font-size: 80px;
       font-weight: 600;
-      color: #dadae8;
+      color: #DFDFDF;
       position: absolute;
       left: -20px;
       top: -37px;

@@ -4,7 +4,7 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 1;
-    color: #DADAE8;
+    color: #DFDFDF;
     display: flex;
     position: relative;
 
@@ -24,7 +24,7 @@
         content: '';
         display: block;
         flex-grow: 1;
-        border-bottom: 1px solid #DADAE8;
+        border-bottom: 1px solid #DFDFDF;
         margin-bottom: 6px;
         margin-left: 28px;
     }
@@ -68,11 +68,11 @@
         &:nth-child(4n - 2),
         &:nth-child(4n - 1) {
             padding-left: 47px;
-            border-left: 1px solid #DADAE8;
+            border-left: 1px solid #DFDFDF;
         }
 
         &:not(:nth-last-child(4)):not(:nth-last-child(3)):not(:nth-last-child(2)):not(:nth-last-child(1)) {
-            border-bottom: 1px solid #DADAE8;
+            border-bottom: 1px solid #DFDFDF;
 
         }
     }
@@ -127,7 +127,7 @@
                     .wwsy-uprotch-item:nth-child(2) {
                         padding-left: 50px;
                         border-radius: 0 20px 0 0;
-                        border-left: 1px solid #DADAE8;
+                        border-left: 1px solid #DFDFDF;
 
 
                         .wwsy-uprotch-item__number {
@@ -141,14 +141,14 @@
                 &:nth-child(2) {
                     .wwsy-uprotch-item:nth-child(1) {
                         border-radius: 0 0 0 20px;
-                        border-top: 1px solid #DADAE8;
+                        border-top: 1px solid #DFDFDF;
                     }
 
                     .wwsy-uprotch-item:nth-child(2) {
                         padding-left: 50px;
-                        border-top: 1px solid #DADAE8;
+                        border-top: 1px solid #DFDFDF;
                         border-radius: 0 0 20px 0;
-                        border-left: 1px solid #DADAE8;
+                        border-left: 1px solid #DFDFDF;
 
                         .wwsy-uprotch-item__number {
                             &::before {
@@ -257,7 +257,7 @@
 
             &>div:not(:last-child) {
                 .wwsy-uprotch-item {
-                    border-bottom: 1px solid #DADAE8;
+                    border-bottom: 1px solid #DFDFDF;
                 }
             }
 
