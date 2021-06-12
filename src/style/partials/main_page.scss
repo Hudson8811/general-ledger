@@ -77,13 +77,13 @@
       top: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(90deg, #000 20.87%, rgba(54, 56, 143, 0) 88.75%);
+      background: linear-gradient(90deg, #232323 20.87%, rgba(54, 56, 143, 0) 88.75%);
       z-index: 0;
     }
 
     &:nth-child(2n) {
       &::before {
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.17);
       }
     }
 
