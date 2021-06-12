@@ -435,7 +435,7 @@
       position: absolute;
       top: 0;
       left: -24px;
-      background: #27ae60;
+      background: #FFE81B;
 
       @media (min-width: 768px) {
         left: -40px;
@@ -501,7 +501,7 @@
         position: absolute;
         top: 7px;
         left: 0;
-        background: #27ae60;
+        background: #FFE81B;
       }
 
       +li {
@@ -526,11 +526,11 @@
 
   &--red {
     .dns-item__count::before {
-      background: #eb5757;
+      background: #FFE81B;
     }
 
     .dns-item__list li::before {
-      background: #eb5757;
+      background: #FFE81B;
     }
   }
 }

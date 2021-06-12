@@ -45,8 +45,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  color: #323340;
-  background: #f5f6fb;
+  color: #232323;
+  background: #F8F8F8;
   font-family: $fontP;
   font-size: 16px;
 }
@@ -759,7 +759,7 @@ button {
     padding: 16px 24px;
     height: 110px;
     border-radius: 50%;
-    background: #000;
+    background: #232323;
     box-sizing: border-box;
 
     img {
@@ -1067,7 +1067,7 @@ button {
   }
 
   &--blue {
-    background: #000;
+    background: #232323;
   }
 
   &--orange {
@@ -1315,7 +1315,7 @@ a.cat-block-iwt-text__line-2 {
 .oc-slide-quote {
   position: relative;
   padding-top: 25px;
-  color: #323340;
+  color: #232323;
   font-size: 16px;
   line-height: 150%;
 
@@ -1379,7 +1379,7 @@ a.cat-block-iwt-text__line-2 {
 
   &__position {
     margin-top: -2px;
-    color: #c7c7d5;
+    color: #5C5C5C;
   }
 }
 
