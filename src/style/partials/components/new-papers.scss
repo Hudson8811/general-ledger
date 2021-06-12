@@ -1,6 +1,7 @@
 .new-papers {
     &__wrapper {
         display: flex;
+        flex-wrap: wrap;
         margin: 0 -10px;
 
         @media all and (max-width: 1024px) {
@@ -19,11 +20,10 @@
         width: 100%;
         min-height: 386px;
         padding: 40px 67px 48px 40px;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+
         box-sizing: border-box;
-        margin: 0 10px;
+        margin: 0 10px 20px;
+        background: linear-gradient(0deg, rgba(35, 35, 35, 0.65), rgba(35, 35, 35, 0.65)), url(1.jpg);
 
         @media all and (max-width: 1024px) {
             max-width: 100%;
@@ -52,6 +52,21 @@
 
     }
 
+    &__img{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        -webkit-filter: grayscale(1); /* Webkit браузеры */
+        filter: gray; /* для IE6-9 */
+        filter: grayscale(1); /* W3C */
+        opacity: .65;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     &__title {
         font-family: Pragmatica;
         font-style: normal;
@@ -59,9 +74,11 @@
         font-size: 20px;
         line-height: 125%;
         color: #FFFFFF;
+        position: relative;
     }
 
     &__author {
+        position: relative;
         font-family: Pragmatica;
         font-style: normal;
         font-weight: normal;
