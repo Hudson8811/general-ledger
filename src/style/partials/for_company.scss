@@ -233,11 +233,19 @@
     align-items: stretch;
     flex-flow: row wrap;
     padding: 48px 0;
+
+    &:hover {
+      .client_block--item {
+        filter: grayscale(0);
+      }
+    }
   }
 
   &--item_wrapper {
     width: 25%;
     height: 123px;
+
+
 
     &:nth-child(4n) {
       .client_block--item {
@@ -321,6 +329,8 @@
     height: 100%;
     border-right: 1px solid #dadae8;
     box-sizing: border-box;
+    filter: grayscale(1);
+    transition: .3s ease;
 
     &.active {
       border-bottom: 1px solid #dadae8;
