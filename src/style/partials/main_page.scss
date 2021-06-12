@@ -329,9 +329,14 @@
     text-align: center;
     text-decoration-line: underline;
     /* links */
-    color: #F3DB00;
+    color: #3E85F3;
     margin-top: 14px;
     margin-bottom: 102px;
+    transition: .3s ease;
+
+    &:hover {
+      color: #F3DB00;
+    }
   }
 }
 

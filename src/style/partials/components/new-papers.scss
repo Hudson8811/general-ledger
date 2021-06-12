@@ -27,7 +27,7 @@
 
         @media all and (max-width: 1024px) {
             max-width: 100%;
-            min-height: 686px;
+            min-height: 450px;
 
             &:not(:last-child) {
                 margin-bottom: 15px;
@@ -35,18 +35,21 @@
         }
 
         @media all and (max-width: 768px) {
-            min-height: 386px;
+            min-height: 300px;
         }
 
-        &:hover {
-            .new-papers__author {
-                display: none;
-            }
+        @media all and (min-width: 1024px) {
+            &:hover {
+                .new-papers__author {
+                    display: none;
+                }
 
-            .new-papers__read {
-                display: flex;
+                .new-papers__read {
+                    display: flex;
+                }
             }
         }
+
     }
 
     &__title {
@@ -73,5 +76,11 @@
         left: 40px;
         bottom: 32px;
         display: none;
+
+        @media all and (max-width: 1024px) {
+            right: 40px;
+            left: auto;
+            display: flex;
+        }
     }
 }
