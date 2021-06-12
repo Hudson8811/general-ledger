@@ -12,6 +12,7 @@
 
 .skills_block {
   background: #232323;
+  border-top: 1px solid rgba(255, 255, 255, 0.17);
 
   &--container {
     display: flex;
@@ -64,8 +65,8 @@
       left: 0;
       top: 0;
       position: absolute;
-      border-left: 1px solid rgba(255, 255, 255, 0.5);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      border-left: 1px solid rgba(255, 255, 255, 0.17);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.17);
       z-index: 1;
     }
 
