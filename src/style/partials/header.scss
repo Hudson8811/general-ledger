@@ -29,6 +29,10 @@
 
 .sh-logo-img {
 	line-height: 1;
+
+	@media (max-width: 450px) {
+		max-width: 123px;
+	}
 }
 
 .sh-logo-vl {

@@ -239,12 +239,6 @@
     width: 25%;
     height: 123px;
 
-    &.active {
-      .client_block--item {
-        border-bottom: 1px solid #dadae8;
-      }
-    }
-
     &:nth-child(4n) {
       .client_block--item {
         border-right: none;

@@ -110,7 +110,7 @@
 			bottom: 0;
 			left: 0;
 			right: 0;
-			background: linear-gradient(to top,#ffb800 15%,transparent);
+			background: linear-gradient(to top, #ffb800 15%, transparent);
 			opacity: 0.7;
 		}
 	}
@@ -140,7 +140,7 @@
 			line-height: 36px;
 		}
 	}
-	
+
 	&__bottom {
 		padding: 20px;
 
@@ -184,11 +184,10 @@
 		align-items: center;
 		justify-content: center;
 		margin-bottom: 10px;
-		border-radius: 20px;
-		background-color: #FFB800;
+		background-color: #FFE81B;
 		font-size: 18px;
 		line-height: 24px;
-		color: #fff;
+		color: #232323;
 
 		&::before {
 			content: '';

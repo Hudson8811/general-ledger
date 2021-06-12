@@ -188,7 +188,10 @@ button {
   font-style: normal;
   position: relative;
 
+  @media (max-width: 650px) {
+    padding: 13px 10px 12px 10px;
 
+  }
 
   &--white {
     color: #ffffff;
@@ -250,13 +253,13 @@ button {
   }
 
   &--orange {
-    color: #ffffff;
-    border: 1px solid #FFB800;
-    background-color: #FFB800;
+    color: #232323;
+    border: 1px solid #FFE81B;
+    background-color: #FFE81B;
 
     svg {
       path {
-        stroke: #FFB800;
+        stroke: #FFE81B;
       }
 
       circle {
@@ -271,6 +274,12 @@ button {
 
   &--with-right-arrow {
     padding-right: 50px;
+
+
+
+    @media (max-width: 650px) {
+      padding-right: 25px;
+    }
 
     svg {
       display: block;
@@ -295,6 +304,26 @@ button {
       content: "";
       position: absolute;
       right: 0;
+
+      @media (max-width: 1026px) {
+        right: -2px;
+      }
+    }
+
+    @media (max-width: 1026px) {
+      @media (max-width: 1026px) {
+        border: 1px solid transparent;
+
+        svg {
+          path:first-child {
+            fill: #232323;
+          }
+
+          path:first-child {
+            stroke: #232323;
+          }
+        }
+      }
     }
   }
 }
@@ -1400,7 +1429,7 @@ a.cat-block-iwt-text__line-2 {
         transition-duration: 0.2s;
         opacity: 0;
         border-radius: 50%;
-        background: #FFB800;
+        background: #FFE81B;
       }
 
       &:hover {
@@ -1497,19 +1526,19 @@ a.cat-block-iwt-text__line-2 {
   }
 
   &:hover {
-    background-color: #f9fafe;
+    background-color: #FFE81B;
 
     .ans-iq-li-svg-main {
-      stroke: #ffb800;
+      stroke: #232323;
     }
 
     .ans-iq-li-svg-horiz,
     .ans-iq-li-svg-vert {
-      fill: #ffb800;
+      fill: #232323;
     }
 
     .ans-iq__text {
-      color: #ffb800;
+      color: #232323;
     }
   }
 }
@@ -1563,7 +1592,7 @@ a.cat-block-iwt-text__line-2 {
     width: 11px;
     height: 100%;
     content: "";
-    background: #ffb800;
+    background: #F3DB00;
   }
 
   ul {
@@ -1911,7 +1940,7 @@ a.cat-block-iwt-text__line-2 {
   }
 
   &-button {
-    background: #FFB800;
+    background: #FFE81B;
     font-size: 16px;
     letter-spacing: 0.1em;
     line-height: 19px;
@@ -1924,7 +1953,7 @@ a.cat-block-iwt-text__line-2 {
     -webkit-box-shadow: 0;
     -moz-box-shadow: 0;
     box-shadow: 0;
-    color: #fff;
+    color: #232323;
     width: 207px;
     padding: 0;
     cursor: pointer;

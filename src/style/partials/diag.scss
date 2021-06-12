@@ -1126,9 +1126,8 @@
     font-size: 16px;
     color: #fff;
     text-transform: uppercase;
-    border-radius: 60px;
-    border: 2px solid #FFB800;
-    background-color: #FFB800;
+    border: 2px solid #fff;
+    background-color: transparent;
     box-sizing: border-box;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -1150,15 +1149,17 @@
     }
 
     &:hover {
-      background-color: transparent;
+      background-color: #FFE81B;
+      color: #232323;
+      border: 1px solid #FFE81B;
 
       svg {
         circle {
           fill: transparent;
         }
 
-        path {
-          stroke: #fff;
+        path:last-child {
+          stroke: #232323;
         }
       }
     }
