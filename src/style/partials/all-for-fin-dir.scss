@@ -238,7 +238,7 @@
       margin: 0 9px;
       width: 6px;
       height: 6px;
-      background: #FFFFFF;
+      background: #232323;
       border-radius: 50%;
       position: relative;
 
@@ -257,7 +257,7 @@
       &::before {
         content: '';
         display: block;
-        background: #FFFFFF;
+        background: #232323;
         width: 10px;
         height: 10px;
         border-radius: 50%;
@@ -293,7 +293,7 @@
 
   text-align: center;
 
-  color: #FFFFFF;
+  color: #232323;
   z-index: 1;
 
 }
