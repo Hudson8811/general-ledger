@@ -1,0 +1,16 @@
+.new-papers {
+    &__wrapper {
+        display: flex;
+    }
+
+    &__item {
+        max-width: 400px;
+        width: 100%;
+        min-height: 386px;
+        display: block;
+        padding: 40px 67px 48px 40px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
