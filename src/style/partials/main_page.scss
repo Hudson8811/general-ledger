@@ -319,24 +319,21 @@
 
   .pb__all_papers {
     display: block;
-    margin: 0 auto;
+    vertical-align: top;
+    margin: 14px auto 102px;
     font-family: Pragmatica;
     font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 150%;
     /* or 30px */
     text-align: center;
-    text-decoration-line: underline;
     /* links */
-    color: #3E85F3;
-    margin-top: 14px;
-    margin-bottom: 102px;
     transition: .3s ease;
-
-    &:hover {
-      color: #F3DB00;
-    }
+    background-color: #ffe81b;
+    font-size: 18px;
+    line-height: 40px;
+    color: #232323;
+    height: 40px;
+    text-decoration: none;
+    width: 130px;
   }
 }
 
