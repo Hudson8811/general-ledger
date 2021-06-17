@@ -43,10 +43,13 @@
                 padding-left: 47px;
                 border-radius: 10px 0 0 10px;
                 position: relative;
-
+                .profitb-controller__text{
+                    color: #323340;
+                }
 
                 .profitb-controller__number {
-                    opacity: 0.5;
+                    opacity: 0.4;
+                    color: #323340;
                 }
             }
         }
