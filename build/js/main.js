@@ -231,7 +231,7 @@ $(document).ready(function () {
 
 	$('.clients-slide.js-modal-comments-open').on('click', function( e ) {
 		var slideIndex = $(this).index();
-		$(".modal-fc-slider").slick( 'slickGoTo', parseInt( slideIndex ) );
+		$(".modal-fc-slider").slick( 'slickGoTo', parseInt( slideIndex ), true );
 		$('.modal-fc-slide').removeClass('slick-current');
 		$(this).addClass('slick-current');
 	});
@@ -258,7 +258,7 @@ $(document).ready(function () {
 		appendDots: $(".clients-slider-dots"),
 		prevArrow: ".clients-slider-button-prev",
 		nextArrow: ".clients-slider-button-next",
-		asNavFor: ".modal-fc-slider",
+		//asNavFor: ".modal-fc-slider",
 		responsive: [
 			{
 				breakpoint: 768,

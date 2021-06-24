@@ -282,6 +282,7 @@
 				justify-content: center;
 				align-items: center;
 				width: 171px;
+				flex-shrink: 0;
 
 				border-left: 1px solid #dfdfdf;
 
@@ -382,6 +383,7 @@
 				object-fit: cover;
 				overflow: hidden;
 				border-radius: 50%;
+				flex-shrink: 0;
 
 				@media screen and (max-width: 1500px) {
 					width: 71px;
