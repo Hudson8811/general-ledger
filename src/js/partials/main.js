@@ -129,6 +129,13 @@ $(document).ready(function () {
 		nextArrow: ".modal-fc-slider-nav__next",
 	});
 
+	$('.clients-slide.js-modal-comments-open').on('click', function( e ) {
+		var slideIndex = $(this).index();
+		$(".modal-fc-slider").slick( 'slickGoTo', parseInt( slideIndex ) );
+		$('.clients-slide').removeClass('slick-current');
+		$(this).addClass('slick-current');
+	});
+
 	$(".js-modal-comments-open, #js-modal-comments-open").click(function () {
 		$.fancybox.open({
 			src: "#modal-full-comment",
