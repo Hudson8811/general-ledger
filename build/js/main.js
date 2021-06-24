@@ -211,7 +211,8 @@ $(document).ready(function () {
 	let activeSlider;
 
 	if (clientsSlider.length) {
-		activeSlider = clientsSlider;
+		//activeSlider = clientsSlider;
+		activeSlider = '';
 	} else {
 		activeSlider = ocSlider;
 	}
@@ -231,7 +232,7 @@ $(document).ready(function () {
 	$('.clients-slide.js-modal-comments-open').on('click', function( e ) {
 		var slideIndex = $(this).index();
 		$(".modal-fc-slider").slick( 'slickGoTo', parseInt( slideIndex ) );
-		$('.clients-slide').removeClass('slick-current');
+		$('.modal-fc-slide').removeClass('slick-current');
 		$(this).addClass('slick-current');
 	});
 
@@ -253,7 +254,7 @@ $(document).ready(function () {
 		arrows: true,
 		slidesToShow: 2,
 		infinite: false,
-		slidesToScroll: 1,
+		slidesToScroll: 2,
 		appendDots: $(".clients-slider-dots"),
 		prevArrow: ".clients-slider-button-prev",
 		nextArrow: ".clients-slider-button-next",

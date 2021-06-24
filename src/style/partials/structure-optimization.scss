@@ -296,6 +296,7 @@
 				img {
 					width: 75px;
 					height: 63px;
+					object-fit: contain;
 
 					@media screen and (max-width: 1500px) {
 						width: 55%;
@@ -378,6 +379,9 @@
 				width: 91px;
 				height: 91px;
 				align-self: center;
+				object-fit: cover;
+				overflow: hidden;
+				border-radius: 50%;
 
 				@media screen and (max-width: 1500px) {
 					width: 71px;
