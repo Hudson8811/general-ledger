@@ -266,16 +266,6 @@
 
 		&:not(:last-child) {
 			margin-right: 20px;
-
-			@media screen and (max-width: $tabletMax) {
-				margin-right: 0;
-			}
-		}
-
-		@media screen and (max-width: $tabletMax) {
-			&:not(:first-child) {
-				display: none;
-			}
 		}
 
 		&__top {
@@ -292,15 +282,19 @@
 
 				border-left: 1px solid #dfdfdf;
 
-				@media screen and (max-width: 550px) {
+				@media screen and (max-width: 1550px) {
 					width: 30%;
+				}
+
+				@media screen and (max-width: 500px) {
+					display: none;
 				}
 
 				img {
 					width: 75px;
 					height: 63px;
 
-					@media screen and (max-width: 550px) {
+					@media screen and (max-width: 1500px) {
 						width: 55%;
 						height: auto;
 					}
@@ -318,6 +312,10 @@
 			max-height: 295px;
 			overflow: hidden;
 
+			@media screen and (max-width: 500px) {
+				padding: 30px 20px;
+			}
+
 			&::before {
 				content: "";
 				position: absolute;
@@ -327,6 +325,11 @@
 				height: 20px;
 				background: url("../../images/structure-optimization/icons/quote.png")
 					no-repeat center / cover;
+
+				@media screen and (max-width: 500px) {
+					top: 12px;
+					left: 20px;
+				}
 			}
 
 			&::after {
@@ -361,6 +364,7 @@
 		&__client {
 			display: flex;
 			padding-left: 40px;
+			padding-right: 20px;
 
 			@media screen and (max-width: 550px) {
 				padding-left: 30px;
@@ -370,10 +374,19 @@
 			img {
 				width: 91px;
 				height: 91px;
+				align-self: center;
 
-				@media screen and (max-width: 550px) {
+				@media screen and (max-width: 1500px) {
 					width: 71px;
 					height: 71px;
+				}
+				@media screen and (max-width: 1150px) {
+					width: 51px;
+					height: 51px;
+				}
+
+				@media screen and (max-width: 550px) {
+					align-self: flex-start;
 				}
 			}
 

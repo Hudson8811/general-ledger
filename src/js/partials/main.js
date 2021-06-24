@@ -154,12 +154,13 @@ $(document).ready(function () {
 		asNavFor: ".modal-fc-slider",
 		responsive: [
 			{
-				breakpoint: 700,
+				breakpoint: 768,
 				settings: {
 					vertical: false,
 					verticalSwiping: false,
 					slidesToShow: 1,
 					slidesToScroll: 1,
+					centerMode: true,
 				},
 			},
 		],
