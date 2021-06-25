@@ -272,7 +272,7 @@ button {
 		padding-right: 50px;
 
 		@media (max-width: 650px) {
-			padding-right: 25px;
+			padding-right: 10px;
 		}
 
 		svg {
@@ -425,6 +425,10 @@ button {
 	font-size: 18px;
 	line-height: 150%;
 	font-family: $fontG;
+
+	&--align-left {
+		text-align: left;
+	}
 }
 
 .ts-pic {

@@ -6,11 +6,17 @@
 		@media screen and (max-width: $tabletMax) {
 			padding-top: 150px;
 		}
+
+		@media screen and (max-width: 700px) {
+			padding-top: 112px;
+			padding-bottom: 40px;
+		}
 	}
 }
 
 .different-section {
 	padding-top: 88px;
+	background-color: #e5e5e5;
 
 	@media screen and (max-width: $tabletMax) {
 		padding: 49px 0 59px;
@@ -57,7 +63,7 @@
 			}
 		}
 	}
-	.ts-btn-mobile{
+	.ts-btn-mobile {
 		@media screen and (max-width: $tabletMax) {
 			position: relative;
 			margin: 41px auto 0;
@@ -96,6 +102,12 @@
 			margin: auto;
 		}
 
+		@media screen and (max-width: 700px) {
+			max-width: calc(100% - 15px * 2);
+			align-items: flex-start;
+			text-align: left;
+		}
+
 		&__left {
 			padding-left: 54px;
 			flex-shrink: 1;
@@ -112,6 +124,10 @@
 				text-align: center;
 				padding-left: 0;
 				justify-content: center;
+			}
+
+			@media screen and (max-width: 700px) {
+				margin-top: 40px;
 			}
 
 			img {
@@ -143,6 +159,11 @@
 				align-items: center;
 				padding: 0;
 			}
+
+			@media screen and (max-width: 700px) {
+				align-items: stretch;
+				text-align: left;
+			}
 		}
 	}
 
@@ -158,6 +179,11 @@
 		@media screen and (max-width: $tabletMax) {
 			width: 100%;
 		}
+
+		@media screen and (max-width: 700px) {
+			font-size: 16px;
+			line-height: 135%;
+		}
 	}
 
 	&__text {
@@ -172,6 +198,13 @@
 
 		@media screen and (max-width: $tabletMax) {
 			max-width: 100%;
+		}
+
+		@media screen and (max-width: 700px) {
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 135%;
+			margin-top: 10px;
 		}
 	}
 }
@@ -271,13 +304,13 @@
 	&-slides {
 		display: flex;
 		justify-content: center;
-      .slick-track {
-        display: flex !important;
-      }
+		.slick-track {
+			display: flex !important;
+		}
 
-      .slick-slide {
-        height: inherit !important;
-      }
+		.slick-slide {
+			height: inherit !important;
+		}
 	}
 
 	&-slide {
@@ -285,7 +318,7 @@
 		color: inherit;
 		max-width: 610px;
 		min-height: 487px;
-      cursor: pointer;
+		cursor: pointer;
 
 		&:not(:last-child) {
 			margin-right: 20px;
@@ -457,6 +490,23 @@
 	flex-wrap: wrap;
 	padding-left: 30px;
 
+	@media screen and (max-width: 700px) {
+		padding-left: 0;
+		padding-top: 7px;
+	}
+
+	.ws-block__item {
+		@media screen and (max-width: 700px) {
+			border: 1px solid #dfdfdf;
+
+			&:not(:last-child) {
+				border-bottom: none;
+			}
+		}
+	}
+	.ans-item:not(:last-child) {
+		border-bottom: none;
+	}
 	&__item {
 		display: flex;
 		flex-direction: column;
@@ -467,6 +517,25 @@
 		padding: 24px 37px;
 		min-height: 220px;
 		box-sizing: border-box;
+
+		.ans-item-answer {
+			@media screen and (min-width: 701px) {
+				display: block;
+				padding: 0;
+				background-color: inherit;
+				position: static;
+			}
+		}
+
+		@media screen and (max-width: 700px) {
+			margin-top: 0;
+		}
+
+		@media screen and (max-width: 700px) {
+			padding: 0;
+			border: 1px solid #dfdfdf;
+			min-height: 0;
+		}
 
 		&:nth-child(odd) {
 			width: 53%;
@@ -489,6 +558,77 @@
 
 		&:nth-last-child(-n + 2) {
 			min-height: 263px;
+
+			@media screen and (max-width: 700px) {
+				min-height: 0;
+			}
+		}
+
+		&-header {
+			display: none;
+			align-items: center;
+			background-color: #f3f3f3;
+			width: 100%;
+			min-height: 64px;
+			padding: 0;
+
+			&.ans-item-question--opened {
+				@media screen and (max-width: 700px) {
+					border-bottom: 1px solid #dfdfdf;
+				}
+			}
+
+			&:hover {
+				background-color: #f3f3f3;
+			}
+
+			@media screen and (max-width: 700px) {
+				display: flex;
+			}
+
+			&-title {
+				font-family: Gilroy, sans-serif;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 15px;
+				line-height: 135%;
+				display: flex;
+				align-items: center;
+				color: #232323;
+				margin-left: 16px;
+				margin-right: auto;
+			}
+
+			&-num {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-weight: bold;
+				font-size: 20px;
+				line-height: 135%;
+				color: #f3db00;
+				font-family: Gilroy, sans-serif;
+				height: 100%;
+				width: 40px;
+				border-right: 1px solid #dfdfdf;
+			}
+
+			svg {
+				margin-right: 16px;
+			}
+		}
+
+		&-body {
+			@media screen and (max-width: 700px) {
+				background-color: #fff;
+				padding: 16px;
+				width: 100%;
+				box-sizing: border-box;
+			}
+
+			&::before {
+				display: none;
+			}
 		}
 
 		&::after {
@@ -500,6 +640,10 @@
 			height: 1px;
 			width: calc(100% + 30px);
 			background-color: #dfdfdf;
+
+			@media screen and (max-width: 700px) {
+				display: none;
+			}
 		}
 		&::before {
 			content: "";
@@ -510,17 +654,25 @@
 			height: calc(100% + 30px);
 			width: 1px;
 			background-color: #dfdfdf;
+
+			@media screen and (max-width: 700px) {
+				display: none;
+			}
 		}
 
 		&-title {
 			font-weight: 600;
 			font-size: 20px;
 			line-height: 135%;
-          br{
-            @media screen and (max-width: $tabletMax) {
-              display: none;
-            }
-          }
+			br {
+				@media screen and (max-width: $tabletMax) {
+					display: none;
+				}
+			}
+
+			@media screen and (max-width: 700px) {
+				display: none;
+			}
 		}
 
 		&-num {
@@ -532,6 +684,10 @@
 			position: absolute;
 			top: -28px;
 			left: -28px;
+
+			@media screen and (max-width: 700px) {
+				display: none;
+			}
 		}
 
 		&-text {
@@ -541,6 +697,10 @@
 			line-height: 150%;
 			margin-top: 18px;
 			max-width: 473px;
+
+			@media screen and (max-width: 700px) {
+				margin: 0;
+			}
 		}
 	}
 }
@@ -676,6 +836,11 @@
 				align-items: center;
 				padding-bottom: 30px;
 			}
+
+			@media screen and (max-width: 700px) {
+				align-items: flex-start;
+				text-align: left;
+			}
 		}
 
 		&__right {
@@ -695,6 +860,10 @@
 					transform: translate(-50%, -50%);
 					margin-top: 0;
 				}
+
+				@media screen and (max-width: 700px) {
+					margin-bottom: 37px;
+				}
 			}
 		}
 	}
@@ -711,6 +880,11 @@
 
 		@media screen and (max-width: $tabletMax) {
 			font-size: 24px;
+		}
+
+		@media screen and (max-width: 700px) {
+			font-size: 18px;
+			line-height: 150%;
 		}
 
 		&:not(:first-child) {
@@ -732,6 +906,10 @@
 		@media screen and (max-width: $tabletMax) {
 			flex-direction: column;
 			padding-bottom: 39px;
+		}
+
+		@media screen and (max-width: 700px) {
+			padding-bottom: 0;
 		}
 
 		&__left {
@@ -757,6 +935,7 @@
 			@media screen and (max-width: 550px) {
 				padding-left: 0;
 				flex-direction: column-reverse;
+				align-items: flex-start;
 			}
 
 			&::after {
@@ -790,8 +969,9 @@
 					transform: translate(0, 0);
 				}
 
-				@media screen and (max-width: 550px) {
-					margin-top: 50px;
+				@media screen and (max-width: 700px) {
+					margin-top: 40px;
+					object-fit: contain;
 				}
 			}
 
@@ -809,6 +989,7 @@
 				width: 374px;
 				position: relative;
 				z-index: 10;
+				box-sizing: border-box;
 
 				@media screen and (max-width: 1200px) {
 					width: 100%;
@@ -830,8 +1011,8 @@
 				@media screen and (max-width: 550px) {
 					margin: auto;
 					display: flex;
-					align-items: center;
 					flex-direction: column;
+					padding-left: 54px;
 				}
 
 				h4 {
@@ -852,9 +1033,9 @@
 						font-size: 36px;
 					}
 
-					@media screen and (max-width: 550px) {
-						max-width: 100%;
-						font-size: 30px;
+					@media screen and (max-width: 700px) {
+						font-size: 40px;
+						line-height: 125%;
 					}
 				}
 				&-tag {
@@ -874,10 +1055,8 @@
 						padding-left: 20px;
 					}
 
-					@media screen and (max-width: 550px) {
-						margin-top: 50px;
-						padding: 0;
-						text-align: center;
+					@media screen and (max-width: 700px) {
+						display: none;
 					}
 
 					span {
@@ -903,6 +1082,7 @@
 			height: 100%;
 			display: flex;
 			align-items: center;
+			position: relative;
 
 			@media screen and (max-width: $tabletMax) {
 				width: 100%;
@@ -915,6 +1095,10 @@
 				max-width: calc(100% - 15px * 2);
 			}
 
+			.ts-btn-mobile {
+				bottom: 0;
+			}
+
 			ul {
 				max-width: 510px;
 				box-sizing: border-box;
@@ -924,6 +1108,11 @@
 					width: 100%;
 					max-width: 100%;
 				}
+
+				@media screen and (max-width: 700px) {
+					padding: 0 17px 100px;
+				}
+
 				li {
 					font-family: Gilroy, sans-serif;
 					font-weight: 600;
@@ -934,6 +1123,12 @@
 					align-items: center;
 					position: relative;
 					padding-left: 23px;
+
+					@media screen and (max-width: 700px) {
+						font-weight: 500;
+						font-size: 15px;
+						line-height: 135%;
+					}
 
 					&:not(:first-child) {
 						margin-top: 20px;
@@ -949,6 +1144,14 @@
 						flex-shrink: 0;
 						border-radius: 50%;
 						background-color: #f3db00;
+
+						@media screen and (max-width: 700px) {
+							font-weight: 500;
+							font-size: 15px;
+							line-height: 135%;
+							background-color: #5c5c5c;
+							top: 5px;
+						}
 					}
 				}
 			}

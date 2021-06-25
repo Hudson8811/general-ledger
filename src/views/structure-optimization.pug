@@ -10,12 +10,12 @@ block main
 	.oveflow-section
 		section.top-section
 			.ts-container.container
-				.ts-flex
-					.ts-flex__left.ts-flex__left--big
+				.ts-flex.ts-flex--align-left
+					.ts-flex__left.ts-flex__left--big.ts-flex__left--padding-bottom
 						h1.ts-heading.ts-heading--medium Улучшите финансовое состояние компании и перейдите от нестабильности к устойчивому развитию за 6 месяцев
 						.ts-text-desktop.ts-text-desktop--small
 							p Персональная программа пошагового внедрения инструментов управления финансами для собственников, которые устали от финансовых проблем, нестабильности и сложностей управления
-						.ts-text-mobile
+						.ts-text-mobile.ts-text-mobile--align-left
 							p Персональная программа пошагового внедрения инструментов управления финансами для собственников, которые устали от финансовых проблем, нестабильности и сложностей управления
 
 						a.btn.btn--white.btn--with-right-arrow.ts-btn.ts-btn-desktop.btn--triangle-arrow.js-modal-fancy-caller(data-fancy-src="#modal-consult" onclick="ym(63508015,'reachGoal','consult-optimizasia-holdinga')") ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ
@@ -35,22 +35,46 @@ block main
 			.container 
 				h2.default-h2 На каком этапе вы сейчас?
 				.ws-block
-					.ws-block__item
-						span.ws-block__item-num 01
-						h3.ws-block__item-title Вы чувствуете, что внутри <br> компании нет ясности
-						p.ws-block__item-text Вы не понимаете финансовых возможностей и ограничений своего бизнеса. Вы боитесь роста, потому что неизвестно, сколько компания продержится в неблагоприятных и непредвиденных обстоятельствах.
-					.ws-block__item
-						span.ws-block__item-num 02
-						h3.ws-block__item-title Вы чувствуете, что внутри <br> компании нет ясности
-						p.ws-block__item-text Вы не понимаете финансовых возможностей и ограничений своего бизнеса. Вы боитесь роста, потому что неизвестно, сколько компания продержится в неблагоприятных и непредвиденных обстоятельствах.
-					.ws-block__item
-						span.ws-block__item-num 03
-						h3.ws-block__item-title Вам кажется, что вы не потянете внедрение <br> системы управления финансами
-						p.ws-block__item-text Проект постановки кажется сложным и долгим. Ресурсов на него не хватает – как денег, так и времени и сил. 
-					.ws-block__item
-						span.ws-block__item-num 04
-						h3.ws-block__item-title Вы опасаетесь, что компания не <br> выдержит роста.
-						p.ws-block__item-text Вы переживаете, что неконтролируемый кратный рост бизнеса приведет к непоправимым последствиям и компания не переживет изменения
+					.ws-block__item.ans-item
+						.ws-block__item-header.ans-item-question 
+							span.ws-block__item-header-num 01
+							h3.ws-block__item-header-title Вы чувствуете, что внутри <br> компании нет ясности
+							svg(width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+								path(d="M17 1L9 8L1 0.999999" stroke="#232323" stroke-width="2")
+						.ws-block__item-body.ans-item-answer
+							span.ws-block__item-num 01
+							h3.ws-block__item-title Вы чувствуете, что внутри <br> компании нет ясности
+							p.ws-block__item-text Вы не понимаете финансовых возможностей и ограничений своего бизнеса. Вы боитесь роста, потому что неизвестно, сколько компания продержится в неблагоприятных и непредвиденных обстоятельствах.
+					.ws-block__item.ans-item
+						.ws-block__item-header.ans-item-question
+							span.ws-block__item-header-num 02
+							h3.ws-block__item-header-title Вы чувствуете, что внутри <br> компании нет ясности
+							svg(width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+								path(d="M17 1L9 8L1 0.999999" stroke="#232323" stroke-width="2")
+						.ws-block__item-body.ans-item-answer
+							span.ws-block__item-num 02
+							h3.ws-block__item-title Вы чувствуете, что внутри <br> компании нет ясности
+							p.ws-block__item-text Вы не понимаете финансовых возможностей и ограничений своего бизнеса. Вы боитесь роста, потому что неизвестно, сколько компания продержится в неблагоприятных и непредвиденных обстоятельствах.
+					.ws-block__item.ans-item
+						.ws-block__item-header.ans-item-question 
+							span.ws-block__item-header-num 03
+							h3.ws-block__item-header-title Вам кажется, что вы не потянете внедрение <br> системы управления финансами
+							svg(width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+								path(d="M17 1L9 8L1 0.999999" stroke="#232323" stroke-width="2")
+						.ws-block__item-body.ans-item-answer 
+							span.ws-block__item-num 03
+							h3.ws-block__item-title Вам кажется, что вы не потянете внедрение <br> системы управления финансами
+							p.ws-block__item-text Вы не понимаете финансовых возможностей и ограничений своего бизнеса. Вы боитесь роста, потому что неизвестно, сколько компания продержится в неблагоприятных и непредвиденных обстоятельствах.
+					.ws-block__item.ans-item
+						.ws-block__item-header.ans-item-question 
+							span.ws-block__item-header-num 04
+							h3.ws-block__item-header-title Вы опасаетесь, что компания не <br> выдержит роста.
+							svg(width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+								path(d="M17 1L9 8L1 0.999999" stroke="#232323" stroke-width="2")
+						.ws-block__item-body.ans-item-answer 
+							span.ws-block__item-num 04
+							h3.ws-block__item-title Вы опасаетесь, что компания не <br> выдержит роста.
+							p.ws-block__item-text Вы переживаете, что неконтролируемый кратный рост бизнеса приведет к непоправимым последствиям и компания не переживет изменения
 		section.different-section
 			.container
 				h2.default-h2 Все может быть по-другому...
@@ -143,6 +167,7 @@ block main
 						li 10 лет опыта работы в крупных промышленных холдингах на ТОП-позициях
 						li 5 лет в управленческом консультировании и стратегическом планировании
 						li 50 реализованных проектов в области финансов и автоматизации бизнес-процессов
+					a.btn.btn--orange.btn--with-right-arrow.ts-btn.ts-btn-mobile.btn--triangle-arrow.js-modal-fancy-caller(data-fancy-src="#modal-consult" onclick="ym(63508015,'reachGoal','consult-optimizasia-holdinga')") ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ
 		section.steps-section 
 			.container
 				h2.default-h2 5 этапов персональной программы создания <br> прочной финансовой основы для развития бизнеса

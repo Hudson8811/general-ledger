@@ -212,7 +212,7 @@ $(document).ready(function () {
 
 	if (clientsSlider.length) {
 		//activeSlider = clientsSlider;
-		activeSlider = '';
+		activeSlider = "";
 	} else {
 		activeSlider = ocSlider;
 	}
@@ -229,11 +229,11 @@ $(document).ready(function () {
 		nextArrow: ".modal-fc-slider-nav__next",
 	});
 
-	$('.clients-slide.js-modal-comments-open').on('click', function( e ) {
+	$(".clients-slide.js-modal-comments-open").on("click", function (e) {
 		var slideIndex = $(this).index();
-		$(".modal-fc-slider").slick( 'slickGoTo', parseInt( slideIndex ), true );
-		$('.modal-fc-slide').removeClass('slick-current');
-		$(this).addClass('slick-current');
+		$(".modal-fc-slider").slick("slickGoTo", parseInt(slideIndex), true);
+		$(".modal-fc-slide").removeClass("slick-current");
+		$(this).addClass("slick-current");
 	});
 
 	$(".js-modal-comments-open, #js-modal-comments-open").click(function () {
@@ -305,6 +305,7 @@ $(document).ready(function () {
 	/////////////////////////////////
 
 	var wcuAndSpBlockState = "default"; //default/scrollbar/slider
+	var dsBlockState = "default"; //default/scrollbar/slider
 
 	function wcuAndSpInitTablet() {
 		console.log("wcuAndSpInitTablet");
@@ -351,12 +352,24 @@ $(document).ready(function () {
 
 		wcuAndSpBlockState = "mobile";
 	}
+	function dsInitMobile() {
+		$(".ds-block").slick({
+			infinite: false,
+			prevArrow:
+				'<div class="wwsy-slick-prev wwsy-slick-prev--wcu"><svg width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1L2 16L14 31" stroke="#C7C7D5" stroke-width="2"/></svg></div>',
+			nextArrow:
+				'<div class="wwsy-slick-next wwsy-slick-next--wcu"><svg width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 31L13 16L1 0.999999" stroke="#C7C7D5" stroke-width="2"/></svg></div>',
+		});
+
+		dsBlockState = "mobile";
+	}
 
 	if (window.matchMedia("(min-width: 701px) and (max-width: 1025px)").matches) {
 		wcuAndSpInitTablet();
 	}
 	if (window.matchMedia("(max-width: 700px)").matches) {
 		wcuAndSpInitMobile();
+		dsInitMobile();
 	}
 
 	$(window).resize(function () {
@@ -374,11 +387,19 @@ $(document).ready(function () {
 				);
 				wcuAndSpInitTablet();
 			}
+
+			if (dsBlockState === "mobile") {
+				$(".ds-block").slick("unslick");
+				dsBlockState = "default";
+			}
 		} else {
 			//mobile
 			if (window.matchMedia("(max-width: 700px)").matches) {
 				if (wcuAndSpBlockState === "default") {
 					wcuAndSpInitMobile();
+				}
+				if (dsBlockState === "default") {
+					dsInitMobile();
 				}
 				if (wcuAndSpBlockState === "tablet") {
 					$(".wcu-block-wrap").mCustomScrollbar("destroy");
