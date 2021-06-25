@@ -57,6 +57,18 @@
 			}
 		}
 	}
+	.ts-btn-mobile{
+		@media screen and (max-width: $tabletMax) {
+			position: relative;
+			margin: 41px auto 0;
+			transform: none;
+			left: auto;
+			bottom: auto;
+			&.btn--triangle-arrow svg path:first-child {
+				stroke: none;
+			}
+		}
+	}
 }
 
 .warranty {
