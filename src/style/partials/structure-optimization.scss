@@ -57,17 +57,6 @@
 		padding: 48px 0;
 	}
 
-	.btn--orange {
-		svg {
-			path {
-				fill: #feb900;
-
-				&:last-child {
-					stroke: #252525;
-				}
-			}
-		}
-	}
 	.ts-btn-mobile {
 		@media screen and (max-width: $tabletMax) {
 			position: relative;
