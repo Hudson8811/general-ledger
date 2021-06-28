@@ -259,6 +259,8 @@ button {
 				fill: #fea800;
 
 				&:nth-child(2) {
+					stroke: rgb(37, 37, 37);
+
 					@media screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
 						stroke: #fea800;
 						fill: transparent;
