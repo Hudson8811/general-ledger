@@ -257,6 +257,10 @@ button {
 			path {
 				stroke: transparent;
 				fill: #fea800;
+
+				&:nth-child(2) {
+					stroke: #232323;
+				}
 			}
 
 			circle {
@@ -1615,7 +1619,7 @@ a.cat-block-iwt-text__line-2 {
 		width: 11px;
 		height: 100%;
 		content: "";
-		background: #f3db00;
+		background: #feb900;
 	}
 
 	ul {
