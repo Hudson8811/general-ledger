@@ -668,6 +668,7 @@
 				height: 100%;
 				width: 40px;
 				border-right: 1px solid #dfdfdf;
+				flex-shrink: 0;
 			}
 
 			svg {
