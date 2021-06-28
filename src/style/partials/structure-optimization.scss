@@ -934,14 +934,9 @@
 
 			@media screen and (max-width: $tabletMax) {
 				width: 100%;
-				text-align: center;
-				align-items: center;
-				padding-bottom: 30px;
-			}
-
-			@media screen and (max-width: 700px) {
 				align-items: flex-start;
 				text-align: left;
+				padding-bottom: 30px;
 			}
 		}
 
@@ -959,7 +954,7 @@
 				@media screen and (min-width: 1026px) {
 					top: 50%;
 					left: 50%;
-					transform: translate(-50%, -50%);
+					transform: translate(-40%, -50%);
 					margin-top: 0;
 				}
 
