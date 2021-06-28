@@ -155,20 +155,18 @@ $(document).ready(function () {
 		arrows: true,
 		slidesToShow: 2,
 		infinite: false,
-		slidesToScroll: 2,
+		slidesToScroll: 1,
 		appendDots: $(".clients-slider-dots"),
 		prevArrow: ".clients-slider-button-prev",
 		nextArrow: ".clients-slider-button-next",
-		//asNavFor: ".modal-fc-slider",
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 700,
 				settings: {
 					vertical: false,
 					verticalSwiping: false,
 					slidesToShow: 1,
 					slidesToScroll: 1,
-					centerMode: true,
 				},
 			},
 		],
@@ -178,6 +176,13 @@ $(document).ready(function () {
 		$(this)
 			.toggleClass("ans-item-question--opened")
 			.siblings(".ans-item-answer")
+			.slideToggle(200);
+	});
+
+	$(".rs-item-header").click(function () {
+		$(this)
+			.toggleClass("rs-item--opened")
+			.siblings(".rs-item-content")
 			.slideToggle(200);
 	});
 
@@ -256,10 +261,19 @@ $(document).ready(function () {
 	function dsInitMobile() {
 		$(".ds-block").slick({
 			infinite: false,
+			adaptiveHeight: true,
 			prevArrow:
-				'<div class="wwsy-slick-prev wwsy-slick-prev--wcu"><svg width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1L2 16L14 31" stroke="#C7C7D5" stroke-width="2"/></svg></div>',
+				'<div class="ds-slick-prev"><svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 1L9 8L1 0.999999" stroke="#5c5c5c" stroke-width="2"/></svg></div>',
 			nextArrow:
-				'<div class="wwsy-slick-next wwsy-slick-next--wcu"><svg width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 31L13 16L1 0.999999" stroke="#C7C7D5" stroke-width="2"/></svg></div>',
+				'<div class="ds-slick-next"><svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 1L9 8L1 0.999999" stroke="#5c5c5c" stroke-width="2"/></svg></div>',
+		});
+		$(".steps-cards").slick({
+			infinite: false,
+			adaptiveHeight: true,
+			prevArrow:
+				'<div class="ds-slick-prev"><svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 1L9 8L1 0.999999" stroke="#5c5c5c" stroke-width="2"/></svg></div>',
+			nextArrow:
+				'<div class="ds-slick-next"><svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 1L9 8L1 0.999999" stroke="#5c5c5c" stroke-width="2"/></svg></div>',
 		});
 
 		dsBlockState = "mobile";
@@ -291,6 +305,7 @@ $(document).ready(function () {
 
 			if (dsBlockState === "mobile") {
 				$(".ds-block").slick("unslick");
+				$(".steps-cards").slick("unslick");
 				dsBlockState = "default";
 			}
 		} else {

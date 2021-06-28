@@ -78,7 +78,7 @@ block main
 		section.different-section
 			.container
 				h2.default-h2 Все может быть по-другому...
-				.ds-block
+				.ds-block(data-counter-id="ds-counter")
 					.ds-block__item
 						.ds-block__item-header 
 							.ds-block__item-header-left
@@ -141,6 +141,10 @@ block main
 						p.ds-block__item-text Ваш бизнес заряжает вас энергией двигаться дальше и стремиться к новым целям. Времена изматывающего тушения пожаров остались в прошлом. Теперь ваша система управления финансами образец для подражания в отрасли.
 					.ds-block__item.ds-block__item--last
 						p.ds-block__item-text.ds-block__item-text--last Если это то, чего вы хотите, нам предстоит поработать вместе
+				.ds-block-mobile-counter
+					#ds-counter.ds-block-mobile-counter__current 1
+					.ds-block-mobile-counter__slash /
+					.ds-block-mobile-counter__max 6
 		section.so-info-section
 			.container
 				.so-info-flex
@@ -171,7 +175,7 @@ block main
 		section.steps-section 
 			.container
 				h2.default-h2 5 этапов персональной программы создания <br> прочной финансовой основы для развития бизнеса
-				.steps-cards 
+				.steps-cards(data-counter-id="steps-counter")
 					.steps-card
 						img(src="http://dev1.mockup.digital/bitrix/templates/GL/images/step-3-1.png", alt="")
 						.steps-card__backdrop 01
@@ -217,6 +221,10 @@ block main
 								li Вы видите “узкие места” своего бизнеса в цифрах и вам очевидно, как их устранить и обезопасить;
 								li Вы нашли новые “трамплины” для роста за счет внутренних резервов;
 								li У вас есть четкие приоритеты, что делать в первую очередь, чтобы “закрыть дыры” и высвободить скрытые финансовые резервы.
+				.steps-mobile-counter
+					#steps-counter.steps-mobile-counter__current 1
+					.steps-mobile-counter__slash /
+					.steps-mobile-counter__max 5
 		section.clients
 			.container
 				h2.default-h2.default-h2--light Наши клиенты и их истории
@@ -233,6 +241,8 @@ block main
 									img(src="http://dev1.mockup.digital/bitrix/templates/GL/images/structure-optimization/icons/slider-icon.png", alt="")
 							.clients-slide__body
 								p Владимир слушает и понимает наши проблемы. Очень терпеливо относится к большому количеству вопросов, к занятости, к неготовности в какой-то момент работать, к тому, что может стопорить.
+							.clients-slide-footer 
+								img(src="http://dev1.mockup.digital/bitrix/templates/GL/images/structure-optimization/icons/slider-icon.png", alt="")
 						.clients-slide.js-modal-comments-open
 							.clients-slide__top
 								.clients-slide__client
@@ -244,6 +254,8 @@ block main
 									img(src="http://dev1.mockup.digital/bitrix/templates/GL/images/structure-optimization/icons/slider-icon.png", alt="")
 							.clients-slide__body 
 								p Владимир слушает и понимает наши проблемы. Очень терпеливо относится к большому количеству вопросов, к занятости, к неготовности в какой-то момент работать, к тому, что может стопорить. Можно сказать, что Владимир будто фонариком в темноте подсвечивает
+							.clients-slide-footer 
+								img(src="http://dev1.mockup.digital/bitrix/templates/GL/images/structure-optimization/icons/slider-icon.png", alt="")
 						.clients-slide.js-modal-comments-open
 							.clients-slide__top
 								.clients-slide__client
@@ -270,20 +282,23 @@ block main
 			.container.rs__container
 				h2.default-h2 Работаю только с 3-мя клиентами одновременно
 				.rs-flex
-					.rs-flex__left
-						h3.rs-flex__title Моя система дает максимальный результат компаниям, которые:
-						ul 
+					.rs-flex__left.rs-item
+						h3.rs-flex__title.rs-item-header Моя система дает максимальный результат компаниям, которые:
+							.rs-flex__indicator
+						ul.rs-item-content
 							li Уже вышли на стабильные продажи и сейчас готовятся к развитию и росту;
 							li У основателя есть запрос плавно и без тряски перейти на следующий уровень - из микро-бизнеса в малый, из малого в средний, из среднего в крупный;
 							li Уже организовали бухгалтерский учет в 1С или аналогичной программе учета.
 					.rs-flex__right
-						.rs-flex__right-top
-							h3.rs-flex__title Как начать работу со мной
-							p.rs-flex__text Первый шаг - забронировать бесплатную консультацию, на которой я уточню вашу задачу и пойму, смогу ли я вам помочь.
-						.rs-flex__right-bottom
-							h3.rs-flex__title Что будет на консультации
+						.rs-flex__right-top.rs-item
+							h3.rs-flex__title.rs-item-header Как начать работу со мной
+								.rs-flex__indicator
+							p.rs-flex__text.rs-item-content Первый шаг - забронировать бесплатную консультацию, на которой я уточню вашу задачу и пойму, смогу ли я вам помочь.
+						.rs-flex__right-bottom.rs-item
+							h3.rs-flex__title.rs-item-header Что будет на консультации
+								.rs-flex__indicator
 							p.rs-flex__subtitle Мы созвонимся на 50 минут, и за это время выясним:
-							ul 
+							ul.rs-item-content 
 								li Какую задачу вы хотите решить;
 								li Может ли моя система помочь вам в достижении ваших целей;
 								li Насколько полезно и интересно нам будет работать вместе;

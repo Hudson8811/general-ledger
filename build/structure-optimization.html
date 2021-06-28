@@ -113,7 +113,7 @@
         <section class="different-section">
           <div class="container">
             <h2 class="default-h2">Все может быть по-другому...</h2>
-            <div class="ds-block">
+            <div class="ds-block" data-counter-id="ds-counter">
               <div class="ds-block__item">
                 <div class="ds-block__item-header"> 
                   <div class="ds-block__item-header-left"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -182,6 +182,11 @@
                 <p class="ds-block__item-text ds-block__item-text--last">Если это то, чего вы хотите, нам предстоит поработать вместе</p>
               </div>
             </div>
+            <div class="ds-block-mobile-counter">
+              <div class="ds-block-mobile-counter__current" id="ds-counter">1</div>
+              <div class="ds-block-mobile-counter__slash">/</div>
+              <div class="ds-block-mobile-counter__max">6</div>
+            </div>
           </div>
         </section>
         <section class="so-info-section">
@@ -218,7 +223,7 @@
         <section class="steps-section"> 
           <div class="container">
             <h2 class="default-h2">5 этапов персональной программы создания <br> прочной финансовой основы для развития бизнеса</h2>
-            <div class="steps-cards"> 
+            <div class="steps-cards" data-counter-id="steps-counter">
               <div class="steps-card"><img src="http://dev1.mockup.digital/bitrix/templates/GL/images/step-3-1.png" alt="">
                 <div class="steps-card__backdrop">01</div>
                 <div class="steps-card__content"> 
@@ -275,6 +280,11 @@
                 </div>
               </div>
             </div>
+            <div class="steps-mobile-counter">
+              <div class="steps-mobile-counter__current" id="steps-counter">1</div>
+              <div class="steps-mobile-counter__slash">/</div>
+              <div class="steps-mobile-counter__max">5</div>
+            </div>
           </div>
         </section>
         <section class="clients">
@@ -292,6 +302,7 @@
                   <div class="clients-slide__body">
                     <p>Владимир слушает и понимает наши проблемы. Очень терпеливо относится к большому количеству вопросов, к занятости, к неготовности в какой-то момент работать, к тому, что может стопорить.</p>
                   </div>
+                  <div class="clients-slide-footer"> <img src="http://dev1.mockup.digital/bitrix/templates/GL/images/structure-optimization/icons/slider-icon.png" alt=""></div>
                 </div>
                 <div class="clients-slide js-modal-comments-open">
                   <div class="clients-slide__top">
@@ -303,6 +314,7 @@
                   <div class="clients-slide__body"> 
                     <p>Владимир слушает и понимает наши проблемы. Очень терпеливо относится к большому количеству вопросов, к занятости, к неготовности в какой-то момент работать, к тому, что может стопорить. Можно сказать, что Владимир будто фонариком в темноте подсвечивает</p>
                   </div>
+                  <div class="clients-slide-footer"> <img src="http://dev1.mockup.digital/bitrix/templates/GL/images/structure-optimization/icons/slider-icon.png" alt=""></div>
                 </div>
                 <div class="clients-slide js-modal-comments-open">
                   <div class="clients-slide__top">
@@ -334,23 +346,29 @@
           <div class="container rs__container">
             <h2 class="default-h2">Работаю только с 3-мя клиентами одновременно</h2>
             <div class="rs-flex">
-              <div class="rs-flex__left">
-                <h3 class="rs-flex__title">Моя система дает максимальный результат компаниям, которые:</h3>
-                <ul> 
+              <div class="rs-flex__left rs-item">
+                <h3 class="rs-flex__title rs-item-header">Моя система дает максимальный результат компаниям, которые:
+                  <div class="rs-flex__indicator"></div>
+                </h3>
+                <ul class="rs-item-content">
                   <li>Уже вышли на стабильные продажи и сейчас готовятся к развитию и росту;</li>
                   <li>У основателя есть запрос плавно и без тряски перейти на следующий уровень - из микро-бизнеса в малый, из малого в средний, из среднего в крупный;</li>
                   <li>Уже организовали бухгалтерский учет в 1С или аналогичной программе учета.</li>
                 </ul>
               </div>
               <div class="rs-flex__right">
-                <div class="rs-flex__right-top">
-                  <h3 class="rs-flex__title">Как начать работу со мной</h3>
-                  <p class="rs-flex__text">Первый шаг - забронировать бесплатную консультацию, на которой я уточню вашу задачу и пойму, смогу ли я вам помочь.</p>
+                <div class="rs-flex__right-top rs-item">
+                  <h3 class="rs-flex__title rs-item-header">Как начать работу со мной
+                    <div class="rs-flex__indicator"></div>
+                  </h3>
+                  <p class="rs-flex__text rs-item-content">Первый шаг - забронировать бесплатную консультацию, на которой я уточню вашу задачу и пойму, смогу ли я вам помочь.</p>
                 </div>
-                <div class="rs-flex__right-bottom">
-                  <h3 class="rs-flex__title">Что будет на консультации</h3>
+                <div class="rs-flex__right-bottom rs-item">
+                  <h3 class="rs-flex__title rs-item-header">Что будет на консультации
+                    <div class="rs-flex__indicator"></div>
+                  </h3>
                   <p class="rs-flex__subtitle">Мы созвонимся на 50 минут, и за это время выясним:</p>
-                  <ul> 
+                  <ul class="rs-item-content"> 
                     <li>Какую задачу вы хотите решить;</li>
                     <li>Может ли моя система помочь вам в достижении ваших целей;</li>
                     <li>Насколько полезно и интересно нам будет работать вместе;</li>
