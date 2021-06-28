@@ -59,7 +59,7 @@
 	.btn--orange {
 		svg {
 			path {
-				fill: #f3db00;
+				fill: #feb900;
 
 				&:last-child {
 					stroke: #252525;
@@ -172,7 +172,7 @@
 	}
 
 	&__subtitle {
-		color: #ffe81b;
+		color: #feb900;
 		font-family: Gilroy, sans-serif;
 		font-weight: bold;
 		font-size: 20px;
@@ -264,7 +264,7 @@
 					cursor: pointer;
 
 					&.slick-active {
-						background-color: #f3db00;
+						background-color: #feb900;
 					}
 
 					&:not(:last-child) {
@@ -662,7 +662,7 @@
 				font-weight: bold;
 				font-size: 20px;
 				line-height: 135%;
-				color: #f3db00;
+				color: #feb900;
 				font-family: Gilroy, sans-serif;
 				height: 100%;
 				width: 40px;
@@ -735,7 +735,7 @@
 			font-weight: bold;
 			font-size: 20px;
 			line-height: 135%;
-			color: #f3db00;
+			color: #feb900;
 			font-family: Gilroy, sans-serif;
 			position: absolute;
 			top: -28px;
@@ -831,7 +831,7 @@
 			background-color: #f3f3f3;
 		}
 		&:last-child {
-			background-color: #ffe81b;
+			background-color: #feb900;
 		}
 
 		&--last {
@@ -847,7 +847,7 @@
 			align-items: center;
 
 			&-left {
-				background-color: #ffe81b;
+				background-color: #feb900;
 				width: 100%;
 				max-width: 116px;
 				display: flex;
@@ -861,7 +861,7 @@
 				font-weight: bold;
 				font-size: 20px;
 				line-height: 150%;
-				color: #f3db00;
+				color: #ffe81b;
 				height: 44px;
 				width: 100%;
 				max-width: 45px;
@@ -874,9 +874,9 @@
 					right: 0;
 					top: 0;
 					bottom: 0;
-					width: 5px;
+					width: 10px;
 					height: 100%;
-					background-color: #f3db00;
+					background-color: #ffe81b;
 				}
 			}
 		}
@@ -994,7 +994,7 @@
 		}
 
 		&--yellow {
-			color: #ffe81b;
+			color: #feb900;
 		}
 	}
 }
@@ -1141,7 +1141,7 @@
 					}
 				}
 				&-tag {
-					background-color: #ffe81b;
+					background-color: #feb900;
 					height: 72px;
 					display: flex;
 					align-items: center;
@@ -1250,7 +1250,7 @@
 						height: 7px;
 						flex-shrink: 0;
 						border-radius: 50%;
-						background-color: #f3db00;
+						background-color: #feb900;
 
 						@media screen and (max-width: 700px) {
 							font-weight: 500;
@@ -1318,15 +1318,16 @@
 		}
 
 		&__backdrop {
+			width: 260px;
 			font-family: Gilroy, sans-serif;
 			font-style: normal;
 			font-weight: 600;
 			font-size: 231px;
 			line-height: 125%;
-			text-align: right;
+			text-align: left;
 			color: #f3f3f3;
 			position: absolute;
-			right: 25px;
+			right: 0;
 			bottom: -60%;
 			z-index: 0;
 
@@ -1467,11 +1468,11 @@
 
 			@media screen and (max-width: 700px) {
 				padding: 16px 54px 16px 16px;
-				background-color: #ffe81b;
+				background-color: #feb900;
 				pointer-events: all;
 
 				&:hover {
-					background-color: #ffe81b;
+					background-color: #feb900;
 				}
 			}
 		}
@@ -1522,7 +1523,7 @@
 				top: 7px;
 				width: 7px;
 				height: 7px;
-				background-color: #f3db00;
+				background-color: #feb900;
 				border-radius: 50%;
 			}
 		}

@@ -196,13 +196,13 @@ button {
 
 		svg {
 			circle {
-				fill: #ffe81b;
+				fill: #feb900;
 			}
 		}
 
 		&:hover {
-			border: 1px solid #ffe81b;
-			background-color: #ffe81b;
+			border: 1px solid #feb900;
+			background-color: #feb900;
 			color: #232323;
 			border: 1px solid #232323;
 
@@ -250,12 +250,12 @@ button {
 
 	&--orange {
 		color: #232323;
-		border: 1px solid #ffe81b;
-		background-color: #ffe81b;
+		border: 1px solid #feb900;
+		background-color: #feb900;
 
 		svg {
 			path {
-				stroke: #ffe81b;
+				stroke: #feb900;
 			}
 
 			circle {
@@ -1443,7 +1443,7 @@ a.cat-block-iwt-text__line-2 {
 				transition-duration: 0.2s;
 				opacity: 0;
 				border-radius: 50%;
-				background: #ffe81b;
+				background: #feb900;
 			}
 
 			&:hover {
@@ -1548,7 +1548,7 @@ a.cat-block-iwt-text__line-2 {
 	}
 
 	&:hover {
-		background-color: #ffe81b;
+		background-color: #feb900;
 
 		.ans-iq-li-svg-main {
 			stroke: #232323;
@@ -1957,7 +1957,7 @@ a.cat-block-iwt-text__line-2 {
 	}
 
 	&-button {
-		background: #ffe81b;
+		background: #feb900;
 
 		font-size: 16px;
 		letter-spacing: 0.1em;
