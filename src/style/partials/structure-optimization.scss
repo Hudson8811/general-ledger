@@ -963,10 +963,20 @@
 	left: 0;
 	top: 0;
 
+	@media screen and (max-width: 400px) { 
+		width: 100%;
+	}
+
 	img {
 		position: static;
 		object-fit: contain;
 		width: 100%;
+
+		@media screen and (max-width: 550px) {
+			width: 70%;
+			height: auto;
+			margin-top: 40px;
+		}
 
 		@media screen and (max-width: 400px) {
 			position: absolute;
