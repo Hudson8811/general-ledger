@@ -203,6 +203,12 @@
 	}
 }
 
+.ts-so-flex__right {
+	.ts-btn-mobile {
+		letter-spacing: 0.8px;
+	}
+}
+
 .clients {
 	padding-top: 88px;
 	padding-bottom: 76px;
@@ -900,7 +906,76 @@
 		}
 	}
 }
+.ts-so-pic-wrapper {
+	overflow: hidden;
+	position: absolute;
+	width: 527px;
 
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin: 54px 0 0 0;
+    bottom: 0;
+
+	@media screen and (max-width: 1400px) {
+		width: 424px;
+		
+	}
+	
+	@media screen and (max-width: 1025px) {
+		position: relative;
+		left: 0;
+		margin: 0;
+		bottom: 0;
+		transform: translate(0, 0);
+	}
+
+	@media screen and (max-width: 500px) {
+		width: 100%;
+	}
+	@media screen and (max-width: 400px) {
+		min-height: 384px;
+		width: 100%;
+	
+
+	}
+
+	img {
+		object-fit: contain;
+		width: 100%;
+		left: -50px;
+		top: 15px;
+		
+		@media screen and (max-width: 400px) {
+			position: absolute;
+			min-height: 384px;
+			width: 120%;
+		}
+	}
+}
+
+.pa-pic {
+	overflow: hidden;
+	position: relative;
+	min-height: 418px;
+	width: auto;
+	transform: translate(0,0);
+	left: 0;
+	top: 0;
+
+	img {
+		position: static;
+		object-fit: contain;
+		width: 100%;
+
+		@media screen and (max-width: 400px) {
+			position: absolute;
+			width: 107%;
+			left: 0;
+			top: 30px;
+		}
+	}
+}
 .so-info {
 	&-section {
 		min-height: 790px;
@@ -1019,13 +1094,19 @@
 
 			@media screen and (max-width: $tabletMax) {
 				width: 100%;
-				padding: 50px 0;
+				padding: 64px 0;
 				justify-content: space-between;
 				padding-left: 139px;
+				padding-bottom: 0;
 			}
 			@media screen and (max-width: 768px) {
 				padding-left: 39px;
 			}
+			@media screen and (max-width: 700px) {
+				padding-bottom: 0;
+			}
+
+
 			@media screen and (max-width: 550px) {
 				padding-left: 0;
 				flex-direction: column-reverse;
@@ -1042,30 +1123,6 @@
 
 				@media screen and (max-width: $tabletMax) {
 					display: none;
-				}
-			}
-
-			img {
-				top: 50%;
-				left: 50%;
-				transform: translate(-55%, -48%);
-				margin-top: 0;
-
-				@media screen and (max-width: 1550px) {
-					top: 50%;
-					left: 0;
-					transform: translate(0, -55%);
-				}
-
-				@media screen and (max-width: $tabletMax) {
-					top: 0;
-					left: 0;
-					transform: translate(0, 0);
-				}
-
-				@media screen and (max-width: 700px) {
-					margin-top: 40px;
-					object-fit: contain;
 				}
 			}
 
@@ -1091,6 +1148,7 @@
 				}
 				@media screen and (max-width: $tabletMax) {
 					max-width: 400px;
+					padding-bottom: 64px;
 				}
 
 				@media screen and (max-width: 768px) {
@@ -1106,7 +1164,8 @@
 					margin: auto;
 					display: flex;
 					flex-direction: column;
-					padding-left: 54px;
+					padding-left: 38px;
+					padding-bottom: 0;
 				}
 
 				h4 {
@@ -1130,6 +1189,7 @@
 					@media screen and (max-width: 700px) {
 						font-size: 40px;
 						line-height: 125%;
+						margin-top: 8px;
 					}
 				}
 				&-tag {
@@ -1192,6 +1252,7 @@
 			.ts-btn-mobile {
 				bottom: 0;
 				display: none;
+				
 
 				@media screen and (max-width: 700px) {
 					display: flex;
