@@ -82,6 +82,7 @@
 
 			@media (max-width: $tabletMax) {
 				margin-bottom: 20px;
+				max-height: none;
 			}
 
 			@media (max-width: $phoneMax) {
