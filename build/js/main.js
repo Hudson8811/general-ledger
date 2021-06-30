@@ -229,6 +229,18 @@ $(document).ready(function () {
 		nextArrow: ".modal-fc-slider-nav__next",
 	});
 
+	$(".ts-slider").slick({
+		dots: true,
+		arrows: true,
+		slidesToShow: 1,
+		infinite: false,
+		slidesToScroll: 1,
+		asNavFor: activeSlider,
+		appendDots: $(".ts-slider__dots"),
+		prevArrow: ".ts-slider__prev",
+		nextArrow: ".ts-slider__next",
+	});
+
 	$(".clients-slide.js-modal-comments-open").on("click", function (e) {
 		var slideIndex = $(this).index();
 		$(".modal-fc-slider").slick("slickGoTo", parseInt(slideIndex), true);
