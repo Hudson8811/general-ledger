@@ -263,6 +263,71 @@
 			}
 		}
 	}
+
+	.caption {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 15px;
+		background: url("../images/caption.jpg") no-repeat;
+		background-size: cover;
+
+		@media (max-width: $tabletMax) {
+			flex-direction: column;
+			padding: 15px 15px 25px;
+			background: url("../images/caption-small.jpg") no-repeat;
+			background-size: cover;
+		}
+
+		svg {
+			&:nth-child(1) {
+				@media (max-width: $tabletMax) {
+					max-width: 176px;
+				}
+			}
+
+			&:nth-child(2) {
+				margin-left: 15px;
+				padding-top: 3px;
+
+				@media (max-width: $tabletMax) {
+					max-width: 94px;
+					margin-left: 5px;
+				}
+			}
+		}
+
+		&__title {
+			font-size: 17px;
+			line-height: 21px;
+			color: #fff;
+			margin: 0 25px;
+
+			@media (max-width: $tabletMax) {
+				font-size: 16px;
+				line-height: 20px;
+				text-align: center;
+			}
+
+			p {
+				@media (max-width: $tabletMax) {
+					display: inline;
+				}
+			}
+		}
+
+		&__btn {
+			padding: 10px 24px;
+			border: 1px solid #FFFFFF;
+			font-size: 13px;
+			line-height: 17px;
+			color: #fff;
+
+			@media (max-width: $tabletMax) {
+				margin-top: 14px;
+			}
+		}
+	}
 }
 
 .skills_block {
