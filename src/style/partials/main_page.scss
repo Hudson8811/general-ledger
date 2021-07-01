@@ -15,6 +15,7 @@
 	}
 
 	.top-section__title {
+		font-family: Gilroy;
 		font-size: 30px;
 		line-height: 41px;
 		color: #fff;
@@ -31,7 +32,7 @@
 
 	.top-section__container {
 		position: relative;
-		padding: 32px 0 73px;
+		padding: 63px 0 60px;
 
 		@media (max-width: $tabletMax) {
 			padding: 39px 0 73px;
@@ -60,6 +61,7 @@
 		}
 
 		&__title {
+			font-family: Gilroy;
 			font-size: 25px;
 			line-height: 37px;
 			font-weight: 500;
@@ -74,6 +76,7 @@
 
 		&__text {
 			max-height: 80px;
+			font-family: Gilroy;
 			font-size: 18px;
 			line-height: 27px;
 			color: #ABABAB;
@@ -93,7 +96,7 @@
 		&__left {
 			max-width: 600px;
 			width: 100%;
-			margin-right: 20px;
+			margin-right: 10px;
 			padding-top: 73px;
 
 			@media (max-width: $tabletMax) {
@@ -103,8 +106,6 @@
 
 		&__right {
 			align-self: flex-end;
-			margin-right: -50px;
-			margin-left: -106px;
 
 			@media (max-width: 1100px) {
 				margin-left: auto;
@@ -123,7 +124,7 @@
 
 		&__dots {
 			position: absolute;
-			bottom: 124px;
+			bottom: 111px;
 			left: 82px;
 
 			@media (max-width: $tabletMax) {
@@ -158,7 +159,6 @@
 							padding: 0;
 							background-color: #c7c7d5;
 							border-radius: 50%;
-							transition: background-color 0.3s ease;
 						}
 
 						@media (min-width: $desktopMin) {
@@ -174,9 +174,8 @@
 						.dot {
 							width: 20px;
 							height: 20px;
-							background-color: #232323;
+							background-color: transparent;
 							position: relative;
-							transition: background-color 0.3s ease;
 
 							&::before {
 								content: '';
@@ -338,9 +337,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 15px;
+		padding: 18px;
 		background: url("../images/caption.jpg") no-repeat;
 		background-size: cover;
+		border-bottom: 1px solid #484848;
 
 		@media (max-width: $tabletMax) {
 			flex-direction: column;
@@ -368,6 +368,7 @@
 		}
 
 		&__title {
+			font-family: Gilroy;
 			font-size: 17px;
 			line-height: 21px;
 			color: #fff;
