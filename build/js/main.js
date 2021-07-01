@@ -233,12 +233,21 @@ $(document).ready(function () {
 		dots: true,
 		arrows: true,
 		slidesToShow: 1,
-		infinite: false,
+		infinite: true,
 		slidesToScroll: 1,
 		asNavFor: activeSlider,
 		appendDots: $(".ts-slider__dots"),
 		prevArrow: ".ts-slider__prev",
 		nextArrow: ".ts-slider__next",
+		autoplay: true,
+		customPaging: function(slider, i) {
+			return '<div class="dot"><div class=\'inner-shadow\'>\n' +
+					'  </div>\n' +
+					'  \n' +
+					'  <div class=\'hold\'>\n' +
+					'    <div class=\'fill\'></div>\n' +
+					'  </div></div>';
+		}
 	});
 
 	$(".clients-slide.js-modal-comments-open").on("click", function (e) {

@@ -119,8 +119,8 @@
 
 		&__dots {
 			position: absolute;
-			bottom: 120px;
-			left: 90px;
+			bottom: 124px;
+			left: 82px;
 
 			@media (max-width: $tabletMax) {
 				bottom: 42px;
@@ -130,50 +130,106 @@
 
 			.slick-dots {
 				display: flex;
+				align-items: center;
 				list-style: none;
 
 				li {
 					display: block;
 
 					+ li {
-						margin-left: 24px;
+						margin-left: 12px;
 					}
 
-					button {
-						width: 7px;
-						height: 7px;
-						padding: 0;
-						background-color: #c7c7d5;
-						border-radius: 50%;
-						border: none;
-						font-size: 0;
+					.dot {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 20px;
+						height: 20px;
 						cursor: pointer;
 
-						&::before {
-							content: '';
-							opacity: 0;
+						.inner-shadow {
+							width: 7px;
+							height: 7px;
+							padding: 0;
+							background-color: #c7c7d5;
+							border-radius: 50%;
+							transition: background-color 0.3s ease;
+						}
+
+						@media (min-width: $desktopMin) {
+							&:hover {
+								.inner-shadow {
+									background-color: #FEB900;
+								}
+							}
 						}
 					}
 
 					&.slick-active {
-						button {
-							width: 9px;
-							height: 9px;
-							background-color: #FEB900;
+						.dot {
+							width: 20px;
+							height: 20px;
+							background-color: #232323;
 							position: relative;
 							transition: background-color 0.3s ease;
 
 							&::before {
+								content: '';
+								display: block;
+								width: 7px;
+								height: 7px;
+								background-color: #FEB900;
+								border-radius: 50%;
 								position: absolute;
-								top: -7px;
-								left: -7px;
-								width: 10px;
-								height: 20px;
-								border: 2px solid #feb900;
-								border-radius: 100% 0 0 100%/50% 0 0 50%;
-								border-right: 0;
-								opacity: 1;
-								transition: opacity 0.3s ease;
+								top: 50%;
+								left: 50%;
+								z-index: 5;
+								transform: translate(-50%, -50%);
+							}
+
+							.inner-shadow {
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								z-index: 4;
+								width: 16px;
+								height: 16px;
+								margin-left: -8px;
+								margin-top: -8px;
+								border-radius: 100%;
+								background-color: #232323;
+							}
+
+							.hold {
+								position: absolute;
+								z-index: 3;
+								width: 100%;
+								height: 100%;
+								clip: rect(0px, 20px, 20px, 10px);
+								border-radius: 100%;
+								background-color: #232323;
+								transform: rotate(180deg);
+							}
+
+							.fill {
+								position: absolute;
+								width: 100%;
+								height: 100%;
+								border-radius: 100%;
+								background-color: #FEB900;
+								clip: rect(0px, 10px, 20px, 0px);
+								animation: right 3s linear both;
+							}
+
+							@keyframes right {
+								0% {
+									transform: rotate(0deg);
+								}
+
+								100% {
+									transform: rotate(180deg);
+								}
 							}
 						}
 					}
@@ -187,6 +243,16 @@
 			border-color: #fff;
 			background-color: transparent;
 			color: #fff;
+			transition: all 0.3s ease;
+
+			@media (min-width: $desktopMin) {
+				&:hover {
+					opacity: 1;
+					background-color: rgb(254, 168, 0);
+					color: #232323;
+					border-color: transparent;
+				}
+			}
 
 			@media (max-width: $tabletMax) {
 				display: block;
