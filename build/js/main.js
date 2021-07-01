@@ -229,31 +229,6 @@ $(document).ready(function () {
 		nextArrow: ".modal-fc-slider-nav__next",
 	});
 
-	$(".ts-slider").slick({
-		dots: true,
-		arrows: true,
-		slidesToShow: 1,
-		infinite: true,
-		slidesToScroll: 1,
-		asNavFor: activeSlider,
-		appendDots: $(".ts-slider__dots"),
-		prevArrow: ".ts-slider__prev",
-		nextArrow: ".ts-slider__next",
-		autoplay: true,
-		customPaging: function(slider, i) {
-			return '<div class="dot"><div class=\'inner-shadow\'>\n' +
-					'  </div>\n' +
-					'  \n' +
-					'  <div class=\'hold right\'>\n' +
-					'    <div class=\'fill\'></div>\n' +
-					'  </div>\n' +
-					'  \n' +
-					'  <div class=\'hold left\'>\n' +
-					'    <div class=\'fill\'></div>\n' +
-					'  </div></div>';
-		}
-	});
-
 	$(".clients-slide.js-modal-comments-open").on("click", function (e) {
 		var slideIndex = $(this).index();
 		$(".modal-fc-slider").slick("slickGoTo", parseInt(slideIndex), true);
@@ -664,6 +639,30 @@ $(".hww-block-mobile-unwrap span").click(function () {
 
 $(".wwsy-uprotch").on("afterChange", function (event, slick, currentSlide) {
 	$("#cp").text(currentSlide + 1);
+});
+
+$(".ts-slider").slick({
+	dots: true,
+	arrows: true,
+	slidesToShow: 1,
+	infinite: true,
+	slidesToScroll: 1,
+	appendDots: $(".ts-slider__dots"),
+	prevArrow: ".ts-slider__prev",
+	nextArrow: ".ts-slider__next",
+	autoplay: true,
+	customPaging: function(slider, i) {
+		return '<div class="dot"><div class=\'inner-shadow\'>\n' +
+				'  </div>\n' +
+				'  \n' +
+				'  <div class=\'hold right\'>\n' +
+				'    <div class=\'fill\'></div>\n' +
+				'  </div>\n' +
+				'  \n' +
+				'  <div class=\'hold left\'>\n' +
+				'    <div class=\'fill\'></div>\n' +
+				'  </div></div>';
+	}
 });
 $('.rs-ssb-main').slick({
 	dots: true,
