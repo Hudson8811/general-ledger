@@ -212,7 +212,14 @@
 								clip: rect(0px, 20px, 20px, 10px);
 								border-radius: 100%;
 								background-color: #232323;
-								transform: rotate(180deg);
+
+								&.right {
+									transform: rotate(180deg);
+								}
+
+								&.left .fill {
+									animation-delay: 1.5s;
+								}
 							}
 
 							.fill {
@@ -222,7 +229,7 @@
 								border-radius: 100%;
 								background-color: #FEB900;
 								clip: rect(0px, 10px, 20px, 0px);
-								animation: right 3s linear both;
+								animation: right 1.5s linear both;
 							}
 
 							@keyframes right {

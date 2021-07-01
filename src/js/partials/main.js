@@ -145,7 +145,11 @@ $(document).ready(function () {
 			return '<div class="dot"><div class=\'inner-shadow\'>\n' +
 					'  </div>\n' +
 					'  \n' +
-					'  <div class=\'hold\'>\n' +
+					'  <div class=\'hold right\'>\n' +
+					'    <div class=\'fill\'></div>\n' +
+					'  </div>\n' +
+					'  \n' +
+					'  <div class=\'hold left\'>\n' +
 					'    <div class=\'fill\'></div>\n' +
 					'  </div></div>';
 		}
