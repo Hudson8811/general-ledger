@@ -104,10 +104,14 @@
 		&__right {
 			align-self: flex-end;
 			margin-right: -50px;
+			margin-left: -106px;
+
+			@media (max-width: 1100px) {
+				margin-left: auto;
+			}
 
 			@media (max-width: $tabletMax) {
 				margin-right: auto;
-				margin-left: auto;
 			}
 
 			img {
