@@ -933,12 +933,9 @@
 	@media screen and (max-width: 500px) {
 		width: 100%;
 	}
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 450px) {
 		min-height: 384px;
 		width: 100%;
-		bottom: 14px;
-	
-
 	}
 
 	img {
@@ -952,7 +949,7 @@
 			margin-left: 11px;
 		}
 		
-		@media screen and (max-width: 400px) {
+		@media screen and (max-width: 450px) {
 			position: absolute;
 			min-height: 384px;
 			width: 120%;
@@ -973,7 +970,7 @@
 		left: 0;
 		top: 0;
 	}
-	@media screen and (max-width: 400px) { 
+	@media screen and (max-width: 450px) {
 		width: 100%;
 	}
 
@@ -988,7 +985,7 @@
 			margin-top: 32px;
 		}
 
-		@media screen and (max-width: 400px) {
+		@media screen and (max-width: 450px) {
 			position: absolute;
 			width: 107%;
 			left: -3px;
