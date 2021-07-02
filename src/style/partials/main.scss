@@ -1,3 +1,8 @@
+@media screen and (max-width: $phoneMax) {
+	.no_on_mob {
+		display: none;
+	}
+}
 .wwsy-uprotch-mobile-counter__max.tablet {
 	display: none;
 }
