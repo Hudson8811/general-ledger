@@ -541,3 +541,27 @@ $(".hww-block-mobile-unwrap span").click(function () {
 $(".wwsy-uprotch").on("afterChange", function (event, slick, currentSlide) {
 	$("#cp").text(currentSlide + 1);
 });
+
+$(".ts-slider").slick({
+	dots: true,
+	arrows: true,
+	slidesToShow: 1,
+	infinite: true,
+	slidesToScroll: 1,
+	appendDots: $(".ts-slider__dots"),
+	prevArrow: ".ts-slider__prev",
+	nextArrow: ".ts-slider__next",
+	autoplay: true,
+	customPaging: function(slider, i) {
+		return '<div class="dot"><div class=\'inner-shadow\'>\n' +
+				'  </div>\n' +
+				'  \n' +
+				'  <div class=\'hold right\'>\n' +
+				'    <div class=\'fill\'></div>\n' +
+				'  </div>\n' +
+				'  \n' +
+				'  <div class=\'hold left\'>\n' +
+				'    <div class=\'fill\'></div>\n' +
+				'  </div></div>';
+	}
+});

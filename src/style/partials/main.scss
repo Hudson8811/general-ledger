@@ -308,6 +308,7 @@ button {
 			content: "";
 			position: absolute;
 			right: 0;
+			top: 0;
 
 			@media (max-width: 1026px) {
 				right: -2px;
