@@ -551,7 +551,6 @@ $(".ts-slider").slick({
 	appendDots: $(".ts-slider__dots"),
 	prevArrow: ".ts-slider__prev",
 	nextArrow: ".ts-slider__next",
-	autoplay: true,
 	customPaging: function(slider, i) {
 		return '<div class="dot"><div class=\'inner-shadow\'>\n' +
 				'  </div>\n' +
