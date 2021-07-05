@@ -269,7 +269,7 @@ $(document).ready(function () {
 		});
 		$(".steps-cards").slick({
 			infinite: false,
-			adaptiveHeight: true,
+			adaptiveHeight: false,
 			prevArrow:
 				'<div class="ds-slick-prev"><svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 1L9 8L1 0.999999" stroke="#5c5c5c" stroke-width="2"/></svg></div>',
 			nextArrow:

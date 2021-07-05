@@ -40,18 +40,23 @@
 	}
 
 	.ts-slider {
+		.slick-track{
+			display: flex;
+		}
 		&__item {
 			display: flex;
 			justify-content: space-between;
-			height: 513px;
+			min-height: 513px;
 			padding: 0 50px 0 80px;
 			border: 7px solid #393939;
 			box-sizing: border-box;
 			position: relative;
 			overflow: hidden;
+			flex:0 0 auto;
+			height: auto;
 
-			@media (max-width: $tabletMax) {
-				height: auto;
+			@media (max-width: $tabletMax){
+
 				flex-direction: column;
 				padding: 20px 50px 63px 80px;
 			}
@@ -106,6 +111,7 @@
 		}
 
 		&__right {
+			align-self: center;
 			align-self: flex-end;
 
 			@media (max-width: 1100px) {
@@ -125,7 +131,7 @@
 
 				@media (max-width: $tabletMax) {
 					position: relative;
-					bottom: -22px;
+					bottom: -30px;
 					z-index: -1;
 				}
 			}
@@ -275,6 +281,9 @@
 				font-weight: 600;
 				text-align: center;
 				letter-spacing: 0.05em;
+				&:hover{
+					opacity: 1;
+				}
 			}
 
 			svg {
