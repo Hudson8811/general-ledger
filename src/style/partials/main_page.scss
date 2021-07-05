@@ -147,6 +147,7 @@
 					right: -50px;
 					width: calc(100% + 130px);
 					z-index: -1;
+					object-position: center;
 				}
 
 				@media (max-width: $phoneMax) {
