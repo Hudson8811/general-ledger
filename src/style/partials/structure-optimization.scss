@@ -638,6 +638,14 @@
 			@media screen and (max-width: 700px) {
 				display: flex;
 			}
+			@media screen and (max-width: 450px) {
+				.ws-block__item-header-title{
+					margin-right: 20px;
+				}
+				.ws-block__item-header-title br{
+					display: none;
+				}
+			}
 
 			&-title {
 				font-family: Gilroy, sans-serif;
@@ -813,6 +821,11 @@
 			font-size: 13px;
 		}
 	}
+	.slick-track{
+		@media screen and (max-width: $phoneMax) {
+			display: flex;
+		}
+	}
 
 	&__item {
 		width: 33.333%;
@@ -822,9 +835,12 @@
 
 		@media screen and (max-width: $tabletMax) {
 			width: 50%;
+
 		}
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 700px) {
 			width: 100%;
+			height: auto;
+			min-height: 360px;
 		}
 
 		&:nth-child(odd) {
@@ -893,6 +909,10 @@
 			font-size: 16px;
 			line-height: 150%;
 			color: #5c5c5c;
+			@media screen and (max-width: 700px) {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
 
 			&--last {
 				font-family: Gilroy, sans-serif;
