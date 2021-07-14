@@ -664,6 +664,7 @@ $(".ts-slider").slick({
 	}
 });
 
+
 function dnsSliderInit() {
 	if (window.matchMedia("(max-width: 1025px)").matches) {
 		$(".js-dns-slider").slick({
@@ -700,7 +701,7 @@ function setEqualHeight(el) {
 		var tallestcolumn = 0;
 
 		el.each(function() {
-			var currentHeight = $(this).height();
+			var currentHeight = $(this).outerHeight();
 
 			if (currentHeight > tallestcolumn) {
 				tallestcolumn = currentHeight;

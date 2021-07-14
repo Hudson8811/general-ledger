@@ -602,7 +602,7 @@ function setEqualHeight(el) {
 		var tallestcolumn = 0;
 
 		el.each(function() {
-			var currentHeight = $(this).height();
+			var currentHeight = $(this).outerHeight();
 
 			if (currentHeight > tallestcolumn) {
 				tallestcolumn = currentHeight;
