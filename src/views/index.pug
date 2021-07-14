@@ -44,7 +44,7 @@ block main
 	section.definitely-need-section--v2
 		.dns-container.container
 			h2.default-h2 Обязательно нужна Вам, если хотите:
-			.dns__wrapper
+			.dns__wrapper.dns__wrapper--main.js-dns-slider(data-counter-id="optish-wwsy-1-counter")
 				.dns-item
 					.dns-item__count
 						.dns-item__digit 01
@@ -75,6 +75,11 @@ block main
 						li Реальную картину финансов бизнеса
 					.dns-item__icon
 						img(src="/bitrix/templates/GL/img/check-green.svg" alt="")
+			.wwsy-uprotch-mobile-counter.wwsy-uprotch-mobile-counter--main
+				#optish-wwsy-1-counter.wwsy-uprotch-mobile-counter__current 1
+				.wwsy-uprotch-mobile-counter__slash /
+				.wwsy-uprotch-mobile-counter__max.tablet 3
+				.wwsy-uprotch-mobile-counter__max.mobile 3
 
 	section.result-section
 		.rs-container.container
