@@ -399,6 +399,14 @@
     @media (min-width: 768px) {
       margin: 39px -10px 0;
     }
+
+    &--main {
+      .dns-item {
+        @media (max-width: 1025px) {
+          margin: 20px 10px;
+        }
+      }
+    }
   }
 }
 
