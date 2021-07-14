@@ -689,28 +689,10 @@ function dnsSliderInit() {
 }
 
 $(window).resize(function () {
-	setEqualHeight($(".js-dns-slider .dns-item"));
 	dnsSliderInit();
 });
 
-setEqualHeight($(".js-dns-slider .dns-item"));
 dnsSliderInit();
-
-function setEqualHeight(el) {
-	if (window.matchMedia("(max-width: 1025px)").matches) {
-		var tallestcolumn = 0;
-
-		el.each(function() {
-			var currentHeight = $(this).outerHeight();
-
-			if (currentHeight > tallestcolumn) {
-				tallestcolumn = currentHeight;
-			}
-		});
-
-		el.height(tallestcolumn);
-	}
-}
 $('.rs-ssb-main').slick({
 	dots: true,
 	slidesToShow: 1,

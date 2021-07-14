@@ -400,9 +400,17 @@
     }
 
   	&--main {
+			.slick-track {
+				display: flex !important;
+			}
+
+			.slick-slide {
+				height: inherit !important;
+			}
+
       .dns-item {
         @media (max-width: 1025px) {
-          margin: 20px 10px;
+          margin: 20px 15px;
         }
       }
     }
