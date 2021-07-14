@@ -1,5 +1,3 @@
-
-
 .sp-block-item-title-number {
 	position: absolute;
 	left: 10px;
@@ -8,7 +6,7 @@
 	font-weight: 600;
 	font-size: 80px;
 	line-height: 125%;
-	color: #DADAE8;
+	color: #dfdfdf;
 	font-family: $fontG;
 	z-index: -1;
 
@@ -22,16 +20,17 @@
 	margin-top: 86px;
 }
 
-.orind-container.container {}
+.orind-container.container {
+}
 
-h2.default-h2 {}
+h2.default-h2 {
+}
 
 .orind-block {
 	display: flex;
 	margin-top: 37px;
-    padding: 74px 0px 68px 0;
-	border-radius: 20px;
-	background: #FFFFFF;
+	padding: 74px 0px 68px 0;
+	background: #ffffff;
 }
 
 .orind-item {
@@ -40,7 +39,7 @@ h2.default-h2 {}
 	width: calc(25% - 1px);
 
 	&:not(:nth-child(4n)) {
-		border-right: 1px solid #DADAE8;
+		border-right: 1px solid #dfdfdf;
 	}
 }
 
@@ -50,7 +49,7 @@ h2.default-h2 {}
 }
 
 .orind-top {
-	color: #2A2FFF;
+	color: #feb900;
 	font-family: $fontG;
 	font-weight: 500;
 	font-size: 60px;
@@ -58,7 +57,8 @@ h2.default-h2 {}
 	font-style: normal;
 }
 
-span.orind-top__digit {}
+span.orind-top__digit {
+}
 
 span.orind-top__dimension {
 	margin-left: 10px;
@@ -71,9 +71,6 @@ span.orind-top__dimension {
 	font-size: 16px;
 	line-height: 125%;
 }
-
-
-
 
 /////////////////////////////////
 
@@ -89,18 +86,16 @@ span.orind-top__dimension {
 
 //////////////
 
-.sp-pic-optish-2-cf{
-	border-radius: 20px;
+.sp-pic-optish-2-cf {
 	&::before {
 		padding-top: calc(31.4% + 64px * 2 - 15px * 2);
 	}
 }
 
-@media screen and (min-width:$desktopMin){
-	.we-will-suit-you-section--optish{
-
-		.wwsy-uprotch-item:nth-child(6){
-			.wwsy-uprotch-item__text{
+@media screen and (min-width: $desktopMin) {
+	.we-will-suit-you-section--optish {
+		.wwsy-uprotch-item:nth-child(6) {
+			.wwsy-uprotch-item__text {
 				width: 220px;
 				max-width: 120%;
 			}

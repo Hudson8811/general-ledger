@@ -5,9 +5,7 @@
 }
 
 @media screen and (min-width: $desktopMin) {
-	.top-section--optish {
-
-	}
+	.top-section--optish {}
 
 	.sp-block--optish-sp-1 {
 		.sp-block-item-pic-inner {
@@ -176,9 +174,7 @@
 		}
 	}
 
-	.top-section--optish {
-
-	}
+	.top-section--optish {}
 
 
 	.why-choose-us-section--optish {
@@ -243,7 +239,6 @@
 	}
 
 	.sp-pic-optish-1-cf {
-		border-radius: 20px;
 
 		&::before {
 			padding-top: calc(25% + 64px * 2 - 15px * 2);
@@ -375,9 +370,7 @@
 
 @media screen and (max-width:$phoneMax) {
 
-	.top-section--optish {
-
-	}
+	.top-section--optish {}
 
 	.result-section--optish {
 
@@ -580,7 +573,8 @@
 	.sp-pic-optish-2-cf::before {
 		padding-top: calc(31.3% + 64px * 2 - 15px * 2);
 	}
-	.wwsy-uprotch .slick-slide .wwsy-uprotch-item__text{
+
+	.wwsy-uprotch .slick-slide .wwsy-uprotch-item__text {
 		flex-direction: column;
 		display: block;
 	}

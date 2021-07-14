@@ -1,117 +1,247 @@
 @media screen and (min-width: $desktopMin) {
-  .top-section--contacts{
-    padding-bottom: 126px;
-    margin-bottom: 0;
-    .ts-flex{
-      min-height: 500px;
-    }
-    .ts-pic{
+	.top-section--contacts {
+		padding-bottom: 126px;
+		margin-bottom: 0;
 
-    }
-    .ts-flex__right{
-      width: calc(100% - 551px);
-    }
-    .ts-flex__left{
-      width: 551px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-    .ts-text-desktop p{
-      max-width: 510px;
-    }
-  }
+		.ts-flex {
+			min-height: 500px;
+		}
+
+		.ts-pic {
+		}
+
+		.ts-flex__right {
+			width: calc(100% - 551px);
+		}
+
+		.ts-flex__left {
+			width: 551px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		.ts-text-desktop p {
+			max-width: 510px;
+		}
+	}
 }
 
 .contacts-page {
-  &-block {
+	&-block {
+		overflow: hidden;
+		background: #fff;
+		margin-top: -126px;
+		margin-bottom: 165px;
+		display: flex;
+	}
 
-    overflow: hidden;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    background: #fff;
-    margin-top: -126px;
-    margin-bottom: 165px;
-    display: flex;
-  }
-  &-left-block {
-    flex-shrink: 0;
-    background: #f5f6fb;
-    width: 47%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 73px 6.5% 72px;
-  }
-  &-right-block {
-    font-weight: 500;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 73px 6.5% 72px;
-  }
-  &-address{
-    position: relative;
-    padding-left: 40px;
-    margin-bottom: 21px;
-    &:before{
-      content: '';
-      position: absolute;
-      left: 3px;
-      top: 2px;
-      background: url("../img/contacts/addr.svg") no-repeat center center;
-      width: 17px;
-      height: 24px;
-    }
-  }
-  &-phone{
-    margin-bottom: 21px;
-    a{
-      color: inherit;
-      padding-left: 40px;
-      position: relative;
-      &:before{
-        content: '';
-        position: absolute;
-        left: 3px;
-        top: -2px;
-        width: 19px;
-        height: 19px;
-        background: url("../img/contacts/phone.svg") no-repeat center center;
-      }
-    }
-  }
-  &-email{
-    margin-bottom: 21px;
-    a{
-      color: #2a2eff;
-      padding-left: 40px;
-      position: relative;
-      text-decoration: underline;
-      &:before{
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 24px;
-        height: 17px;
-        background: url("../img/contacts/mail.svg") no-repeat center center;
-      }
-    }
-  }
-  &-map{
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    overflow: hidden;
-    height: 390px;
-  }
+	&-left-block {
+		flex-shrink: 0;
+		background: #f5f6fb;
+		width: 47%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 73px 6.5% 72px;
+	}
+
+	&-right-block {
+		font-weight: 500;
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 73px 6.5% 72px;
+
+		.form-main-heading {
+			margin-bottom: 35px;
+
+			@media (max-width: $phoneMax) {
+				margin-bottom: 18px;
+			}
+		}
+	}
+
+	&-address {
+		position: relative;
+		padding-left: 40px;
+		margin-bottom: 21px;
+
+		&:before {
+			content: "";
+			position: absolute;
+			left: 3px;
+			top: 2px;
+			background: url("../img/contacts/addr.svg") no-repeat center center;
+			width: 17px;
+			height: 24px;
+		}
+	}
+
+	&-phone {
+		margin-bottom: 21px;
+
+		a {
+			color: inherit;
+			padding-left: 40px;
+			position: relative;
+
+			&:before {
+				content: "";
+				position: absolute;
+				left: 3px;
+				top: -2px;
+				width: 19px;
+				height: 19px;
+				background: url("../img/contacts/phone.svg") no-repeat center center;
+			}
+		}
+	}
+
+	&-email {
+		margin-bottom: 21px;
+
+		a {
+			color: #3e85f3;
+			transition: 0.3s ease;
+			padding-left: 40px;
+			position: relative;
+			text-decoration: underline;
+
+			&:hover {
+				color: #feb900;
+			}
+
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 24px;
+				height: 17px;
+				background: url("../img/contacts/mail.svg") no-repeat center center;
+			}
+		}
+	}
+
+	&-map {
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+		overflow: hidden;
+		height: 390px;
+	}
+
+	&-grid {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 18px;
+
+		@media (max-width: $phoneMax) {
+			margin-bottom: 6px;
+		}
+
+		.social-item {
+			width: 45%;
+
+			@media (max-width: $phoneMax) {
+				width: 100%;
+			}
+
+			&:nth-child(even) {
+				width: 55%;
+
+				@media (max-width: $phoneMax) {
+					width: 100%;
+				}
+			}
+
+			&:nth-child(1) {
+				@media (max-width: $phoneMax) {
+					order: -2;
+				}
+			}
+
+			&:nth-child(3) {
+				@media (max-width: $phoneMax) {
+					order: -1;
+				}
+			}
+		}
+	}
+}
+
+.social-item {
+	display: flex;
+	margin-bottom: 25px;
+
+	@media (max-width: $phoneMax) {
+		margin-bottom: 21px;
+	}
+
+	svg,
+	img {
+		width: 32px;
+		height: 32px;
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		-ms-filter: grayscale(100%);
+		-o-filter: grayscale(100%);
+		filter: url(desaturate.svg#greyscale);
+		filter: gray;
+		-webkit-filter: grayscale(1);
+		transition:.3s all
+	}
+
+	&__group {
+		margin-left: 17px;
+		font-family: Pragmatica;
+		font-size: 13px;
+		line-height: 18px;
+		color: #828282;
+
+		a {
+			display: block;
+			font-size: 16px;
+			color: #0000FF;
+			text-decoration: underline;
+
+			@media (min-width: $desktopMin) {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+
+			&.black {
+				color: #232323;
+				text-decoration: none;
+				transition: opacity 0.3s ease;
+
+				@media (min-width: $desktopMin) {
+					&:hover {
+						opacity: 0.7;
+					}
+				}
+			}
+		}
+	}
+	&:hover{
+		img, svg{
+			filter: grayscale(0);
+			-webkit-filter: grayscale(0);
+			-moz-filter: grayscale(0);
+			-ms-filter: grayscale(0);
+			-o-filter: grayscale(0);
+			filter: none;
+			-webkit-filter: grayscale(0);
+		}
+	}
 }
 
 .social-block-item {
-  img {
-    height: 21px;
-  }
+	img {
+		height: 21px;
+	}
 }

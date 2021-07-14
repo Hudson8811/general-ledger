@@ -27,13 +27,19 @@ block main
 								br.mbr.tbr
 								|  подскажем, как сдавать и общаться в банке
 							p от 7-ми дней
-						a.btn.btn--white.btn--with-right-arrow.ts-btn.ts-btn-desktop.js-modal-fancy-caller(data-fancy-src="#modal-consult" onclick="ym(63508015,'reachGoal','consult-konsolidirovannaya-otchetnost');") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
-							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
+						a.btn.btn--white.btn--with-right-arrow.btn--triangle-arrow.ts-btn.ts-btn-desktop.js-modal-fancy-caller(data-fancy-src="#modal-consult" onclick="ym(63508015,'reachGoal','consult-konsolidirovannaya-otchetnost');") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+							<svg width="23" height="46" viewBox="0 0 23 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M-1.00536e-06 23L23 -1.00536e-06L23 46L-1.00536e-06 23Z" fill="#FFE81B"/>
+							<path d="M11 18L16 23L11 28" stroke="#232323" stroke-width="2"/>
+							</svg>
 
 					.ts-flex__right
 						img.ts-pic(src="/bitrix/templates/GL/img/ts.png" alt="" style="max-width:850px; margin-bottom:-30px;")
-						.btn.btn--orange.btn--with-right-arrow.ts-btn.ts-btn-mobile.js-modal-fancy-caller(data-fancy-src="#modal-consult" onclick="ym(63508015,'reachGoal','consult-konsolidirovannaya-otchetnost');") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
-							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
+						.btn.btn--orange.btn--with-right-arrow.btn--triangle-arrow.ts-btn.ts-btn-mobile.js-modal-fancy-caller(data-fancy-src="#modal-consult" onclick="ym(63508015,'reachGoal','consult-konsolidirovannaya-otchetnost');") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+							<svg width="23" height="46" viewBox="0 0 23 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M-1.00536e-06 23L23 -1.00536e-06L23 46L-1.00536e-06 23Z" fill="#FFE81B"/>
+							<path d="M11 18L16 23L11 28" stroke="#232323" stroke-width="2"/>
+							</svg>
 
 	section.definitely-need-section--v2
 		.dns-container.container
@@ -212,7 +218,7 @@ block main
 					.wwsy-block-mobile-counter__slash /
 					.wwsy-block-mobile-counter__max 3
 
-	section.how-we-work-section
+	//- section.how-we-work-section
 		.hww-container.container
 			h2.default-h2 Как мы готовим Вашу отчетность
 			.hww-block-mobile-tabs
@@ -447,17 +453,20 @@ block main
 					.feedback-section__title Бесплатная консультация
 					a.feedback-section__button.js-modal-fancy-caller(data-fancy-src="#modal-consult" onclick="ym(63508015,'reachGoal','consult-konsolidirovannaya-otchetnost');")
 						span Получить консультацию
-						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="white"/><path d="M8 5L13 10L8 15" stroke="#F26419" stroke-width="2"/></svg>
+						<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11 0L22 11L11 22L0 11L11 0Z" fill="#FFE81B"/>
+						<path d="M9 6L14 11L9 16" stroke="#232323" stroke-width="2"/>
+						</svg>
 				.feedback-section__col
 					.feedback-section__title.feedback-section__title--call Свяжитесь с нами
 					.feedback-section__contacts
 						.feedback-section__contact-item-col
 							a(href='tel:+74952119040' style='font-weight: 500;').feedback-section__contact-item
 								img(src="/bitrix/templates/GL/img/contacts/tp-phone.svg" alt="")
-								span +7 (495) 211 90 40
-							a(href='mailto:info@glfinance.ru').feedback-section__contact-item
+								span +7 (985) 211 90 40
+							a(href='mailto:mail@vavilov.com').feedback-section__contact-item
 								img(src="/bitrix/templates/GL/img/contacts/tp-mail.svg" alt="")
-								span(style='text-decoration: underline;') info@glfinance.ru
+								span(style='text-decoration: underline;') mail@vavilov.com
 						.feedback-section__contact-item-col
 							a(onclick="ym(63508015,'reachGoal','whatsapp');"  href="https://wa.me/79852119040" target="_blank").feedback-section__contact-item
 								img(src="/bitrix/templates/GL/img/contacts/tp-wa.svg" alt="")
@@ -529,8 +538,8 @@ block main
 							.modal-fc-main-bold General Ledger помогли нам сэкономить порядка 3&nbsp;000&nbsp;000 рублей, внедрив управленческую и консолидированную отчетность в нашу компанию. Теперь мы понимаем где мы находимся не только по своим «ощущениям», но и на уровне цифр.
 							.modal-fc-video-wrap
 								.video-yt.js-video-yt.video-yt--h100.video-yt-btn
-										.video-yt__preview(data-src="https://www.youtube.com/embed/WUgvvPRH7Oc")
-											img(src="/bitrix/templates/GL/images/com-mod-pic.jpg")
+									.video-yt__preview(data-src="https://www.youtube.com/embed/WUgvvPRH7Oc")
+										img(src="/bitrix/templates/GL/images/com-mod-pic.jpg")
 								.modal-fc-vid-name Алексей Тараповский
 								.modal-fc-vid-positio Управляющий партнер, председатель правления
 							.modal-fc-text
@@ -563,8 +572,8 @@ block main
 							.modal-fc-main-bold General Ledger помогли нам сэкономить порядка 3&nbsp;000&nbsp;000 рублей, внедрив управленческую и консолидированную отчетность в нашу компанию. Теперь мы понимаем где мы находимся не только по своим «ощущениям», но и на уровне цифр.
 							.modal-fc-video-wrap
 								.video-yt.js-video-yt.video-yt--h100.video-yt-btn
-										.video-yt__preview(data-src="https://www.youtube.com/embed/WUgvvPRH7Oc")
-											img(src="/bitrix/templates/GL/images/com-mod-pic.jpg")
+									.video-yt__preview(data-src="https://www.youtube.com/embed/WUgvvPRH7Oc")
+										img(src="/bitrix/templates/GL/images/com-mod-pic.jpg")
 								.modal-fc-vid-name Алексей Тараповский
 								.modal-fc-vid-positio Управляющий партнер, председатель правления
 							.modal-fc-text
@@ -597,8 +606,8 @@ block main
 							.modal-fc-main-bold General Ledger помогли нам сэкономить порядка 3&nbsp;000&nbsp;000 рублей, внедрив управленческую и консолидированную отчетность в нашу компанию. Теперь мы понимаем где мы находимся не только по своим «ощущениям», но и на уровне цифр.
 							.modal-fc-video-wrap
 								.video-yt.js-video-yt.video-yt--h100.video-yt-btn
-										.video-yt__preview(data-src="https://www.youtube.com/embed/WUgvvPRH7Oc")
-											img(src="/bitrix/templates/GL/images/com-mod-pic.jpg")
+									.video-yt__preview(data-src="https://www.youtube.com/embed/WUgvvPRH7Oc")
+										img(src="/bitrix/templates/GL/images/com-mod-pic.jpg")
 								.modal-fc-vid-name Алексей Тараповский
 								.modal-fc-vid-positio Управляющий партнер, председатель правления
 							.modal-fc-text

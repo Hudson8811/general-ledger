@@ -1,0 +1,104 @@
+.new-papers {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+
+        @media all and (max-width: 1024px) {
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 400px;
+        width: 100%;
+        min-height: 386px;
+        padding: 40px 67px 48px 40px;
+
+        box-sizing: border-box;
+        margin: 0 10px 20px;
+        background: linear-gradient(0deg, rgba(35, 35, 35, 0.65), rgba(35, 35, 35, 0.65)), url(1.jpg);
+
+        @media all and (max-width: 1024px) {
+            max-width: 100%;
+            min-height: 450px;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+
+        @media all and (max-width: 768px) {
+            min-height: 300px;
+        }
+
+        @media all and (min-width: 1024px) {
+            &:hover {
+                .new-papers__author {
+                    display: none;
+                }
+
+                .new-papers__read {
+                    display: flex;
+                }
+            }
+        }
+
+    }
+
+    &__img{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        -webkit-filter: grayscale(1); /* Webkit браузеры */
+        filter: gray; /* для IE6-9 */
+        filter: grayscale(1); /* W3C */
+        opacity: .65;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__title {
+        font-family: Pragmatica;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 125%;
+        color: #FFFFFF;
+        position: relative;
+    }
+
+    &__author {
+        position: relative;
+        font-family: Pragmatica;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 125%;
+        color: #FFFFFF;
+    }
+
+    &__read {
+        width: 83px;
+        position: absolute;
+        left: 40px;
+        bottom: 32px;
+        display: none;
+
+        @media all and (max-width: 1024px) {
+            right: 40px;
+            left: auto;
+            display: flex;
+            bottom: 25px;
+        }
+    }
+}

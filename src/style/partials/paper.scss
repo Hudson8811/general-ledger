@@ -1,7 +1,7 @@
 .paper {
-	&__container {
-		width: 1119px;
-	}
+  &__container {
+    width: 1119px;
+  }
 
   &__wrapper {
     padding-top: 25px;
@@ -62,7 +62,8 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: linear-gradient(to top, rgba(53, 44, 91, 1) 15%, transparent);
+      background: linear-gradient(to top, #000 15%, transparent);
+      opacity: 0.7;
     }
   }
 
@@ -227,6 +228,7 @@
   }
 
   &__share {
+
     &::before,
     &::after {
       content: '';
@@ -319,7 +321,7 @@
       font-size: 16px;
       line-height: 24px;
 
-      + p {
+      +p {
         margin-top: 24px;
       }
     }
@@ -327,14 +329,13 @@
 
   &__consult {
     position: relative;
-    border-radius: 15px;
     overflow: hidden;
     padding: 20px;
     margin-top: 28px;
     color: #fff;
     background: no-repeat 120px;
     background-size: cover;
-    background-color: #2c2e85;
+    background-color: #000;
 
     @media (min-width: 768px) {
       padding: 32px;
@@ -347,7 +348,8 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgba(30, 19, 72, 0.8);
+      background-color: #ffb800;
+      opacity: 0.2;
     }
 
     @media (min-width: 768px) {
@@ -358,6 +360,7 @@
       padding: 29px 48px 41px;
     }
   }
+
   &__consult-bg {
     position: absolute;
     top: 0;
@@ -572,7 +575,7 @@
 
     .paper-part {
       &__desc {
-        p > span {
+        p>span {
           font-weight: 500;
         }
 
@@ -646,7 +649,7 @@
       font-size: 16px;
       line-height: 24px;
 
-      + p {
+      +p {
         margin-top: 24px;
       }
     }
@@ -694,6 +697,7 @@
         white-space: nowrap;
       }
     }
+
     &--small {
       font-size: 13px;
 
@@ -708,7 +712,7 @@
     width: 100%;
     padding: 40px 100px 30px;
     margin: 58px -100px 0;
-    background-color: #000;
+    background-color: #232323;
     color: #fff;
 
     @media (min-width: 1024px) {
@@ -717,9 +721,9 @@
       background-size: auto 70%;
       background-repeat: no-repeat;
     }
-    @media (max-width: 1023px)
-    {
-      background-image: none!important;
+
+    @media (max-width: 1023px) {
+      background-image: none !important;
     }
   }
 
@@ -747,12 +751,13 @@
       left: -24px;
       background: url("../img/quote2.svg") no-repeat center center;
       background-size: cover;
+      opacity: 0.7;
 
       @media (min-width: 1024px) {
         left: -49px;
       }
     }
-    
+
     span {
       position: relative;
     }
